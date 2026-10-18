@@ -15,8 +15,7 @@ export type Vault = z.infer<typeof VaultSchema>;
 export class WrongPasswordError extends Error {}
 
 export const DEFAULT_ITERATIONS = 600_000;
-export const passwordProblem = (p: string) =>
-  p.length < 12 ? 'Use at least 12 characters – e.g. 4–5 random words' : null;
+export const passwordProblem = (p: string) => (p.length === 0 ? 'Enter a password' : null);
 
 const b64 = (u: Uint8Array) => btoa(String.fromCharCode(...u));
 const unb64 = (s: string) => Uint8Array.from(atob(s), (c) => c.charCodeAt(0));

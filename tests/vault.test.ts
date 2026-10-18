@@ -27,7 +27,8 @@ it('fresh salt and IV every time; the round count is stored', async () => {
   expect(a.iterations).toBe(FAST);
   expect((await encryptVault(cfg, 'correct horse battery staple')).iterations).toBeGreaterThanOrEqual(600000);
 });
-it('password rules: at least 12 characters', () => {
-  expect(passwordProblem('short')).toMatch(/12/);
+it('password rules: any non-empty password', () => {
+  expect(passwordProblem('')).toMatch(/password/i);
+  expect(passwordProblem('abc')).toBeNull();
   expect(passwordProblem('correct horse battery staple')).toBeNull();
 });

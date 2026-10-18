@@ -42,8 +42,8 @@ the token with that password (PBKDF2-SHA256, 600 000 rounds → AES-256-GCM) and
 `public/login.json`. After the next deploy every device shows **Log in** – enter the password and you can save
 changes; *Log out on this device* forgets it again.
 
-Only the encrypted token is published, so its safety depends on the password: use 4–5 random words, not a
-short one. When the token expires, paste a new one in *Settings* and save the password again.
+Only the encrypted token is published, so its safety depends on the password: any password is accepted,
+but a longer one (e.g. 4–5 random words) is much harder to guess. When the token expires, paste a new one in *Settings* and save the password again.
 
 ## Running locally
 

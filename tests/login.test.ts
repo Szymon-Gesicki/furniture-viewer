@@ -27,14 +27,14 @@ it('loginWithPassword: right password stores the config; wrong password → Wron
   expect(loadGhConfig()).toEqual(cfg);
   await expect(loginWithPassword('x', site(null))).rejects.toThrow(/not set up/);
 });
-it('saveLoginPassword: commits public/login.json with the encrypted config (sha when it exists); weak password rejected', async () => {
+it('saveLoginPassword: commits public/login.json with the encrypted config (sha when it exists); empty password rejected', async () => {
   const puts: any[] = [];
   const f = (async (url: string, init: RequestInit = {}) => {
     if ((init.method ?? 'GET') === 'GET') return new Response(JSON.stringify({ content: btoa('{}'), sha: 'old' }), { status: 200 });
     puts.push({ url, ...JSON.parse(String(init.body)) });
     return new Response('{}', { status: 200 });
   }) as unknown as typeof fetch;
-  await expect(saveLoginPassword(cfg, 'short', f)).rejects.toThrow(/12/);
+  await expect(saveLoginPassword(cfg, '', f)).rejects.toThrow(/password/i);
   await saveLoginPassword(cfg, 'correct horse battery', f, 1000);
   expect(puts[0].url).toContain(`/contents/${VAULT_PATH}`);
   expect(puts[0].sha).toBe('old');

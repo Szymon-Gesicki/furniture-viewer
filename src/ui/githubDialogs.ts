@@ -67,13 +67,13 @@ export function openSettings(onChange: () => void): void {
 
 // password login: encrypts the current token with a password and commits public/login.json
 function passwordSection(cfg: GhConfig): HTMLElement {
-  const pass = el('input', { type: 'password', autocomplete: 'new-password', placeholder: 'at least 12 characters' });
+  const pass = el('input', { type: 'password', autocomplete: 'new-password', placeholder: 'e.g. 4–5 random words' });
   const again = el('input', { type: 'password', autocomplete: 'new-password' });
   const status = el('p', { className: 'status' });
   const save = el('button', { type: 'submit', className: 'btn', textContent: 'Save login password' });
   const form = el('form', { className: 'password-login' },
     el('h3', { textContent: 'Password login for other devices' }),
-    el('p', { className: 'lead', textContent: 'Encrypts this token with a password and publishes it with the site. On another device just click “Log in” and enter the password. Use a long password (4–5 random words) – the encrypted token is public.' }),
+    el('p', { className: 'lead', textContent: 'Encrypts this token with a password and publishes it with the site. On another device just click “Log in” and enter the password. The encrypted token is public, so a longer password (e.g. 4–5 random words) is safer.' }),
     field('Password', pass), field('Repeat password', again), status, el('div', { className: 'actions' }, save));
   form.addEventListener('submit', async (e) => {
     e.preventDefault();
