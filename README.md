@@ -35,6 +35,16 @@ Stack: Vite, TypeScript, three.js, zod, vitest. Ruby is only used to import Sket
    Paste it in the app (library → *Settings*). It is stored only in that browser – never commit it.
    All `<user>.github.io` sites share one origin, so keep the token scoped to this single repository.
 
+### Password login on other devices
+
+Paste the token once (library → *Settings*), then in the same dialog set a **login password**. The app encrypts
+the token with that password (PBKDF2-SHA256, 600 000 rounds → AES-256-GCM) and commits it as
+`public/login.json`. After the next deploy every device shows **Log in** – enter the password and you can save
+changes; *Log out on this device* forgets it again.
+
+Only the encrypted token is published, so its safety depends on the password: use 4–5 random words, not a
+short one. When the token expires, paste a new one in *Settings* and save the password again.
+
 ## Running locally
 
 Requires Node 20+.

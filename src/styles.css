@@ -139,6 +139,8 @@ button { font: inherit; color: inherit; }
 .dialog details { margin: 4px 0 10px; }
 .dialog summary { cursor: pointer; color: var(--muted); font-size: 13px; margin-bottom: 8px; }
 .dialog .actions { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 8px; }
+.password-login { border-top: 1px solid var(--line); margin-top: 14px; padding-top: 12px; }
+.password-login h3 { margin: 0 0 6px; font-size: 15px; }
 .status { min-height: 1.2em; margin: 6px 0; font-size: 13px; }
 .status.ok { color: var(--accent); }
 .status.err { color: #a33a2a; }

@@ -1,6 +1,8 @@
 import { AuthError, checkRepo } from '../github/api';
 import { DEFAULT_REPO, clearGhConfig, guessRepo, loadGhConfig, saveGhConfig, type GhConfig } from '../github/config';
 import { planUpload, projectExists, uploadProject } from '../github/addProject';
+import { loginWithPassword, saveLoginPassword } from '../github/login';
+import { WrongPasswordError, passwordProblem } from '../github/vault';
 
 function el<K extends keyof HTMLElementTagNameMap>(tag: K, props: Record<string, unknown> = {}, ...kids: (Node | string)[]): HTMLElementTagNameMap[K] {
   const e = document.createElement(tag);
@@ -36,7 +38,7 @@ export function openSettings(onChange: () => void): void {
   const token = el('input', { type: 'password', value: cur?.token ?? '', placeholder: 'github_pat_…', autocomplete: 'off', required: true });
   const status = el('p', { className: 'status' });
   const save = el('button', { type: 'submit', className: 'btn btn-primary', textContent: 'Save and check' });
-  const remove = el('button', { type: 'button', className: 'btn', textContent: 'Remove token from this browser' });
+  const remove = el('button', { type: 'button', className: 'btn', textContent: 'Log out on this device' });
   const form = el('form', {},
     el('p', { className: 'lead', textContent: 'The token lets the app save changes (layers, new projects) as commits to the repository. It is stored only in this browser.' }),
     field('Token (fine-grained, Contents: Read and write)', token),
@@ -60,6 +62,62 @@ export function openSettings(onChange: () => void): void {
     } finally { save.disabled = false; }
   });
   remove.addEventListener('click', () => { clearGhConfig(); onChange(); close(); });
+  if (cur) body.append(passwordSection(cur));
+}
+
+// password login: encrypts the current token with a password and commits public/login.json
+function passwordSection(cfg: GhConfig): HTMLElement {
+  const pass = el('input', { type: 'password', autocomplete: 'new-password', placeholder: 'at least 12 characters' });
+  const again = el('input', { type: 'password', autocomplete: 'new-password' });
+  const status = el('p', { className: 'status' });
+  const save = el('button', { type: 'submit', className: 'btn', textContent: 'Save login password' });
+  const form = el('form', { className: 'password-login' },
+    el('h3', { textContent: 'Password login for other devices' }),
+    el('p', { className: 'lead', textContent: 'Encrypts this token with a password and publishes it with the site. On another device just click “Log in” and enter the password. Use a long password (4–5 random words) – the encrypted token is public.' }),
+    field('Password', pass), field('Repeat password', again), status, el('div', { className: 'actions' }, save));
+  form.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    const problem = passwordProblem(pass.value) ?? (pass.value !== again.value ? 'The passwords do not match' : null);
+    if (problem) { status.className = 'status err'; status.textContent = problem; return; }
+    save.disabled = true; status.className = 'status'; status.textContent = 'Encrypting and saving…';
+    try {
+      await saveLoginPassword(cfg, pass.value);
+      status.className = 'status ok';
+      status.textContent = 'Saved. “Log in” will work on other devices after the site rebuilds (about 2 minutes).';
+      pass.value = ''; again.value = '';
+    } catch (err) {
+      status.className = 'status err'; status.textContent = err instanceof Error ? err.message : String(err);
+    } finally { save.disabled = false; }
+  });
+  return form;
+}
+
+export function openLogin(onChange: () => void): void {
+  const { body, close } = modal('Log in');
+  const pass = el('input', { type: 'password', autocomplete: 'current-password', required: true });
+  const status = el('p', { className: 'status' });
+  const go = el('button', { type: 'submit', className: 'btn btn-primary', textContent: 'Log in' });
+  const form = el('form', {}, field('Password', pass), status, el('div', { className: 'actions' }, go));
+  body.append(form);
+  pass.focus();
+  form.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    go.disabled = true; status.className = 'status'; status.textContent = 'Checking…';
+    try {
+      const cfg = await loginWithPassword(pass.value);
+      await checkRepo(cfg);
+      status.className = 'status ok'; status.textContent = `Logged in – saving to ${cfg.owner}/${cfg.repo}.`;
+      onChange();
+      setTimeout(close, 700);
+    } catch (err) {
+      status.className = 'status err';
+      status.textContent = err instanceof WrongPasswordError ? 'Wrong password'
+        : err instanceof AuthError ? `${err.message} – the token may have expired; paste a new one in Settings and set the password again`
+        : err instanceof Error ? err.message : String(err);
+      if (!(err instanceof WrongPasswordError)) clearGhConfig();
+      onChange();
+    } finally { go.disabled = false; }
+  });
 }
 
 // new project from a .rb / model.json / project.ts file → commit to projects/<id>/, built by GitHub Actions

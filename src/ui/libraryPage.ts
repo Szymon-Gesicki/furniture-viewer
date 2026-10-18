@@ -1,7 +1,8 @@
 import { LAYERS } from '../model/schema';
 import { partsCount } from './format';
 import { loadGhConfig } from '../github/config';
-import { openAddProject, openSettings } from './githubDialogs';
+import { openAddProject, openLogin, openSettings } from './githubDialogs';
+import { fetchVault } from '../github/login';
 
 interface Entry { id: string; name: string; description: string; parts: number; layers: string[] }
 
@@ -24,6 +25,13 @@ export function libraryPage(el: HTMLElement): { dispose(): void } {
     const settings = Object.assign(document.createElement('button'), { type: 'button', className: 'btn', textContent: 'Settings' });
     settings.addEventListener('click', () => openSettings(renderTools));
     const kids: HTMLElement[] = [state, settings];
+    if (!cfg) {
+      // "Log in" only when a password login has been published (public/login.json)
+      const login = Object.assign(document.createElement('button'), { type: 'button', className: 'btn btn-primary', textContent: 'Log in', hidden: true });
+      login.addEventListener('click', () => openLogin(renderTools));
+      void fetchVault().then((v) => { login.hidden = !v; });
+      kids.push(login);
+    }
     if (cfg) {
       const add = Object.assign(document.createElement('button'), { type: 'button', className: 'btn btn-primary', textContent: 'Add project' });
       add.addEventListener('click', () => openAddProject(cfg));
