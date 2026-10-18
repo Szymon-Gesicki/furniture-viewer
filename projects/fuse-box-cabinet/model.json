@@ -1,0 +1,1003 @@
+{
+  "format": "furniture-model",
+  "version": 1,
+  "id": "fuse-box-cabinet",
+  "name": "Fuse box cabinet",
+  "description": "Shallow hallway cabinet next to the door",
+  "source": "import-rb:fuse-box-cabinet.rb",
+  "materials": {
+    "sciana-przedpokoj": {
+      "label": "Sciana_przedpokoj",
+      "color": "#eeece6"
+    },
+    "drzwi-wejsciowe": {
+      "label": "Drzwi_wejsciowe",
+      "color": "#5a5046"
+    },
+    "podloga-przedpokoj": {
+      "label": "Podloga_przedpokoj",
+      "color": "#beaa91"
+    },
+    "sufit-przedpokoj": {
+      "label": "Sufit_przedpokoj",
+      "color": "#f8f8f8"
+    },
+    "rozdzielnia-biala": {
+      "label": "Rozdzielnia_biala",
+      "color": "#f5f5f2"
+    },
+    "rozdzielnia-okienko": {
+      "label": "Rozdzielnia_okienko",
+      "color": "#96a0aa"
+    },
+    "przewody-gniazdko": {
+      "label": "Przewody_gniazdko",
+      "color": "#e1e1e1"
+    },
+    "korpus-kaszmir": {
+      "label": "Korpus_kaszmir",
+      "color": "#d6caba"
+    },
+    "front-kaszmir": {
+      "label": "Front_kaszmir",
+      "color": "#cdbfae"
+    },
+    "nozka-klips": {
+      "label": "Nozka_klips (okucie, nie ciac)",
+      "color": "#3c3c3e"
+    }
+  },
+  "groups": [
+    {
+      "id": "g1",
+      "name": "Szafka_rozdzielnia_v4",
+      "parent": null
+    },
+    {
+      "id": "g2",
+      "name": "Przedpokoj (sciana, drzwi, instalacja)",
+      "parent": "g1"
+    }
+  ],
+  "parts": [
+    {
+      "id": "p0001",
+      "name": "Sciana lewa czesc",
+      "group": "g2",
+      "unit": "g2",
+      "layer": "room",
+      "material": "sciana-przedpokoj",
+      "shape": {
+        "type": "box",
+        "min": [
+          -600,
+          0,
+          0
+        ],
+        "max": [
+          550,
+          100,
+          2400
+        ]
+      },
+      "edges": {
+        "raw": []
+      },
+      "meta": {
+        "thickness": 100,
+        "tag": "Przedpokoj - sciana i drzwi"
+      }
+    },
+    {
+      "id": "p0002",
+      "name": "Sciana nad drzwiami",
+      "group": "g2",
+      "unit": "g2",
+      "layer": "room",
+      "material": "sciana-przedpokoj",
+      "shape": {
+        "type": "box",
+        "min": [
+          550,
+          0,
+          2060
+        ],
+        "max": [
+          1450,
+          100,
+          2400
+        ]
+      },
+      "edges": {
+        "raw": []
+      },
+      "meta": {
+        "thickness": 100,
+        "tag": "Przedpokoj - sciana i drzwi"
+      }
+    },
+    {
+      "id": "p0003",
+      "name": "Sciana prawa czesc",
+      "group": "g2",
+      "unit": "g2",
+      "layer": "room",
+      "material": "sciana-przedpokoj",
+      "shape": {
+        "type": "box",
+        "min": [
+          1450,
+          0,
+          0
+        ],
+        "max": [
+          2050,
+          100,
+          2400
+        ]
+      },
+      "edges": {
+        "raw": []
+      },
+      "meta": {
+        "thickness": 100,
+        "tag": "Przedpokoj - sciana i drzwi"
+      }
+    },
+    {
+      "id": "p0004",
+      "name": "Oscieznica lewa",
+      "group": "g2",
+      "unit": "g2",
+      "layer": "room",
+      "material": "drzwi-wejsciowe",
+      "shape": {
+        "type": "box",
+        "min": [
+          550,
+          -20,
+          0
+        ],
+        "max": [
+          580,
+          100,
+          2060
+        ]
+      },
+      "edges": {
+        "raw": []
+      },
+      "meta": {
+        "thickness": 30,
+        "tag": "Przedpokoj - sciana i drzwi"
+      }
+    },
+    {
+      "id": "p0005",
+      "name": "Oscieznica prawa",
+      "group": "g2",
+      "unit": "g2",
+      "layer": "room",
+      "material": "drzwi-wejsciowe",
+      "shape": {
+        "type": "box",
+        "min": [
+          1420,
+          -20,
+          0
+        ],
+        "max": [
+          1450,
+          100,
+          2060
+        ]
+      },
+      "edges": {
+        "raw": []
+      },
+      "meta": {
+        "thickness": 30,
+        "tag": "Przedpokoj - sciana i drzwi"
+      }
+    },
+    {
+      "id": "p0006",
+      "name": "Oscieznica gora",
+      "group": "g2",
+      "unit": "g2",
+      "layer": "room",
+      "material": "drzwi-wejsciowe",
+      "shape": {
+        "type": "box",
+        "min": [
+          550,
+          -20,
+          2030
+        ],
+        "max": [
+          1450,
+          100,
+          2060
+        ]
+      },
+      "edges": {
+        "raw": []
+      },
+      "meta": {
+        "thickness": 30,
+        "tag": "Przedpokoj - sciana i drzwi"
+      }
+    },
+    {
+      "id": "p0007",
+      "name": "Drzwi wejsciowe (skrzydlo)",
+      "group": "g2",
+      "unit": "g2",
+      "layer": "room",
+      "material": "drzwi-wejsciowe",
+      "shape": {
+        "type": "box",
+        "min": [
+          580,
+          20,
+          0
+        ],
+        "max": [
+          1420,
+          60,
+          2030
+        ]
+      },
+      "edges": {
+        "raw": []
+      },
+      "meta": {
+        "thickness": 40,
+        "tag": "Przedpokoj - sciana i drzwi"
+      }
+    },
+    {
+      "id": "p0008",
+      "name": "Podloga",
+      "group": "g2",
+      "unit": "g2",
+      "layer": "room",
+      "material": "podloga-przedpokoj",
+      "shape": {
+        "type": "box",
+        "min": [
+          -600,
+          -1500,
+          -10
+        ],
+        "max": [
+          2050,
+          0,
+          0
+        ]
+      },
+      "edges": {
+        "raw": []
+      },
+      "meta": {
+        "thickness": 10,
+        "tag": "Przedpokoj - sciana i drzwi"
+      }
+    },
+    {
+      "id": "p0009",
+      "name": "Sufit",
+      "group": "g2",
+      "unit": "g2",
+      "layer": "room",
+      "material": "sufit-przedpokoj",
+      "shape": {
+        "type": "box",
+        "min": [
+          -600,
+          -1500,
+          2400
+        ],
+        "max": [
+          2050,
+          0,
+          2410
+        ]
+      },
+      "edges": {
+        "raw": []
+      },
+      "meta": {
+        "thickness": 10,
+        "tag": "Przedpokoj - sufit"
+      }
+    },
+    {
+      "id": "p0010",
+      "name": "Rozdzielnia - obudowa/ramka 330x380 (wystaje ~15)",
+      "group": "g2",
+      "unit": "g2",
+      "layer": "room",
+      "material": "rozdzielnia-biala",
+      "shape": {
+        "type": "box",
+        "min": [
+          60,
+          -15,
+          1895
+        ],
+        "max": [
+          390,
+          0,
+          2275
+        ]
+      },
+      "edges": {
+        "raw": []
+      },
+      "meta": {
+        "thickness": 15,
+        "tag": "Rozdzielnia, przewody, gniazdko"
+      }
+    },
+    {
+      "id": "p0011",
+      "name": "Rozdzielnia - okienko",
+      "group": "g2",
+      "unit": "g2",
+      "layer": "room",
+      "material": "rozdzielnia-okienko",
+      "shape": {
+        "type": "box",
+        "min": [
+          90,
+          -17,
+          2015
+        ],
+        "max": [
+          360,
+          -15,
+          2155
+        ]
+      },
+      "edges": {
+        "raw": []
+      },
+      "meta": {
+        "thickness": 2,
+        "tag": "Rozdzielnia, przewody, gniazdko"
+      }
+    },
+    {
+      "id": "p0012",
+      "name": "Przewody - wiazka/listwa 60x20 do gniazdka",
+      "group": "g2",
+      "unit": "g2",
+      "layer": "room",
+      "material": "przewody-gniazdko",
+      "shape": {
+        "type": "box",
+        "min": [
+          195,
+          -20,
+          1240
+        ],
+        "max": [
+          255,
+          0,
+          1895
+        ]
+      },
+      "edges": {
+        "raw": []
+      },
+      "meta": {
+        "thickness": 20,
+        "tag": "Rozdzielnia, przewody, gniazdko"
+      }
+    },
+    {
+      "id": "p0013",
+      "name": "Gniazdko natynkowe 80x80 (wystaje ~40, z wtyczka ~90)",
+      "group": "g2",
+      "unit": "g2",
+      "layer": "room",
+      "material": "przewody-gniazdko",
+      "shape": {
+        "type": "box",
+        "min": [
+          185,
+          -40,
+          1160
+        ],
+        "max": [
+          265,
+          0,
+          1240
+        ]
+      },
+      "edges": {
+        "raw": []
+      },
+      "meta": {
+        "thickness": 40,
+        "tag": "Rozdzielnia, przewody, gniazdko"
+      }
+    },
+    {
+      "id": "p0014",
+      "name": "Wieniec dolny 450x122",
+      "group": "g1",
+      "unit": "g1",
+      "layer": "carcass",
+      "material": "korpus-kaszmir",
+      "shape": {
+        "type": "box",
+        "min": [
+          0,
+          -122,
+          150
+        ],
+        "max": [
+          450,
+          0,
+          168
+        ]
+      },
+      "edges": {
+        "raw": [
+          "y+"
+        ]
+      },
+      "meta": {
+        "thickness": 18,
+        "tag": "Szafka - korpus",
+        "code": "FUS-1"
+      }
+    },
+    {
+      "id": "p0015",
+      "name": "Wieniec gorny 450x122",
+      "group": "g1",
+      "unit": "g1",
+      "layer": "carcass",
+      "material": "korpus-kaszmir",
+      "shape": {
+        "type": "box",
+        "min": [
+          0,
+          -122,
+          2364
+        ],
+        "max": [
+          450,
+          0,
+          2382
+        ]
+      },
+      "edges": {
+        "raw": [
+          "y+"
+        ]
+      },
+      "meta": {
+        "thickness": 18,
+        "tag": "Szafka - korpus",
+        "code": "FUS-2"
+      }
+    },
+    {
+      "id": "p0016",
+      "name": "Plyta gorna 450x140 (na wiencu, do lica drzwi; przykrec od spodu)",
+      "group": "g1",
+      "unit": "g1",
+      "layer": "carcass",
+      "material": "korpus-kaszmir",
+      "shape": {
+        "type": "box",
+        "min": [
+          0,
+          -140,
+          2382
+        ],
+        "max": [
+          450,
+          0,
+          2400
+        ]
+      },
+      "edges": {
+        "raw": [
+          "y+"
+        ]
+      },
+      "meta": {
+        "thickness": 18,
+        "tag": "Szafka - korpus",
+        "code": "FUS-3"
+      }
+    },
+    {
+      "id": "p0017",
+      "name": "Bok L 2196x122 (zawiasy)",
+      "group": "g1",
+      "unit": "g1",
+      "layer": "carcass",
+      "material": "korpus-kaszmir",
+      "shape": {
+        "type": "box",
+        "min": [
+          0,
+          -122,
+          168
+        ],
+        "max": [
+          18,
+          0,
+          2364
+        ]
+      },
+      "edges": {
+        "raw": [
+          "y+",
+          "z+",
+          "z-"
+        ]
+      },
+      "meta": {
+        "thickness": 18,
+        "tag": "Szafka - korpus",
+        "code": "FUS-4"
+      }
+    },
+    {
+      "id": "p0018",
+      "name": "Bok P 2196x122",
+      "group": "g1",
+      "unit": "g1",
+      "layer": "carcass",
+      "material": "korpus-kaszmir",
+      "shape": {
+        "type": "box",
+        "min": [
+          432,
+          -122,
+          168
+        ],
+        "max": [
+          450,
+          0,
+          2364
+        ]
+      },
+      "edges": {
+        "raw": [
+          "y+",
+          "z+",
+          "z-"
+        ]
+      },
+      "meta": {
+        "thickness": 18,
+        "tag": "Szafka - korpus",
+        "code": "FUS-5"
+      }
+    },
+    {
+      "id": "p0019",
+      "name": "Przegroda pod rozdzielnia 414x122 (wyciecie z tylu 80x30 na przewody)",
+      "group": "g1",
+      "unit": "g1",
+      "layer": "carcass",
+      "material": "korpus-kaszmir",
+      "shape": {
+        "type": "extrude",
+        "plane": "xy",
+        "outline": [
+          [
+            18,
+            -122
+          ],
+          [
+            432,
+            -122
+          ],
+          [
+            432,
+            0
+          ],
+          [
+            265,
+            0
+          ],
+          [
+            265,
+            -30
+          ],
+          [
+            185,
+            -30
+          ],
+          [
+            185,
+            0
+          ],
+          [
+            18,
+            0
+          ]
+        ],
+        "from": 1841,
+        "to": 1859
+      },
+      "edges": {
+        "raw": [
+          "x+",
+          "x-",
+          "y+"
+        ]
+      },
+      "meta": {
+        "thickness": 18,
+        "tag": "Szafka - korpus",
+        "code": "FUS-6"
+      }
+    },
+    {
+      "id": "p0020",
+      "name": "Polka 3 nad gniazdkiem 414x122 (wyciecie z tylu 80x30 na przewody)",
+      "group": "g1",
+      "unit": "g1",
+      "layer": "carcass",
+      "material": "korpus-kaszmir",
+      "shape": {
+        "type": "extrude",
+        "plane": "xy",
+        "outline": [
+          [
+            18,
+            -122
+          ],
+          [
+            432,
+            -122
+          ],
+          [
+            432,
+            0
+          ],
+          [
+            265,
+            0
+          ],
+          [
+            265,
+            -30
+          ],
+          [
+            185,
+            -30
+          ],
+          [
+            185,
+            0
+          ],
+          [
+            18,
+            0
+          ]
+        ],
+        "from": 1500,
+        "to": 1518
+      },
+      "edges": {
+        "raw": [
+          "x+",
+          "x-",
+          "y+"
+        ]
+      },
+      "meta": {
+        "thickness": 18,
+        "tag": "Szafka - korpus",
+        "code": "FUS-7"
+      }
+    },
+    {
+      "id": "p0021",
+      "name": "Polka 2 pod gniazdkiem 414x122",
+      "group": "g1",
+      "unit": "g1",
+      "layer": "carcass",
+      "material": "korpus-kaszmir",
+      "shape": {
+        "type": "box",
+        "min": [
+          18,
+          -122,
+          1000
+        ],
+        "max": [
+          432,
+          0,
+          1018
+        ]
+      },
+      "edges": {
+        "raw": [
+          "x+",
+          "x-",
+          "y+"
+        ]
+      },
+      "meta": {
+        "thickness": 18,
+        "tag": "Szafka - korpus",
+        "code": "FUS-8"
+      }
+    },
+    {
+      "id": "p0022",
+      "name": "Polka 1 dolna 414x122",
+      "group": "g1",
+      "unit": "g1",
+      "layer": "carcass",
+      "material": "korpus-kaszmir",
+      "shape": {
+        "type": "box",
+        "min": [
+          18,
+          -122,
+          550
+        ],
+        "max": [
+          432,
+          0,
+          568
+        ]
+      },
+      "edges": {
+        "raw": [
+          "x+",
+          "x-",
+          "y+"
+        ]
+      },
+      "meta": {
+        "thickness": 18,
+        "tag": "Szafka - korpus",
+        "code": "FUS-9"
+      }
+    },
+    {
+      "id": "p0023",
+      "name": "Drzwi gorne 446x528 (zawiasy L, 2 szt.)",
+      "group": "g1",
+      "unit": "g1",
+      "layer": "front",
+      "material": "front-kaszmir",
+      "shape": {
+        "type": "box",
+        "min": [
+          2,
+          -140,
+          1852
+        ],
+        "max": [
+          448,
+          -122,
+          2380
+        ]
+      },
+      "edges": {
+        "raw": []
+      },
+      "meta": {
+        "thickness": 18,
+        "tag": "Szafka - fronty",
+        "code": "FUS-10"
+      }
+    },
+    {
+      "id": "p0024",
+      "name": "Drzwi dolne 446x1696 (zawiasy L, 4 szt.)",
+      "group": "g1",
+      "unit": "g1",
+      "layer": "front",
+      "material": "front-kaszmir",
+      "shape": {
+        "type": "box",
+        "min": [
+          2,
+          -140,
+          152
+        ],
+        "max": [
+          448,
+          -122,
+          1848
+        ]
+      },
+      "edges": {
+        "raw": []
+      },
+      "meta": {
+        "thickness": 18,
+        "tag": "Szafka - fronty",
+        "code": "FUS-11"
+      }
+    },
+    {
+      "id": "p0025",
+      "name": "Zawias puszkowy 35 (znacznik)",
+      "group": "g1",
+      "unit": "g1",
+      "layer": "assembly",
+      "material": "nozka-klips",
+      "shape": {
+        "type": "box",
+        "min": [
+          4,
+          -122,
+          1932.5
+        ],
+        "max": [
+          39,
+          -121,
+          1967.5
+        ]
+      },
+      "edges": {
+        "raw": []
+      },
+      "meta": {
+        "thickness": 1,
+        "tag": "Szafka - fronty"
+      }
+    },
+    {
+      "id": "p0026",
+      "name": "Zawias puszkowy 35 (znacznik)",
+      "group": "g1",
+      "unit": "g1",
+      "layer": "assembly",
+      "material": "nozka-klips",
+      "shape": {
+        "type": "box",
+        "min": [
+          4,
+          -122,
+          2264.5
+        ],
+        "max": [
+          39,
+          -121,
+          2299.5
+        ]
+      },
+      "edges": {
+        "raw": []
+      },
+      "meta": {
+        "thickness": 1,
+        "tag": "Szafka - fronty"
+      }
+    },
+    {
+      "id": "p0027",
+      "name": "Zawias puszkowy 35 (znacznik)",
+      "group": "g1",
+      "unit": "g1",
+      "layer": "assembly",
+      "material": "nozka-klips",
+      "shape": {
+        "type": "box",
+        "min": [
+          4,
+          -122,
+          232.5
+        ],
+        "max": [
+          39,
+          -121,
+          267.5
+        ]
+      },
+      "edges": {
+        "raw": []
+      },
+      "meta": {
+        "thickness": 1,
+        "tag": "Szafka - fronty"
+      }
+    },
+    {
+      "id": "p0028",
+      "name": "Zawias puszkowy 35 (znacznik)",
+      "group": "g1",
+      "unit": "g1",
+      "layer": "assembly",
+      "material": "nozka-klips",
+      "shape": {
+        "type": "box",
+        "min": [
+          4,
+          -122,
+          732.5
+        ],
+        "max": [
+          39,
+          -121,
+          767.5
+        ]
+      },
+      "edges": {
+        "raw": []
+      },
+      "meta": {
+        "thickness": 1,
+        "tag": "Szafka - fronty"
+      }
+    },
+    {
+      "id": "p0029",
+      "name": "Zawias puszkowy 35 (znacznik)",
+      "group": "g1",
+      "unit": "g1",
+      "layer": "assembly",
+      "material": "nozka-klips",
+      "shape": {
+        "type": "box",
+        "min": [
+          4,
+          -122,
+          1232.5
+        ],
+        "max": [
+          39,
+          -121,
+          1267.5
+        ]
+      },
+      "edges": {
+        "raw": []
+      },
+      "meta": {
+        "thickness": 1,
+        "tag": "Szafka - fronty"
+      }
+    },
+    {
+      "id": "p0030",
+      "name": "Zawias puszkowy 35 (znacznik)",
+      "group": "g1",
+      "unit": "g1",
+      "layer": "assembly",
+      "material": "nozka-klips",
+      "shape": {
+        "type": "box",
+        "min": [
+          4,
+          -122,
+          1732.5
+        ],
+        "max": [
+          39,
+          -121,
+          1767.5
+        ]
+      },
+      "edges": {
+        "raw": []
+      },
+      "meta": {
+        "thickness": 1,
+        "tag": "Szafka - fronty"
+      }
+    }
+  ],
+  "codes": {
+    "prefix": "FUS",
+    "next": 12
+  }
+}

@@ -1,0 +1,766 @@
+{
+  "format": "furniture-model",
+  "version": 1,
+  "id": "nightstands",
+  "name": "Nightstands",
+  "description": "Two nightstands with a Hudson oak top",
+  "source": "import-rb:nightstands.rb",
+  "materials": {
+    "sciana-sypialnia": {
+      "label": "Sciana_sypialnia",
+      "color": "#eeece6"
+    },
+    "podloga-sypialnia": {
+      "label": "Podloga_sypialnia",
+      "color": "#beaa91"
+    },
+    "lozko-tapicerka": {
+      "label": "Lozko_tapicerka",
+      "color": "#969ba5"
+    },
+    "materac": {
+      "label": "Materac",
+      "color": "#f0f0f0"
+    },
+    "korpus-kaszmir": {
+      "label": "Korpus_kaszmir",
+      "color": "#d6caba"
+    },
+    "plecy-hdf": {
+      "label": "Plecy_HDF",
+      "color": "#ebe6de"
+    },
+    "front-kaszmir": {
+      "label": "Front_kaszmir",
+      "color": "#cdbfae"
+    },
+    "drewno-blat": {
+      "label": "Drewno_blat",
+      "color": "#a87c54"
+    }
+  },
+  "groups": [
+    {
+      "id": "g1",
+      "name": "Szafki_nocne_v3",
+      "parent": null
+    },
+    {
+      "id": "g2",
+      "name": "Sypialnia (sciana, lozko)",
+      "parent": "g1"
+    }
+  ],
+  "parts": [
+    {
+      "id": "p0001",
+      "name": "Sciana za lozkiem",
+      "group": "g2",
+      "unit": "g2",
+      "layer": "room",
+      "material": "sciana-sypialnia",
+      "shape": {
+        "type": "box",
+        "min": [
+          -100,
+          0,
+          0
+        ],
+        "max": [
+          2200,
+          100,
+          2600
+        ]
+      },
+      "edges": {
+        "raw": []
+      },
+      "meta": {
+        "thickness": 100,
+        "tag": "Sypialnia - sciany i lozko"
+      }
+    },
+    {
+      "id": "p0002",
+      "name": "Sciana lewa",
+      "group": "g2",
+      "unit": "g2",
+      "layer": "room",
+      "material": "sciana-sypialnia",
+      "shape": {
+        "type": "box",
+        "min": [
+          -100,
+          -2600,
+          0
+        ],
+        "max": [
+          0,
+          0,
+          2600
+        ]
+      },
+      "edges": {
+        "raw": []
+      },
+      "meta": {
+        "thickness": 100,
+        "tag": "Sypialnia - sciany i lozko"
+      }
+    },
+    {
+      "id": "p0003",
+      "name": "Sciana prawa",
+      "group": "g2",
+      "unit": "g2",
+      "layer": "room",
+      "material": "sciana-sypialnia",
+      "shape": {
+        "type": "box",
+        "min": [
+          2100,
+          -2600,
+          0
+        ],
+        "max": [
+          2200,
+          0,
+          2600
+        ]
+      },
+      "edges": {
+        "raw": []
+      },
+      "meta": {
+        "thickness": 100,
+        "tag": "Sypialnia - sciany i lozko"
+      }
+    },
+    {
+      "id": "p0004",
+      "name": "Podloga",
+      "group": "g2",
+      "unit": "g2",
+      "layer": "room",
+      "material": "podloga-sypialnia",
+      "shape": {
+        "type": "box",
+        "min": [
+          -100,
+          -2600,
+          -10
+        ],
+        "max": [
+          2200,
+          0,
+          0
+        ]
+      },
+      "edges": {
+        "raw": []
+      },
+      "meta": {
+        "thickness": 10,
+        "tag": "Sypialnia - sciany i lozko"
+      }
+    },
+    {
+      "id": "p0005",
+      "name": "Lozko rama 1600x2000",
+      "group": "g2",
+      "unit": "g2",
+      "layer": "room",
+      "material": "lozko-tapicerka",
+      "shape": {
+        "type": "box",
+        "min": [
+          250,
+          -2000,
+          0
+        ],
+        "max": [
+          1850,
+          0,
+          350
+        ]
+      },
+      "edges": {
+        "raw": []
+      },
+      "meta": {
+        "thickness": 350,
+        "tag": "Sypialnia - sciany i lozko"
+      }
+    },
+    {
+      "id": "p0006",
+      "name": "Materac 1600x2000",
+      "group": "g2",
+      "unit": "g2",
+      "layer": "room",
+      "material": "materac",
+      "shape": {
+        "type": "box",
+        "min": [
+          260,
+          -1990,
+          350
+        ],
+        "max": [
+          1840,
+          -60,
+          550
+        ]
+      },
+      "edges": {
+        "raw": []
+      },
+      "meta": {
+        "thickness": 200,
+        "tag": "Sypialnia - sciany i lozko"
+      }
+    },
+    {
+      "id": "p0007",
+      "name": "Zaglowek",
+      "group": "g2",
+      "unit": "g2",
+      "layer": "room",
+      "material": "lozko-tapicerka",
+      "shape": {
+        "type": "box",
+        "min": [
+          250,
+          -60,
+          0
+        ],
+        "max": [
+          1850,
+          0,
+          1000
+        ]
+      },
+      "edges": {
+        "raw": []
+      },
+      "meta": {
+        "thickness": 60,
+        "tag": "Sypialnia - sciany i lozko"
+      }
+    },
+    {
+      "id": "p0008",
+      "name": "N1 lewa Bok L 514x282",
+      "group": "g1",
+      "unit": "N1 lewa",
+      "layer": "carcass",
+      "material": "korpus-kaszmir",
+      "shape": {
+        "type": "box",
+        "min": [
+          10,
+          -292,
+          0
+        ],
+        "max": [
+          28,
+          -10,
+          514
+        ]
+      },
+      "edges": {
+        "raw": [
+          "y+",
+          "z+",
+          "z-"
+        ]
+      },
+      "meta": {
+        "thickness": 18,
+        "tag": "Szafka N1 lewa",
+        "code": "NIG-1"
+      }
+    },
+    {
+      "id": "p0009",
+      "name": "N1 lewa Bok P 514x282",
+      "group": "g1",
+      "unit": "N1 lewa",
+      "layer": "carcass",
+      "material": "korpus-kaszmir",
+      "shape": {
+        "type": "box",
+        "min": [
+          222,
+          -292,
+          0
+        ],
+        "max": [
+          240,
+          -10,
+          514
+        ]
+      },
+      "edges": {
+        "raw": [
+          "y+",
+          "z+",
+          "z-"
+        ]
+      },
+      "meta": {
+        "thickness": 18,
+        "tag": "Szafka N1 lewa",
+        "code": "NIG-2"
+      }
+    },
+    {
+      "id": "p0010",
+      "name": "N1 lewa Wieniec gorny (na bokach) 230x282",
+      "group": "g1",
+      "unit": "N1 lewa",
+      "layer": "carcass",
+      "material": "korpus-kaszmir",
+      "shape": {
+        "type": "box",
+        "min": [
+          10,
+          -292,
+          514
+        ],
+        "max": [
+          240,
+          -10,
+          532
+        ]
+      },
+      "edges": {
+        "raw": [
+          "y+"
+        ]
+      },
+      "meta": {
+        "thickness": 18,
+        "tag": "Szafka N1 lewa",
+        "code": "NIG-3"
+      }
+    },
+    {
+      "id": "p0011",
+      "name": "N1 lewa Wieniec dolny 194x282",
+      "group": "g1",
+      "unit": "N1 lewa",
+      "layer": "carcass",
+      "material": "korpus-kaszmir",
+      "shape": {
+        "type": "box",
+        "min": [
+          28,
+          -292,
+          100
+        ],
+        "max": [
+          222,
+          -10,
+          118
+        ]
+      },
+      "edges": {
+        "raw": [
+          "x+",
+          "x-",
+          "y+"
+        ]
+      },
+      "meta": {
+        "thickness": 18,
+        "tag": "Szafka N1 lewa",
+        "code": "NIG-4"
+      }
+    },
+    {
+      "id": "p0012",
+      "name": "N1 lewa Polka 194x282",
+      "group": "g1",
+      "unit": "N1 lewa",
+      "layer": "carcass",
+      "material": "korpus-kaszmir",
+      "shape": {
+        "type": "box",
+        "min": [
+          28,
+          -292,
+          300
+        ],
+        "max": [
+          222,
+          -10,
+          318
+        ]
+      },
+      "edges": {
+        "raw": [
+          "x+",
+          "x-",
+          "y+"
+        ]
+      },
+      "meta": {
+        "thickness": 18,
+        "tag": "Szafka N1 lewa",
+        "code": "NIG-5"
+      }
+    },
+    {
+      "id": "p0013",
+      "name": "N1 lewa Plecy HDF 230x432",
+      "group": "g1",
+      "unit": "N1 lewa",
+      "layer": "back",
+      "material": "plecy-hdf",
+      "shape": {
+        "type": "box",
+        "min": [
+          10,
+          -10,
+          100
+        ],
+        "max": [
+          240,
+          -7,
+          532
+        ]
+      },
+      "edges": {
+        "raw": [
+          "x+",
+          "x-",
+          "z+",
+          "z-"
+        ]
+      },
+      "meta": {
+        "thickness": 3,
+        "tag": "Szafka N1 lewa",
+        "code": "NIG-6"
+      }
+    },
+    {
+      "id": "p0014",
+      "name": "N1 lewa Drzwiczki 226x228",
+      "group": "g1",
+      "unit": "N1 lewa",
+      "layer": "front",
+      "material": "front-kaszmir",
+      "shape": {
+        "type": "box",
+        "min": [
+          12,
+          -310,
+          302
+        ],
+        "max": [
+          238,
+          -292,
+          530
+        ]
+      },
+      "edges": {
+        "raw": []
+      },
+      "meta": {
+        "thickness": 18,
+        "tag": "Fronty",
+        "code": "NIG-7"
+      }
+    },
+    {
+      "id": "p0015",
+      "name": "N1 lewa Blat z plyty drewnianej (Dab Hudson) 18 230x310 (wystaje 10 przed drzwiczki, oklejony dookola)",
+      "group": "g1",
+      "unit": "N1 lewa",
+      "layer": "cladding",
+      "material": "drewno-blat",
+      "shape": {
+        "type": "box",
+        "min": [
+          10,
+          -320,
+          532
+        ],
+        "max": [
+          240,
+          -10,
+          550
+        ]
+      },
+      "edges": {
+        "raw": []
+      },
+      "meta": {
+        "thickness": 18,
+        "tag": "Blaty drewniane",
+        "code": "NIG-8"
+      }
+    },
+    {
+      "id": "p0016",
+      "name": "N2 prawa Bok L 514x282",
+      "group": "g1",
+      "unit": "N2 prawa",
+      "layer": "carcass",
+      "material": "korpus-kaszmir",
+      "shape": {
+        "type": "box",
+        "min": [
+          1860,
+          -292,
+          0
+        ],
+        "max": [
+          1878,
+          -10,
+          514
+        ]
+      },
+      "edges": {
+        "raw": [
+          "y+",
+          "z+",
+          "z-"
+        ]
+      },
+      "meta": {
+        "thickness": 18,
+        "tag": "Szafka N2 prawa",
+        "code": "NIG-9"
+      }
+    },
+    {
+      "id": "p0017",
+      "name": "N2 prawa Bok P 514x282",
+      "group": "g1",
+      "unit": "N2 prawa",
+      "layer": "carcass",
+      "material": "korpus-kaszmir",
+      "shape": {
+        "type": "box",
+        "min": [
+          2072,
+          -292,
+          0
+        ],
+        "max": [
+          2090,
+          -10,
+          514
+        ]
+      },
+      "edges": {
+        "raw": [
+          "y+",
+          "z+",
+          "z-"
+        ]
+      },
+      "meta": {
+        "thickness": 18,
+        "tag": "Szafka N2 prawa",
+        "code": "NIG-10"
+      }
+    },
+    {
+      "id": "p0018",
+      "name": "N2 prawa Wieniec gorny (na bokach) 230x282",
+      "group": "g1",
+      "unit": "N2 prawa",
+      "layer": "carcass",
+      "material": "korpus-kaszmir",
+      "shape": {
+        "type": "box",
+        "min": [
+          1860,
+          -292,
+          514
+        ],
+        "max": [
+          2090,
+          -10,
+          532
+        ]
+      },
+      "edges": {
+        "raw": [
+          "y+"
+        ]
+      },
+      "meta": {
+        "thickness": 18,
+        "tag": "Szafka N2 prawa",
+        "code": "NIG-11"
+      }
+    },
+    {
+      "id": "p0019",
+      "name": "N2 prawa Wieniec dolny 194x282",
+      "group": "g1",
+      "unit": "N2 prawa",
+      "layer": "carcass",
+      "material": "korpus-kaszmir",
+      "shape": {
+        "type": "box",
+        "min": [
+          1878,
+          -292,
+          100
+        ],
+        "max": [
+          2072,
+          -10,
+          118
+        ]
+      },
+      "edges": {
+        "raw": [
+          "x+",
+          "x-",
+          "y+"
+        ]
+      },
+      "meta": {
+        "thickness": 18,
+        "tag": "Szafka N2 prawa",
+        "code": "NIG-12"
+      }
+    },
+    {
+      "id": "p0020",
+      "name": "N2 prawa Polka 194x282",
+      "group": "g1",
+      "unit": "N2 prawa",
+      "layer": "carcass",
+      "material": "korpus-kaszmir",
+      "shape": {
+        "type": "box",
+        "min": [
+          1878,
+          -292,
+          300
+        ],
+        "max": [
+          2072,
+          -10,
+          318
+        ]
+      },
+      "edges": {
+        "raw": [
+          "x+",
+          "x-",
+          "y+"
+        ]
+      },
+      "meta": {
+        "thickness": 18,
+        "tag": "Szafka N2 prawa",
+        "code": "NIG-13"
+      }
+    },
+    {
+      "id": "p0021",
+      "name": "N2 prawa Plecy HDF 230x432",
+      "group": "g1",
+      "unit": "N2 prawa",
+      "layer": "back",
+      "material": "plecy-hdf",
+      "shape": {
+        "type": "box",
+        "min": [
+          1860,
+          -10,
+          100
+        ],
+        "max": [
+          2090,
+          -7,
+          532
+        ]
+      },
+      "edges": {
+        "raw": [
+          "x+",
+          "x-",
+          "z+",
+          "z-"
+        ]
+      },
+      "meta": {
+        "thickness": 3,
+        "tag": "Szafka N2 prawa",
+        "code": "NIG-14"
+      }
+    },
+    {
+      "id": "p0022",
+      "name": "N2 prawa Drzwiczki 226x228",
+      "group": "g1",
+      "unit": "N2 prawa",
+      "layer": "front",
+      "material": "front-kaszmir",
+      "shape": {
+        "type": "box",
+        "min": [
+          1862,
+          -310,
+          302
+        ],
+        "max": [
+          2088,
+          -292,
+          530
+        ]
+      },
+      "edges": {
+        "raw": []
+      },
+      "meta": {
+        "thickness": 18,
+        "tag": "Fronty",
+        "code": "NIG-15"
+      }
+    },
+    {
+      "id": "p0023",
+      "name": "N2 prawa Blat z plyty drewnianej (Dab Hudson) 18 230x310 (wystaje 10 przed drzwiczki, oklejony dookola)",
+      "group": "g1",
+      "unit": "N2 prawa",
+      "layer": "cladding",
+      "material": "drewno-blat",
+      "shape": {
+        "type": "box",
+        "min": [
+          1860,
+          -320,
+          532
+        ],
+        "max": [
+          2090,
+          -10,
+          550
+        ]
+      },
+      "edges": {
+        "raw": []
+      },
+      "meta": {
+        "thickness": 18,
+        "tag": "Blaty drewniane",
+        "code": "NIG-16"
+      }
+    }
+  ],
+  "codes": {
+    "prefix": "NIG",
+    "next": 17
+  }
+}

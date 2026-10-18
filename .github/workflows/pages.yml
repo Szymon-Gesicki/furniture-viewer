@@ -1,0 +1,52 @@
+name: Pages
+on:
+  push: { branches: [main] }
+  workflow_dispatch: {}
+# contents: write – the workflow commits back model.json files imported from new or changed .rb scripts
+permissions: { contents: write, pages: write, id-token: write }
+concurrency: { group: pages, cancel-in-progress: false }
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with: { fetch-depth: 0 }   # full history: git pull --rebase before pushing
+      - name: Git identity for commits made by Actions
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+      - uses: actions/setup-node@v4
+        with: { node-version: 20, cache: npm }
+      - uses: ruby/setup-ruby@v1
+        with: { ruby-version: '3.3' }
+      - run: npm ci
+      - name: Import new and changed .rb scripts
+        run: npm run import:rb -- --changed
+      - name: Commit imported models
+        run: |
+          if [ -n "$(git status --porcelain projects)" ]; then
+            git add projects
+            git commit -m "Import .rb → model.json (GitHub Actions)"
+            git pull --rebase
+            git push
+          fi
+      - run: npm test
+      - run: npm run test:ruby
+      - run: npm run build
+      - name: Commit new part codes (if the build assigned any)
+        run: |
+          if [ -n "$(git status --porcelain projects)" ]; then
+            git add projects
+            git commit -m "Assign part codes (GitHub Actions)"
+            git pull --rebase
+            git push
+          fi
+      - uses: actions/upload-pages-artifact@v3
+        with: { path: dist }
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment: { name: github-pages, url: '${{ steps.deployment.outputs.page_url }}' }
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

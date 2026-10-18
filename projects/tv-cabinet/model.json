@@ -1,0 +1,1562 @@
+{
+  "format": "furniture-model",
+  "version": 1,
+  "id": "tv-cabinet",
+  "name": "TV cabinet",
+  "description": "Three carcasses, three doors, Hudson oak casing",
+  "source": "import-rb:tv-cabinet-b.rb",
+  "materials": {
+    "sciana-sypialnia": {
+      "label": "Sciana_sypialnia",
+      "color": "#eeece6"
+    },
+    "podloga-sypialnia": {
+      "label": "Podloga_sypialnia",
+      "color": "#beaa91"
+    },
+    "lozko-tapicerka": {
+      "label": "Lozko_tapicerka",
+      "color": "#969ba5"
+    },
+    "korpus-kaszmir": {
+      "label": "Korpus_kaszmir",
+      "color": "#d6caba"
+    },
+    "plecy-hdf": {
+      "label": "Plecy_HDF",
+      "color": "#ebe6de"
+    },
+    "nozka-klips": {
+      "label": "Nozka_klips (okucie, nie ciac)",
+      "color": "#3c3c3e"
+    },
+    "front-kaszmir": {
+      "label": "Front_kaszmir",
+      "color": "#cdbfae"
+    },
+    "drewno-blat": {
+      "label": "Drewno_blat",
+      "color": "#a87c54"
+    }
+  },
+  "groups": [
+    {
+      "id": "g1",
+      "name": "Szafka_RTV_wariant_B",
+      "parent": null
+    },
+    {
+      "id": "g2",
+      "name": "Salon (sciana)",
+      "parent": "g1"
+    }
+  ],
+  "parts": [
+    {
+      "id": "p0001",
+      "name": "Sciana",
+      "group": "g2",
+      "unit": "g2",
+      "layer": "room",
+      "material": "sciana-sypialnia",
+      "shape": {
+        "type": "box",
+        "min": [
+          -600,
+          0,
+          0
+        ],
+        "max": [
+          1700,
+          100,
+          2500
+        ]
+      },
+      "edges": {
+        "raw": []
+      },
+      "meta": {
+        "thickness": 100,
+        "tag": "Salon - sciana"
+      }
+    },
+    {
+      "id": "p0002",
+      "name": "Podloga",
+      "group": "g2",
+      "unit": "g2",
+      "layer": "room",
+      "material": "podloga-sypialnia",
+      "shape": {
+        "type": "box",
+        "min": [
+          -600,
+          -1500,
+          -10
+        ],
+        "max": [
+          1700,
+          0,
+          0
+        ]
+      },
+      "edges": {
+        "raw": []
+      },
+      "meta": {
+        "thickness": 10,
+        "tag": "Salon - sciana"
+      }
+    },
+    {
+      "id": "p0003",
+      "name": "Telewizor 50 cali (orientacyjnie)",
+      "group": "g2",
+      "unit": "g2",
+      "layer": "room",
+      "material": "lozko-tapicerka",
+      "shape": {
+        "type": "box",
+        "min": [
+          -10,
+          -40,
+          650
+        ],
+        "max": [
+          1110,
+          0,
+          1300
+        ]
+      },
+      "edges": {
+        "raw": []
+      },
+      "meta": {
+        "thickness": 40,
+        "tag": "Salon - sciana"
+      }
+    },
+    {
+      "id": "p0004",
+      "name": "RTV K1 Bok L 332x282",
+      "group": "g1",
+      "unit": "RTV K1",
+      "layer": "carcass",
+      "material": "korpus-kaszmir",
+      "shape": {
+        "type": "box",
+        "min": [
+          18,
+          -302,
+          100
+        ],
+        "max": [
+          36,
+          -20,
+          432
+        ]
+      },
+      "edges": {
+        "raw": [
+          "y+",
+          "z+",
+          "z-"
+        ]
+      },
+      "meta": {
+        "thickness": 18,
+        "tag": "Korpus RTV K1",
+        "code": "TVC-1"
+      }
+    },
+    {
+      "id": "p0005",
+      "name": "RTV K1 Bok P 332x282",
+      "group": "g1",
+      "unit": "RTV K1",
+      "layer": "carcass",
+      "material": "korpus-kaszmir",
+      "shape": {
+        "type": "box",
+        "min": [
+          328,
+          -302,
+          100
+        ],
+        "max": [
+          346,
+          -20,
+          432
+        ]
+      },
+      "edges": {
+        "raw": [
+          "y+",
+          "z+",
+          "z-"
+        ]
+      },
+      "meta": {
+        "thickness": 18,
+        "tag": "Korpus RTV K1",
+        "code": "TVC-2"
+      }
+    },
+    {
+      "id": "p0006",
+      "name": "RTV K1 Wieniec dolny 292x282",
+      "group": "g1",
+      "unit": "RTV K1",
+      "layer": "carcass",
+      "material": "korpus-kaszmir",
+      "shape": {
+        "type": "box",
+        "min": [
+          36,
+          -302,
+          100
+        ],
+        "max": [
+          328,
+          -20,
+          118
+        ]
+      },
+      "edges": {
+        "raw": [
+          "x+",
+          "x-",
+          "y+"
+        ]
+      },
+      "meta": {
+        "thickness": 18,
+        "tag": "Korpus RTV K1",
+        "code": "TVC-3"
+      }
+    },
+    {
+      "id": "p0007",
+      "name": "RTV K1 Wieniec gorny 292x282",
+      "group": "g1",
+      "unit": "RTV K1",
+      "layer": "carcass",
+      "material": "korpus-kaszmir",
+      "shape": {
+        "type": "box",
+        "min": [
+          36,
+          -302,
+          414
+        ],
+        "max": [
+          328,
+          -20,
+          432
+        ]
+      },
+      "edges": {
+        "raw": [
+          "x+",
+          "x-",
+          "y+"
+        ]
+      },
+      "meta": {
+        "thickness": 18,
+        "tag": "Korpus RTV K1",
+        "code": "TVC-4"
+      }
+    },
+    {
+      "id": "p0008",
+      "name": "RTV K1 Polka 290x262 (na podporkach, przestawna)",
+      "group": "g1",
+      "unit": "RTV K1",
+      "layer": "carcass",
+      "material": "korpus-kaszmir",
+      "shape": {
+        "type": "box",
+        "min": [
+          37,
+          -282,
+          257
+        ],
+        "max": [
+          327,
+          -20,
+          275
+        ]
+      },
+      "edges": {
+        "raw": [
+          "x+",
+          "x-",
+          "y+"
+        ]
+      },
+      "meta": {
+        "thickness": 18,
+        "tag": "Korpus RTV K1",
+        "code": "TVC-5"
+      }
+    },
+    {
+      "id": "p0009",
+      "name": "RTV K1 Plecy HDF 328x332 (otwor na kable wytnij na miejscu)",
+      "group": "g1",
+      "unit": "RTV K1",
+      "layer": "back",
+      "material": "plecy-hdf",
+      "shape": {
+        "type": "box",
+        "min": [
+          18,
+          -20,
+          100
+        ],
+        "max": [
+          346,
+          -17,
+          432
+        ]
+      },
+      "edges": {
+        "raw": [
+          "x+",
+          "x-",
+          "z+",
+          "z-"
+        ]
+      },
+      "meta": {
+        "thickness": 3,
+        "tag": "Korpus RTV K1",
+        "code": "TVC-6"
+      }
+    },
+    {
+      "id": "p0010",
+      "name": "RTV K1 Nozka 100",
+      "group": "g1",
+      "unit": "RTV K1",
+      "layer": "legs",
+      "material": "nozka-klips",
+      "shape": {
+        "type": "box",
+        "min": [
+          51,
+          -87,
+          5
+        ],
+        "max": [
+          85,
+          -53,
+          100
+        ]
+      },
+      "edges": {
+        "raw": []
+      },
+      "meta": {
+        "thickness": 34,
+        "tag": "Nozki RTV"
+      }
+    },
+    {
+      "id": "p0011",
+      "name": "RTV K1 Stopka nozki",
+      "group": "g1",
+      "unit": "RTV K1",
+      "layer": "legs",
+      "material": "nozka-klips",
+      "shape": {
+        "type": "box",
+        "min": [
+          38,
+          -100,
+          0
+        ],
+        "max": [
+          98,
+          -40,
+          5
+        ]
+      },
+      "edges": {
+        "raw": []
+      },
+      "meta": {
+        "thickness": 5,
+        "tag": "Nozki RTV"
+      }
+    },
+    {
+      "id": "p0012",
+      "name": "RTV K1 Nozka 100",
+      "group": "g1",
+      "unit": "RTV K1",
+      "layer": "legs",
+      "material": "nozka-klips",
+      "shape": {
+        "type": "box",
+        "min": [
+          51,
+          -269,
+          5
+        ],
+        "max": [
+          85,
+          -235,
+          100
+        ]
+      },
+      "edges": {
+        "raw": []
+      },
+      "meta": {
+        "thickness": 34,
+        "tag": "Nozki RTV"
+      }
+    },
+    {
+      "id": "p0013",
+      "name": "RTV K1 Stopka nozki",
+      "group": "g1",
+      "unit": "RTV K1",
+      "layer": "legs",
+      "material": "nozka-klips",
+      "shape": {
+        "type": "box",
+        "min": [
+          38,
+          -282,
+          0
+        ],
+        "max": [
+          98,
+          -222,
+          5
+        ]
+      },
+      "edges": {
+        "raw": []
+      },
+      "meta": {
+        "thickness": 5,
+        "tag": "Nozki RTV"
+      }
+    },
+    {
+      "id": "p0014",
+      "name": "RTV K1 Nozka 100",
+      "group": "g1",
+      "unit": "RTV K1",
+      "layer": "legs",
+      "material": "nozka-klips",
+      "shape": {
+        "type": "box",
+        "min": [
+          279,
+          -87,
+          5
+        ],
+        "max": [
+          313,
+          -53,
+          100
+        ]
+      },
+      "edges": {
+        "raw": []
+      },
+      "meta": {
+        "thickness": 34,
+        "tag": "Nozki RTV"
+      }
+    },
+    {
+      "id": "p0015",
+      "name": "RTV K1 Stopka nozki",
+      "group": "g1",
+      "unit": "RTV K1",
+      "layer": "legs",
+      "material": "nozka-klips",
+      "shape": {
+        "type": "box",
+        "min": [
+          266,
+          -100,
+          0
+        ],
+        "max": [
+          326,
+          -40,
+          5
+        ]
+      },
+      "edges": {
+        "raw": []
+      },
+      "meta": {
+        "thickness": 5,
+        "tag": "Nozki RTV"
+      }
+    },
+    {
+      "id": "p0016",
+      "name": "RTV K1 Nozka 100",
+      "group": "g1",
+      "unit": "RTV K1",
+      "layer": "legs",
+      "material": "nozka-klips",
+      "shape": {
+        "type": "box",
+        "min": [
+          279,
+          -269,
+          5
+        ],
+        "max": [
+          313,
+          -235,
+          100
+        ]
+      },
+      "edges": {
+        "raw": []
+      },
+      "meta": {
+        "thickness": 34,
+        "tag": "Nozki RTV"
+      }
+    },
+    {
+      "id": "p0017",
+      "name": "RTV K1 Stopka nozki",
+      "group": "g1",
+      "unit": "RTV K1",
+      "layer": "legs",
+      "material": "nozka-klips",
+      "shape": {
+        "type": "box",
+        "min": [
+          266,
+          -282,
+          0
+        ],
+        "max": [
+          326,
+          -222,
+          5
+        ]
+      },
+      "edges": {
+        "raw": []
+      },
+      "meta": {
+        "thickness": 5,
+        "tag": "Nozki RTV"
+      }
+    },
+    {
+      "id": "p0018",
+      "name": "RTV K1 Drzwi (zawiasy L) 324x330",
+      "group": "g1",
+      "unit": "RTV K1",
+      "layer": "front",
+      "material": "front-kaszmir",
+      "shape": {
+        "type": "box",
+        "min": [
+          20,
+          -320,
+          100
+        ],
+        "max": [
+          344,
+          -302,
+          430
+        ]
+      },
+      "edges": {
+        "raw": []
+      },
+      "meta": {
+        "thickness": 18,
+        "tag": "Fronty RTV",
+        "code": "TVC-7"
+      }
+    },
+    {
+      "id": "p0019",
+      "name": "RTV K2 Bok L 332x282",
+      "group": "g1",
+      "unit": "RTV K2",
+      "layer": "carcass",
+      "material": "korpus-kaszmir",
+      "shape": {
+        "type": "box",
+        "min": [
+          346,
+          -302,
+          100
+        ],
+        "max": [
+          364,
+          -20,
+          432
+        ]
+      },
+      "edges": {
+        "raw": [
+          "y+",
+          "z+",
+          "z-"
+        ]
+      },
+      "meta": {
+        "thickness": 18,
+        "tag": "Korpus RTV K2",
+        "code": "TVC-8"
+      }
+    },
+    {
+      "id": "p0020",
+      "name": "RTV K2 Bok P 332x282",
+      "group": "g1",
+      "unit": "RTV K2",
+      "layer": "carcass",
+      "material": "korpus-kaszmir",
+      "shape": {
+        "type": "box",
+        "min": [
+          736,
+          -302,
+          100
+        ],
+        "max": [
+          754,
+          -20,
+          432
+        ]
+      },
+      "edges": {
+        "raw": [
+          "y+",
+          "z+",
+          "z-"
+        ]
+      },
+      "meta": {
+        "thickness": 18,
+        "tag": "Korpus RTV K2",
+        "code": "TVC-9"
+      }
+    },
+    {
+      "id": "p0021",
+      "name": "RTV K2 Wieniec dolny 372x282",
+      "group": "g1",
+      "unit": "RTV K2",
+      "layer": "carcass",
+      "material": "korpus-kaszmir",
+      "shape": {
+        "type": "box",
+        "min": [
+          364,
+          -302,
+          100
+        ],
+        "max": [
+          736,
+          -20,
+          118
+        ]
+      },
+      "edges": {
+        "raw": [
+          "x+",
+          "x-",
+          "y+"
+        ]
+      },
+      "meta": {
+        "thickness": 18,
+        "tag": "Korpus RTV K2",
+        "code": "TVC-10"
+      }
+    },
+    {
+      "id": "p0022",
+      "name": "RTV K2 Wieniec gorny 372x282",
+      "group": "g1",
+      "unit": "RTV K2",
+      "layer": "carcass",
+      "material": "korpus-kaszmir",
+      "shape": {
+        "type": "box",
+        "min": [
+          364,
+          -302,
+          414
+        ],
+        "max": [
+          736,
+          -20,
+          432
+        ]
+      },
+      "edges": {
+        "raw": [
+          "x+",
+          "x-",
+          "y+"
+        ]
+      },
+      "meta": {
+        "thickness": 18,
+        "tag": "Korpus RTV K2",
+        "code": "TVC-11"
+      }
+    },
+    {
+      "id": "p0023",
+      "name": "RTV K2 Plecy HDF 408x332 (otwor na kable wytnij na miejscu)",
+      "group": "g1",
+      "unit": "RTV K2",
+      "layer": "back",
+      "material": "plecy-hdf",
+      "shape": {
+        "type": "box",
+        "min": [
+          346,
+          -20,
+          100
+        ],
+        "max": [
+          754,
+          -17,
+          432
+        ]
+      },
+      "edges": {
+        "raw": [
+          "x+",
+          "x-",
+          "z+",
+          "z-"
+        ]
+      },
+      "meta": {
+        "thickness": 3,
+        "tag": "Korpus RTV K2",
+        "code": "TVC-12"
+      }
+    },
+    {
+      "id": "p0024",
+      "name": "RTV K2 Nozka 100",
+      "group": "g1",
+      "unit": "RTV K2",
+      "layer": "legs",
+      "material": "nozka-klips",
+      "shape": {
+        "type": "box",
+        "min": [
+          379,
+          -87,
+          5
+        ],
+        "max": [
+          413,
+          -53,
+          100
+        ]
+      },
+      "edges": {
+        "raw": []
+      },
+      "meta": {
+        "thickness": 34,
+        "tag": "Nozki RTV"
+      }
+    },
+    {
+      "id": "p0025",
+      "name": "RTV K2 Stopka nozki",
+      "group": "g1",
+      "unit": "RTV K2",
+      "layer": "legs",
+      "material": "nozka-klips",
+      "shape": {
+        "type": "box",
+        "min": [
+          366,
+          -100,
+          0
+        ],
+        "max": [
+          426,
+          -40,
+          5
+        ]
+      },
+      "edges": {
+        "raw": []
+      },
+      "meta": {
+        "thickness": 5,
+        "tag": "Nozki RTV"
+      }
+    },
+    {
+      "id": "p0026",
+      "name": "RTV K2 Nozka 100",
+      "group": "g1",
+      "unit": "RTV K2",
+      "layer": "legs",
+      "material": "nozka-klips",
+      "shape": {
+        "type": "box",
+        "min": [
+          379,
+          -269,
+          5
+        ],
+        "max": [
+          413,
+          -235,
+          100
+        ]
+      },
+      "edges": {
+        "raw": []
+      },
+      "meta": {
+        "thickness": 34,
+        "tag": "Nozki RTV"
+      }
+    },
+    {
+      "id": "p0027",
+      "name": "RTV K2 Stopka nozki",
+      "group": "g1",
+      "unit": "RTV K2",
+      "layer": "legs",
+      "material": "nozka-klips",
+      "shape": {
+        "type": "box",
+        "min": [
+          366,
+          -282,
+          0
+        ],
+        "max": [
+          426,
+          -222,
+          5
+        ]
+      },
+      "edges": {
+        "raw": []
+      },
+      "meta": {
+        "thickness": 5,
+        "tag": "Nozki RTV"
+      }
+    },
+    {
+      "id": "p0028",
+      "name": "RTV K2 Nozka 100",
+      "group": "g1",
+      "unit": "RTV K2",
+      "layer": "legs",
+      "material": "nozka-klips",
+      "shape": {
+        "type": "box",
+        "min": [
+          687,
+          -87,
+          5
+        ],
+        "max": [
+          721,
+          -53,
+          100
+        ]
+      },
+      "edges": {
+        "raw": []
+      },
+      "meta": {
+        "thickness": 34,
+        "tag": "Nozki RTV"
+      }
+    },
+    {
+      "id": "p0029",
+      "name": "RTV K2 Stopka nozki",
+      "group": "g1",
+      "unit": "RTV K2",
+      "layer": "legs",
+      "material": "nozka-klips",
+      "shape": {
+        "type": "box",
+        "min": [
+          674,
+          -100,
+          0
+        ],
+        "max": [
+          734,
+          -40,
+          5
+        ]
+      },
+      "edges": {
+        "raw": []
+      },
+      "meta": {
+        "thickness": 5,
+        "tag": "Nozki RTV"
+      }
+    },
+    {
+      "id": "p0030",
+      "name": "RTV K2 Nozka 100",
+      "group": "g1",
+      "unit": "RTV K2",
+      "layer": "legs",
+      "material": "nozka-klips",
+      "shape": {
+        "type": "box",
+        "min": [
+          687,
+          -269,
+          5
+        ],
+        "max": [
+          721,
+          -235,
+          100
+        ]
+      },
+      "edges": {
+        "raw": []
+      },
+      "meta": {
+        "thickness": 34,
+        "tag": "Nozki RTV"
+      }
+    },
+    {
+      "id": "p0031",
+      "name": "RTV K2 Stopka nozki",
+      "group": "g1",
+      "unit": "RTV K2",
+      "layer": "legs",
+      "material": "nozka-klips",
+      "shape": {
+        "type": "box",
+        "min": [
+          674,
+          -282,
+          0
+        ],
+        "max": [
+          734,
+          -222,
+          5
+        ]
+      },
+      "edges": {
+        "raw": []
+      },
+      "meta": {
+        "thickness": 5,
+        "tag": "Nozki RTV"
+      }
+    },
+    {
+      "id": "p0032",
+      "name": "RTV K2 Drzwi srodkowe (zawiasy L, otwierane na bok) 404x330",
+      "group": "g1",
+      "unit": "RTV K2",
+      "layer": "front",
+      "material": "front-kaszmir",
+      "shape": {
+        "type": "box",
+        "min": [
+          348,
+          -320,
+          100
+        ],
+        "max": [
+          752,
+          -302,
+          430
+        ]
+      },
+      "edges": {
+        "raw": []
+      },
+      "meta": {
+        "thickness": 18,
+        "tag": "Fronty RTV",
+        "code": "TVC-13"
+      }
+    },
+    {
+      "id": "p0033",
+      "name": "RTV K3 Bok L 332x282",
+      "group": "g1",
+      "unit": "RTV K3",
+      "layer": "carcass",
+      "material": "korpus-kaszmir",
+      "shape": {
+        "type": "box",
+        "min": [
+          754,
+          -302,
+          100
+        ],
+        "max": [
+          772,
+          -20,
+          432
+        ]
+      },
+      "edges": {
+        "raw": [
+          "y+",
+          "z+",
+          "z-"
+        ]
+      },
+      "meta": {
+        "thickness": 18,
+        "tag": "Korpus RTV K3",
+        "code": "TVC-14"
+      }
+    },
+    {
+      "id": "p0034",
+      "name": "RTV K3 Bok P 332x282",
+      "group": "g1",
+      "unit": "RTV K3",
+      "layer": "carcass",
+      "material": "korpus-kaszmir",
+      "shape": {
+        "type": "box",
+        "min": [
+          1064,
+          -302,
+          100
+        ],
+        "max": [
+          1082,
+          -20,
+          432
+        ]
+      },
+      "edges": {
+        "raw": [
+          "y+",
+          "z+",
+          "z-"
+        ]
+      },
+      "meta": {
+        "thickness": 18,
+        "tag": "Korpus RTV K3",
+        "code": "TVC-15"
+      }
+    },
+    {
+      "id": "p0035",
+      "name": "RTV K3 Wieniec dolny 292x282",
+      "group": "g1",
+      "unit": "RTV K3",
+      "layer": "carcass",
+      "material": "korpus-kaszmir",
+      "shape": {
+        "type": "box",
+        "min": [
+          772,
+          -302,
+          100
+        ],
+        "max": [
+          1064,
+          -20,
+          118
+        ]
+      },
+      "edges": {
+        "raw": [
+          "x+",
+          "x-",
+          "y+"
+        ]
+      },
+      "meta": {
+        "thickness": 18,
+        "tag": "Korpus RTV K3",
+        "code": "TVC-16"
+      }
+    },
+    {
+      "id": "p0036",
+      "name": "RTV K3 Wieniec gorny 292x282",
+      "group": "g1",
+      "unit": "RTV K3",
+      "layer": "carcass",
+      "material": "korpus-kaszmir",
+      "shape": {
+        "type": "box",
+        "min": [
+          772,
+          -302,
+          414
+        ],
+        "max": [
+          1064,
+          -20,
+          432
+        ]
+      },
+      "edges": {
+        "raw": [
+          "x+",
+          "x-",
+          "y+"
+        ]
+      },
+      "meta": {
+        "thickness": 18,
+        "tag": "Korpus RTV K3",
+        "code": "TVC-17"
+      }
+    },
+    {
+      "id": "p0037",
+      "name": "RTV K3 Polka 290x262 (na podporkach, przestawna)",
+      "group": "g1",
+      "unit": "RTV K3",
+      "layer": "carcass",
+      "material": "korpus-kaszmir",
+      "shape": {
+        "type": "box",
+        "min": [
+          773,
+          -282,
+          257
+        ],
+        "max": [
+          1063,
+          -20,
+          275
+        ]
+      },
+      "edges": {
+        "raw": [
+          "x+",
+          "x-",
+          "y+"
+        ]
+      },
+      "meta": {
+        "thickness": 18,
+        "tag": "Korpus RTV K3",
+        "code": "TVC-18"
+      }
+    },
+    {
+      "id": "p0038",
+      "name": "RTV K3 Plecy HDF 328x332 (otwor na kable wytnij na miejscu)",
+      "group": "g1",
+      "unit": "RTV K3",
+      "layer": "back",
+      "material": "plecy-hdf",
+      "shape": {
+        "type": "box",
+        "min": [
+          754,
+          -20,
+          100
+        ],
+        "max": [
+          1082,
+          -17,
+          432
+        ]
+      },
+      "edges": {
+        "raw": [
+          "x+",
+          "x-",
+          "z+",
+          "z-"
+        ]
+      },
+      "meta": {
+        "thickness": 3,
+        "tag": "Korpus RTV K3",
+        "code": "TVC-19"
+      }
+    },
+    {
+      "id": "p0039",
+      "name": "RTV K3 Nozka 100",
+      "group": "g1",
+      "unit": "RTV K3",
+      "layer": "legs",
+      "material": "nozka-klips",
+      "shape": {
+        "type": "box",
+        "min": [
+          787,
+          -87,
+          5
+        ],
+        "max": [
+          821,
+          -53,
+          100
+        ]
+      },
+      "edges": {
+        "raw": []
+      },
+      "meta": {
+        "thickness": 34,
+        "tag": "Nozki RTV"
+      }
+    },
+    {
+      "id": "p0040",
+      "name": "RTV K3 Stopka nozki",
+      "group": "g1",
+      "unit": "RTV K3",
+      "layer": "legs",
+      "material": "nozka-klips",
+      "shape": {
+        "type": "box",
+        "min": [
+          774,
+          -100,
+          0
+        ],
+        "max": [
+          834,
+          -40,
+          5
+        ]
+      },
+      "edges": {
+        "raw": []
+      },
+      "meta": {
+        "thickness": 5,
+        "tag": "Nozki RTV"
+      }
+    },
+    {
+      "id": "p0041",
+      "name": "RTV K3 Nozka 100",
+      "group": "g1",
+      "unit": "RTV K3",
+      "layer": "legs",
+      "material": "nozka-klips",
+      "shape": {
+        "type": "box",
+        "min": [
+          787,
+          -269,
+          5
+        ],
+        "max": [
+          821,
+          -235,
+          100
+        ]
+      },
+      "edges": {
+        "raw": []
+      },
+      "meta": {
+        "thickness": 34,
+        "tag": "Nozki RTV"
+      }
+    },
+    {
+      "id": "p0042",
+      "name": "RTV K3 Stopka nozki",
+      "group": "g1",
+      "unit": "RTV K3",
+      "layer": "legs",
+      "material": "nozka-klips",
+      "shape": {
+        "type": "box",
+        "min": [
+          774,
+          -282,
+          0
+        ],
+        "max": [
+          834,
+          -222,
+          5
+        ]
+      },
+      "edges": {
+        "raw": []
+      },
+      "meta": {
+        "thickness": 5,
+        "tag": "Nozki RTV"
+      }
+    },
+    {
+      "id": "p0043",
+      "name": "RTV K3 Nozka 100",
+      "group": "g1",
+      "unit": "RTV K3",
+      "layer": "legs",
+      "material": "nozka-klips",
+      "shape": {
+        "type": "box",
+        "min": [
+          1015,
+          -87,
+          5
+        ],
+        "max": [
+          1049,
+          -53,
+          100
+        ]
+      },
+      "edges": {
+        "raw": []
+      },
+      "meta": {
+        "thickness": 34,
+        "tag": "Nozki RTV"
+      }
+    },
+    {
+      "id": "p0044",
+      "name": "RTV K3 Stopka nozki",
+      "group": "g1",
+      "unit": "RTV K3",
+      "layer": "legs",
+      "material": "nozka-klips",
+      "shape": {
+        "type": "box",
+        "min": [
+          1002,
+          -100,
+          0
+        ],
+        "max": [
+          1062,
+          -40,
+          5
+        ]
+      },
+      "edges": {
+        "raw": []
+      },
+      "meta": {
+        "thickness": 5,
+        "tag": "Nozki RTV"
+      }
+    },
+    {
+      "id": "p0045",
+      "name": "RTV K3 Nozka 100",
+      "group": "g1",
+      "unit": "RTV K3",
+      "layer": "legs",
+      "material": "nozka-klips",
+      "shape": {
+        "type": "box",
+        "min": [
+          1015,
+          -269,
+          5
+        ],
+        "max": [
+          1049,
+          -235,
+          100
+        ]
+      },
+      "edges": {
+        "raw": []
+      },
+      "meta": {
+        "thickness": 34,
+        "tag": "Nozki RTV"
+      }
+    },
+    {
+      "id": "p0046",
+      "name": "RTV K3 Stopka nozki",
+      "group": "g1",
+      "unit": "RTV K3",
+      "layer": "legs",
+      "material": "nozka-klips",
+      "shape": {
+        "type": "box",
+        "min": [
+          1002,
+          -282,
+          0
+        ],
+        "max": [
+          1062,
+          -222,
+          5
+        ]
+      },
+      "edges": {
+        "raw": []
+      },
+      "meta": {
+        "thickness": 5,
+        "tag": "Nozki RTV"
+      }
+    },
+    {
+      "id": "p0047",
+      "name": "RTV K3 Drzwi (zawiasy P) 324x330",
+      "group": "g1",
+      "unit": "RTV K3",
+      "layer": "front",
+      "material": "front-kaszmir",
+      "shape": {
+        "type": "box",
+        "min": [
+          756,
+          -320,
+          100
+        ],
+        "max": [
+          1080,
+          -302,
+          430
+        ]
+      },
+      "edges": {
+        "raw": []
+      },
+      "meta": {
+        "thickness": 18,
+        "tag": "Fronty RTV",
+        "code": "TVC-20"
+      }
+    },
+    {
+      "id": "p0048",
+      "name": "RTV Obudowa bok L (drewno) 332x300",
+      "group": "g1",
+      "unit": "RTV",
+      "layer": "cladding",
+      "material": "drewno-blat",
+      "shape": {
+        "type": "box",
+        "min": [
+          0,
+          -320,
+          100
+        ],
+        "max": [
+          18,
+          -20,
+          432
+        ]
+      },
+      "edges": {
+        "raw": [
+          "y+",
+          "z+"
+        ]
+      },
+      "meta": {
+        "thickness": 18,
+        "tag": "Obudowa drewniana",
+        "code": "TVC-21"
+      }
+    },
+    {
+      "id": "p0049",
+      "name": "RTV Obudowa bok P (drewno) 332x300",
+      "group": "g1",
+      "unit": "RTV",
+      "layer": "cladding",
+      "material": "drewno-blat",
+      "shape": {
+        "type": "box",
+        "min": [
+          1082,
+          -320,
+          100
+        ],
+        "max": [
+          1100,
+          -20,
+          432
+        ]
+      },
+      "edges": {
+        "raw": [
+          "y+",
+          "z+"
+        ]
+      },
+      "meta": {
+        "thickness": 18,
+        "tag": "Obudowa drewniana",
+        "code": "TVC-22"
+      }
+    },
+    {
+      "id": "p0050",
+      "name": "RTV Obudowa gora (drewno) 1100x300",
+      "group": "g1",
+      "unit": "RTV",
+      "layer": "cladding",
+      "material": "drewno-blat",
+      "shape": {
+        "type": "box",
+        "min": [
+          0,
+          -320,
+          432
+        ],
+        "max": [
+          1100,
+          -20,
+          450
+        ]
+      },
+      "edges": {
+        "raw": [
+          "y+"
+        ]
+      },
+      "meta": {
+        "thickness": 18,
+        "tag": "Obudowa drewniana",
+        "code": "TVC-23"
+      }
+    }
+  ],
+  "codes": {
+    "prefix": "TVC",
+    "next": 24
+  }
+}

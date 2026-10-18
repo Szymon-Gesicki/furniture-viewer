@@ -1,0 +1,42 @@
+{
+  "prefix": "EXA",
+  "next": 10,
+  "codes": {
+    "p0001": {
+      "n": 1,
+      "name": "R1 Side L 1200x300"
+    },
+    "p0002": {
+      "n": 2,
+      "name": "R1 Side R 1200x300"
+    },
+    "p0003": {
+      "n": 3,
+      "name": "R1 Top panel 764x300"
+    },
+    "p0004": {
+      "n": 4,
+      "name": "R1 Bottom panel 764x300"
+    },
+    "p0006": {
+      "n": 5,
+      "name": "R1 Shelf 764x300"
+    },
+    "p0007": {
+      "n": 6,
+      "name": "R1 Shelf 764x300"
+    },
+    "p0005": {
+      "n": 7,
+      "name": "R1 Back HDF 800x1200"
+    },
+    "p0008": {
+      "n": 8,
+      "name": "R1 Door L 396x1196"
+    },
+    "p0009": {
+      "n": 9,
+      "name": "R1 Door R 396x1196"
+    }
+  }
+}

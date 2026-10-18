@@ -1,0 +1,1584 @@
+{
+  "format": "furniture-model",
+  "version": 1,
+  "id": "bathroom",
+  "name": "Bathroom",
+  "description": "Toilet frame boxing, cabinets above the WC, R1 cabinet and fillers",
+  "source": "import-rb:bathroom-in-room.rb",
+  "materials": {
+    "korpus-kaszmir": {
+      "label": "Korpus_kaszmir",
+      "color": "#d6caba"
+    },
+    "front-kaszmir": {
+      "label": "Front_kaszmir",
+      "color": "#cdbfae"
+    },
+    "zlew": {
+      "label": "Zlew",
+      "color": "#46484b"
+    },
+    "plecy-hdf": {
+      "label": "Plecy_HDF",
+      "color": "#ebe6de"
+    },
+    "sciana-lazienka": {
+      "label": "Sciana_lazienka",
+      "color": "#ecece8"
+    },
+    "podloga-lazienka": {
+      "label": "Podloga_lazienka",
+      "color": "#c8c3b9"
+    },
+    "sufit-lazienka": {
+      "label": "Sufit_lazienka",
+      "color": "#f8f8f8"
+    },
+    "plytki-sciana": {
+      "label": "Plytki_sciana",
+      "color": "#dce1e4"
+    },
+    "geberit-stelaz-gk": {
+      "label": "Geberit_stelaz_GK",
+      "color": "#bebec4"
+    }
+  },
+  "groups": [
+    {
+      "id": "g1",
+      "name": "Lazienka_meble_v11",
+      "parent": null
+    },
+    {
+      "id": "g2",
+      "name": "R1 Szafka dolna 421",
+      "parent": "g1"
+    },
+    {
+      "id": "g3",
+      "name": "U1 Szafka nad geberitem 643",
+      "parent": "g1"
+    },
+    {
+      "id": "g4",
+      "name": "U2 Szafka gorna 421",
+      "parent": "g1"
+    },
+    {
+      "id": "g5",
+      "name": "Lazienka_pomieszczenie",
+      "parent": "g1"
+    }
+  ],
+  "parts": [
+    {
+      "id": "p0001",
+      "name": "GB Bok L zabudowy 1134x170",
+      "group": "g1",
+      "unit": "g1",
+      "layer": "carcass",
+      "material": "korpus-kaszmir",
+      "shape": {
+        "type": "box",
+        "min": [
+          -18,
+          -170,
+          0
+        ],
+        "max": [
+          0,
+          0,
+          1134
+        ]
+      },
+      "edges": {
+        "raw": [
+          "y+",
+          "z+",
+          "z-"
+        ]
+      },
+      "meta": {
+        "thickness": 18,
+        "tag": "Zabudowa geberitu",
+        "code": "BAT-1"
+      }
+    },
+    {
+      "id": "p0002",
+      "name": "GB Bok P zabudowy 1134x170",
+      "group": "g1",
+      "unit": "g1",
+      "layer": "carcass",
+      "material": "korpus-kaszmir",
+      "shape": {
+        "type": "box",
+        "min": [
+          607,
+          -170,
+          0
+        ],
+        "max": [
+          625,
+          0,
+          1134
+        ]
+      },
+      "edges": {
+        "raw": [
+          "y+",
+          "z+",
+          "z-"
+        ]
+      },
+      "meta": {
+        "thickness": 18,
+        "tag": "Zabudowa geberitu",
+        "code": "BAT-2"
+      }
+    },
+    {
+      "id": "p0003",
+      "name": "GB Wieniec gorny zabudowy 607x170 (miedzy bokami)",
+      "group": "g1",
+      "unit": "g1",
+      "layer": "carcass",
+      "material": "korpus-kaszmir",
+      "shape": {
+        "type": "box",
+        "min": [
+          0,
+          -170,
+          1116
+        ],
+        "max": [
+          607,
+          0,
+          1134
+        ]
+      },
+      "edges": {
+        "raw": [
+          "x+",
+          "x-",
+          "y+"
+        ]
+      },
+      "meta": {
+        "thickness": 18,
+        "tag": "Zabudowa geberitu",
+        "code": "BAT-3"
+      }
+    },
+    {
+      "id": "p0004",
+      "name": "GB Front zabudowy 639x1132 (otwory WC + przycisk)",
+      "group": "g1",
+      "unit": "g1",
+      "layer": "front",
+      "material": "front-kaszmir",
+      "shape": {
+        "type": "box",
+        "min": [
+          -16,
+          -188,
+          0
+        ],
+        "max": [
+          623,
+          -170,
+          1132
+        ]
+      },
+      "edges": {
+        "raw": []
+      },
+      "meta": {
+        "thickness": 18,
+        "tag": "Front zabudowy geberitu",
+        "code": "BAT-4"
+      }
+    },
+    {
+      "id": "p0005",
+      "name": "Otwor odplyw ~110 (pozycja do zmierzenia)",
+      "group": "g1",
+      "unit": "g1",
+      "layer": "assembly",
+      "material": "zlew",
+      "shape": {
+        "type": "box",
+        "min": [
+          248.5,
+          -189,
+          175
+        ],
+        "max": [
+          358.5,
+          -188,
+          285
+        ]
+      },
+      "edges": {
+        "raw": []
+      },
+      "meta": {
+        "thickness": 1,
+        "tag": "Otwory WC (do zmierzenia)"
+      }
+    },
+    {
+      "id": "p0006",
+      "name": "Otwor sruba L (do zmierzenia)",
+      "group": "g1",
+      "unit": "g1",
+      "layer": "assembly",
+      "material": "zlew",
+      "shape": {
+        "type": "box",
+        "min": [
+          205.5,
+          -189,
+          322
+        ],
+        "max": [
+          221.5,
+          -188,
+          338
+        ]
+      },
+      "edges": {
+        "raw": []
+      },
+      "meta": {
+        "thickness": 1,
+        "tag": "Otwory WC (do zmierzenia)"
+      }
+    },
+    {
+      "id": "p0007",
+      "name": "Otwor sruba P (do zmierzenia)",
+      "group": "g1",
+      "unit": "g1",
+      "layer": "assembly",
+      "material": "zlew",
+      "shape": {
+        "type": "box",
+        "min": [
+          385.5,
+          -189,
+          322
+        ],
+        "max": [
+          401.5,
+          -188,
+          338
+        ]
+      },
+      "edges": {
+        "raw": []
+      },
+      "meta": {
+        "thickness": 1,
+        "tag": "Otwory WC (do zmierzenia)"
+      }
+    },
+    {
+      "id": "p0008",
+      "name": "Otwor rura splukujaca ~50 (do zmierzenia)",
+      "group": "g1",
+      "unit": "g1",
+      "layer": "assembly",
+      "material": "zlew",
+      "shape": {
+        "type": "box",
+        "min": [
+          278.5,
+          -189,
+          355
+        ],
+        "max": [
+          328.5,
+          -188,
+          405
+        ]
+      },
+      "edges": {
+        "raw": []
+      },
+      "meta": {
+        "thickness": 1,
+        "tag": "Otwory WC (do zmierzenia)"
+      }
+    },
+    {
+      "id": "p0009",
+      "name": "Otwor przycisk/rewizja ~245x165 (wg szablonu)",
+      "group": "g1",
+      "unit": "g1",
+      "layer": "assembly",
+      "material": "zlew",
+      "shape": {
+        "type": "box",
+        "min": [
+          181.5,
+          -189,
+          920
+        ],
+        "max": [
+          425.5,
+          -188,
+          1085
+        ]
+      },
+      "edges": {
+        "raw": []
+      },
+      "meta": {
+        "thickness": 1,
+        "tag": "Otwory WC (do zmierzenia)"
+      }
+    },
+    {
+      "id": "p0010",
+      "name": "R0 Wieniec podstawy (plyta na podlodze, pod szafka i blenda)",
+      "group": "g1",
+      "unit": "R0",
+      "layer": "carcass",
+      "material": "korpus-kaszmir",
+      "shape": {
+        "type": "box",
+        "min": [
+          625,
+          -188,
+          0
+        ],
+        "max": [
+          1087,
+          0,
+          18
+        ]
+      },
+      "edges": {
+        "raw": [
+          "x+",
+          "x-",
+          "y+"
+        ]
+      },
+      "meta": {
+        "thickness": 18,
+        "tag": "Korpus R1",
+        "code": "BAT-5"
+      }
+    },
+    {
+      "id": "p0011",
+      "name": "R1 Wieniec dolny (pod bokami) 421x170",
+      "group": "g2",
+      "unit": "g2",
+      "layer": "carcass",
+      "material": "korpus-kaszmir",
+      "shape": {
+        "type": "box",
+        "min": [
+          625,
+          -170,
+          18
+        ],
+        "max": [
+          1046,
+          0,
+          36
+        ]
+      },
+      "edges": {
+        "raw": [
+          "x+",
+          "x-",
+          "y+"
+        ]
+      },
+      "meta": {
+        "thickness": 18,
+        "tag": "Korpus R1",
+        "code": "BAT-6"
+      }
+    },
+    {
+      "id": "p0012",
+      "name": "R1 Bok L 1098x170",
+      "group": "g2",
+      "unit": "g2",
+      "layer": "carcass",
+      "material": "korpus-kaszmir",
+      "shape": {
+        "type": "box",
+        "min": [
+          1028,
+          -170,
+          36
+        ],
+        "max": [
+          1046,
+          0,
+          1134
+        ]
+      },
+      "edges": {
+        "raw": [
+          "y+",
+          "z+",
+          "z-"
+        ]
+      },
+      "meta": {
+        "thickness": 18,
+        "tag": "Korpus R1",
+        "code": "BAT-7"
+      }
+    },
+    {
+      "id": "p0013",
+      "name": "R1 Bok P 1098x170",
+      "group": "g2",
+      "unit": "g2",
+      "layer": "carcass",
+      "material": "korpus-kaszmir",
+      "shape": {
+        "type": "box",
+        "min": [
+          625,
+          -170,
+          36
+        ],
+        "max": [
+          643,
+          0,
+          1134
+        ]
+      },
+      "edges": {
+        "raw": [
+          "y+",
+          "z+",
+          "z-"
+        ]
+      },
+      "meta": {
+        "thickness": 18,
+        "tag": "Korpus R1",
+        "code": "BAT-8"
+      }
+    },
+    {
+      "id": "p0014",
+      "name": "R1 Wieniec gorny (miedzy bokami) 385x170",
+      "group": "g2",
+      "unit": "g2",
+      "layer": "carcass",
+      "material": "korpus-kaszmir",
+      "shape": {
+        "type": "box",
+        "min": [
+          643,
+          -170,
+          1116
+        ],
+        "max": [
+          1028,
+          0,
+          1134
+        ]
+      },
+      "edges": {
+        "raw": [
+          "x+",
+          "x-",
+          "y+"
+        ]
+      },
+      "meta": {
+        "thickness": 18,
+        "tag": "Korpus R1",
+        "code": "BAT-9"
+      }
+    },
+    {
+      "id": "p0015",
+      "name": "R1 Plecy HDF 421x1116",
+      "group": "g2",
+      "unit": "g2",
+      "layer": "back",
+      "material": "plecy-hdf",
+      "shape": {
+        "type": "box",
+        "min": [
+          625,
+          0,
+          18
+        ],
+        "max": [
+          1046,
+          3,
+          1134
+        ]
+      },
+      "edges": {
+        "raw": [
+          "x+",
+          "x-",
+          "z+",
+          "z-"
+        ]
+      },
+      "meta": {
+        "thickness": 3,
+        "tag": "Korpus R1",
+        "code": "BAT-13"
+      }
+    },
+    {
+      "id": "p0016",
+      "name": "R1 Polka 385x150",
+      "group": "g2",
+      "unit": "g2",
+      "layer": "carcass",
+      "material": "korpus-kaszmir",
+      "shape": {
+        "type": "box",
+        "min": [
+          643,
+          -150,
+          292
+        ],
+        "max": [
+          1028,
+          0,
+          310
+        ]
+      },
+      "edges": {
+        "raw": [
+          "x+",
+          "x-",
+          "y+"
+        ]
+      },
+      "meta": {
+        "thickness": 18,
+        "tag": "Korpus R1",
+        "code": "BAT-10"
+      }
+    },
+    {
+      "id": "p0017",
+      "name": "R1 Polka 385x150",
+      "group": "g2",
+      "unit": "g2",
+      "layer": "carcass",
+      "material": "korpus-kaszmir",
+      "shape": {
+        "type": "box",
+        "min": [
+          643,
+          -150,
+          567
+        ],
+        "max": [
+          1028,
+          0,
+          585
+        ]
+      },
+      "edges": {
+        "raw": [
+          "x+",
+          "x-",
+          "y+"
+        ]
+      },
+      "meta": {
+        "thickness": 18,
+        "tag": "Korpus R1",
+        "code": "BAT-11"
+      }
+    },
+    {
+      "id": "p0018",
+      "name": "R1 Polka 385x150",
+      "group": "g2",
+      "unit": "g2",
+      "layer": "carcass",
+      "material": "korpus-kaszmir",
+      "shape": {
+        "type": "box",
+        "min": [
+          643,
+          -150,
+          841
+        ],
+        "max": [
+          1028,
+          0,
+          859
+        ]
+      },
+      "edges": {
+        "raw": [
+          "x+",
+          "x-",
+          "y+"
+        ]
+      },
+      "meta": {
+        "thickness": 18,
+        "tag": "Korpus R1",
+        "code": "BAT-12"
+      }
+    },
+    {
+      "id": "p0019",
+      "name": "R1 Drzwi (zawiasy P) 417x1112",
+      "group": "g2",
+      "unit": "g2",
+      "layer": "front",
+      "material": "front-kaszmir",
+      "shape": {
+        "type": "box",
+        "min": [
+          627,
+          -188,
+          20
+        ],
+        "max": [
+          1044,
+          -170,
+          1132
+        ]
+      },
+      "edges": {
+        "raw": []
+      },
+      "meta": {
+        "thickness": 18,
+        "tag": "Front R1 Drzwi (zawiasy P)",
+        "code": "BAT-14"
+      }
+    },
+    {
+      "id": "p0020",
+      "name": "R2 Blenda P plyta 188x2357 (do sufitu z naddatkiem, dotnij; wsun miedzy szafki a plytki)",
+      "group": "g1",
+      "unit": "R2",
+      "layer": "fillers",
+      "material": "front-kaszmir",
+      "shape": {
+        "type": "box",
+        "min": [
+          1046,
+          -188,
+          18
+        ],
+        "max": [
+          1064,
+          0,
+          2375
+        ]
+      },
+      "edges": {
+        "raw": [
+          "y+",
+          "z+",
+          "z-"
+        ]
+      },
+      "meta": {
+        "thickness": 18,
+        "tag": "Lazienka blenda prawa",
+        "code": "BAT-15"
+      }
+    },
+    {
+      "id": "p0021",
+      "name": "U5 Bok lewy od podlogi do sufitu 2375x188 (z naddatkiem, dotnij pod sufit)",
+      "group": "g1",
+      "unit": "U5",
+      "layer": "fillers",
+      "material": "front-kaszmir",
+      "shape": {
+        "type": "box",
+        "min": [
+          -36,
+          -188,
+          0
+        ],
+        "max": [
+          -18,
+          0,
+          2375
+        ]
+      },
+      "edges": {
+        "raw": [
+          "y+",
+          "z+",
+          "z-"
+        ]
+      },
+      "meta": {
+        "thickness": 18,
+        "tag": "Lazienka bok lewy",
+        "code": "BAT-16",
+        "originalLayer": "carcass"
+      }
+    },
+    {
+      "id": "p0022",
+      "name": "U1 Bok L 1171x170",
+      "group": "g3",
+      "unit": "g3",
+      "layer": "carcass",
+      "material": "korpus-kaszmir",
+      "shape": {
+        "type": "box",
+        "min": [
+          607,
+          -170,
+          1134
+        ],
+        "max": [
+          625,
+          0,
+          2305
+        ]
+      },
+      "edges": {
+        "raw": [
+          "y+",
+          "z+",
+          "z-"
+        ]
+      },
+      "meta": {
+        "thickness": 18,
+        "tag": "Korpus U1",
+        "code": "BAT-17"
+      }
+    },
+    {
+      "id": "p0023",
+      "name": "U1 Bok P 1171x170",
+      "group": "g3",
+      "unit": "g3",
+      "layer": "carcass",
+      "material": "korpus-kaszmir",
+      "shape": {
+        "type": "box",
+        "min": [
+          -18,
+          -170,
+          1134
+        ],
+        "max": [
+          0,
+          0,
+          2305
+        ]
+      },
+      "edges": {
+        "raw": [
+          "y+",
+          "z+",
+          "z-"
+        ]
+      },
+      "meta": {
+        "thickness": 18,
+        "tag": "Korpus U1",
+        "code": "BAT-18"
+      }
+    },
+    {
+      "id": "p0024",
+      "name": "U1 Wieniec dolny 607x170",
+      "group": "g3",
+      "unit": "g3",
+      "layer": "carcass",
+      "material": "korpus-kaszmir",
+      "shape": {
+        "type": "box",
+        "min": [
+          0,
+          -170,
+          1134
+        ],
+        "max": [
+          607,
+          0,
+          1152
+        ]
+      },
+      "edges": {
+        "raw": [
+          "x+",
+          "x-",
+          "y+"
+        ]
+      },
+      "meta": {
+        "thickness": 18,
+        "tag": "Korpus U1",
+        "code": "BAT-19"
+      }
+    },
+    {
+      "id": "p0025",
+      "name": "U1 Wieniec gorny 607x170",
+      "group": "g3",
+      "unit": "g3",
+      "layer": "carcass",
+      "material": "korpus-kaszmir",
+      "shape": {
+        "type": "box",
+        "min": [
+          0,
+          -170,
+          2287
+        ],
+        "max": [
+          607,
+          0,
+          2305
+        ]
+      },
+      "edges": {
+        "raw": [
+          "x+",
+          "x-",
+          "y+"
+        ]
+      },
+      "meta": {
+        "thickness": 18,
+        "tag": "Korpus U1",
+        "code": "BAT-20"
+      }
+    },
+    {
+      "id": "p0026",
+      "name": "U1 Plecy HDF 643x1171",
+      "group": "g3",
+      "unit": "g3",
+      "layer": "back",
+      "material": "plecy-hdf",
+      "shape": {
+        "type": "box",
+        "min": [
+          -18,
+          0,
+          1134
+        ],
+        "max": [
+          625,
+          3,
+          2305
+        ]
+      },
+      "edges": {
+        "raw": [
+          "x+",
+          "x-",
+          "z+",
+          "z-"
+        ]
+      },
+      "meta": {
+        "thickness": 3,
+        "tag": "Korpus U1",
+        "code": "BAT-24"
+      }
+    },
+    {
+      "id": "p0027",
+      "name": "U1 Polka 607x150",
+      "group": "g3",
+      "unit": "g3",
+      "layer": "carcass",
+      "material": "korpus-kaszmir",
+      "shape": {
+        "type": "box",
+        "min": [
+          0,
+          -150,
+          1554
+        ],
+        "max": [
+          607,
+          0,
+          1572
+        ]
+      },
+      "edges": {
+        "raw": [
+          "x+",
+          "x-",
+          "y+"
+        ]
+      },
+      "meta": {
+        "thickness": 18,
+        "tag": "Korpus U1",
+        "code": "BAT-21"
+      }
+    },
+    {
+      "id": "p0028",
+      "name": "U1 Polka 607x150",
+      "group": "g3",
+      "unit": "g3",
+      "layer": "carcass",
+      "material": "korpus-kaszmir",
+      "shape": {
+        "type": "box",
+        "min": [
+          0,
+          -150,
+          1794
+        ],
+        "max": [
+          607,
+          0,
+          1812
+        ]
+      },
+      "edges": {
+        "raw": [
+          "x+",
+          "x-",
+          "y+"
+        ]
+      },
+      "meta": {
+        "thickness": 18,
+        "tag": "Korpus U1",
+        "code": "BAT-22"
+      }
+    },
+    {
+      "id": "p0029",
+      "name": "U1 Polka 607x150",
+      "group": "g3",
+      "unit": "g3",
+      "layer": "carcass",
+      "material": "korpus-kaszmir",
+      "shape": {
+        "type": "box",
+        "min": [
+          0,
+          -150,
+          2034
+        ],
+        "max": [
+          607,
+          0,
+          2052
+        ]
+      },
+      "edges": {
+        "raw": [
+          "x+",
+          "x-",
+          "y+"
+        ]
+      },
+      "meta": {
+        "thickness": 18,
+        "tag": "Korpus U1",
+        "code": "BAT-23"
+      }
+    },
+    {
+      "id": "p0030",
+      "name": "U1 Drzwi prawe (zawiasy P) 318x1167",
+      "group": "g3",
+      "unit": "g3",
+      "layer": "front",
+      "material": "front-kaszmir",
+      "shape": {
+        "type": "box",
+        "min": [
+          305,
+          -188,
+          1136
+        ],
+        "max": [
+          623,
+          -170,
+          2303
+        ]
+      },
+      "edges": {
+        "raw": []
+      },
+      "meta": {
+        "thickness": 18,
+        "tag": "Front U1 Drzwi prawe (zawiasy P)",
+        "code": "BAT-25"
+      }
+    },
+    {
+      "id": "p0031",
+      "name": "U1 Drzwi lewe (zawiasy L) 318x1167",
+      "group": "g3",
+      "unit": "g3",
+      "layer": "front",
+      "material": "front-kaszmir",
+      "shape": {
+        "type": "box",
+        "min": [
+          -16,
+          -188,
+          1136
+        ],
+        "max": [
+          302,
+          -170,
+          2303
+        ]
+      },
+      "edges": {
+        "raw": []
+      },
+      "meta": {
+        "thickness": 18,
+        "tag": "Front U1 Drzwi lewe (zawiasy L)",
+        "code": "BAT-26"
+      }
+    },
+    {
+      "id": "p0032",
+      "name": "U2 Bok L 1171x170",
+      "group": "g4",
+      "unit": "g4",
+      "layer": "carcass",
+      "material": "korpus-kaszmir",
+      "shape": {
+        "type": "box",
+        "min": [
+          1028,
+          -170,
+          1134
+        ],
+        "max": [
+          1046,
+          0,
+          2305
+        ]
+      },
+      "edges": {
+        "raw": [
+          "y+",
+          "z+",
+          "z-"
+        ]
+      },
+      "meta": {
+        "thickness": 18,
+        "tag": "Korpus U2",
+        "code": "BAT-27"
+      }
+    },
+    {
+      "id": "p0033",
+      "name": "U2 Bok P 1171x170",
+      "group": "g4",
+      "unit": "g4",
+      "layer": "carcass",
+      "material": "korpus-kaszmir",
+      "shape": {
+        "type": "box",
+        "min": [
+          625,
+          -170,
+          1134
+        ],
+        "max": [
+          643,
+          0,
+          2305
+        ]
+      },
+      "edges": {
+        "raw": [
+          "y+",
+          "z+",
+          "z-"
+        ]
+      },
+      "meta": {
+        "thickness": 18,
+        "tag": "Korpus U2",
+        "code": "BAT-28"
+      }
+    },
+    {
+      "id": "p0034",
+      "name": "U2 Wieniec dolny 385x170",
+      "group": "g4",
+      "unit": "g4",
+      "layer": "carcass",
+      "material": "korpus-kaszmir",
+      "shape": {
+        "type": "box",
+        "min": [
+          643,
+          -170,
+          1134
+        ],
+        "max": [
+          1028,
+          0,
+          1152
+        ]
+      },
+      "edges": {
+        "raw": [
+          "x+",
+          "x-",
+          "y+"
+        ]
+      },
+      "meta": {
+        "thickness": 18,
+        "tag": "Korpus U2",
+        "code": "BAT-29"
+      }
+    },
+    {
+      "id": "p0035",
+      "name": "U2 Wieniec gorny 385x170",
+      "group": "g4",
+      "unit": "g4",
+      "layer": "carcass",
+      "material": "korpus-kaszmir",
+      "shape": {
+        "type": "box",
+        "min": [
+          643,
+          -170,
+          2287
+        ],
+        "max": [
+          1028,
+          0,
+          2305
+        ]
+      },
+      "edges": {
+        "raw": [
+          "x+",
+          "x-",
+          "y+"
+        ]
+      },
+      "meta": {
+        "thickness": 18,
+        "tag": "Korpus U2",
+        "code": "BAT-30"
+      }
+    },
+    {
+      "id": "p0036",
+      "name": "U2 Plecy HDF 421x1171",
+      "group": "g4",
+      "unit": "g4",
+      "layer": "back",
+      "material": "plecy-hdf",
+      "shape": {
+        "type": "box",
+        "min": [
+          625,
+          0,
+          1134
+        ],
+        "max": [
+          1046,
+          3,
+          2305
+        ]
+      },
+      "edges": {
+        "raw": [
+          "x+",
+          "x-",
+          "z+",
+          "z-"
+        ]
+      },
+      "meta": {
+        "thickness": 3,
+        "tag": "Korpus U2",
+        "code": "BAT-34"
+      }
+    },
+    {
+      "id": "p0037",
+      "name": "U2 Polka 385x150",
+      "group": "g4",
+      "unit": "g4",
+      "layer": "carcass",
+      "material": "korpus-kaszmir",
+      "shape": {
+        "type": "box",
+        "min": [
+          643,
+          -150,
+          1422
+        ],
+        "max": [
+          1028,
+          0,
+          1440
+        ]
+      },
+      "edges": {
+        "raw": [
+          "x+",
+          "x-",
+          "y+"
+        ]
+      },
+      "meta": {
+        "thickness": 18,
+        "tag": "Korpus U2",
+        "code": "BAT-31"
+      }
+    },
+    {
+      "id": "p0038",
+      "name": "U2 Polka 385x150",
+      "group": "g4",
+      "unit": "g4",
+      "layer": "carcass",
+      "material": "korpus-kaszmir",
+      "shape": {
+        "type": "box",
+        "min": [
+          643,
+          -150,
+          1710
+        ],
+        "max": [
+          1028,
+          0,
+          1728
+        ]
+      },
+      "edges": {
+        "raw": [
+          "x+",
+          "x-",
+          "y+"
+        ]
+      },
+      "meta": {
+        "thickness": 18,
+        "tag": "Korpus U2",
+        "code": "BAT-32"
+      }
+    },
+    {
+      "id": "p0039",
+      "name": "U2 Polka 385x150",
+      "group": "g4",
+      "unit": "g4",
+      "layer": "carcass",
+      "material": "korpus-kaszmir",
+      "shape": {
+        "type": "box",
+        "min": [
+          643,
+          -150,
+          1999
+        ],
+        "max": [
+          1028,
+          0,
+          2017
+        ]
+      },
+      "edges": {
+        "raw": [
+          "x+",
+          "x-",
+          "y+"
+        ]
+      },
+      "meta": {
+        "thickness": 18,
+        "tag": "Korpus U2",
+        "code": "BAT-33"
+      }
+    },
+    {
+      "id": "p0040",
+      "name": "U2 Drzwi (zawiasy P) 417x1167",
+      "group": "g4",
+      "unit": "g4",
+      "layer": "front",
+      "material": "front-kaszmir",
+      "shape": {
+        "type": "box",
+        "min": [
+          627,
+          -188,
+          1136
+        ],
+        "max": [
+          1044,
+          -170,
+          2303
+        ]
+      },
+      "edges": {
+        "raw": []
+      },
+      "meta": {
+        "thickness": 18,
+        "tag": "Front U2 Drzwi (zawiasy P)",
+        "code": "BAT-35"
+      }
+    },
+    {
+      "id": "p0041",
+      "name": "U4 Blenda pod sufit 1064x70 (miedzy blendami U5 i R2, wysokosc z naddatkiem, dotnij)",
+      "group": "g1",
+      "unit": "U4",
+      "layer": "fillers",
+      "material": "front-kaszmir",
+      "shape": {
+        "type": "box",
+        "min": [
+          -18,
+          -188,
+          2305
+        ],
+        "max": [
+          1046,
+          -170,
+          2375
+        ]
+      },
+      "edges": {
+        "raw": [
+          "x+",
+          "x-",
+          "z+"
+        ]
+      },
+      "meta": {
+        "thickness": 18,
+        "tag": "Lazienka blenda pod sufit",
+        "code": "BAT-36"
+      }
+    },
+    {
+      "id": "p0042",
+      "name": "Sciana tylna",
+      "group": "g5",
+      "unit": "g5",
+      "layer": "room",
+      "material": "sciana-lazienka",
+      "shape": {
+        "type": "box",
+        "min": [
+          -400,
+          0,
+          0
+        ],
+        "max": [
+          1083,
+          50,
+          2361
+        ]
+      },
+      "edges": {
+        "raw": [
+          "x+",
+          "x-",
+          "z+",
+          "z-"
+        ]
+      },
+      "meta": {
+        "thickness": 50,
+        "tag": "Lazienka - pomieszczenie"
+      }
+    },
+    {
+      "id": "p0043",
+      "name": "Sciana prawa",
+      "group": "g5",
+      "unit": "g5",
+      "layer": "room",
+      "material": "sciana-lazienka",
+      "shape": {
+        "type": "box",
+        "min": [
+          1083,
+          -1600,
+          0
+        ],
+        "max": [
+          1133,
+          50,
+          2361
+        ]
+      },
+      "edges": {
+        "raw": [
+          "y+",
+          "y-",
+          "z+",
+          "z-"
+        ]
+      },
+      "meta": {
+        "thickness": 50,
+        "tag": "Lazienka - pomieszczenie"
+      }
+    },
+    {
+      "id": "p0044",
+      "name": "Podloga",
+      "group": "g5",
+      "unit": "g5",
+      "layer": "room",
+      "material": "podloga-lazienka",
+      "shape": {
+        "type": "box",
+        "min": [
+          -400,
+          -1600,
+          -10
+        ],
+        "max": [
+          1083,
+          0,
+          0
+        ]
+      },
+      "edges": {
+        "raw": [
+          "x+",
+          "x-",
+          "y+",
+          "y-"
+        ]
+      },
+      "meta": {
+        "thickness": 10,
+        "tag": "Lazienka - pomieszczenie"
+      }
+    },
+    {
+      "id": "p0045",
+      "name": "Sufit",
+      "group": "g5",
+      "unit": "g5",
+      "layer": "room",
+      "material": "sufit-lazienka",
+      "shape": {
+        "type": "box",
+        "min": [
+          -400,
+          -1600,
+          2355
+        ],
+        "max": [
+          1083,
+          0,
+          2365
+        ]
+      },
+      "edges": {
+        "raw": [
+          "x+",
+          "x-",
+          "y+",
+          "y-"
+        ]
+      },
+      "meta": {
+        "thickness": 10,
+        "tag": "Lazienka - sufit"
+      }
+    },
+    {
+      "id": "p0046",
+      "name": "Plytki + klej na prawej scianie (lico zmierzone)",
+      "group": "g5",
+      "unit": "g5",
+      "layer": "room",
+      "material": "plytki-sciana",
+      "shape": {
+        "type": "box",
+        "min": [
+          1067,
+          -1600,
+          0
+        ],
+        "max": [
+          1083,
+          0,
+          2355
+        ]
+      },
+      "edges": {
+        "raw": [
+          "y+",
+          "y-",
+          "z+",
+          "z-"
+        ]
+      },
+      "meta": {
+        "thickness": 16,
+        "tag": "Lazienka - pomieszczenie"
+      }
+    },
+    {
+      "id": "p0047",
+      "name": "Stelaz geberitu (obudowany) 607x165x1115",
+      "group": "g5",
+      "unit": "g5",
+      "layer": "room",
+      "material": "geberit-stelaz-gk",
+      "shape": {
+        "type": "box",
+        "min": [
+          0,
+          -165,
+          0
+        ],
+        "max": [
+          607,
+          0,
+          1115
+        ]
+      },
+      "edges": {
+        "raw": []
+      },
+      "meta": {
+        "thickness": 165,
+        "tag": "Lazienka - pomieszczenie"
+      }
+    }
+  ],
+  "codes": {
+    "prefix": "BAT",
+    "next": 37
+  }
+}

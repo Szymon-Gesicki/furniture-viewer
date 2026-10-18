@@ -1,0 +1,2675 @@
+{
+  "format": "furniture-model",
+  "version": 1,
+  "id": "alcove-wardrobe",
+  "name": "Alcove wardrobe",
+  "description": "Two tall units, top box, fillers scribed to the walls",
+  "source": "import-rb:alcove-wardrobe.rb",
+  "materials": {
+    "sciana-korytarz": {
+      "label": "Sciana_korytarz",
+      "color": "#eeece6"
+    },
+    "drzwi-wejsciowe": {
+      "label": "Drzwi_wejsciowe",
+      "color": "#5a5046"
+    },
+    "podloga-korytarz": {
+      "label": "Podloga_korytarz",
+      "color": "#beaa91"
+    },
+    "sufit-korytarz": {
+      "label": "Sufit_korytarz",
+      "color": "#f8f8f8"
+    },
+    "korpus-kaszmir": {
+      "label": "Korpus_kaszmir",
+      "color": "#d6caba"
+    },
+    "plecy-hdf": {
+      "label": "Plecy_HDF",
+      "color": "#ebe6de"
+    },
+    "nozka-klips": {
+      "label": "Nozka_klips (okucie, nie ciac)",
+      "color": "#3c3c3e"
+    },
+    "front-kaszmir": {
+      "label": "Front_kaszmir",
+      "color": "#cdbfae"
+    },
+    "listwa-montazowa-18": {
+      "label": "Listwa_montazowa_18",
+      "color": "#c4b8a6"
+    }
+  },
+  "groups": [
+    {
+      "id": "g1",
+      "name": "Szafa_wneka_v3",
+      "parent": null
+    },
+    {
+      "id": "g2",
+      "name": "Nisza na korytarzu",
+      "parent": "g1"
+    }
+  ],
+  "parts": [
+    {
+      "id": "p0001",
+      "name": "Sciana tylna",
+      "group": "g2",
+      "unit": "g2",
+      "layer": "room",
+      "material": "sciana-korytarz",
+      "shape": {
+        "type": "box",
+        "min": [
+          -100,
+          0,
+          0
+        ],
+        "max": [
+          1295,
+          100,
+          2396
+        ]
+      },
+      "edges": {
+        "raw": []
+      },
+      "meta": {
+        "thickness": 100,
+        "tag": "Nisza - sciany"
+      }
+    },
+    {
+      "id": "p0002",
+      "name": "Sciana lewa",
+      "group": "g2",
+      "unit": "g2",
+      "layer": "room",
+      "material": "sciana-korytarz",
+      "shape": {
+        "type": "box",
+        "min": [
+          -100,
+          -2100,
+          0
+        ],
+        "max": [
+          0,
+          0,
+          2396
+        ]
+      },
+      "edges": {
+        "raw": []
+      },
+      "meta": {
+        "thickness": 100,
+        "tag": "Nisza - sciany"
+      }
+    },
+    {
+      "id": "p0003",
+      "name": "Sciana prawa do drzwi",
+      "group": "g2",
+      "unit": "g2",
+      "layer": "room",
+      "material": "sciana-korytarz",
+      "shape": {
+        "type": "box",
+        "min": [
+          1195,
+          -600,
+          0
+        ],
+        "max": [
+          1295,
+          0,
+          2396
+        ]
+      },
+      "edges": {
+        "raw": []
+      },
+      "meta": {
+        "thickness": 100,
+        "tag": "Nisza - sciany"
+      }
+    },
+    {
+      "id": "p0004",
+      "name": "Sciana prawa nad drzwiami",
+      "group": "g2",
+      "unit": "g2",
+      "layer": "room",
+      "material": "sciana-korytarz",
+      "shape": {
+        "type": "box",
+        "min": [
+          1195,
+          -1500,
+          2060
+        ],
+        "max": [
+          1295,
+          -600,
+          2396
+        ]
+      },
+      "edges": {
+        "raw": []
+      },
+      "meta": {
+        "thickness": 100,
+        "tag": "Nisza - sciany"
+      }
+    },
+    {
+      "id": "p0005",
+      "name": "Sciana prawa za drzwiami",
+      "group": "g2",
+      "unit": "g2",
+      "layer": "room",
+      "material": "sciana-korytarz",
+      "shape": {
+        "type": "box",
+        "min": [
+          1195,
+          -2100,
+          0
+        ],
+        "max": [
+          1295,
+          -1500,
+          2396
+        ]
+      },
+      "edges": {
+        "raw": []
+      },
+      "meta": {
+        "thickness": 100,
+        "tag": "Nisza - sciany"
+      }
+    },
+    {
+      "id": "p0006",
+      "name": "Oscieznica drzwi do pokoju",
+      "group": "g2",
+      "unit": "g2",
+      "layer": "room",
+      "material": "drzwi-wejsciowe",
+      "shape": {
+        "type": "box",
+        "min": [
+          1175,
+          -630,
+          0
+        ],
+        "max": [
+          1295,
+          -600,
+          2060
+        ]
+      },
+      "edges": {
+        "raw": []
+      },
+      "meta": {
+        "thickness": 30,
+        "tag": "Nisza - sciany"
+      }
+    },
+    {
+      "id": "p0007",
+      "name": "Drzwi do pokoju (skrzydlo)",
+      "group": "g2",
+      "unit": "g2",
+      "layer": "room",
+      "material": "drzwi-wejsciowe",
+      "shape": {
+        "type": "box",
+        "min": [
+          1215,
+          -1470,
+          0
+        ],
+        "max": [
+          1255,
+          -630,
+          2030
+        ]
+      },
+      "edges": {
+        "raw": []
+      },
+      "meta": {
+        "thickness": 40,
+        "tag": "Nisza - sciany"
+      }
+    },
+    {
+      "id": "p0008",
+      "name": "Podloga",
+      "group": "g2",
+      "unit": "g2",
+      "layer": "room",
+      "material": "podloga-korytarz",
+      "shape": {
+        "type": "box",
+        "min": [
+          -100,
+          -2100,
+          -10
+        ],
+        "max": [
+          1295,
+          0,
+          0
+        ]
+      },
+      "edges": {
+        "raw": []
+      },
+      "meta": {
+        "thickness": 10,
+        "tag": "Nisza - sciany"
+      }
+    },
+    {
+      "id": "p0009",
+      "name": "Sufit",
+      "group": "g2",
+      "unit": "g2",
+      "layer": "room",
+      "material": "sufit-korytarz",
+      "shape": {
+        "type": "box",
+        "min": [
+          -100,
+          -2100,
+          2396
+        ],
+        "max": [
+          1295,
+          0,
+          2406
+        ]
+      },
+      "edges": {
+        "raw": []
+      },
+      "meta": {
+        "thickness": 10,
+        "tag": "Nisza - sufit"
+      }
+    },
+    {
+      "id": "p0010",
+      "name": "S1 Schowek Wieniec dolny (pod bokami) 400x560",
+      "group": "g1",
+      "unit": "S1",
+      "layer": "carcass",
+      "material": "korpus-kaszmir",
+      "shape": {
+        "type": "box",
+        "min": [
+          32,
+          -582,
+          100
+        ],
+        "max": [
+          432,
+          -22,
+          118
+        ]
+      },
+      "edges": {
+        "raw": [
+          "x+",
+          "x-",
+          "y+"
+        ]
+      },
+      "meta": {
+        "thickness": 18,
+        "tag": "Korpus S1 Schowek",
+        "code": "ALC-1"
+      }
+    },
+    {
+      "id": "p0011",
+      "name": "S1 Schowek Bok L 1782x560",
+      "group": "g1",
+      "unit": "S1",
+      "layer": "carcass",
+      "material": "korpus-kaszmir",
+      "shape": {
+        "type": "box",
+        "min": [
+          32,
+          -582,
+          118
+        ],
+        "max": [
+          50,
+          -22,
+          1900
+        ]
+      },
+      "edges": {
+        "raw": [
+          "y+",
+          "z+",
+          "z-"
+        ]
+      },
+      "meta": {
+        "thickness": 18,
+        "tag": "Korpus S1 Schowek",
+        "code": "ALC-2"
+      }
+    },
+    {
+      "id": "p0012",
+      "name": "S1 Schowek Bok P 1782x560",
+      "group": "g1",
+      "unit": "S1",
+      "layer": "carcass",
+      "material": "korpus-kaszmir",
+      "shape": {
+        "type": "box",
+        "min": [
+          414,
+          -582,
+          118
+        ],
+        "max": [
+          432,
+          -22,
+          1900
+        ]
+      },
+      "edges": {
+        "raw": [
+          "y+",
+          "z+",
+          "z-"
+        ]
+      },
+      "meta": {
+        "thickness": 18,
+        "tag": "Korpus S1 Schowek",
+        "code": "ALC-3"
+      }
+    },
+    {
+      "id": "p0013",
+      "name": "S1 Schowek Wieniec gorny (miedzy bokami) 364x560",
+      "group": "g1",
+      "unit": "S1",
+      "layer": "carcass",
+      "material": "korpus-kaszmir",
+      "shape": {
+        "type": "box",
+        "min": [
+          50,
+          -582,
+          1882
+        ],
+        "max": [
+          414,
+          -22,
+          1900
+        ]
+      },
+      "edges": {
+        "raw": [
+          "x+",
+          "x-",
+          "y+"
+        ]
+      },
+      "meta": {
+        "thickness": 18,
+        "tag": "Korpus S1 Schowek",
+        "code": "ALC-4"
+      }
+    },
+    {
+      "id": "p0014",
+      "name": "S1 Schowek Plecy HDF 400x1800",
+      "group": "g1",
+      "unit": "S1",
+      "layer": "back",
+      "material": "plecy-hdf",
+      "shape": {
+        "type": "box",
+        "min": [
+          32,
+          -22,
+          100
+        ],
+        "max": [
+          432,
+          -19,
+          1900
+        ]
+      },
+      "edges": {
+        "raw": [
+          "x+",
+          "x-",
+          "z+",
+          "z-"
+        ]
+      },
+      "meta": {
+        "thickness": 3,
+        "tag": "Korpus S1 Schowek",
+        "code": "ALC-7"
+      }
+    },
+    {
+      "id": "p0015",
+      "name": "S1 Schowek Polka 364x540",
+      "group": "g1",
+      "unit": "S1",
+      "layer": "carcass",
+      "material": "korpus-kaszmir",
+      "shape": {
+        "type": "box",
+        "min": [
+          50,
+          -562,
+          1318
+        ],
+        "max": [
+          414,
+          -22,
+          1336
+        ]
+      },
+      "edges": {
+        "raw": [
+          "x+",
+          "x-",
+          "y+"
+        ]
+      },
+      "meta": {
+        "thickness": 18,
+        "tag": "Korpus S1 Schowek",
+        "code": "ALC-5"
+      }
+    },
+    {
+      "id": "p0016",
+      "name": "S1 Schowek Polka 364x540",
+      "group": "g1",
+      "unit": "S1",
+      "layer": "carcass",
+      "material": "korpus-kaszmir",
+      "shape": {
+        "type": "box",
+        "min": [
+          50,
+          -562,
+          1600
+        ],
+        "max": [
+          414,
+          -22,
+          1618
+        ]
+      },
+      "edges": {
+        "raw": [
+          "x+",
+          "x-",
+          "y+"
+        ]
+      },
+      "meta": {
+        "thickness": 18,
+        "tag": "Korpus S1 Schowek",
+        "code": "ALC-6"
+      }
+    },
+    {
+      "id": "p0017",
+      "name": "S1 Nozka 100 regulowana",
+      "group": "g1",
+      "unit": "S1",
+      "layer": "legs",
+      "material": "nozka-klips",
+      "shape": {
+        "type": "box",
+        "min": [
+          65,
+          -99,
+          5
+        ],
+        "max": [
+          99,
+          -65,
+          100
+        ]
+      },
+      "edges": {
+        "raw": []
+      },
+      "meta": {
+        "thickness": 34,
+        "tag": "Nozki i klipsy"
+      }
+    },
+    {
+      "id": "p0018",
+      "name": "S1 Stopka nozki",
+      "group": "g1",
+      "unit": "S1",
+      "layer": "legs",
+      "material": "nozka-klips",
+      "shape": {
+        "type": "box",
+        "min": [
+          47,
+          -117,
+          0
+        ],
+        "max": [
+          117,
+          -47,
+          5
+        ]
+      },
+      "edges": {
+        "raw": []
+      },
+      "meta": {
+        "thickness": 5,
+        "tag": "Nozki i klipsy"
+      }
+    },
+    {
+      "id": "p0019",
+      "name": "S1 Nozka 100 regulowana",
+      "group": "g1",
+      "unit": "S1",
+      "layer": "legs",
+      "material": "nozka-klips",
+      "shape": {
+        "type": "box",
+        "min": [
+          65,
+          -519,
+          5
+        ],
+        "max": [
+          99,
+          -485,
+          100
+        ]
+      },
+      "edges": {
+        "raw": []
+      },
+      "meta": {
+        "thickness": 34,
+        "tag": "Nozki i klipsy"
+      }
+    },
+    {
+      "id": "p0020",
+      "name": "S1 Stopka nozki",
+      "group": "g1",
+      "unit": "S1",
+      "layer": "legs",
+      "material": "nozka-klips",
+      "shape": {
+        "type": "box",
+        "min": [
+          47,
+          -537,
+          0
+        ],
+        "max": [
+          117,
+          -467,
+          5
+        ]
+      },
+      "edges": {
+        "raw": []
+      },
+      "meta": {
+        "thickness": 5,
+        "tag": "Nozki i klipsy"
+      }
+    },
+    {
+      "id": "p0021",
+      "name": "S1 Klips cokolu",
+      "group": "g1",
+      "unit": "S1",
+      "layer": "legs",
+      "material": "nozka-klips",
+      "shape": {
+        "type": "box",
+        "min": [
+          67,
+          -542,
+          30
+        ],
+        "max": [
+          97,
+          -534,
+          70
+        ]
+      },
+      "edges": {
+        "raw": []
+      },
+      "meta": {
+        "thickness": 8,
+        "tag": "Nozki i klipsy"
+      }
+    },
+    {
+      "id": "p0022",
+      "name": "S1 Nozka 100 regulowana",
+      "group": "g1",
+      "unit": "S1",
+      "layer": "legs",
+      "material": "nozka-klips",
+      "shape": {
+        "type": "box",
+        "min": [
+          365,
+          -99,
+          5
+        ],
+        "max": [
+          399,
+          -65,
+          100
+        ]
+      },
+      "edges": {
+        "raw": []
+      },
+      "meta": {
+        "thickness": 34,
+        "tag": "Nozki i klipsy"
+      }
+    },
+    {
+      "id": "p0023",
+      "name": "S1 Stopka nozki",
+      "group": "g1",
+      "unit": "S1",
+      "layer": "legs",
+      "material": "nozka-klips",
+      "shape": {
+        "type": "box",
+        "min": [
+          347,
+          -117,
+          0
+        ],
+        "max": [
+          417,
+          -47,
+          5
+        ]
+      },
+      "edges": {
+        "raw": []
+      },
+      "meta": {
+        "thickness": 5,
+        "tag": "Nozki i klipsy"
+      }
+    },
+    {
+      "id": "p0024",
+      "name": "S1 Nozka 100 regulowana",
+      "group": "g1",
+      "unit": "S1",
+      "layer": "legs",
+      "material": "nozka-klips",
+      "shape": {
+        "type": "box",
+        "min": [
+          365,
+          -519,
+          5
+        ],
+        "max": [
+          399,
+          -485,
+          100
+        ]
+      },
+      "edges": {
+        "raw": []
+      },
+      "meta": {
+        "thickness": 34,
+        "tag": "Nozki i klipsy"
+      }
+    },
+    {
+      "id": "p0025",
+      "name": "S1 Stopka nozki",
+      "group": "g1",
+      "unit": "S1",
+      "layer": "legs",
+      "material": "nozka-klips",
+      "shape": {
+        "type": "box",
+        "min": [
+          347,
+          -537,
+          0
+        ],
+        "max": [
+          417,
+          -467,
+          5
+        ]
+      },
+      "edges": {
+        "raw": []
+      },
+      "meta": {
+        "thickness": 5,
+        "tag": "Nozki i klipsy"
+      }
+    },
+    {
+      "id": "p0026",
+      "name": "S1 Klips cokolu",
+      "group": "g1",
+      "unit": "S1",
+      "layer": "legs",
+      "material": "nozka-klips",
+      "shape": {
+        "type": "box",
+        "min": [
+          367,
+          -542,
+          30
+        ],
+        "max": [
+          397,
+          -534,
+          70
+        ]
+      },
+      "edges": {
+        "raw": []
+      },
+      "meta": {
+        "thickness": 8,
+        "tag": "Nozki i klipsy"
+      }
+    },
+    {
+      "id": "p0027",
+      "name": "S1 Drzwi (zawiasy L) 396x1796",
+      "group": "g1",
+      "unit": "S1",
+      "layer": "front",
+      "material": "front-kaszmir",
+      "shape": {
+        "type": "box",
+        "min": [
+          34,
+          -600,
+          102
+        ],
+        "max": [
+          430,
+          -582,
+          1898
+        ]
+      },
+      "edges": {
+        "raw": []
+      },
+      "meta": {
+        "thickness": 18,
+        "tag": "Fronty",
+        "code": "ALC-8"
+      }
+    },
+    {
+      "id": "p0028",
+      "name": "Zawias puszkowy 35 (znacznik)",
+      "group": "g1",
+      "unit": "g1",
+      "layer": "assembly",
+      "material": "nozka-klips",
+      "shape": {
+        "type": "box",
+        "min": [
+          38,
+          -582,
+          182.5
+        ],
+        "max": [
+          73,
+          -581,
+          217.5
+        ]
+      },
+      "edges": {
+        "raw": []
+      },
+      "meta": {
+        "thickness": 1,
+        "tag": "Fronty"
+      }
+    },
+    {
+      "id": "p0029",
+      "name": "Zawias puszkowy 35 (znacznik)",
+      "group": "g1",
+      "unit": "g1",
+      "layer": "assembly",
+      "material": "nozka-klips",
+      "shape": {
+        "type": "box",
+        "min": [
+          38,
+          -582,
+          732.5
+        ],
+        "max": [
+          73,
+          -581,
+          767.5
+        ]
+      },
+      "edges": {
+        "raw": []
+      },
+      "meta": {
+        "thickness": 1,
+        "tag": "Fronty"
+      }
+    },
+    {
+      "id": "p0030",
+      "name": "Zawias puszkowy 35 (znacznik)",
+      "group": "g1",
+      "unit": "g1",
+      "layer": "assembly",
+      "material": "nozka-klips",
+      "shape": {
+        "type": "box",
+        "min": [
+          38,
+          -582,
+          1232.5
+        ],
+        "max": [
+          73,
+          -581,
+          1267.5
+        ]
+      },
+      "edges": {
+        "raw": []
+      },
+      "meta": {
+        "thickness": 1,
+        "tag": "Fronty"
+      }
+    },
+    {
+      "id": "p0031",
+      "name": "Zawias puszkowy 35 (znacznik)",
+      "group": "g1",
+      "unit": "g1",
+      "layer": "assembly",
+      "material": "nozka-klips",
+      "shape": {
+        "type": "box",
+        "min": [
+          38,
+          -582,
+          1782.5
+        ],
+        "max": [
+          73,
+          -581,
+          1817.5
+        ]
+      },
+      "edges": {
+        "raw": []
+      },
+      "meta": {
+        "thickness": 1,
+        "tag": "Fronty"
+      }
+    },
+    {
+      "id": "p0032",
+      "name": "S2 Kurtki Wieniec dolny (pod bokami) 730x560",
+      "group": "g1",
+      "unit": "S2",
+      "layer": "carcass",
+      "material": "korpus-kaszmir",
+      "shape": {
+        "type": "box",
+        "min": [
+          432,
+          -582,
+          100
+        ],
+        "max": [
+          1162,
+          -22,
+          118
+        ]
+      },
+      "edges": {
+        "raw": [
+          "x+",
+          "x-",
+          "y+"
+        ]
+      },
+      "meta": {
+        "thickness": 18,
+        "tag": "Korpus S2 Kurtki",
+        "code": "ALC-22"
+      }
+    },
+    {
+      "id": "p0033",
+      "name": "S2 Kurtki Bok L 1782x560",
+      "group": "g1",
+      "unit": "S2",
+      "layer": "carcass",
+      "material": "korpus-kaszmir",
+      "shape": {
+        "type": "box",
+        "min": [
+          432,
+          -582,
+          118
+        ],
+        "max": [
+          450,
+          -22,
+          1900
+        ]
+      },
+      "edges": {
+        "raw": [
+          "y+",
+          "z+",
+          "z-"
+        ]
+      },
+      "meta": {
+        "thickness": 18,
+        "tag": "Korpus S2 Kurtki",
+        "code": "ALC-23"
+      }
+    },
+    {
+      "id": "p0034",
+      "name": "S2 Kurtki Bok P 1782x560",
+      "group": "g1",
+      "unit": "S2",
+      "layer": "carcass",
+      "material": "korpus-kaszmir",
+      "shape": {
+        "type": "box",
+        "min": [
+          1144,
+          -582,
+          118
+        ],
+        "max": [
+          1162,
+          -22,
+          1900
+        ]
+      },
+      "edges": {
+        "raw": [
+          "y+",
+          "z+",
+          "z-"
+        ]
+      },
+      "meta": {
+        "thickness": 18,
+        "tag": "Korpus S2 Kurtki",
+        "code": "ALC-24"
+      }
+    },
+    {
+      "id": "p0035",
+      "name": "S2 Kurtki Wieniec gorny (miedzy bokami) 694x560",
+      "group": "g1",
+      "unit": "S2",
+      "layer": "carcass",
+      "material": "korpus-kaszmir",
+      "shape": {
+        "type": "box",
+        "min": [
+          450,
+          -582,
+          1882
+        ],
+        "max": [
+          1144,
+          -22,
+          1900
+        ]
+      },
+      "edges": {
+        "raw": [
+          "x+",
+          "x-",
+          "y+"
+        ]
+      },
+      "meta": {
+        "thickness": 18,
+        "tag": "Korpus S2 Kurtki",
+        "code": "ALC-25"
+      }
+    },
+    {
+      "id": "p0036",
+      "name": "S2 Kurtki Plecy HDF 730x1800",
+      "group": "g1",
+      "unit": "S2",
+      "layer": "back",
+      "material": "plecy-hdf",
+      "shape": {
+        "type": "box",
+        "min": [
+          432,
+          -22,
+          100
+        ],
+        "max": [
+          1162,
+          -19,
+          1900
+        ]
+      },
+      "edges": {
+        "raw": [
+          "x+",
+          "x-",
+          "z+",
+          "z-"
+        ]
+      },
+      "meta": {
+        "thickness": 3,
+        "tag": "Korpus S2 Kurtki",
+        "code": "ALC-28"
+      }
+    },
+    {
+      "id": "p0037",
+      "name": "S2 Kurtki Polka 694x540",
+      "group": "g1",
+      "unit": "S2",
+      "layer": "carcass",
+      "material": "korpus-kaszmir",
+      "shape": {
+        "type": "box",
+        "min": [
+          450,
+          -562,
+          300
+        ],
+        "max": [
+          1144,
+          -22,
+          318
+        ]
+      },
+      "edges": {
+        "raw": [
+          "x+",
+          "x-",
+          "y+"
+        ]
+      },
+      "meta": {
+        "thickness": 18,
+        "tag": "Korpus S2 Kurtki",
+        "code": "ALC-26"
+      }
+    },
+    {
+      "id": "p0038",
+      "name": "S2 Kurtki Polka 694x540",
+      "group": "g1",
+      "unit": "S2",
+      "layer": "carcass",
+      "material": "korpus-kaszmir",
+      "shape": {
+        "type": "box",
+        "min": [
+          450,
+          -562,
+          500
+        ],
+        "max": [
+          1144,
+          -22,
+          518
+        ]
+      },
+      "edges": {
+        "raw": [
+          "x+",
+          "x-",
+          "y+"
+        ]
+      },
+      "meta": {
+        "thickness": 18,
+        "tag": "Korpus S2 Kurtki",
+        "code": "ALC-27"
+      }
+    },
+    {
+      "id": "p0039",
+      "name": "S2 Drazek owalny 694 (os ok. 70 pod wiencem)",
+      "group": "g1",
+      "unit": "S2",
+      "layer": "assembly",
+      "material": "nozka-klips",
+      "shape": {
+        "type": "box",
+        "min": [
+          450,
+          -310,
+          1797
+        ],
+        "max": [
+          1144,
+          -294,
+          1827
+        ]
+      },
+      "edges": {
+        "raw": []
+      },
+      "meta": {
+        "thickness": 16,
+        "tag": "Korpus S2 Kurtki"
+      }
+    },
+    {
+      "id": "p0040",
+      "name": "S2 Nozka 100 regulowana",
+      "group": "g1",
+      "unit": "S2",
+      "layer": "legs",
+      "material": "nozka-klips",
+      "shape": {
+        "type": "box",
+        "min": [
+          465,
+          -99,
+          5
+        ],
+        "max": [
+          499,
+          -65,
+          100
+        ]
+      },
+      "edges": {
+        "raw": []
+      },
+      "meta": {
+        "thickness": 34,
+        "tag": "Nozki i klipsy"
+      }
+    },
+    {
+      "id": "p0041",
+      "name": "S2 Stopka nozki",
+      "group": "g1",
+      "unit": "S2",
+      "layer": "legs",
+      "material": "nozka-klips",
+      "shape": {
+        "type": "box",
+        "min": [
+          447,
+          -117,
+          0
+        ],
+        "max": [
+          517,
+          -47,
+          5
+        ]
+      },
+      "edges": {
+        "raw": []
+      },
+      "meta": {
+        "thickness": 5,
+        "tag": "Nozki i klipsy"
+      }
+    },
+    {
+      "id": "p0042",
+      "name": "S2 Nozka 100 regulowana",
+      "group": "g1",
+      "unit": "S2",
+      "layer": "legs",
+      "material": "nozka-klips",
+      "shape": {
+        "type": "box",
+        "min": [
+          465,
+          -519,
+          5
+        ],
+        "max": [
+          499,
+          -485,
+          100
+        ]
+      },
+      "edges": {
+        "raw": []
+      },
+      "meta": {
+        "thickness": 34,
+        "tag": "Nozki i klipsy"
+      }
+    },
+    {
+      "id": "p0043",
+      "name": "S2 Stopka nozki",
+      "group": "g1",
+      "unit": "S2",
+      "layer": "legs",
+      "material": "nozka-klips",
+      "shape": {
+        "type": "box",
+        "min": [
+          447,
+          -537,
+          0
+        ],
+        "max": [
+          517,
+          -467,
+          5
+        ]
+      },
+      "edges": {
+        "raw": []
+      },
+      "meta": {
+        "thickness": 5,
+        "tag": "Nozki i klipsy"
+      }
+    },
+    {
+      "id": "p0044",
+      "name": "S2 Klips cokolu",
+      "group": "g1",
+      "unit": "S2",
+      "layer": "legs",
+      "material": "nozka-klips",
+      "shape": {
+        "type": "box",
+        "min": [
+          467,
+          -542,
+          30
+        ],
+        "max": [
+          497,
+          -534,
+          70
+        ]
+      },
+      "edges": {
+        "raw": []
+      },
+      "meta": {
+        "thickness": 8,
+        "tag": "Nozki i klipsy"
+      }
+    },
+    {
+      "id": "p0045",
+      "name": "S2 Nozka 100 regulowana",
+      "group": "g1",
+      "unit": "S2",
+      "layer": "legs",
+      "material": "nozka-klips",
+      "shape": {
+        "type": "box",
+        "min": [
+          1095,
+          -99,
+          5
+        ],
+        "max": [
+          1129,
+          -65,
+          100
+        ]
+      },
+      "edges": {
+        "raw": []
+      },
+      "meta": {
+        "thickness": 34,
+        "tag": "Nozki i klipsy"
+      }
+    },
+    {
+      "id": "p0046",
+      "name": "S2 Stopka nozki",
+      "group": "g1",
+      "unit": "S2",
+      "layer": "legs",
+      "material": "nozka-klips",
+      "shape": {
+        "type": "box",
+        "min": [
+          1077,
+          -117,
+          0
+        ],
+        "max": [
+          1147,
+          -47,
+          5
+        ]
+      },
+      "edges": {
+        "raw": []
+      },
+      "meta": {
+        "thickness": 5,
+        "tag": "Nozki i klipsy"
+      }
+    },
+    {
+      "id": "p0047",
+      "name": "S2 Nozka 100 regulowana",
+      "group": "g1",
+      "unit": "S2",
+      "layer": "legs",
+      "material": "nozka-klips",
+      "shape": {
+        "type": "box",
+        "min": [
+          1095,
+          -519,
+          5
+        ],
+        "max": [
+          1129,
+          -485,
+          100
+        ]
+      },
+      "edges": {
+        "raw": []
+      },
+      "meta": {
+        "thickness": 34,
+        "tag": "Nozki i klipsy"
+      }
+    },
+    {
+      "id": "p0048",
+      "name": "S2 Stopka nozki",
+      "group": "g1",
+      "unit": "S2",
+      "layer": "legs",
+      "material": "nozka-klips",
+      "shape": {
+        "type": "box",
+        "min": [
+          1077,
+          -537,
+          0
+        ],
+        "max": [
+          1147,
+          -467,
+          5
+        ]
+      },
+      "edges": {
+        "raw": []
+      },
+      "meta": {
+        "thickness": 5,
+        "tag": "Nozki i klipsy"
+      }
+    },
+    {
+      "id": "p0049",
+      "name": "S2 Klips cokolu",
+      "group": "g1",
+      "unit": "S2",
+      "layer": "legs",
+      "material": "nozka-klips",
+      "shape": {
+        "type": "box",
+        "min": [
+          1097,
+          -542,
+          30
+        ],
+        "max": [
+          1127,
+          -534,
+          70
+        ]
+      },
+      "edges": {
+        "raw": []
+      },
+      "meta": {
+        "thickness": 8,
+        "tag": "Nozki i klipsy"
+      }
+    },
+    {
+      "id": "p0050",
+      "name": "S2 Drzwi lewe (zawiasy L) 361x1796",
+      "group": "g1",
+      "unit": "S2",
+      "layer": "front",
+      "material": "front-kaszmir",
+      "shape": {
+        "type": "box",
+        "min": [
+          434,
+          -600,
+          102
+        ],
+        "max": [
+          795,
+          -582,
+          1898
+        ]
+      },
+      "edges": {
+        "raw": []
+      },
+      "meta": {
+        "thickness": 18,
+        "tag": "Fronty",
+        "code": "ALC-29"
+      }
+    },
+    {
+      "id": "p0051",
+      "name": "S2 Drzwi prawe (zawiasy P) 361x1796",
+      "group": "g1",
+      "unit": "S2",
+      "layer": "front",
+      "material": "front-kaszmir",
+      "shape": {
+        "type": "box",
+        "min": [
+          799,
+          -600,
+          102
+        ],
+        "max": [
+          1160,
+          -582,
+          1898
+        ]
+      },
+      "edges": {
+        "raw": []
+      },
+      "meta": {
+        "thickness": 18,
+        "tag": "Fronty",
+        "code": "ALC-30"
+      }
+    },
+    {
+      "id": "p0052",
+      "name": "Zawias puszkowy 35 (znacznik)",
+      "group": "g1",
+      "unit": "g1",
+      "layer": "assembly",
+      "material": "nozka-klips",
+      "shape": {
+        "type": "box",
+        "min": [
+          438,
+          -582,
+          182.5
+        ],
+        "max": [
+          473,
+          -581,
+          217.5
+        ]
+      },
+      "edges": {
+        "raw": []
+      },
+      "meta": {
+        "thickness": 1,
+        "tag": "Fronty"
+      }
+    },
+    {
+      "id": "p0053",
+      "name": "Zawias puszkowy 35 (znacznik)",
+      "group": "g1",
+      "unit": "g1",
+      "layer": "assembly",
+      "material": "nozka-klips",
+      "shape": {
+        "type": "box",
+        "min": [
+          438,
+          -582,
+          732.5
+        ],
+        "max": [
+          473,
+          -581,
+          767.5
+        ]
+      },
+      "edges": {
+        "raw": []
+      },
+      "meta": {
+        "thickness": 1,
+        "tag": "Fronty"
+      }
+    },
+    {
+      "id": "p0054",
+      "name": "Zawias puszkowy 35 (znacznik)",
+      "group": "g1",
+      "unit": "g1",
+      "layer": "assembly",
+      "material": "nozka-klips",
+      "shape": {
+        "type": "box",
+        "min": [
+          438,
+          -582,
+          1232.5
+        ],
+        "max": [
+          473,
+          -581,
+          1267.5
+        ]
+      },
+      "edges": {
+        "raw": []
+      },
+      "meta": {
+        "thickness": 1,
+        "tag": "Fronty"
+      }
+    },
+    {
+      "id": "p0055",
+      "name": "Zawias puszkowy 35 (znacznik)",
+      "group": "g1",
+      "unit": "g1",
+      "layer": "assembly",
+      "material": "nozka-klips",
+      "shape": {
+        "type": "box",
+        "min": [
+          438,
+          -582,
+          1782.5
+        ],
+        "max": [
+          473,
+          -581,
+          1817.5
+        ]
+      },
+      "edges": {
+        "raw": []
+      },
+      "meta": {
+        "thickness": 1,
+        "tag": "Fronty"
+      }
+    },
+    {
+      "id": "p0056",
+      "name": "Zawias puszkowy 35 (znacznik)",
+      "group": "g1",
+      "unit": "g1",
+      "layer": "assembly",
+      "material": "nozka-klips",
+      "shape": {
+        "type": "box",
+        "min": [
+          1121,
+          -582,
+          182.5
+        ],
+        "max": [
+          1156,
+          -581,
+          217.5
+        ]
+      },
+      "edges": {
+        "raw": []
+      },
+      "meta": {
+        "thickness": 1,
+        "tag": "Fronty"
+      }
+    },
+    {
+      "id": "p0057",
+      "name": "Zawias puszkowy 35 (znacznik)",
+      "group": "g1",
+      "unit": "g1",
+      "layer": "assembly",
+      "material": "nozka-klips",
+      "shape": {
+        "type": "box",
+        "min": [
+          1121,
+          -582,
+          732.5
+        ],
+        "max": [
+          1156,
+          -581,
+          767.5
+        ]
+      },
+      "edges": {
+        "raw": []
+      },
+      "meta": {
+        "thickness": 1,
+        "tag": "Fronty"
+      }
+    },
+    {
+      "id": "p0058",
+      "name": "Zawias puszkowy 35 (znacznik)",
+      "group": "g1",
+      "unit": "g1",
+      "layer": "assembly",
+      "material": "nozka-klips",
+      "shape": {
+        "type": "box",
+        "min": [
+          1121,
+          -582,
+          1232.5
+        ],
+        "max": [
+          1156,
+          -581,
+          1267.5
+        ]
+      },
+      "edges": {
+        "raw": []
+      },
+      "meta": {
+        "thickness": 1,
+        "tag": "Fronty"
+      }
+    },
+    {
+      "id": "p0059",
+      "name": "Zawias puszkowy 35 (znacznik)",
+      "group": "g1",
+      "unit": "g1",
+      "layer": "assembly",
+      "material": "nozka-klips",
+      "shape": {
+        "type": "box",
+        "min": [
+          1121,
+          -582,
+          1782.5
+        ],
+        "max": [
+          1156,
+          -581,
+          1817.5
+        ]
+      },
+      "edges": {
+        "raw": []
+      },
+      "meta": {
+        "thickness": 1,
+        "tag": "Fronty"
+      }
+    },
+    {
+      "id": "p0060",
+      "name": "P Pawlacz Wieniec dolny (miedzy bokami) 1094x560",
+      "group": "g1",
+      "unit": "g1",
+      "layer": "carcass",
+      "material": "korpus-kaszmir",
+      "shape": {
+        "type": "box",
+        "min": [
+          50,
+          -582,
+          1900
+        ],
+        "max": [
+          1144,
+          -22,
+          1918
+        ]
+      },
+      "edges": {
+        "raw": [
+          "x+",
+          "x-",
+          "y+"
+        ]
+      },
+      "meta": {
+        "thickness": 18,
+        "tag": "Korpus P Pawlacz",
+        "code": "ALC-9"
+      }
+    },
+    {
+      "id": "p0061",
+      "name": "P Pawlacz Wieniec gorny (miedzy bokami) 1094x560",
+      "group": "g1",
+      "unit": "g1",
+      "layer": "carcass",
+      "material": "korpus-kaszmir",
+      "shape": {
+        "type": "box",
+        "min": [
+          50,
+          -582,
+          2312
+        ],
+        "max": [
+          1144,
+          -22,
+          2330
+        ]
+      },
+      "edges": {
+        "raw": [
+          "x+",
+          "x-",
+          "y+"
+        ]
+      },
+      "meta": {
+        "thickness": 18,
+        "tag": "Korpus P Pawlacz",
+        "code": "ALC-10"
+      }
+    },
+    {
+      "id": "p0062",
+      "name": "P Pawlacz Bok L 430x560",
+      "group": "g1",
+      "unit": "g1",
+      "layer": "carcass",
+      "material": "korpus-kaszmir",
+      "shape": {
+        "type": "box",
+        "min": [
+          32,
+          -582,
+          1900
+        ],
+        "max": [
+          50,
+          -22,
+          2330
+        ]
+      },
+      "edges": {
+        "raw": [
+          "y+",
+          "z+",
+          "z-"
+        ]
+      },
+      "meta": {
+        "thickness": 18,
+        "tag": "Korpus P Pawlacz",
+        "code": "ALC-11"
+      }
+    },
+    {
+      "id": "p0063",
+      "name": "P Pawlacz Bok P 430x560",
+      "group": "g1",
+      "unit": "g1",
+      "layer": "carcass",
+      "material": "korpus-kaszmir",
+      "shape": {
+        "type": "box",
+        "min": [
+          1144,
+          -582,
+          1900
+        ],
+        "max": [
+          1162,
+          -22,
+          2330
+        ]
+      },
+      "edges": {
+        "raw": [
+          "y+",
+          "z+",
+          "z-"
+        ]
+      },
+      "meta": {
+        "thickness": 18,
+        "tag": "Korpus P Pawlacz",
+        "code": "ALC-12"
+      }
+    },
+    {
+      "id": "p0064",
+      "name": "P Pawlacz Przegroda 394x540 (nad podzialem slupkow)",
+      "group": "g1",
+      "unit": "g1",
+      "layer": "carcass",
+      "material": "korpus-kaszmir",
+      "shape": {
+        "type": "box",
+        "min": [
+          423,
+          -562,
+          1918
+        ],
+        "max": [
+          441,
+          -22,
+          2312
+        ]
+      },
+      "edges": {
+        "raw": [
+          "y+",
+          "z+",
+          "z-"
+        ]
+      },
+      "meta": {
+        "thickness": 18,
+        "tag": "Korpus P Pawlacz",
+        "code": "ALC-13"
+      }
+    },
+    {
+      "id": "p0065",
+      "name": "P Pawlacz Plecy HDF 1130x430",
+      "group": "g1",
+      "unit": "g1",
+      "layer": "back",
+      "material": "plecy-hdf",
+      "shape": {
+        "type": "box",
+        "min": [
+          32,
+          -22,
+          1900
+        ],
+        "max": [
+          1162,
+          -19,
+          2330
+        ]
+      },
+      "edges": {
+        "raw": [
+          "x+",
+          "x-",
+          "z+",
+          "z-"
+        ]
+      },
+      "meta": {
+        "thickness": 3,
+        "tag": "Korpus P Pawlacz",
+        "code": "ALC-14"
+      }
+    },
+    {
+      "id": "p0066",
+      "name": "P Drzwi nad schowkiem (zawiasy L) 396x426",
+      "group": "g1",
+      "unit": "g1",
+      "layer": "front",
+      "material": "front-kaszmir",
+      "shape": {
+        "type": "box",
+        "min": [
+          34,
+          -600,
+          1902
+        ],
+        "max": [
+          430,
+          -582,
+          2328
+        ]
+      },
+      "edges": {
+        "raw": []
+      },
+      "meta": {
+        "thickness": 18,
+        "tag": "Fronty",
+        "code": "ALC-15"
+      }
+    },
+    {
+      "id": "p0067",
+      "name": "P Drzwi lewe nad kurtkami (zawiasy L) 361x426",
+      "group": "g1",
+      "unit": "g1",
+      "layer": "front",
+      "material": "front-kaszmir",
+      "shape": {
+        "type": "box",
+        "min": [
+          434,
+          -600,
+          1902
+        ],
+        "max": [
+          795,
+          -582,
+          2328
+        ]
+      },
+      "edges": {
+        "raw": []
+      },
+      "meta": {
+        "thickness": 18,
+        "tag": "Fronty",
+        "code": "ALC-16"
+      }
+    },
+    {
+      "id": "p0068",
+      "name": "P Drzwi prawe nad kurtkami (zawiasy P) 361x426",
+      "group": "g1",
+      "unit": "g1",
+      "layer": "front",
+      "material": "front-kaszmir",
+      "shape": {
+        "type": "box",
+        "min": [
+          799,
+          -600,
+          1902
+        ],
+        "max": [
+          1160,
+          -582,
+          2328
+        ]
+      },
+      "edges": {
+        "raw": []
+      },
+      "meta": {
+        "thickness": 18,
+        "tag": "Fronty",
+        "code": "ALC-17"
+      }
+    },
+    {
+      "id": "p0069",
+      "name": "Zawias puszkowy 35 (znacznik)",
+      "group": "g1",
+      "unit": "g1",
+      "layer": "assembly",
+      "material": "nozka-klips",
+      "shape": {
+        "type": "box",
+        "min": [
+          38,
+          -582,
+          1962.5
+        ],
+        "max": [
+          73,
+          -581,
+          1997.5
+        ]
+      },
+      "edges": {
+        "raw": []
+      },
+      "meta": {
+        "thickness": 1,
+        "tag": "Fronty"
+      }
+    },
+    {
+      "id": "p0070",
+      "name": "Zawias puszkowy 35 (znacznik)",
+      "group": "g1",
+      "unit": "g1",
+      "layer": "assembly",
+      "material": "nozka-klips",
+      "shape": {
+        "type": "box",
+        "min": [
+          38,
+          -582,
+          2232.5
+        ],
+        "max": [
+          73,
+          -581,
+          2267.5
+        ]
+      },
+      "edges": {
+        "raw": []
+      },
+      "meta": {
+        "thickness": 1,
+        "tag": "Fronty"
+      }
+    },
+    {
+      "id": "p0071",
+      "name": "Zawias puszkowy 35 (znacznik)",
+      "group": "g1",
+      "unit": "g1",
+      "layer": "assembly",
+      "material": "nozka-klips",
+      "shape": {
+        "type": "box",
+        "min": [
+          438,
+          -582,
+          1962.5
+        ],
+        "max": [
+          473,
+          -581,
+          1997.5
+        ]
+      },
+      "edges": {
+        "raw": []
+      },
+      "meta": {
+        "thickness": 1,
+        "tag": "Fronty"
+      }
+    },
+    {
+      "id": "p0072",
+      "name": "Zawias puszkowy 35 (znacznik)",
+      "group": "g1",
+      "unit": "g1",
+      "layer": "assembly",
+      "material": "nozka-klips",
+      "shape": {
+        "type": "box",
+        "min": [
+          438,
+          -582,
+          2232.5
+        ],
+        "max": [
+          473,
+          -581,
+          2267.5
+        ]
+      },
+      "edges": {
+        "raw": []
+      },
+      "meta": {
+        "thickness": 1,
+        "tag": "Fronty"
+      }
+    },
+    {
+      "id": "p0073",
+      "name": "Zawias puszkowy 35 (znacznik)",
+      "group": "g1",
+      "unit": "g1",
+      "layer": "assembly",
+      "material": "nozka-klips",
+      "shape": {
+        "type": "box",
+        "min": [
+          1121,
+          -582,
+          1962.5
+        ],
+        "max": [
+          1156,
+          -581,
+          1997.5
+        ]
+      },
+      "edges": {
+        "raw": []
+      },
+      "meta": {
+        "thickness": 1,
+        "tag": "Fronty"
+      }
+    },
+    {
+      "id": "p0074",
+      "name": "Zawias puszkowy 35 (znacznik)",
+      "group": "g1",
+      "unit": "g1",
+      "layer": "assembly",
+      "material": "nozka-klips",
+      "shape": {
+        "type": "box",
+        "min": [
+          1121,
+          -582,
+          2232.5
+        ],
+        "max": [
+          1156,
+          -581,
+          2267.5
+        ]
+      },
+      "edges": {
+        "raw": []
+      },
+      "meta": {
+        "thickness": 1,
+        "tag": "Fronty"
+      }
+    },
+    {
+      "id": "p0075",
+      "name": "Blenda boczna L 57x2426 (z naddatkiem; dotnij do sciany 32-37 i pod sufit)",
+      "group": "g1",
+      "unit": "g1",
+      "layer": "fillers",
+      "material": "front-kaszmir",
+      "shape": {
+        "type": "box",
+        "min": [
+          -25,
+          -600,
+          0
+        ],
+        "max": [
+          32,
+          -582,
+          2426
+        ]
+      },
+      "edges": {
+        "raw": [
+          "x-",
+          "z+",
+          "z-"
+        ]
+      },
+      "meta": {
+        "thickness": 18,
+        "tag": "Blendy i cokol",
+        "code": "ALC-18"
+      }
+    },
+    {
+      "id": "p0076",
+      "name": "Blenda boczna P 57x2426 (z naddatkiem; dotnij do sciany 32-37 i pod sufit)",
+      "group": "g1",
+      "unit": "g1",
+      "layer": "fillers",
+      "material": "front-kaszmir",
+      "shape": {
+        "type": "box",
+        "min": [
+          1162,
+          -600,
+          0
+        ],
+        "max": [
+          1219,
+          -582,
+          2426
+        ]
+      },
+      "edges": {
+        "raw": [
+          "x+",
+          "z+",
+          "z-"
+        ]
+      },
+      "meta": {
+        "thickness": 18,
+        "tag": "Blendy i cokol",
+        "code": "ALC-19"
+      }
+    },
+    {
+      "id": "p0077",
+      "name": "Blenda gorna 1130x96 (miedzy blendami bocznymi; dotnij pod sufit do 66-76)",
+      "group": "g1",
+      "unit": "g1",
+      "layer": "fillers",
+      "material": "front-kaszmir",
+      "shape": {
+        "type": "box",
+        "min": [
+          32,
+          -600,
+          2330
+        ],
+        "max": [
+          1162,
+          -582,
+          2426
+        ]
+      },
+      "edges": {
+        "raw": [
+          "x+",
+          "x-",
+          "z+"
+        ]
+      },
+      "meta": {
+        "thickness": 18,
+        "tag": "Blendy i cokol",
+        "code": "ALC-20"
+      }
+    },
+    {
+      "id": "p0078",
+      "name": "Cokol 1130x110 (miedzy blendami, cofniety 40 mm, na klipsach; dotnij do podlogi)",
+      "group": "g1",
+      "unit": "g1",
+      "layer": "fillers",
+      "material": "front-kaszmir",
+      "shape": {
+        "type": "box",
+        "min": [
+          32,
+          -560,
+          -10
+        ],
+        "max": [
+          1162,
+          -542,
+          100
+        ]
+      },
+      "edges": {
+        "raw": [
+          "x+",
+          "x-",
+          "z+",
+          "z-"
+        ]
+      },
+      "meta": {
+        "thickness": 18,
+        "tag": "Blendy i cokol",
+        "code": "ALC-21"
+      }
+    },
+    {
+      "id": "p0079",
+      "name": "Klocek montazowy blendy L 100x100",
+      "group": "g1",
+      "unit": "g1",
+      "layer": "assembly",
+      "material": "listwa-montazowa-18",
+      "shape": {
+        "type": "box",
+        "min": [
+          14,
+          -582,
+          350
+        ],
+        "max": [
+          32,
+          -482,
+          450
+        ]
+      },
+      "edges": {
+        "raw": [
+          "y+",
+          "y-",
+          "z+",
+          "z-"
+        ]
+      },
+      "meta": {
+        "thickness": 18,
+        "tag": "Blendy i cokol"
+      }
+    },
+    {
+      "id": "p0080",
+      "name": "Klocek montazowy blendy P 100x100",
+      "group": "g1",
+      "unit": "g1",
+      "layer": "assembly",
+      "material": "listwa-montazowa-18",
+      "shape": {
+        "type": "box",
+        "min": [
+          1162,
+          -582,
+          350
+        ],
+        "max": [
+          1180,
+          -482,
+          450
+        ]
+      },
+      "edges": {
+        "raw": [
+          "y+",
+          "y-",
+          "z+",
+          "z-"
+        ]
+      },
+      "meta": {
+        "thickness": 18,
+        "tag": "Blendy i cokol"
+      }
+    },
+    {
+      "id": "p0081",
+      "name": "Klocek montazowy blendy L 100x100",
+      "group": "g1",
+      "unit": "g1",
+      "layer": "assembly",
+      "material": "listwa-montazowa-18",
+      "shape": {
+        "type": "box",
+        "min": [
+          14,
+          -582,
+          1150
+        ],
+        "max": [
+          32,
+          -482,
+          1250
+        ]
+      },
+      "edges": {
+        "raw": [
+          "y+",
+          "y-",
+          "z+",
+          "z-"
+        ]
+      },
+      "meta": {
+        "thickness": 18,
+        "tag": "Blendy i cokol"
+      }
+    },
+    {
+      "id": "p0082",
+      "name": "Klocek montazowy blendy P 100x100",
+      "group": "g1",
+      "unit": "g1",
+      "layer": "assembly",
+      "material": "listwa-montazowa-18",
+      "shape": {
+        "type": "box",
+        "min": [
+          1162,
+          -582,
+          1150
+        ],
+        "max": [
+          1180,
+          -482,
+          1250
+        ]
+      },
+      "edges": {
+        "raw": [
+          "y+",
+          "y-",
+          "z+",
+          "z-"
+        ]
+      },
+      "meta": {
+        "thickness": 18,
+        "tag": "Blendy i cokol"
+      }
+    },
+    {
+      "id": "p0083",
+      "name": "Klocek montazowy blendy L 100x100",
+      "group": "g1",
+      "unit": "g1",
+      "layer": "assembly",
+      "material": "listwa-montazowa-18",
+      "shape": {
+        "type": "box",
+        "min": [
+          14,
+          -582,
+          2050
+        ],
+        "max": [
+          32,
+          -482,
+          2150
+        ]
+      },
+      "edges": {
+        "raw": [
+          "y+",
+          "y-",
+          "z+",
+          "z-"
+        ]
+      },
+      "meta": {
+        "thickness": 18,
+        "tag": "Blendy i cokol"
+      }
+    },
+    {
+      "id": "p0084",
+      "name": "Klocek montazowy blendy P 100x100",
+      "group": "g1",
+      "unit": "g1",
+      "layer": "assembly",
+      "material": "listwa-montazowa-18",
+      "shape": {
+        "type": "box",
+        "min": [
+          1162,
+          -582,
+          2050
+        ],
+        "max": [
+          1180,
+          -482,
+          2150
+        ]
+      },
+      "edges": {
+        "raw": [
+          "y+",
+          "y-",
+          "z+",
+          "z-"
+        ]
+      },
+      "meta": {
+        "thickness": 18,
+        "tag": "Blendy i cokol"
+      }
+    },
+    {
+      "id": "p0085",
+      "name": "Klocek montazowy blendy gornej 100x100 (na pawlaczu)",
+      "group": "g1",
+      "unit": "g1",
+      "layer": "assembly",
+      "material": "listwa-montazowa-18",
+      "shape": {
+        "type": "box",
+        "min": [
+          132,
+          -582,
+          2330
+        ],
+        "max": [
+          232,
+          -482,
+          2348
+        ]
+      },
+      "edges": {
+        "raw": [
+          "x+",
+          "x-",
+          "y+",
+          "y-"
+        ]
+      },
+      "meta": {
+        "thickness": 18,
+        "tag": "Blendy i cokol"
+      }
+    },
+    {
+      "id": "p0086",
+      "name": "Klocek montazowy blendy gornej 100x100 (na pawlaczu)",
+      "group": "g1",
+      "unit": "g1",
+      "layer": "assembly",
+      "material": "listwa-montazowa-18",
+      "shape": {
+        "type": "box",
+        "min": [
+          547,
+          -582,
+          2330
+        ],
+        "max": [
+          647,
+          -482,
+          2348
+        ]
+      },
+      "edges": {
+        "raw": [
+          "x+",
+          "x-",
+          "y+",
+          "y-"
+        ]
+      },
+      "meta": {
+        "thickness": 18,
+        "tag": "Blendy i cokol"
+      }
+    },
+    {
+      "id": "p0087",
+      "name": "Klocek montazowy blendy gornej 100x100 (na pawlaczu)",
+      "group": "g1",
+      "unit": "g1",
+      "layer": "assembly",
+      "material": "listwa-montazowa-18",
+      "shape": {
+        "type": "box",
+        "min": [
+          962,
+          -582,
+          2330
+        ],
+        "max": [
+          1062,
+          -482,
+          2348
+        ]
+      },
+      "edges": {
+        "raw": [
+          "x+",
+          "x-",
+          "y+",
+          "y-"
+        ]
+      },
+      "meta": {
+        "thickness": 18,
+        "tag": "Blendy i cokol"
+      }
+    }
+  ],
+  "codes": {
+    "prefix": "ALC",
+    "next": 31
+  }
+}
