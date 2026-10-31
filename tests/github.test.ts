@@ -76,3 +76,20 @@ it('guessRepo from a GitHub Pages URL', () => {
   expect(guessRepo('https://szymon.github.io/')).toEqual({ owner: 'szymon', repo: 'szymon.github.io' });
   expect(guessRepo('http://localhost:5173/')).toBeNull();
 });
+
+it('saveDrillEdit: creates drilling.json without sha; on a conflict retries once on the fresh file', async () => {
+  const { saveDrillEdit } = await import('../src/github/drilling');
+  const a = fakeFetch([{ status: 404 }, { status: 201, body: {} }]);
+  const r = await saveDrillEdit(cfg, 'kitchen', { kind: 'hingeSide', name: 'D 1', value: 'P' }, a.f);
+  expect(r.hingeSide).toEqual({ 'D 1': 'P' });
+  const put = JSON.parse(a.calls[1]!.init.body as string);
+  expect(a.calls[1]!.url).toMatch(/projects\/kitchen\/drilling\.json$/);
+  expect(put.sha).toBeUndefined();
+  expect(put.message).toBe('Drilling: hingeSide D 1 → P (kitchen)');
+  const fresh = utf8ToB64(JSON.stringify({ shelfMode: { S: 'fixed' } }));
+  const b = fakeFetch([{ status: 200, body: { content: utf8ToB64('{}'), sha: 's1' } }, { status: 409, body: { message: 'x' } },
+    { status: 200, body: { content: fresh, sha: 's2' } }, { status: 200, body: {} }]);
+  const r2 = await saveDrillEdit(cfg, 'kitchen', { kind: 'hingeSide', name: 'D 1', value: 'L' }, b.f);
+  expect(r2).toEqual({ hingeSide: { 'D 1': 'L' }, shelfMode: { S: 'fixed' }, hingeZ: {}, params: {}, notes: {}, partNotes: {}, done: {} });
+  expect(JSON.parse(b.calls[3]!.init.body as string).sha).toBe('s2');
+});

@@ -1,11 +1,11 @@
-# Szafa w niszy na korytarzu v3 (mm) + model niszy. Konsola Ruby:
+# Szafa w niszy na korytarzu v4 (mm) + model niszy. Konsola Ruby:
 #   load File.expand_path('~/Downloads/szafa-wneka.rb')
 # Nisza 1200 x 2350, gleboko 600 do oscieznicy drzwi (sciany krzywe - tu proste, do zmierzenia).
 # Uklad: x od lewej sciany niszy, y od sciany tylnej w strone korytarza, z od podlogi.
 # Szafa = 3 osobne korpusy na nozkach (schowek na miotle/odkurzacz 400, kurtki + buty 730, pawlacz 1130 na gorze),
 # ustawione na srodku i obudowane blendami: boczne, gorna i cokol - dociete do krzywych scian na miejscu.
 M = Sketchup.active_model
-M.start_operation("Szafa wneka v3", true)
+M.start_operation("Szafa wneka v4", true)
 def mat(name, rgb, a = 1.0)
   m = M.materials[name] || M.materials.add(name)
   m.color = Sketchup::Color.new(*rgb)
@@ -33,7 +33,7 @@ def tg(folder, name)
 end
 
 ROOT = M.active_entities.add_group
-ROOT.name = "Szafa_wneka_v3"
+ROOT.name = "Szafa_wneka_v4"
 
 # ---- oklejanie: krawedzie BEZ okleiny maluje na brazowo ----
 def band_rule(name)
@@ -166,7 +166,10 @@ wbox("P Pawlacz Wieniec dolny (miedzy bokami) #{PW - 2 * T}x#{KD}", X0 + T, X1 -
 wbox("P Pawlacz Wieniec gorny (miedzy bokami) #{PW - 2 * T}x#{KD}", X0 + T, X1 - T, KY0, KY1, ZTOP - T, ZTOP, KORPUS, pl)
 wbox("P Pawlacz Bok L #{PH}x#{KD}", X0, X0 + T, KY0, KY1, ZP, ZTOP, KORPUS, pl)
 wbox("P Pawlacz Bok P #{PH}x#{KD}", X1 - T, X1, KY0, KY1, ZP, ZTOP, KORPUS, pl)
-wbox("P Pawlacz Przegroda #{PH - 2 * T}x#{KD - 20} (nad podzialem slupkow)", XS - T / 2.0, XS + T / 2.0, KY0, KY1 - 20, ZP + T, ZTOP - T, KORPUS, pl)
+# dwie przegrody obok siebie (jak boki slupkow ponizej) - na pelna glebokosc, bo na prawej wisza zawiasy;
+# dzieki temu wszystkie drzwi pawlacza maja zwykle zawiasy nakladane
+wbox("P Pawlacz Przegroda L #{PH - 2 * T}x#{KD} (nad bokiem S1)", XS - T, XS, KY0, KY1, ZP + T, ZTOP - T, KORPUS, pl)
+wbox("P Pawlacz Przegroda P #{PH - 2 * T}x#{KD} (nad bokiem S2, zawiasy drzwi lewych)", XS, XS + T, KY0, KY1, ZP + T, ZTOP - T, KORPUS, pl)
 wbox("P Pawlacz Plecy HDF #{PW}x#{PH}", X0, X1, KY0 - 3, KY0, ZP, ZTOP, HDF, pl)
 drzwi("P", "nad schowkiem (zawiasy L)", X0 + GAP, XS - GAP, ZP + GAP, ZTOP - GAP)
 drzwi("P", "lewe nad kurtkami (zawiasy L)", XS + GAP, xm - GAP, ZP + GAP, ZTOP - GAP)

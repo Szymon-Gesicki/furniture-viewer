@@ -1,0 +1,1700 @@
+{
+ "format": "drill-plan",
+ "version": 1,
+ "project": "tv-cabinet",
+ "generated_from": "sources/sketchup/tv-cabinet-b.rb",
+ "units": "mm, world coordinates of the viewer model (Z up); local u/v measured on the named face",
+ "parameters": {
+  "hinge": {
+   "overlay_formula": "B = overlay - 11 (CLIP top 110 deg 71B3550 and 155 deg 71B7550, 0 mm plate)",
+   "cup_dia": 35,
+   "cup_depth": 13,
+   "cup_edge_offset": 17.5,
+   "screw_spacing": 45,
+   "screw_offset": 9.5,
+   "screw_dia": 2.5,
+   "screw_depth": 10,
+   "plate_setback": 37,
+   "plate_screw_spacing": 32,
+   "plate_screw_dia": 2.5,
+   "plate_screw_depth": 10,
+   "plate_half_height": 25,
+   "edge_dist_tall": 100,
+   "edge_dist_small_factor": 0.22,
+   "edge_dist_min": 45,
+   "count": [
+    [
+     900,
+     2
+    ],
+    [
+     1600,
+     3
+    ],
+    [
+     2000,
+     4
+    ],
+    [
+     2400,
+     5
+    ]
+   ],
+   "B_range": {
+    "71B3550": [
+     3,
+     7
+    ],
+    "71B7550": [
+     3,
+     8
+    ]
+   }
+  },
+  "shelf": {
+   "pin_dia": 5,
+   "pin_depth": 10,
+   "pin_from_edge": 37,
+   "pin_below_shelf": 2.5,
+   "screw_dia": 4,
+   "screw_from_edge": 40
+  },
+  "drawer": {
+   "FA_side": 16,
+   "FA_bottom": 16,
+   "front_hole_x": 20.5,
+   "front_hole_z1": 33.5,
+   "front_hole_pitch": 32,
+   "front_hole_dia": 10,
+   "front_hole_depth": 12,
+   "stab_below_first": 15,
+   "stab_pitch": 32,
+   "runner_screws_from_front": [
+    19,
+    37,
+    69,
+    261,
+    293
+   ],
+   "runner_screw_dia": 2.5,
+   "runner_screw_depth": 10,
+   "runner_screw_above_runner_bottom": 6
+  },
+  "handle": {
+   "dia": 5,
+   "depth": 18,
+   "drawer_from_top": 50,
+   "door_from_opening_edge": 40,
+   "door_end_hole_from_edge": 60,
+   "long": {
+    "code": "C-1149-320.P61",
+    "name": "Nomet TECHNO 320 czarny mat",
+    "cc": 320
+   },
+   "short": {
+    "code": "C-1149-128.P61 (verify code)",
+    "name": "Nomet TECHNO 128 czarny mat",
+    "cc": 128
+   }
+  },
+  "tipon": {
+   "code": "956A1006",
+   "bore_dia": 10,
+   "bore_depth": 76,
+   "from_inner_face": 7.5,
+   "from_opening_edge_on_panel": 60,
+   "two_units_above": 1500
+  },
+  "camar801": {
+   "dowel_dia": 10,
+   "dowel_depth": 10.5,
+   "below_top_panel_underside": 42,
+   "first_dowel_from_back_edge": 20,
+   "dowel_spacing": 32,
+   "dowel_axis": "depth",
+   "VERIFY": "first_dowel_from_back_edge, dowel_spacing and dowel_axis are placeholders - measure the real hanger"
+  }
+ },
+ "hinges": [
+  {
+   "cabinet": "RTV K1",
+   "door": {
+    "id": "p0018",
+    "name": "RTV K1 Drzwi (zawiasy L) 324x330"
+   },
+   "size": [
+    324.0,
+    330.0
+   ],
+   "hinge_side": "L",
+   "hinge_side_reason": "label",
+   "hardware": "71B3550",
+   "inset": false,
+   "side_panel": {
+    "id": "p0004",
+    "name": "RTV K1 Bok L 332x282"
+   },
+   "overlay": 16.0,
+   "B": 5.0,
+   "cup_from_edge": 22.5,
+   "plate_setback": 37,
+   "hinges_from_door_bottom": [
+    73.0,
+    257.0
+   ],
+   "plates_from_side_bottom": [
+    73.0,
+    257.0
+   ],
+   "moved": []
+  },
+  {
+   "cabinet": "RTV K2",
+   "door": {
+    "id": "p0032",
+    "name": "RTV K2 Drzwi srodkowe (zawiasy L, otwierane na bok) 404x330"
+   },
+   "size": [
+    404.0,
+    330.0
+   ],
+   "hinge_side": "L",
+   "hinge_side_reason": "label",
+   "hardware": "71B3550",
+   "inset": false,
+   "side_panel": {
+    "id": "p0019",
+    "name": "RTV K2 Bok L 332x282"
+   },
+   "overlay": 16.0,
+   "B": 5.0,
+   "cup_from_edge": 22.5,
+   "plate_setback": 37,
+   "hinges_from_door_bottom": [
+    73.0,
+    257.0
+   ],
+   "plates_from_side_bottom": [
+    73.0,
+    257.0
+   ],
+   "moved": []
+  },
+  {
+   "cabinet": "RTV K3",
+   "door": {
+    "id": "p0047",
+    "name": "RTV K3 Drzwi (zawiasy P) 324x330"
+   },
+   "size": [
+    324.0,
+    330.0
+   ],
+   "hinge_side": "P",
+   "hinge_side_reason": "label",
+   "hardware": "71B3550",
+   "inset": false,
+   "side_panel": {
+    "id": "p0034",
+    "name": "RTV K3 Bok P 332x282"
+   },
+   "overlay": 16.0,
+   "B": 5.0,
+   "cup_from_edge": 22.5,
+   "plate_setback": 37,
+   "hinges_from_door_bottom": [
+    73.0,
+    257.0
+   ],
+   "plates_from_side_bottom": [
+    73.0,
+    257.0
+   ],
+   "moved": []
+  }
+ ],
+ "drawers": [],
+ "shelves": [
+  {
+   "cabinet": "RTV",
+   "shelf": {
+    "id": "p0008",
+    "name": "RTV K1 Polka 290x262 (na podporkach, przestawna)"
+   },
+   "fixed": false,
+   "z_bottom": 257.0,
+   "holes": [
+    {
+     "panel": "RTV K1 Bok L 332x282",
+     "u": 57.0,
+     "v": 154.5
+    },
+    {
+     "panel": "RTV K1 Bok L 332x282",
+     "u": 245.0,
+     "v": 154.5
+    },
+    {
+     "panel": "RTV K1 Bok P 332x282",
+     "u": 57.0,
+     "v": 154.5
+    },
+    {
+     "panel": "RTV K1 Bok P 332x282",
+     "u": 245.0,
+     "v": 154.5
+    }
+   ]
+  },
+  {
+   "cabinet": "RTV",
+   "shelf": {
+    "id": "p0037",
+    "name": "RTV K3 Polka 290x262 (na podporkach, przestawna)"
+   },
+   "fixed": false,
+   "z_bottom": 257.0,
+   "holes": [
+    {
+     "panel": "RTV K3 Bok L 332x282",
+     "u": 57.0,
+     "v": 154.5
+    },
+    {
+     "panel": "RTV K3 Bok L 332x282",
+     "u": 245.0,
+     "v": 154.5
+    },
+    {
+     "panel": "RTV K3 Bok P 332x282",
+     "u": 57.0,
+     "v": 154.5
+    },
+    {
+     "panel": "RTV K3 Bok P 332x282",
+     "u": 245.0,
+     "v": 154.5
+    }
+   ]
+  }
+ ],
+ "handles": [],
+ "tipons": [
+  {
+   "door": "RTV K1 Drzwi (zawiasy L) 324x330",
+   "panel": "RTV K1 Bok P 332x282",
+   "v_from_panel_bottom": 230.0,
+   "v_from_door_bottom": 230
+  },
+  {
+   "door": "RTV K2 Drzwi srodkowe (zawiasy L, otwierane na bok) 404x330",
+   "panel": "RTV K2 Bok P 332x282",
+   "v_from_panel_bottom": 230.0,
+   "v_from_door_bottom": 230
+  },
+  {
+   "door": "RTV K3 Drzwi (zawiasy P) 324x330",
+   "panel": "RTV K3 Bok L 332x282",
+   "v_from_panel_bottom": 230.0,
+   "v_from_door_bottom": 230
+  }
+ ],
+ "hangers": [],
+ "warnings": [],
+ "features": [
+  {
+   "id": "f0001",
+   "cabinet": "RTV K1",
+   "kind": "hinge-cup",
+   "hardware": "71B3550",
+   "part": {
+    "id": "p0018",
+    "name": "RTV K1 Drzwi (zawiasy L) 324x330"
+   },
+   "face": "y+",
+   "world": {
+    "p": [
+     42.5,
+     -302.0,
+     173.0
+    ],
+    "dir": [
+     0,
+     -1,
+     0
+    ]
+   },
+   "local": {
+    "u": 22.5,
+    "v": 73.0,
+    "u_from": "hinge edge",
+    "v_from": "door bottom edge",
+    "face": "back"
+   },
+   "dia": 35,
+   "depth": 13,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0002",
+   "cabinet": "RTV K1",
+   "kind": "hinge-screw",
+   "hardware": "609.1500",
+   "part": {
+    "id": "p0018",
+    "name": "RTV K1 Drzwi (zawiasy L) 324x330"
+   },
+   "face": "y+",
+   "world": {
+    "p": [
+     52.0,
+     -302.0,
+     150.5
+    ],
+    "dir": [
+     0,
+     -1,
+     0
+    ]
+   },
+   "local": {
+    "u": 32.0,
+    "v": 50.5,
+    "u_from": "hinge edge",
+    "v_from": "door bottom edge",
+    "face": "back"
+   },
+   "dia": 2.5,
+   "depth": 10,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0003",
+   "cabinet": "RTV K1",
+   "kind": "hinge-screw",
+   "hardware": "609.1500",
+   "part": {
+    "id": "p0018",
+    "name": "RTV K1 Drzwi (zawiasy L) 324x330"
+   },
+   "face": "y+",
+   "world": {
+    "p": [
+     52.0,
+     -302.0,
+     195.5
+    ],
+    "dir": [
+     0,
+     -1,
+     0
+    ]
+   },
+   "local": {
+    "u": 32.0,
+    "v": 95.5,
+    "u_from": "hinge edge",
+    "v_from": "door bottom edge",
+    "face": "back"
+   },
+   "dia": 2.5,
+   "depth": 10,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0004",
+   "cabinet": "RTV K1",
+   "kind": "plate-screw",
+   "hardware": "173L6100",
+   "part": {
+    "id": "p0004",
+    "name": "RTV K1 Bok L 332x282"
+   },
+   "face": "x+",
+   "world": {
+    "p": [
+     36.0,
+     -265.0,
+     157.0
+    ],
+    "dir": [
+     -1,
+     0,
+     0
+    ]
+   },
+   "local": {
+    "u": 37,
+    "v": 57.0,
+    "u_from": "front edge",
+    "v_from": "panel bottom edge",
+    "face": "inner (towards the door centre)"
+   },
+   "dia": 2.5,
+   "depth": 10,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0005",
+   "cabinet": "RTV K1",
+   "kind": "plate-screw",
+   "hardware": "173L6100",
+   "part": {
+    "id": "p0004",
+    "name": "RTV K1 Bok L 332x282"
+   },
+   "face": "x+",
+   "world": {
+    "p": [
+     36.0,
+     -265.0,
+     189.0
+    ],
+    "dir": [
+     -1,
+     0,
+     0
+    ]
+   },
+   "local": {
+    "u": 37,
+    "v": 89.0,
+    "u_from": "front edge",
+    "v_from": "panel bottom edge",
+    "face": "inner (towards the door centre)"
+   },
+   "dia": 2.5,
+   "depth": 10,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0006",
+   "cabinet": "RTV K1",
+   "kind": "hinge-cup",
+   "hardware": "71B3550",
+   "part": {
+    "id": "p0018",
+    "name": "RTV K1 Drzwi (zawiasy L) 324x330"
+   },
+   "face": "y+",
+   "world": {
+    "p": [
+     42.5,
+     -302.0,
+     357.0
+    ],
+    "dir": [
+     0,
+     -1,
+     0
+    ]
+   },
+   "local": {
+    "u": 22.5,
+    "v": 257.0,
+    "u_from": "hinge edge",
+    "v_from": "door bottom edge",
+    "face": "back"
+   },
+   "dia": 35,
+   "depth": 13,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0007",
+   "cabinet": "RTV K1",
+   "kind": "hinge-screw",
+   "hardware": "609.1500",
+   "part": {
+    "id": "p0018",
+    "name": "RTV K1 Drzwi (zawiasy L) 324x330"
+   },
+   "face": "y+",
+   "world": {
+    "p": [
+     52.0,
+     -302.0,
+     334.5
+    ],
+    "dir": [
+     0,
+     -1,
+     0
+    ]
+   },
+   "local": {
+    "u": 32.0,
+    "v": 234.5,
+    "u_from": "hinge edge",
+    "v_from": "door bottom edge",
+    "face": "back"
+   },
+   "dia": 2.5,
+   "depth": 10,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0008",
+   "cabinet": "RTV K1",
+   "kind": "hinge-screw",
+   "hardware": "609.1500",
+   "part": {
+    "id": "p0018",
+    "name": "RTV K1 Drzwi (zawiasy L) 324x330"
+   },
+   "face": "y+",
+   "world": {
+    "p": [
+     52.0,
+     -302.0,
+     379.5
+    ],
+    "dir": [
+     0,
+     -1,
+     0
+    ]
+   },
+   "local": {
+    "u": 32.0,
+    "v": 279.5,
+    "u_from": "hinge edge",
+    "v_from": "door bottom edge",
+    "face": "back"
+   },
+   "dia": 2.5,
+   "depth": 10,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0009",
+   "cabinet": "RTV K1",
+   "kind": "plate-screw",
+   "hardware": "173L6100",
+   "part": {
+    "id": "p0004",
+    "name": "RTV K1 Bok L 332x282"
+   },
+   "face": "x+",
+   "world": {
+    "p": [
+     36.0,
+     -265.0,
+     341.0
+    ],
+    "dir": [
+     -1,
+     0,
+     0
+    ]
+   },
+   "local": {
+    "u": 37,
+    "v": 241.0,
+    "u_from": "front edge",
+    "v_from": "panel bottom edge",
+    "face": "inner (towards the door centre)"
+   },
+   "dia": 2.5,
+   "depth": 10,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0010",
+   "cabinet": "RTV K1",
+   "kind": "plate-screw",
+   "hardware": "173L6100",
+   "part": {
+    "id": "p0004",
+    "name": "RTV K1 Bok L 332x282"
+   },
+   "face": "x+",
+   "world": {
+    "p": [
+     36.0,
+     -265.0,
+     373.0
+    ],
+    "dir": [
+     -1,
+     0,
+     0
+    ]
+   },
+   "local": {
+    "u": 37,
+    "v": 273.0,
+    "u_from": "front edge",
+    "v_from": "panel bottom edge",
+    "face": "inner (towards the door centre)"
+   },
+   "dia": 2.5,
+   "depth": 10,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0011",
+   "cabinet": "RTV K2",
+   "kind": "hinge-cup",
+   "hardware": "71B3550",
+   "part": {
+    "id": "p0032",
+    "name": "RTV K2 Drzwi srodkowe (zawiasy L, otwierane na bok) 404x330"
+   },
+   "face": "y+",
+   "world": {
+    "p": [
+     370.5,
+     -302.0,
+     173.0
+    ],
+    "dir": [
+     0,
+     -1,
+     0
+    ]
+   },
+   "local": {
+    "u": 22.5,
+    "v": 73.0,
+    "u_from": "hinge edge",
+    "v_from": "door bottom edge",
+    "face": "back"
+   },
+   "dia": 35,
+   "depth": 13,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0012",
+   "cabinet": "RTV K2",
+   "kind": "hinge-screw",
+   "hardware": "609.1500",
+   "part": {
+    "id": "p0032",
+    "name": "RTV K2 Drzwi srodkowe (zawiasy L, otwierane na bok) 404x330"
+   },
+   "face": "y+",
+   "world": {
+    "p": [
+     380.0,
+     -302.0,
+     150.5
+    ],
+    "dir": [
+     0,
+     -1,
+     0
+    ]
+   },
+   "local": {
+    "u": 32.0,
+    "v": 50.5,
+    "u_from": "hinge edge",
+    "v_from": "door bottom edge",
+    "face": "back"
+   },
+   "dia": 2.5,
+   "depth": 10,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0013",
+   "cabinet": "RTV K2",
+   "kind": "hinge-screw",
+   "hardware": "609.1500",
+   "part": {
+    "id": "p0032",
+    "name": "RTV K2 Drzwi srodkowe (zawiasy L, otwierane na bok) 404x330"
+   },
+   "face": "y+",
+   "world": {
+    "p": [
+     380.0,
+     -302.0,
+     195.5
+    ],
+    "dir": [
+     0,
+     -1,
+     0
+    ]
+   },
+   "local": {
+    "u": 32.0,
+    "v": 95.5,
+    "u_from": "hinge edge",
+    "v_from": "door bottom edge",
+    "face": "back"
+   },
+   "dia": 2.5,
+   "depth": 10,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0014",
+   "cabinet": "RTV K2",
+   "kind": "plate-screw",
+   "hardware": "173L6100",
+   "part": {
+    "id": "p0019",
+    "name": "RTV K2 Bok L 332x282"
+   },
+   "face": "x+",
+   "world": {
+    "p": [
+     364.0,
+     -265.0,
+     157.0
+    ],
+    "dir": [
+     -1,
+     0,
+     0
+    ]
+   },
+   "local": {
+    "u": 37,
+    "v": 57.0,
+    "u_from": "front edge",
+    "v_from": "panel bottom edge",
+    "face": "inner (towards the door centre)"
+   },
+   "dia": 2.5,
+   "depth": 10,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0015",
+   "cabinet": "RTV K2",
+   "kind": "plate-screw",
+   "hardware": "173L6100",
+   "part": {
+    "id": "p0019",
+    "name": "RTV K2 Bok L 332x282"
+   },
+   "face": "x+",
+   "world": {
+    "p": [
+     364.0,
+     -265.0,
+     189.0
+    ],
+    "dir": [
+     -1,
+     0,
+     0
+    ]
+   },
+   "local": {
+    "u": 37,
+    "v": 89.0,
+    "u_from": "front edge",
+    "v_from": "panel bottom edge",
+    "face": "inner (towards the door centre)"
+   },
+   "dia": 2.5,
+   "depth": 10,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0016",
+   "cabinet": "RTV K2",
+   "kind": "hinge-cup",
+   "hardware": "71B3550",
+   "part": {
+    "id": "p0032",
+    "name": "RTV K2 Drzwi srodkowe (zawiasy L, otwierane na bok) 404x330"
+   },
+   "face": "y+",
+   "world": {
+    "p": [
+     370.5,
+     -302.0,
+     357.0
+    ],
+    "dir": [
+     0,
+     -1,
+     0
+    ]
+   },
+   "local": {
+    "u": 22.5,
+    "v": 257.0,
+    "u_from": "hinge edge",
+    "v_from": "door bottom edge",
+    "face": "back"
+   },
+   "dia": 35,
+   "depth": 13,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0017",
+   "cabinet": "RTV K2",
+   "kind": "hinge-screw",
+   "hardware": "609.1500",
+   "part": {
+    "id": "p0032",
+    "name": "RTV K2 Drzwi srodkowe (zawiasy L, otwierane na bok) 404x330"
+   },
+   "face": "y+",
+   "world": {
+    "p": [
+     380.0,
+     -302.0,
+     334.5
+    ],
+    "dir": [
+     0,
+     -1,
+     0
+    ]
+   },
+   "local": {
+    "u": 32.0,
+    "v": 234.5,
+    "u_from": "hinge edge",
+    "v_from": "door bottom edge",
+    "face": "back"
+   },
+   "dia": 2.5,
+   "depth": 10,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0018",
+   "cabinet": "RTV K2",
+   "kind": "hinge-screw",
+   "hardware": "609.1500",
+   "part": {
+    "id": "p0032",
+    "name": "RTV K2 Drzwi srodkowe (zawiasy L, otwierane na bok) 404x330"
+   },
+   "face": "y+",
+   "world": {
+    "p": [
+     380.0,
+     -302.0,
+     379.5
+    ],
+    "dir": [
+     0,
+     -1,
+     0
+    ]
+   },
+   "local": {
+    "u": 32.0,
+    "v": 279.5,
+    "u_from": "hinge edge",
+    "v_from": "door bottom edge",
+    "face": "back"
+   },
+   "dia": 2.5,
+   "depth": 10,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0019",
+   "cabinet": "RTV K2",
+   "kind": "plate-screw",
+   "hardware": "173L6100",
+   "part": {
+    "id": "p0019",
+    "name": "RTV K2 Bok L 332x282"
+   },
+   "face": "x+",
+   "world": {
+    "p": [
+     364.0,
+     -265.0,
+     341.0
+    ],
+    "dir": [
+     -1,
+     0,
+     0
+    ]
+   },
+   "local": {
+    "u": 37,
+    "v": 241.0,
+    "u_from": "front edge",
+    "v_from": "panel bottom edge",
+    "face": "inner (towards the door centre)"
+   },
+   "dia": 2.5,
+   "depth": 10,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0020",
+   "cabinet": "RTV K2",
+   "kind": "plate-screw",
+   "hardware": "173L6100",
+   "part": {
+    "id": "p0019",
+    "name": "RTV K2 Bok L 332x282"
+   },
+   "face": "x+",
+   "world": {
+    "p": [
+     364.0,
+     -265.0,
+     373.0
+    ],
+    "dir": [
+     -1,
+     0,
+     0
+    ]
+   },
+   "local": {
+    "u": 37,
+    "v": 273.0,
+    "u_from": "front edge",
+    "v_from": "panel bottom edge",
+    "face": "inner (towards the door centre)"
+   },
+   "dia": 2.5,
+   "depth": 10,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0021",
+   "cabinet": "RTV K3",
+   "kind": "hinge-cup",
+   "hardware": "71B3550",
+   "part": {
+    "id": "p0047",
+    "name": "RTV K3 Drzwi (zawiasy P) 324x330"
+   },
+   "face": "y+",
+   "world": {
+    "p": [
+     1057.5,
+     -302.0,
+     173.0
+    ],
+    "dir": [
+     0,
+     -1,
+     0
+    ]
+   },
+   "local": {
+    "u": 22.5,
+    "v": 73.0,
+    "u_from": "hinge edge",
+    "v_from": "door bottom edge",
+    "face": "back"
+   },
+   "dia": 35,
+   "depth": 13,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0022",
+   "cabinet": "RTV K3",
+   "kind": "hinge-screw",
+   "hardware": "609.1500",
+   "part": {
+    "id": "p0047",
+    "name": "RTV K3 Drzwi (zawiasy P) 324x330"
+   },
+   "face": "y+",
+   "world": {
+    "p": [
+     1048.0,
+     -302.0,
+     150.5
+    ],
+    "dir": [
+     0,
+     -1,
+     0
+    ]
+   },
+   "local": {
+    "u": 32.0,
+    "v": 50.5,
+    "u_from": "hinge edge",
+    "v_from": "door bottom edge",
+    "face": "back"
+   },
+   "dia": 2.5,
+   "depth": 10,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0023",
+   "cabinet": "RTV K3",
+   "kind": "hinge-screw",
+   "hardware": "609.1500",
+   "part": {
+    "id": "p0047",
+    "name": "RTV K3 Drzwi (zawiasy P) 324x330"
+   },
+   "face": "y+",
+   "world": {
+    "p": [
+     1048.0,
+     -302.0,
+     195.5
+    ],
+    "dir": [
+     0,
+     -1,
+     0
+    ]
+   },
+   "local": {
+    "u": 32.0,
+    "v": 95.5,
+    "u_from": "hinge edge",
+    "v_from": "door bottom edge",
+    "face": "back"
+   },
+   "dia": 2.5,
+   "depth": 10,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0024",
+   "cabinet": "RTV K3",
+   "kind": "plate-screw",
+   "hardware": "173L6100",
+   "part": {
+    "id": "p0034",
+    "name": "RTV K3 Bok P 332x282"
+   },
+   "face": "x-",
+   "world": {
+    "p": [
+     1064.0,
+     -265.0,
+     157.0
+    ],
+    "dir": [
+     1,
+     0,
+     0
+    ]
+   },
+   "local": {
+    "u": 37,
+    "v": 57.0,
+    "u_from": "front edge",
+    "v_from": "panel bottom edge",
+    "face": "inner (towards the door centre)"
+   },
+   "dia": 2.5,
+   "depth": 10,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0025",
+   "cabinet": "RTV K3",
+   "kind": "plate-screw",
+   "hardware": "173L6100",
+   "part": {
+    "id": "p0034",
+    "name": "RTV K3 Bok P 332x282"
+   },
+   "face": "x-",
+   "world": {
+    "p": [
+     1064.0,
+     -265.0,
+     189.0
+    ],
+    "dir": [
+     1,
+     0,
+     0
+    ]
+   },
+   "local": {
+    "u": 37,
+    "v": 89.0,
+    "u_from": "front edge",
+    "v_from": "panel bottom edge",
+    "face": "inner (towards the door centre)"
+   },
+   "dia": 2.5,
+   "depth": 10,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0026",
+   "cabinet": "RTV K3",
+   "kind": "hinge-cup",
+   "hardware": "71B3550",
+   "part": {
+    "id": "p0047",
+    "name": "RTV K3 Drzwi (zawiasy P) 324x330"
+   },
+   "face": "y+",
+   "world": {
+    "p": [
+     1057.5,
+     -302.0,
+     357.0
+    ],
+    "dir": [
+     0,
+     -1,
+     0
+    ]
+   },
+   "local": {
+    "u": 22.5,
+    "v": 257.0,
+    "u_from": "hinge edge",
+    "v_from": "door bottom edge",
+    "face": "back"
+   },
+   "dia": 35,
+   "depth": 13,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0027",
+   "cabinet": "RTV K3",
+   "kind": "hinge-screw",
+   "hardware": "609.1500",
+   "part": {
+    "id": "p0047",
+    "name": "RTV K3 Drzwi (zawiasy P) 324x330"
+   },
+   "face": "y+",
+   "world": {
+    "p": [
+     1048.0,
+     -302.0,
+     334.5
+    ],
+    "dir": [
+     0,
+     -1,
+     0
+    ]
+   },
+   "local": {
+    "u": 32.0,
+    "v": 234.5,
+    "u_from": "hinge edge",
+    "v_from": "door bottom edge",
+    "face": "back"
+   },
+   "dia": 2.5,
+   "depth": 10,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0028",
+   "cabinet": "RTV K3",
+   "kind": "hinge-screw",
+   "hardware": "609.1500",
+   "part": {
+    "id": "p0047",
+    "name": "RTV K3 Drzwi (zawiasy P) 324x330"
+   },
+   "face": "y+",
+   "world": {
+    "p": [
+     1048.0,
+     -302.0,
+     379.5
+    ],
+    "dir": [
+     0,
+     -1,
+     0
+    ]
+   },
+   "local": {
+    "u": 32.0,
+    "v": 279.5,
+    "u_from": "hinge edge",
+    "v_from": "door bottom edge",
+    "face": "back"
+   },
+   "dia": 2.5,
+   "depth": 10,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0029",
+   "cabinet": "RTV K3",
+   "kind": "plate-screw",
+   "hardware": "173L6100",
+   "part": {
+    "id": "p0034",
+    "name": "RTV K3 Bok P 332x282"
+   },
+   "face": "x-",
+   "world": {
+    "p": [
+     1064.0,
+     -265.0,
+     341.0
+    ],
+    "dir": [
+     1,
+     0,
+     0
+    ]
+   },
+   "local": {
+    "u": 37,
+    "v": 241.0,
+    "u_from": "front edge",
+    "v_from": "panel bottom edge",
+    "face": "inner (towards the door centre)"
+   },
+   "dia": 2.5,
+   "depth": 10,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0030",
+   "cabinet": "RTV K3",
+   "kind": "plate-screw",
+   "hardware": "173L6100",
+   "part": {
+    "id": "p0034",
+    "name": "RTV K3 Bok P 332x282"
+   },
+   "face": "x-",
+   "world": {
+    "p": [
+     1064.0,
+     -265.0,
+     373.0
+    ],
+    "dir": [
+     1,
+     0,
+     0
+    ]
+   },
+   "local": {
+    "u": 37,
+    "v": 273.0,
+    "u_from": "front edge",
+    "v_from": "panel bottom edge",
+    "face": "inner (towards the door centre)"
+   },
+   "dia": 2.5,
+   "depth": 10,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0031",
+   "cabinet": "RTV",
+   "kind": "shelf-pin",
+   "hardware": "podporka 5 mm",
+   "part": {
+    "id": "p0004",
+    "name": "RTV K1 Bok L 332x282"
+   },
+   "face": "x+",
+   "world": {
+    "p": [
+     36.0,
+     -245.0,
+     254.5
+    ],
+    "dir": [
+     -1,
+     0,
+     0
+    ]
+   },
+   "local": {
+    "u": 57.0,
+    "v": 154.5,
+    "u_from": "front edge",
+    "v_from": "panel bottom edge",
+    "face": "inner"
+   },
+   "dia": 5,
+   "depth": 10,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0032",
+   "cabinet": "RTV",
+   "kind": "shelf-pin",
+   "hardware": "podporka 5 mm",
+   "part": {
+    "id": "p0004",
+    "name": "RTV K1 Bok L 332x282"
+   },
+   "face": "x+",
+   "world": {
+    "p": [
+     36.0,
+     -57.0,
+     254.5
+    ],
+    "dir": [
+     -1,
+     0,
+     0
+    ]
+   },
+   "local": {
+    "u": 245.0,
+    "v": 154.5,
+    "u_from": "front edge",
+    "v_from": "panel bottom edge",
+    "face": "inner"
+   },
+   "dia": 5,
+   "depth": 10,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0033",
+   "cabinet": "RTV",
+   "kind": "shelf-pin",
+   "hardware": "podporka 5 mm",
+   "part": {
+    "id": "p0005",
+    "name": "RTV K1 Bok P 332x282"
+   },
+   "face": "x-",
+   "world": {
+    "p": [
+     328.0,
+     -245.0,
+     254.5
+    ],
+    "dir": [
+     1,
+     0,
+     0
+    ]
+   },
+   "local": {
+    "u": 57.0,
+    "v": 154.5,
+    "u_from": "front edge",
+    "v_from": "panel bottom edge",
+    "face": "inner"
+   },
+   "dia": 5,
+   "depth": 10,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0034",
+   "cabinet": "RTV",
+   "kind": "shelf-pin",
+   "hardware": "podporka 5 mm",
+   "part": {
+    "id": "p0005",
+    "name": "RTV K1 Bok P 332x282"
+   },
+   "face": "x-",
+   "world": {
+    "p": [
+     328.0,
+     -57.0,
+     254.5
+    ],
+    "dir": [
+     1,
+     0,
+     0
+    ]
+   },
+   "local": {
+    "u": 245.0,
+    "v": 154.5,
+    "u_from": "front edge",
+    "v_from": "panel bottom edge",
+    "face": "inner"
+   },
+   "dia": 5,
+   "depth": 10,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0035",
+   "cabinet": "RTV",
+   "kind": "shelf-pin",
+   "hardware": "podporka 5 mm",
+   "part": {
+    "id": "p0033",
+    "name": "RTV K3 Bok L 332x282"
+   },
+   "face": "x+",
+   "world": {
+    "p": [
+     772.0,
+     -245.0,
+     254.5
+    ],
+    "dir": [
+     -1,
+     0,
+     0
+    ]
+   },
+   "local": {
+    "u": 57.0,
+    "v": 154.5,
+    "u_from": "front edge",
+    "v_from": "panel bottom edge",
+    "face": "inner"
+   },
+   "dia": 5,
+   "depth": 10,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0036",
+   "cabinet": "RTV",
+   "kind": "shelf-pin",
+   "hardware": "podporka 5 mm",
+   "part": {
+    "id": "p0033",
+    "name": "RTV K3 Bok L 332x282"
+   },
+   "face": "x+",
+   "world": {
+    "p": [
+     772.0,
+     -57.0,
+     254.5
+    ],
+    "dir": [
+     -1,
+     0,
+     0
+    ]
+   },
+   "local": {
+    "u": 245.0,
+    "v": 154.5,
+    "u_from": "front edge",
+    "v_from": "panel bottom edge",
+    "face": "inner"
+   },
+   "dia": 5,
+   "depth": 10,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0037",
+   "cabinet": "RTV",
+   "kind": "shelf-pin",
+   "hardware": "podporka 5 mm",
+   "part": {
+    "id": "p0034",
+    "name": "RTV K3 Bok P 332x282"
+   },
+   "face": "x-",
+   "world": {
+    "p": [
+     1064.0,
+     -245.0,
+     254.5
+    ],
+    "dir": [
+     1,
+     0,
+     0
+    ]
+   },
+   "local": {
+    "u": 57.0,
+    "v": 154.5,
+    "u_from": "front edge",
+    "v_from": "panel bottom edge",
+    "face": "inner"
+   },
+   "dia": 5,
+   "depth": 10,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0038",
+   "cabinet": "RTV",
+   "kind": "shelf-pin",
+   "hardware": "podporka 5 mm",
+   "part": {
+    "id": "p0034",
+    "name": "RTV K3 Bok P 332x282"
+   },
+   "face": "x-",
+   "world": {
+    "p": [
+     1064.0,
+     -57.0,
+     254.5
+    ],
+    "dir": [
+     1,
+     0,
+     0
+    ]
+   },
+   "local": {
+    "u": 245.0,
+    "v": 154.5,
+    "u_from": "front edge",
+    "v_from": "panel bottom edge",
+    "face": "inner"
+   },
+   "dia": 5,
+   "depth": 10,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0039",
+   "cabinet": "RTV K1",
+   "kind": "tipon-bore",
+   "hardware": "956A1006",
+   "part": {
+    "id": "p0005",
+    "name": "RTV K1 Bok P 332x282"
+   },
+   "face": "y-",
+   "world": {
+    "p": [
+     335.5,
+     -302.0,
+     330.0
+    ],
+    "dir": [
+     0,
+     1,
+     0
+    ]
+   },
+   "local": {
+    "u": 7.5,
+    "v": 230.0,
+    "u_from": "inner face (bore in the FRONT EDGE of the panel)",
+    "v_from": "panel bottom edge",
+    "face": "front edge"
+   },
+   "dia": 10,
+   "depth": 76,
+   "note": "Blum template 65.5010; position allowed +-300 mm in height",
+   "verify": false
+  },
+  {
+   "id": "f0040",
+   "cabinet": "RTV K2",
+   "kind": "tipon-bore",
+   "hardware": "956A1006",
+   "part": {
+    "id": "p0020",
+    "name": "RTV K2 Bok P 332x282"
+   },
+   "face": "y-",
+   "world": {
+    "p": [
+     743.5,
+     -302.0,
+     330.0
+    ],
+    "dir": [
+     0,
+     1,
+     0
+    ]
+   },
+   "local": {
+    "u": 7.5,
+    "v": 230.0,
+    "u_from": "inner face (bore in the FRONT EDGE of the panel)",
+    "v_from": "panel bottom edge",
+    "face": "front edge"
+   },
+   "dia": 10,
+   "depth": 76,
+   "note": "Blum template 65.5010; position allowed +-300 mm in height",
+   "verify": false
+  },
+  {
+   "id": "f0041",
+   "cabinet": "RTV K3",
+   "kind": "tipon-bore",
+   "hardware": "956A1006",
+   "part": {
+    "id": "p0033",
+    "name": "RTV K3 Bok L 332x282"
+   },
+   "face": "y-",
+   "world": {
+    "p": [
+     764.5,
+     -302.0,
+     330.0
+    ],
+    "dir": [
+     0,
+     1,
+     0
+    ]
+   },
+   "local": {
+    "u": 7.5,
+    "v": 230.0,
+    "u_from": "inner face (bore in the FRONT EDGE of the panel)",
+    "v_from": "panel bottom edge",
+    "face": "front edge"
+   },
+   "dia": 10,
+   "depth": 76,
+   "note": "Blum template 65.5010; position allowed +-300 mm in height",
+   "verify": false
+  }
+ ]
+}

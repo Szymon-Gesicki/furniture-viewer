@@ -1,0 +1,1288 @@
+{
+ "format": "drill-plan",
+ "version": 1,
+ "project": "nightstands",
+ "generated_from": "sources/sketchup/nightstands.rb",
+ "units": "mm, world coordinates of the viewer model (Z up); local u/v measured on the named face",
+ "parameters": {
+  "hinge": {
+   "overlay_formula": "B = overlay - 11 (CLIP top 110 deg 71B3550 and 155 deg 71B7550, 0 mm plate)",
+   "cup_dia": 35,
+   "cup_depth": 13,
+   "cup_edge_offset": 17.5,
+   "screw_spacing": 45,
+   "screw_offset": 9.5,
+   "screw_dia": 2.5,
+   "screw_depth": 10,
+   "plate_setback": 37,
+   "plate_screw_spacing": 32,
+   "plate_screw_dia": 2.5,
+   "plate_screw_depth": 10,
+   "plate_half_height": 25,
+   "edge_dist_tall": 100,
+   "edge_dist_small_factor": 0.22,
+   "edge_dist_min": 45,
+   "count": [
+    [
+     900,
+     2
+    ],
+    [
+     1600,
+     3
+    ],
+    [
+     2000,
+     4
+    ],
+    [
+     2400,
+     5
+    ]
+   ],
+   "B_range": {
+    "71B3550": [
+     3,
+     7
+    ],
+    "71B7550": [
+     3,
+     8
+    ]
+   }
+  },
+  "shelf": {
+   "pin_dia": 5,
+   "pin_depth": 10,
+   "pin_from_edge": 37,
+   "pin_below_shelf": 2.5,
+   "screw_dia": 4,
+   "screw_from_edge": 40
+  },
+  "drawer": {
+   "FA_side": 16,
+   "FA_bottom": 16,
+   "front_hole_x": 20.5,
+   "front_hole_z1": 33.5,
+   "front_hole_pitch": 32,
+   "front_hole_dia": 10,
+   "front_hole_depth": 12,
+   "stab_below_first": 15,
+   "stab_pitch": 32,
+   "runner_screws_from_front": [
+    19,
+    37,
+    69,
+    261,
+    293
+   ],
+   "runner_screw_dia": 2.5,
+   "runner_screw_depth": 10,
+   "runner_screw_above_runner_bottom": 6
+  },
+  "handle": {
+   "dia": 5,
+   "depth": 18,
+   "drawer_from_top": 50,
+   "door_from_opening_edge": 40,
+   "door_end_hole_from_edge": 60,
+   "long": {
+    "code": "C-1149-320.P61",
+    "name": "Nomet TECHNO 320 czarny mat",
+    "cc": 320
+   },
+   "short": {
+    "code": "C-1149-128.P61 (verify code)",
+    "name": "Nomet TECHNO 128 czarny mat",
+    "cc": 128
+   }
+  },
+  "tipon": {
+   "code": "956A1006",
+   "bore_dia": 10,
+   "bore_depth": 76,
+   "from_inner_face": 7.5,
+   "from_opening_edge_on_panel": 60,
+   "two_units_above": 1500
+  },
+  "camar801": {
+   "dowel_dia": 10,
+   "dowel_depth": 10.5,
+   "below_top_panel_underside": 42,
+   "first_dowel_from_back_edge": 20,
+   "dowel_spacing": 32,
+   "dowel_axis": "depth",
+   "VERIFY": "first_dowel_from_back_edge, dowel_spacing and dowel_axis are placeholders - measure the real hanger"
+  }
+ },
+ "hinges": [
+  {
+   "cabinet": "N1 lewa",
+   "door": {
+    "id": "p0014",
+    "name": "N1 lewa Drzwiczki 226x228"
+   },
+   "size": [
+    226.0,
+    228.0
+   ],
+   "hinge_side": "L",
+   "hinge_side_reason": "confirmed: hinge on the side away from the bed",
+   "hardware": "71B3550",
+   "inset": false,
+   "side_panel": {
+    "id": "p0008",
+    "name": "N1 lewa Bok L 514x282"
+   },
+   "overlay": 16.0,
+   "B": 5.0,
+   "cup_from_edge": 22.5,
+   "plate_setback": 37,
+   "hinges_from_door_bottom": [
+    50.0,
+    178.0
+   ],
+   "plates_from_side_bottom": [
+    352.0,
+    480.0
+   ],
+   "moved": []
+  },
+  {
+   "cabinet": "N2 prawa",
+   "door": {
+    "id": "p0022",
+    "name": "N2 prawa Drzwiczki 226x228"
+   },
+   "size": [
+    226.0,
+    228.0
+   ],
+   "hinge_side": "P",
+   "hinge_side_reason": "confirmed: hinge on the side away from the bed",
+   "hardware": "71B3550",
+   "inset": false,
+   "side_panel": {
+    "id": "p0017",
+    "name": "N2 prawa Bok P 514x282"
+   },
+   "overlay": 16.0,
+   "B": 5.0,
+   "cup_from_edge": 22.5,
+   "plate_setback": 37,
+   "hinges_from_door_bottom": [
+    50.0,
+    178.0
+   ],
+   "plates_from_side_bottom": [
+    352.0,
+    480.0
+   ],
+   "moved": []
+  }
+ ],
+ "drawers": [],
+ "shelves": [
+  {
+   "cabinet": "N1",
+   "shelf": {
+    "id": "p0012",
+    "name": "N1 lewa Polka 194x282"
+   },
+   "fixed": true,
+   "z_bottom": 300.0,
+   "holes": [
+    {
+     "panel": "N1 lewa Bok L 514x282",
+     "u": 40.0,
+     "v": 309.0
+    },
+    {
+     "panel": "N1 lewa Bok L 514x282",
+     "u": 242.0,
+     "v": 309.0
+    },
+    {
+     "panel": "N1 lewa Bok P 514x282",
+     "u": 40.0,
+     "v": 309.0
+    },
+    {
+     "panel": "N1 lewa Bok P 514x282",
+     "u": 242.0,
+     "v": 309.0
+    }
+   ]
+  },
+  {
+   "cabinet": "N2",
+   "shelf": {
+    "id": "p0020",
+    "name": "N2 prawa Polka 194x282"
+   },
+   "fixed": true,
+   "z_bottom": 300.0,
+   "holes": [
+    {
+     "panel": "N2 prawa Bok L 514x282",
+     "u": 40.0,
+     "v": 309.0
+    },
+    {
+     "panel": "N2 prawa Bok L 514x282",
+     "u": 242.0,
+     "v": 309.0
+    },
+    {
+     "panel": "N2 prawa Bok P 514x282",
+     "u": 40.0,
+     "v": 309.0
+    },
+    {
+     "panel": "N2 prawa Bok P 514x282",
+     "u": 242.0,
+     "v": 309.0
+    }
+   ]
+  }
+ ],
+ "handles": [],
+ "tipons": [
+  {
+   "door": "N1 lewa Drzwiczki 226x228",
+   "panel": "N1 lewa Bok P 514x282",
+   "v_from_panel_bottom": 430.0,
+   "v_from_door_bottom": 128
+  },
+  {
+   "door": "N2 prawa Drzwiczki 226x228",
+   "panel": "N2 prawa Bok L 514x282",
+   "v_from_panel_bottom": 430.0,
+   "v_from_door_bottom": 128
+  }
+ ],
+ "hangers": [],
+ "warnings": [],
+ "features": [
+  {
+   "id": "f0001",
+   "cabinet": "N1 lewa",
+   "kind": "hinge-cup",
+   "hardware": "71B3550",
+   "part": {
+    "id": "p0014",
+    "name": "N1 lewa Drzwiczki 226x228"
+   },
+   "face": "y+",
+   "world": {
+    "p": [
+     34.5,
+     -292.0,
+     352.0
+    ],
+    "dir": [
+     0,
+     -1,
+     0
+    ]
+   },
+   "local": {
+    "u": 22.5,
+    "v": 50.0,
+    "u_from": "hinge edge",
+    "v_from": "door bottom edge",
+    "face": "back"
+   },
+   "dia": 35,
+   "depth": 13,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0002",
+   "cabinet": "N1 lewa",
+   "kind": "hinge-screw",
+   "hardware": "609.1500",
+   "part": {
+    "id": "p0014",
+    "name": "N1 lewa Drzwiczki 226x228"
+   },
+   "face": "y+",
+   "world": {
+    "p": [
+     44.0,
+     -292.0,
+     329.5
+    ],
+    "dir": [
+     0,
+     -1,
+     0
+    ]
+   },
+   "local": {
+    "u": 32.0,
+    "v": 27.5,
+    "u_from": "hinge edge",
+    "v_from": "door bottom edge",
+    "face": "back"
+   },
+   "dia": 2.5,
+   "depth": 10,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0003",
+   "cabinet": "N1 lewa",
+   "kind": "hinge-screw",
+   "hardware": "609.1500",
+   "part": {
+    "id": "p0014",
+    "name": "N1 lewa Drzwiczki 226x228"
+   },
+   "face": "y+",
+   "world": {
+    "p": [
+     44.0,
+     -292.0,
+     374.5
+    ],
+    "dir": [
+     0,
+     -1,
+     0
+    ]
+   },
+   "local": {
+    "u": 32.0,
+    "v": 72.5,
+    "u_from": "hinge edge",
+    "v_from": "door bottom edge",
+    "face": "back"
+   },
+   "dia": 2.5,
+   "depth": 10,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0004",
+   "cabinet": "N1 lewa",
+   "kind": "plate-screw",
+   "hardware": "173L6100",
+   "part": {
+    "id": "p0008",
+    "name": "N1 lewa Bok L 514x282"
+   },
+   "face": "x+",
+   "world": {
+    "p": [
+     28.0,
+     -255.0,
+     336.0
+    ],
+    "dir": [
+     -1,
+     0,
+     0
+    ]
+   },
+   "local": {
+    "u": 37,
+    "v": 336.0,
+    "u_from": "front edge",
+    "v_from": "panel bottom edge",
+    "face": "inner (towards the door centre)"
+   },
+   "dia": 2.5,
+   "depth": 10,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0005",
+   "cabinet": "N1 lewa",
+   "kind": "plate-screw",
+   "hardware": "173L6100",
+   "part": {
+    "id": "p0008",
+    "name": "N1 lewa Bok L 514x282"
+   },
+   "face": "x+",
+   "world": {
+    "p": [
+     28.0,
+     -255.0,
+     368.0
+    ],
+    "dir": [
+     -1,
+     0,
+     0
+    ]
+   },
+   "local": {
+    "u": 37,
+    "v": 368.0,
+    "u_from": "front edge",
+    "v_from": "panel bottom edge",
+    "face": "inner (towards the door centre)"
+   },
+   "dia": 2.5,
+   "depth": 10,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0006",
+   "cabinet": "N1 lewa",
+   "kind": "hinge-cup",
+   "hardware": "71B3550",
+   "part": {
+    "id": "p0014",
+    "name": "N1 lewa Drzwiczki 226x228"
+   },
+   "face": "y+",
+   "world": {
+    "p": [
+     34.5,
+     -292.0,
+     480.0
+    ],
+    "dir": [
+     0,
+     -1,
+     0
+    ]
+   },
+   "local": {
+    "u": 22.5,
+    "v": 178.0,
+    "u_from": "hinge edge",
+    "v_from": "door bottom edge",
+    "face": "back"
+   },
+   "dia": 35,
+   "depth": 13,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0007",
+   "cabinet": "N1 lewa",
+   "kind": "hinge-screw",
+   "hardware": "609.1500",
+   "part": {
+    "id": "p0014",
+    "name": "N1 lewa Drzwiczki 226x228"
+   },
+   "face": "y+",
+   "world": {
+    "p": [
+     44.0,
+     -292.0,
+     457.5
+    ],
+    "dir": [
+     0,
+     -1,
+     0
+    ]
+   },
+   "local": {
+    "u": 32.0,
+    "v": 155.5,
+    "u_from": "hinge edge",
+    "v_from": "door bottom edge",
+    "face": "back"
+   },
+   "dia": 2.5,
+   "depth": 10,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0008",
+   "cabinet": "N1 lewa",
+   "kind": "hinge-screw",
+   "hardware": "609.1500",
+   "part": {
+    "id": "p0014",
+    "name": "N1 lewa Drzwiczki 226x228"
+   },
+   "face": "y+",
+   "world": {
+    "p": [
+     44.0,
+     -292.0,
+     502.5
+    ],
+    "dir": [
+     0,
+     -1,
+     0
+    ]
+   },
+   "local": {
+    "u": 32.0,
+    "v": 200.5,
+    "u_from": "hinge edge",
+    "v_from": "door bottom edge",
+    "face": "back"
+   },
+   "dia": 2.5,
+   "depth": 10,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0009",
+   "cabinet": "N1 lewa",
+   "kind": "plate-screw",
+   "hardware": "173L6100",
+   "part": {
+    "id": "p0008",
+    "name": "N1 lewa Bok L 514x282"
+   },
+   "face": "x+",
+   "world": {
+    "p": [
+     28.0,
+     -255.0,
+     464.0
+    ],
+    "dir": [
+     -1,
+     0,
+     0
+    ]
+   },
+   "local": {
+    "u": 37,
+    "v": 464.0,
+    "u_from": "front edge",
+    "v_from": "panel bottom edge",
+    "face": "inner (towards the door centre)"
+   },
+   "dia": 2.5,
+   "depth": 10,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0010",
+   "cabinet": "N1 lewa",
+   "kind": "plate-screw",
+   "hardware": "173L6100",
+   "part": {
+    "id": "p0008",
+    "name": "N1 lewa Bok L 514x282"
+   },
+   "face": "x+",
+   "world": {
+    "p": [
+     28.0,
+     -255.0,
+     496.0
+    ],
+    "dir": [
+     -1,
+     0,
+     0
+    ]
+   },
+   "local": {
+    "u": 37,
+    "v": 496.0,
+    "u_from": "front edge",
+    "v_from": "panel bottom edge",
+    "face": "inner (towards the door centre)"
+   },
+   "dia": 2.5,
+   "depth": 10,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0011",
+   "cabinet": "N2 prawa",
+   "kind": "hinge-cup",
+   "hardware": "71B3550",
+   "part": {
+    "id": "p0022",
+    "name": "N2 prawa Drzwiczki 226x228"
+   },
+   "face": "y+",
+   "world": {
+    "p": [
+     2065.5,
+     -292.0,
+     352.0
+    ],
+    "dir": [
+     0,
+     -1,
+     0
+    ]
+   },
+   "local": {
+    "u": 22.5,
+    "v": 50.0,
+    "u_from": "hinge edge",
+    "v_from": "door bottom edge",
+    "face": "back"
+   },
+   "dia": 35,
+   "depth": 13,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0012",
+   "cabinet": "N2 prawa",
+   "kind": "hinge-screw",
+   "hardware": "609.1500",
+   "part": {
+    "id": "p0022",
+    "name": "N2 prawa Drzwiczki 226x228"
+   },
+   "face": "y+",
+   "world": {
+    "p": [
+     2056.0,
+     -292.0,
+     329.5
+    ],
+    "dir": [
+     0,
+     -1,
+     0
+    ]
+   },
+   "local": {
+    "u": 32.0,
+    "v": 27.5,
+    "u_from": "hinge edge",
+    "v_from": "door bottom edge",
+    "face": "back"
+   },
+   "dia": 2.5,
+   "depth": 10,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0013",
+   "cabinet": "N2 prawa",
+   "kind": "hinge-screw",
+   "hardware": "609.1500",
+   "part": {
+    "id": "p0022",
+    "name": "N2 prawa Drzwiczki 226x228"
+   },
+   "face": "y+",
+   "world": {
+    "p": [
+     2056.0,
+     -292.0,
+     374.5
+    ],
+    "dir": [
+     0,
+     -1,
+     0
+    ]
+   },
+   "local": {
+    "u": 32.0,
+    "v": 72.5,
+    "u_from": "hinge edge",
+    "v_from": "door bottom edge",
+    "face": "back"
+   },
+   "dia": 2.5,
+   "depth": 10,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0014",
+   "cabinet": "N2 prawa",
+   "kind": "plate-screw",
+   "hardware": "173L6100",
+   "part": {
+    "id": "p0017",
+    "name": "N2 prawa Bok P 514x282"
+   },
+   "face": "x-",
+   "world": {
+    "p": [
+     2072.0,
+     -255.0,
+     336.0
+    ],
+    "dir": [
+     1,
+     0,
+     0
+    ]
+   },
+   "local": {
+    "u": 37,
+    "v": 336.0,
+    "u_from": "front edge",
+    "v_from": "panel bottom edge",
+    "face": "inner (towards the door centre)"
+   },
+   "dia": 2.5,
+   "depth": 10,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0015",
+   "cabinet": "N2 prawa",
+   "kind": "plate-screw",
+   "hardware": "173L6100",
+   "part": {
+    "id": "p0017",
+    "name": "N2 prawa Bok P 514x282"
+   },
+   "face": "x-",
+   "world": {
+    "p": [
+     2072.0,
+     -255.0,
+     368.0
+    ],
+    "dir": [
+     1,
+     0,
+     0
+    ]
+   },
+   "local": {
+    "u": 37,
+    "v": 368.0,
+    "u_from": "front edge",
+    "v_from": "panel bottom edge",
+    "face": "inner (towards the door centre)"
+   },
+   "dia": 2.5,
+   "depth": 10,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0016",
+   "cabinet": "N2 prawa",
+   "kind": "hinge-cup",
+   "hardware": "71B3550",
+   "part": {
+    "id": "p0022",
+    "name": "N2 prawa Drzwiczki 226x228"
+   },
+   "face": "y+",
+   "world": {
+    "p": [
+     2065.5,
+     -292.0,
+     480.0
+    ],
+    "dir": [
+     0,
+     -1,
+     0
+    ]
+   },
+   "local": {
+    "u": 22.5,
+    "v": 178.0,
+    "u_from": "hinge edge",
+    "v_from": "door bottom edge",
+    "face": "back"
+   },
+   "dia": 35,
+   "depth": 13,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0017",
+   "cabinet": "N2 prawa",
+   "kind": "hinge-screw",
+   "hardware": "609.1500",
+   "part": {
+    "id": "p0022",
+    "name": "N2 prawa Drzwiczki 226x228"
+   },
+   "face": "y+",
+   "world": {
+    "p": [
+     2056.0,
+     -292.0,
+     457.5
+    ],
+    "dir": [
+     0,
+     -1,
+     0
+    ]
+   },
+   "local": {
+    "u": 32.0,
+    "v": 155.5,
+    "u_from": "hinge edge",
+    "v_from": "door bottom edge",
+    "face": "back"
+   },
+   "dia": 2.5,
+   "depth": 10,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0018",
+   "cabinet": "N2 prawa",
+   "kind": "hinge-screw",
+   "hardware": "609.1500",
+   "part": {
+    "id": "p0022",
+    "name": "N2 prawa Drzwiczki 226x228"
+   },
+   "face": "y+",
+   "world": {
+    "p": [
+     2056.0,
+     -292.0,
+     502.5
+    ],
+    "dir": [
+     0,
+     -1,
+     0
+    ]
+   },
+   "local": {
+    "u": 32.0,
+    "v": 200.5,
+    "u_from": "hinge edge",
+    "v_from": "door bottom edge",
+    "face": "back"
+   },
+   "dia": 2.5,
+   "depth": 10,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0019",
+   "cabinet": "N2 prawa",
+   "kind": "plate-screw",
+   "hardware": "173L6100",
+   "part": {
+    "id": "p0017",
+    "name": "N2 prawa Bok P 514x282"
+   },
+   "face": "x-",
+   "world": {
+    "p": [
+     2072.0,
+     -255.0,
+     464.0
+    ],
+    "dir": [
+     1,
+     0,
+     0
+    ]
+   },
+   "local": {
+    "u": 37,
+    "v": 464.0,
+    "u_from": "front edge",
+    "v_from": "panel bottom edge",
+    "face": "inner (towards the door centre)"
+   },
+   "dia": 2.5,
+   "depth": 10,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0020",
+   "cabinet": "N2 prawa",
+   "kind": "plate-screw",
+   "hardware": "173L6100",
+   "part": {
+    "id": "p0017",
+    "name": "N2 prawa Bok P 514x282"
+   },
+   "face": "x-",
+   "world": {
+    "p": [
+     2072.0,
+     -255.0,
+     496.0
+    ],
+    "dir": [
+     1,
+     0,
+     0
+    ]
+   },
+   "local": {
+    "u": 37,
+    "v": 496.0,
+    "u_from": "front edge",
+    "v_from": "panel bottom edge",
+    "face": "inner (towards the door centre)"
+   },
+   "dia": 2.5,
+   "depth": 10,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0021",
+   "cabinet": "N1",
+   "kind": "shelf-screw",
+   "hardware": "Spax 4x50",
+   "part": {
+    "id": "p0008",
+    "name": "N1 lewa Bok L 514x282"
+   },
+   "face": "x-",
+   "world": {
+    "p": [
+     10.0,
+     -252.0,
+     309.0
+    ],
+    "dir": [
+     1,
+     0,
+     0
+    ]
+   },
+   "local": {
+    "u": 40.0,
+    "v": 309.0,
+    "u_from": "front edge",
+    "v_from": "panel bottom edge",
+    "face": "outer"
+   },
+   "dia": 4,
+   "depth": 18,
+   "note": "through the side, countersink; pilot 2.5 mm into the shelf edge",
+   "verify": false
+  },
+  {
+   "id": "f0022",
+   "cabinet": "N1",
+   "kind": "shelf-screw",
+   "hardware": "Spax 4x50",
+   "part": {
+    "id": "p0008",
+    "name": "N1 lewa Bok L 514x282"
+   },
+   "face": "x-",
+   "world": {
+    "p": [
+     10.0,
+     -50.0,
+     309.0
+    ],
+    "dir": [
+     1,
+     0,
+     0
+    ]
+   },
+   "local": {
+    "u": 242.0,
+    "v": 309.0,
+    "u_from": "front edge",
+    "v_from": "panel bottom edge",
+    "face": "outer"
+   },
+   "dia": 4,
+   "depth": 18,
+   "note": "through the side, countersink; pilot 2.5 mm into the shelf edge",
+   "verify": false
+  },
+  {
+   "id": "f0023",
+   "cabinet": "N1",
+   "kind": "shelf-screw",
+   "hardware": "Spax 4x50",
+   "part": {
+    "id": "p0009",
+    "name": "N1 lewa Bok P 514x282"
+   },
+   "face": "x+",
+   "world": {
+    "p": [
+     240.0,
+     -252.0,
+     309.0
+    ],
+    "dir": [
+     -1,
+     0,
+     0
+    ]
+   },
+   "local": {
+    "u": 40.0,
+    "v": 309.0,
+    "u_from": "front edge",
+    "v_from": "panel bottom edge",
+    "face": "outer"
+   },
+   "dia": 4,
+   "depth": 18,
+   "note": "through the side, countersink; pilot 2.5 mm into the shelf edge",
+   "verify": false
+  },
+  {
+   "id": "f0024",
+   "cabinet": "N1",
+   "kind": "shelf-screw",
+   "hardware": "Spax 4x50",
+   "part": {
+    "id": "p0009",
+    "name": "N1 lewa Bok P 514x282"
+   },
+   "face": "x+",
+   "world": {
+    "p": [
+     240.0,
+     -50.0,
+     309.0
+    ],
+    "dir": [
+     -1,
+     0,
+     0
+    ]
+   },
+   "local": {
+    "u": 242.0,
+    "v": 309.0,
+    "u_from": "front edge",
+    "v_from": "panel bottom edge",
+    "face": "outer"
+   },
+   "dia": 4,
+   "depth": 18,
+   "note": "through the side, countersink; pilot 2.5 mm into the shelf edge",
+   "verify": false
+  },
+  {
+   "id": "f0025",
+   "cabinet": "N2",
+   "kind": "shelf-screw",
+   "hardware": "Spax 4x50",
+   "part": {
+    "id": "p0016",
+    "name": "N2 prawa Bok L 514x282"
+   },
+   "face": "x-",
+   "world": {
+    "p": [
+     1860.0,
+     -252.0,
+     309.0
+    ],
+    "dir": [
+     1,
+     0,
+     0
+    ]
+   },
+   "local": {
+    "u": 40.0,
+    "v": 309.0,
+    "u_from": "front edge",
+    "v_from": "panel bottom edge",
+    "face": "outer"
+   },
+   "dia": 4,
+   "depth": 18,
+   "note": "through the side, countersink; pilot 2.5 mm into the shelf edge",
+   "verify": false
+  },
+  {
+   "id": "f0026",
+   "cabinet": "N2",
+   "kind": "shelf-screw",
+   "hardware": "Spax 4x50",
+   "part": {
+    "id": "p0016",
+    "name": "N2 prawa Bok L 514x282"
+   },
+   "face": "x-",
+   "world": {
+    "p": [
+     1860.0,
+     -50.0,
+     309.0
+    ],
+    "dir": [
+     1,
+     0,
+     0
+    ]
+   },
+   "local": {
+    "u": 242.0,
+    "v": 309.0,
+    "u_from": "front edge",
+    "v_from": "panel bottom edge",
+    "face": "outer"
+   },
+   "dia": 4,
+   "depth": 18,
+   "note": "through the side, countersink; pilot 2.5 mm into the shelf edge",
+   "verify": false
+  },
+  {
+   "id": "f0027",
+   "cabinet": "N2",
+   "kind": "shelf-screw",
+   "hardware": "Spax 4x50",
+   "part": {
+    "id": "p0017",
+    "name": "N2 prawa Bok P 514x282"
+   },
+   "face": "x+",
+   "world": {
+    "p": [
+     2090.0,
+     -252.0,
+     309.0
+    ],
+    "dir": [
+     -1,
+     0,
+     0
+    ]
+   },
+   "local": {
+    "u": 40.0,
+    "v": 309.0,
+    "u_from": "front edge",
+    "v_from": "panel bottom edge",
+    "face": "outer"
+   },
+   "dia": 4,
+   "depth": 18,
+   "note": "through the side, countersink; pilot 2.5 mm into the shelf edge",
+   "verify": false
+  },
+  {
+   "id": "f0028",
+   "cabinet": "N2",
+   "kind": "shelf-screw",
+   "hardware": "Spax 4x50",
+   "part": {
+    "id": "p0017",
+    "name": "N2 prawa Bok P 514x282"
+   },
+   "face": "x+",
+   "world": {
+    "p": [
+     2090.0,
+     -50.0,
+     309.0
+    ],
+    "dir": [
+     -1,
+     0,
+     0
+    ]
+   },
+   "local": {
+    "u": 242.0,
+    "v": 309.0,
+    "u_from": "front edge",
+    "v_from": "panel bottom edge",
+    "face": "outer"
+   },
+   "dia": 4,
+   "depth": 18,
+   "note": "through the side, countersink; pilot 2.5 mm into the shelf edge",
+   "verify": false
+  },
+  {
+   "id": "f0029",
+   "cabinet": "N1 lewa",
+   "kind": "tipon-bore",
+   "hardware": "956A1006",
+   "part": {
+    "id": "p0009",
+    "name": "N1 lewa Bok P 514x282"
+   },
+   "face": "y-",
+   "world": {
+    "p": [
+     229.5,
+     -292.0,
+     430.0
+    ],
+    "dir": [
+     0,
+     1,
+     0
+    ]
+   },
+   "local": {
+    "u": 7.5,
+    "v": 430.0,
+    "u_from": "inner face (bore in the FRONT EDGE of the panel)",
+    "v_from": "panel bottom edge",
+    "face": "front edge"
+   },
+   "dia": 10,
+   "depth": 76,
+   "note": "Blum template 65.5010; position allowed +-300 mm in height",
+   "verify": false
+  },
+  {
+   "id": "f0030",
+   "cabinet": "N2 prawa",
+   "kind": "tipon-bore",
+   "hardware": "956A1006",
+   "part": {
+    "id": "p0016",
+    "name": "N2 prawa Bok L 514x282"
+   },
+   "face": "y-",
+   "world": {
+    "p": [
+     1870.5,
+     -292.0,
+     430.0
+    ],
+    "dir": [
+     0,
+     1,
+     0
+    ]
+   },
+   "local": {
+    "u": 7.5,
+    "v": 430.0,
+    "u_from": "inner face (bore in the FRONT EDGE of the panel)",
+    "v_from": "panel bottom edge",
+    "face": "front edge"
+   },
+   "dia": 10,
+   "depth": 76,
+   "note": "Blum template 65.5010; position allowed +-300 mm in height",
+   "verify": false
+  }
+ ]
+}

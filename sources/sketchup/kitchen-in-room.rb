@@ -399,9 +399,10 @@ def szuflada(e, p, label, w, d, z0, typ, nl = 500)
   sh = SIDE_H[typ]
   bw = w - 2 * T - 51
   x0 = T + 25.5
+  # Wymiary wg Blum E-SERVICES (Merivobox A1): dno NL-26 = 474, tyl M 83 / K 121 / E 184 (bok - 8)
   y1 = d - 10; y0 = y1 - (nl - 10)
-  box(e, "#{p} #{label} Dno 16mm #{bw.round}x#{nl - 10}", x0, x0 + bw, y0, y1, z0, z0 + 16, DNO16, l)
-  box(e, "#{p} #{label} Tyl 16mm #{bw.round}x#{(sh - 20).round}", x0, x0 + bw, y0, y0 + 16, z0 + 16, z0 + sh - 4, DNO16, l)
+  box(e, "#{p} #{label} Dno 16mm #{bw.round}x#{nl - 26}", x0, x0 + bw, y1 - (nl - 26), y1, z0, z0 + 16, DNO16, l)
+  box(e, "#{p} #{label} Tyl 16mm #{bw.round}x#{(sh - 8).round}", x0, x0 + bw, y0, y0 + 16, z0, z0 + sh - 8, DNO16, l)
   box(e, "#{p} #{label} Bok L Merivobox #{typ}", x0 - 13, x0, y0, y1, z0, z0 + sh, STAL, l)
   box(e, "#{p} #{label} Bok P Merivobox #{typ}", x0 + bw, x0 + bw + 13, y0, y1, z0, z0 + sh, STAL, l)
 end

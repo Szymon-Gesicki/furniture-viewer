@@ -1,0 +1,3981 @@
+{
+ "format": "drill-plan",
+ "version": 1,
+ "project": "bathroom",
+ "generated_from": "sources/sketchup/bathroom-in-room.rb",
+ "units": "mm, world coordinates of the viewer model (Z up); local u/v measured on the named face",
+ "parameters": {
+  "hinge": {
+   "overlay_formula": "B = overlay - 11 (CLIP top 110 deg 71B3550 and 155 deg 71B7550, 0 mm plate)",
+   "cup_dia": 35,
+   "cup_depth": 13,
+   "cup_edge_offset": 17.5,
+   "screw_spacing": 45,
+   "screw_offset": 9.5,
+   "screw_dia": 2.5,
+   "screw_depth": 10,
+   "plate_setback": 37,
+   "plate_screw_spacing": 32,
+   "plate_screw_dia": 2.5,
+   "plate_screw_depth": 10,
+   "plate_half_height": 25,
+   "edge_dist_tall": 100,
+   "edge_dist_small_factor": 0.22,
+   "edge_dist_min": 45,
+   "count": [
+    [
+     900,
+     2
+    ],
+    [
+     1600,
+     3
+    ],
+    [
+     2000,
+     4
+    ],
+    [
+     2400,
+     5
+    ]
+   ],
+   "B_range": {
+    "71B3550": [
+     3,
+     7
+    ],
+    "71B7550": [
+     3,
+     8
+    ]
+   }
+  },
+  "shelf": {
+   "pin_dia": 5,
+   "pin_depth": 10,
+   "pin_from_edge": 37,
+   "pin_below_shelf": 2.5,
+   "screw_dia": 4,
+   "screw_from_edge": 40
+  },
+  "drawer": {
+   "FA_side": 16,
+   "FA_bottom": 16,
+   "front_hole_x": 20.5,
+   "front_hole_z1": 33.5,
+   "front_hole_pitch": 32,
+   "front_hole_dia": 10,
+   "front_hole_depth": 12,
+   "stab_below_first": 15,
+   "stab_pitch": 32,
+   "runner_screws_from_front": [
+    19,
+    37,
+    69,
+    261,
+    293
+   ],
+   "runner_screw_dia": 2.5,
+   "runner_screw_depth": 10,
+   "runner_screw_above_runner_bottom": 6
+  },
+  "handle": {
+   "dia": 5,
+   "depth": 18,
+   "drawer_from_top": 50,
+   "door_from_opening_edge": 40,
+   "door_end_hole_from_edge": 60,
+   "long": {
+    "code": "C-1149-320.P61",
+    "name": "Nomet TECHNO 320 czarny mat",
+    "cc": 320
+   },
+   "short": {
+    "code": "C-1149-128.P61 (verify code)",
+    "name": "Nomet TECHNO 128 czarny mat",
+    "cc": 128
+   }
+  },
+  "tipon": {
+   "code": "956A1006",
+   "bore_dia": 10,
+   "bore_depth": 76,
+   "from_inner_face": 7.5,
+   "from_opening_edge_on_panel": 60,
+   "two_units_above": 1500
+  },
+  "camar801": {
+   "dowel_dia": 10,
+   "dowel_depth": 10.5,
+   "below_top_panel_underside": 42,
+   "first_dowel_from_back_edge": 20,
+   "dowel_spacing": 32,
+   "dowel_axis": "depth",
+   "VERIFY": "first_dowel_from_back_edge, dowel_spacing and dowel_axis are placeholders - measure the real hanger"
+  }
+ },
+ "hinges": [
+  {
+   "cabinet": "R1",
+   "door": {
+    "id": "p0019",
+    "name": "R1 Drzwi (zawiasy P) 417x1112"
+   },
+   "size": [
+    417.0,
+    1112.0
+   ],
+   "hinge_side": "P",
+   "hinge_side_reason": "label",
+   "hardware": "71B3550",
+   "inset": false,
+   "side_panel": {
+    "id": "p0012",
+    "name": "R1 Bok L 1098x170"
+   },
+   "overlay": 16.0,
+   "B": 5.0,
+   "cup_from_edge": 22.5,
+   "plate_setback": 37,
+   "hinges_from_door_bottom": [
+    100.0,
+    593.0,
+    1012.0
+   ],
+   "plates_from_side_bottom": [
+    84.0,
+    577.0,
+    996.0
+   ],
+   "moved": [
+    {
+     "hinge": 2,
+     "from": 556.0,
+     "to": 593.0,
+     "because": "R1 Polka 385x150"
+    }
+   ]
+  },
+  {
+   "cabinet": "U1",
+   "door": {
+    "id": "p0030",
+    "name": "U1 Drzwi prawe (zawiasy P) 318x1167"
+   },
+   "size": [
+    318.0,
+    1167.0
+   ],
+   "hinge_side": "P",
+   "hinge_side_reason": "label",
+   "hardware": "71B3550",
+   "inset": false,
+   "side_panel": {
+    "id": "p0022",
+    "name": "U1 Bok L 1171x170"
+   },
+   "overlay": 16.0,
+   "B": 5.0,
+   "cup_from_edge": 22.5,
+   "plate_setback": 37,
+   "hinges_from_door_bottom": [
+    100.0,
+    584.0,
+    1067.0
+   ],
+   "plates_from_side_bottom": [
+    102.0,
+    586.0,
+    1069.0
+   ],
+   "moved": []
+  },
+  {
+   "cabinet": "U1",
+   "door": {
+    "id": "p0031",
+    "name": "U1 Drzwi lewe (zawiasy L) 318x1167"
+   },
+   "size": [
+    318.0,
+    1167.0
+   ],
+   "hinge_side": "L",
+   "hinge_side_reason": "label",
+   "hardware": "71B3550",
+   "inset": false,
+   "side_panel": {
+    "id": "p0023",
+    "name": "U1 Bok P 1171x170"
+   },
+   "overlay": 16.0,
+   "B": 5.0,
+   "cup_from_edge": 22.5,
+   "plate_setback": 37,
+   "hinges_from_door_bottom": [
+    100.0,
+    584.0,
+    1067.0
+   ],
+   "plates_from_side_bottom": [
+    102.0,
+    586.0,
+    1069.0
+   ],
+   "moved": []
+  },
+  {
+   "cabinet": "U2",
+   "door": {
+    "id": "p0040",
+    "name": "U2 Drzwi (zawiasy P) 417x1167"
+   },
+   "size": [
+    417.0,
+    1167.0
+   ],
+   "hinge_side": "P",
+   "hinge_side_reason": "label",
+   "hardware": "71B3550",
+   "inset": false,
+   "side_panel": {
+    "id": "p0032",
+    "name": "U2 Bok L 1171x170"
+   },
+   "overlay": 16.0,
+   "B": 5.0,
+   "cup_from_edge": 22.5,
+   "plate_setback": 37,
+   "hinges_from_door_bottom": [
+    100.0,
+    620.0,
+    1067.0
+   ],
+   "plates_from_side_bottom": [
+    102.0,
+    622.0,
+    1069.0
+   ],
+   "moved": [
+    {
+     "hinge": 2,
+     "from": 583.5,
+     "to": 620.5,
+     "because": "U2 Polka 385x150"
+    }
+   ]
+  }
+ ],
+ "drawers": [],
+ "shelves": [
+  {
+   "cabinet": "R1",
+   "shelf": {
+    "id": "p0016",
+    "name": "R1 Polka 385x150"
+   },
+   "fixed": false,
+   "z_bottom": 292.0,
+   "holes": [
+    {
+     "panel": "R1 Bok P 1098x170",
+     "u": 57.0,
+     "v": 253.5
+    },
+    {
+     "panel": "R1 Bok P 1098x170",
+     "u": 133.0,
+     "v": 253.5
+    },
+    {
+     "panel": "R1 Bok L 1098x170",
+     "u": 57.0,
+     "v": 253.5
+    },
+    {
+     "panel": "R1 Bok L 1098x170",
+     "u": 133.0,
+     "v": 253.5
+    }
+   ]
+  },
+  {
+   "cabinet": "R1",
+   "shelf": {
+    "id": "p0017",
+    "name": "R1 Polka 385x150"
+   },
+   "fixed": false,
+   "z_bottom": 567.0,
+   "holes": [
+    {
+     "panel": "R1 Bok P 1098x170",
+     "u": 57.0,
+     "v": 528.5
+    },
+    {
+     "panel": "R1 Bok P 1098x170",
+     "u": 133.0,
+     "v": 528.5
+    },
+    {
+     "panel": "R1 Bok L 1098x170",
+     "u": 57.0,
+     "v": 528.5
+    },
+    {
+     "panel": "R1 Bok L 1098x170",
+     "u": 133.0,
+     "v": 528.5
+    }
+   ]
+  },
+  {
+   "cabinet": "R1",
+   "shelf": {
+    "id": "p0018",
+    "name": "R1 Polka 385x150"
+   },
+   "fixed": false,
+   "z_bottom": 841.0,
+   "holes": [
+    {
+     "panel": "R1 Bok P 1098x170",
+     "u": 57.0,
+     "v": 802.5
+    },
+    {
+     "panel": "R1 Bok P 1098x170",
+     "u": 133.0,
+     "v": 802.5
+    },
+    {
+     "panel": "R1 Bok L 1098x170",
+     "u": 57.0,
+     "v": 802.5
+    },
+    {
+     "panel": "R1 Bok L 1098x170",
+     "u": 133.0,
+     "v": 802.5
+    }
+   ]
+  },
+  {
+   "cabinet": "U1",
+   "shelf": {
+    "id": "p0027",
+    "name": "U1 Polka 607x150"
+   },
+   "fixed": false,
+   "z_bottom": 1554.0,
+   "holes": [
+    {
+     "panel": "U1 Bok P 1171x170",
+     "u": 57.0,
+     "v": 417.5
+    },
+    {
+     "panel": "U1 Bok P 1171x170",
+     "u": 133.0,
+     "v": 417.5
+    },
+    {
+     "panel": "U1 Bok L 1171x170",
+     "u": 57.0,
+     "v": 417.5
+    },
+    {
+     "panel": "U1 Bok L 1171x170",
+     "u": 133.0,
+     "v": 417.5
+    }
+   ]
+  },
+  {
+   "cabinet": "U1",
+   "shelf": {
+    "id": "p0028",
+    "name": "U1 Polka 607x150"
+   },
+   "fixed": false,
+   "z_bottom": 1794.0,
+   "holes": [
+    {
+     "panel": "U1 Bok P 1171x170",
+     "u": 57.0,
+     "v": 657.5
+    },
+    {
+     "panel": "U1 Bok P 1171x170",
+     "u": 133.0,
+     "v": 657.5
+    },
+    {
+     "panel": "U1 Bok L 1171x170",
+     "u": 57.0,
+     "v": 657.5
+    },
+    {
+     "panel": "U1 Bok L 1171x170",
+     "u": 133.0,
+     "v": 657.5
+    }
+   ]
+  },
+  {
+   "cabinet": "U1",
+   "shelf": {
+    "id": "p0029",
+    "name": "U1 Polka 607x150"
+   },
+   "fixed": false,
+   "z_bottom": 2034.0,
+   "holes": [
+    {
+     "panel": "U1 Bok P 1171x170",
+     "u": 57.0,
+     "v": 897.5
+    },
+    {
+     "panel": "U1 Bok P 1171x170",
+     "u": 133.0,
+     "v": 897.5
+    },
+    {
+     "panel": "U1 Bok L 1171x170",
+     "u": 57.0,
+     "v": 897.5
+    },
+    {
+     "panel": "U1 Bok L 1171x170",
+     "u": 133.0,
+     "v": 897.5
+    }
+   ]
+  },
+  {
+   "cabinet": "U2",
+   "shelf": {
+    "id": "p0037",
+    "name": "U2 Polka 385x150"
+   },
+   "fixed": false,
+   "z_bottom": 1422.0,
+   "holes": [
+    {
+     "panel": "U2 Bok P 1171x170",
+     "u": 57.0,
+     "v": 285.5
+    },
+    {
+     "panel": "U2 Bok P 1171x170",
+     "u": 133.0,
+     "v": 285.5
+    },
+    {
+     "panel": "U2 Bok L 1171x170",
+     "u": 57.0,
+     "v": 285.5
+    },
+    {
+     "panel": "U2 Bok L 1171x170",
+     "u": 133.0,
+     "v": 285.5
+    }
+   ]
+  },
+  {
+   "cabinet": "U2",
+   "shelf": {
+    "id": "p0038",
+    "name": "U2 Polka 385x150"
+   },
+   "fixed": false,
+   "z_bottom": 1710.0,
+   "holes": [
+    {
+     "panel": "U2 Bok P 1171x170",
+     "u": 57.0,
+     "v": 573.5
+    },
+    {
+     "panel": "U2 Bok P 1171x170",
+     "u": 133.0,
+     "v": 573.5
+    },
+    {
+     "panel": "U2 Bok L 1171x170",
+     "u": 57.0,
+     "v": 573.5
+    },
+    {
+     "panel": "U2 Bok L 1171x170",
+     "u": 133.0,
+     "v": 573.5
+    }
+   ]
+  },
+  {
+   "cabinet": "U2",
+   "shelf": {
+    "id": "p0039",
+    "name": "U2 Polka 385x150"
+   },
+   "fixed": false,
+   "z_bottom": 1999.0,
+   "holes": [
+    {
+     "panel": "U2 Bok P 1171x170",
+     "u": 57.0,
+     "v": 862.5
+    },
+    {
+     "panel": "U2 Bok P 1171x170",
+     "u": 133.0,
+     "v": 862.5
+    },
+    {
+     "panel": "U2 Bok L 1171x170",
+     "u": 57.0,
+     "v": 862.5
+    },
+    {
+     "panel": "U2 Bok L 1171x170",
+     "u": 133.0,
+     "v": 862.5
+    }
+   ]
+  }
+ ],
+ "handles": [],
+ "tipons": [
+  {
+   "door": "R1 Drzwi (zawiasy P) 417x1112",
+   "panel": "R1 Bok P 1098x170",
+   "v_from_panel_bottom": 996.0,
+   "v_from_door_bottom": 1012
+  },
+  {
+   "door": "U1 Drzwi prawe (zawiasy P) 318x1167",
+   "panel": "U1 Wieniec gorny 607x170",
+   "u_from_panel_left": 365.0
+  },
+  {
+   "door": "U1 Drzwi lewe (zawiasy L) 318x1167",
+   "panel": "U1 Wieniec gorny 607x170",
+   "u_from_panel_left": 242.0
+  },
+  {
+   "door": "U2 Drzwi (zawiasy P) 417x1167",
+   "panel": "U2 Bok P 1171x170",
+   "v_from_panel_bottom": 586.0,
+   "v_from_door_bottom": 584
+  }
+ ],
+ "hangers": [],
+ "warnings": [],
+ "features": [
+  {
+   "id": "f0001",
+   "cabinet": "R1",
+   "kind": "hinge-cup",
+   "hardware": "71B3550",
+   "part": {
+    "id": "p0019",
+    "name": "R1 Drzwi (zawiasy P) 417x1112"
+   },
+   "face": "y+",
+   "world": {
+    "p": [
+     1021.5,
+     -170.0,
+     120.0
+    ],
+    "dir": [
+     0,
+     -1,
+     0
+    ]
+   },
+   "local": {
+    "u": 22.5,
+    "v": 100.0,
+    "u_from": "hinge edge",
+    "v_from": "door bottom edge",
+    "face": "back"
+   },
+   "dia": 35,
+   "depth": 13,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0002",
+   "cabinet": "R1",
+   "kind": "hinge-screw",
+   "hardware": "609.1500",
+   "part": {
+    "id": "p0019",
+    "name": "R1 Drzwi (zawiasy P) 417x1112"
+   },
+   "face": "y+",
+   "world": {
+    "p": [
+     1012.0,
+     -170.0,
+     97.5
+    ],
+    "dir": [
+     0,
+     -1,
+     0
+    ]
+   },
+   "local": {
+    "u": 32.0,
+    "v": 77.5,
+    "u_from": "hinge edge",
+    "v_from": "door bottom edge",
+    "face": "back"
+   },
+   "dia": 2.5,
+   "depth": 10,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0003",
+   "cabinet": "R1",
+   "kind": "hinge-screw",
+   "hardware": "609.1500",
+   "part": {
+    "id": "p0019",
+    "name": "R1 Drzwi (zawiasy P) 417x1112"
+   },
+   "face": "y+",
+   "world": {
+    "p": [
+     1012.0,
+     -170.0,
+     142.5
+    ],
+    "dir": [
+     0,
+     -1,
+     0
+    ]
+   },
+   "local": {
+    "u": 32.0,
+    "v": 122.5,
+    "u_from": "hinge edge",
+    "v_from": "door bottom edge",
+    "face": "back"
+   },
+   "dia": 2.5,
+   "depth": 10,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0004",
+   "cabinet": "R1",
+   "kind": "plate-screw",
+   "hardware": "173L6100",
+   "part": {
+    "id": "p0012",
+    "name": "R1 Bok L 1098x170"
+   },
+   "face": "x-",
+   "world": {
+    "p": [
+     1028.0,
+     -133.0,
+     104.0
+    ],
+    "dir": [
+     1,
+     0,
+     0
+    ]
+   },
+   "local": {
+    "u": 37,
+    "v": 68.0,
+    "u_from": "front edge",
+    "v_from": "panel bottom edge",
+    "face": "inner (towards the door centre)"
+   },
+   "dia": 2.5,
+   "depth": 10,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0005",
+   "cabinet": "R1",
+   "kind": "plate-screw",
+   "hardware": "173L6100",
+   "part": {
+    "id": "p0012",
+    "name": "R1 Bok L 1098x170"
+   },
+   "face": "x-",
+   "world": {
+    "p": [
+     1028.0,
+     -133.0,
+     136.0
+    ],
+    "dir": [
+     1,
+     0,
+     0
+    ]
+   },
+   "local": {
+    "u": 37,
+    "v": 100.0,
+    "u_from": "front edge",
+    "v_from": "panel bottom edge",
+    "face": "inner (towards the door centre)"
+   },
+   "dia": 2.5,
+   "depth": 10,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0006",
+   "cabinet": "R1",
+   "kind": "hinge-cup",
+   "hardware": "71B3550",
+   "part": {
+    "id": "p0019",
+    "name": "R1 Drzwi (zawiasy P) 417x1112"
+   },
+   "face": "y+",
+   "world": {
+    "p": [
+     1021.5,
+     -170.0,
+     613.0
+    ],
+    "dir": [
+     0,
+     -1,
+     0
+    ]
+   },
+   "local": {
+    "u": 22.5,
+    "v": 593.0,
+    "u_from": "hinge edge",
+    "v_from": "door bottom edge",
+    "face": "back"
+   },
+   "dia": 35,
+   "depth": 13,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0007",
+   "cabinet": "R1",
+   "kind": "hinge-screw",
+   "hardware": "609.1500",
+   "part": {
+    "id": "p0019",
+    "name": "R1 Drzwi (zawiasy P) 417x1112"
+   },
+   "face": "y+",
+   "world": {
+    "p": [
+     1012.0,
+     -170.0,
+     590.5
+    ],
+    "dir": [
+     0,
+     -1,
+     0
+    ]
+   },
+   "local": {
+    "u": 32.0,
+    "v": 570.5,
+    "u_from": "hinge edge",
+    "v_from": "door bottom edge",
+    "face": "back"
+   },
+   "dia": 2.5,
+   "depth": 10,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0008",
+   "cabinet": "R1",
+   "kind": "hinge-screw",
+   "hardware": "609.1500",
+   "part": {
+    "id": "p0019",
+    "name": "R1 Drzwi (zawiasy P) 417x1112"
+   },
+   "face": "y+",
+   "world": {
+    "p": [
+     1012.0,
+     -170.0,
+     635.5
+    ],
+    "dir": [
+     0,
+     -1,
+     0
+    ]
+   },
+   "local": {
+    "u": 32.0,
+    "v": 615.5,
+    "u_from": "hinge edge",
+    "v_from": "door bottom edge",
+    "face": "back"
+   },
+   "dia": 2.5,
+   "depth": 10,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0009",
+   "cabinet": "R1",
+   "kind": "plate-screw",
+   "hardware": "173L6100",
+   "part": {
+    "id": "p0012",
+    "name": "R1 Bok L 1098x170"
+   },
+   "face": "x-",
+   "world": {
+    "p": [
+     1028.0,
+     -133.0,
+     597.0
+    ],
+    "dir": [
+     1,
+     0,
+     0
+    ]
+   },
+   "local": {
+    "u": 37,
+    "v": 561.0,
+    "u_from": "front edge",
+    "v_from": "panel bottom edge",
+    "face": "inner (towards the door centre)"
+   },
+   "dia": 2.5,
+   "depth": 10,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0010",
+   "cabinet": "R1",
+   "kind": "plate-screw",
+   "hardware": "173L6100",
+   "part": {
+    "id": "p0012",
+    "name": "R1 Bok L 1098x170"
+   },
+   "face": "x-",
+   "world": {
+    "p": [
+     1028.0,
+     -133.0,
+     629.0
+    ],
+    "dir": [
+     1,
+     0,
+     0
+    ]
+   },
+   "local": {
+    "u": 37,
+    "v": 593.0,
+    "u_from": "front edge",
+    "v_from": "panel bottom edge",
+    "face": "inner (towards the door centre)"
+   },
+   "dia": 2.5,
+   "depth": 10,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0011",
+   "cabinet": "R1",
+   "kind": "hinge-cup",
+   "hardware": "71B3550",
+   "part": {
+    "id": "p0019",
+    "name": "R1 Drzwi (zawiasy P) 417x1112"
+   },
+   "face": "y+",
+   "world": {
+    "p": [
+     1021.5,
+     -170.0,
+     1032.0
+    ],
+    "dir": [
+     0,
+     -1,
+     0
+    ]
+   },
+   "local": {
+    "u": 22.5,
+    "v": 1012.0,
+    "u_from": "hinge edge",
+    "v_from": "door bottom edge",
+    "face": "back"
+   },
+   "dia": 35,
+   "depth": 13,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0012",
+   "cabinet": "R1",
+   "kind": "hinge-screw",
+   "hardware": "609.1500",
+   "part": {
+    "id": "p0019",
+    "name": "R1 Drzwi (zawiasy P) 417x1112"
+   },
+   "face": "y+",
+   "world": {
+    "p": [
+     1012.0,
+     -170.0,
+     1009.5
+    ],
+    "dir": [
+     0,
+     -1,
+     0
+    ]
+   },
+   "local": {
+    "u": 32.0,
+    "v": 989.5,
+    "u_from": "hinge edge",
+    "v_from": "door bottom edge",
+    "face": "back"
+   },
+   "dia": 2.5,
+   "depth": 10,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0013",
+   "cabinet": "R1",
+   "kind": "hinge-screw",
+   "hardware": "609.1500",
+   "part": {
+    "id": "p0019",
+    "name": "R1 Drzwi (zawiasy P) 417x1112"
+   },
+   "face": "y+",
+   "world": {
+    "p": [
+     1012.0,
+     -170.0,
+     1054.5
+    ],
+    "dir": [
+     0,
+     -1,
+     0
+    ]
+   },
+   "local": {
+    "u": 32.0,
+    "v": 1034.5,
+    "u_from": "hinge edge",
+    "v_from": "door bottom edge",
+    "face": "back"
+   },
+   "dia": 2.5,
+   "depth": 10,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0014",
+   "cabinet": "R1",
+   "kind": "plate-screw",
+   "hardware": "173L6100",
+   "part": {
+    "id": "p0012",
+    "name": "R1 Bok L 1098x170"
+   },
+   "face": "x-",
+   "world": {
+    "p": [
+     1028.0,
+     -133.0,
+     1016.0
+    ],
+    "dir": [
+     1,
+     0,
+     0
+    ]
+   },
+   "local": {
+    "u": 37,
+    "v": 980.0,
+    "u_from": "front edge",
+    "v_from": "panel bottom edge",
+    "face": "inner (towards the door centre)"
+   },
+   "dia": 2.5,
+   "depth": 10,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0015",
+   "cabinet": "R1",
+   "kind": "plate-screw",
+   "hardware": "173L6100",
+   "part": {
+    "id": "p0012",
+    "name": "R1 Bok L 1098x170"
+   },
+   "face": "x-",
+   "world": {
+    "p": [
+     1028.0,
+     -133.0,
+     1048.0
+    ],
+    "dir": [
+     1,
+     0,
+     0
+    ]
+   },
+   "local": {
+    "u": 37,
+    "v": 1012.0,
+    "u_from": "front edge",
+    "v_from": "panel bottom edge",
+    "face": "inner (towards the door centre)"
+   },
+   "dia": 2.5,
+   "depth": 10,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0016",
+   "cabinet": "U1",
+   "kind": "hinge-cup",
+   "hardware": "71B3550",
+   "part": {
+    "id": "p0030",
+    "name": "U1 Drzwi prawe (zawiasy P) 318x1167"
+   },
+   "face": "y+",
+   "world": {
+    "p": [
+     600.5,
+     -170.0,
+     1236.0
+    ],
+    "dir": [
+     0,
+     -1,
+     0
+    ]
+   },
+   "local": {
+    "u": 22.5,
+    "v": 100.0,
+    "u_from": "hinge edge",
+    "v_from": "door bottom edge",
+    "face": "back"
+   },
+   "dia": 35,
+   "depth": 13,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0017",
+   "cabinet": "U1",
+   "kind": "hinge-screw",
+   "hardware": "609.1500",
+   "part": {
+    "id": "p0030",
+    "name": "U1 Drzwi prawe (zawiasy P) 318x1167"
+   },
+   "face": "y+",
+   "world": {
+    "p": [
+     591.0,
+     -170.0,
+     1213.5
+    ],
+    "dir": [
+     0,
+     -1,
+     0
+    ]
+   },
+   "local": {
+    "u": 32.0,
+    "v": 77.5,
+    "u_from": "hinge edge",
+    "v_from": "door bottom edge",
+    "face": "back"
+   },
+   "dia": 2.5,
+   "depth": 10,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0018",
+   "cabinet": "U1",
+   "kind": "hinge-screw",
+   "hardware": "609.1500",
+   "part": {
+    "id": "p0030",
+    "name": "U1 Drzwi prawe (zawiasy P) 318x1167"
+   },
+   "face": "y+",
+   "world": {
+    "p": [
+     591.0,
+     -170.0,
+     1258.5
+    ],
+    "dir": [
+     0,
+     -1,
+     0
+    ]
+   },
+   "local": {
+    "u": 32.0,
+    "v": 122.5,
+    "u_from": "hinge edge",
+    "v_from": "door bottom edge",
+    "face": "back"
+   },
+   "dia": 2.5,
+   "depth": 10,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0019",
+   "cabinet": "U1",
+   "kind": "plate-screw",
+   "hardware": "173L6100",
+   "part": {
+    "id": "p0022",
+    "name": "U1 Bok L 1171x170"
+   },
+   "face": "x-",
+   "world": {
+    "p": [
+     607.0,
+     -133.0,
+     1220.0
+    ],
+    "dir": [
+     1,
+     0,
+     0
+    ]
+   },
+   "local": {
+    "u": 37,
+    "v": 86.0,
+    "u_from": "front edge",
+    "v_from": "panel bottom edge",
+    "face": "inner (towards the door centre)"
+   },
+   "dia": 2.5,
+   "depth": 10,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0020",
+   "cabinet": "U1",
+   "kind": "plate-screw",
+   "hardware": "173L6100",
+   "part": {
+    "id": "p0022",
+    "name": "U1 Bok L 1171x170"
+   },
+   "face": "x-",
+   "world": {
+    "p": [
+     607.0,
+     -133.0,
+     1252.0
+    ],
+    "dir": [
+     1,
+     0,
+     0
+    ]
+   },
+   "local": {
+    "u": 37,
+    "v": 118.0,
+    "u_from": "front edge",
+    "v_from": "panel bottom edge",
+    "face": "inner (towards the door centre)"
+   },
+   "dia": 2.5,
+   "depth": 10,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0021",
+   "cabinet": "U1",
+   "kind": "hinge-cup",
+   "hardware": "71B3550",
+   "part": {
+    "id": "p0030",
+    "name": "U1 Drzwi prawe (zawiasy P) 318x1167"
+   },
+   "face": "y+",
+   "world": {
+    "p": [
+     600.5,
+     -170.0,
+     1720.0
+    ],
+    "dir": [
+     0,
+     -1,
+     0
+    ]
+   },
+   "local": {
+    "u": 22.5,
+    "v": 584.0,
+    "u_from": "hinge edge",
+    "v_from": "door bottom edge",
+    "face": "back"
+   },
+   "dia": 35,
+   "depth": 13,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0022",
+   "cabinet": "U1",
+   "kind": "hinge-screw",
+   "hardware": "609.1500",
+   "part": {
+    "id": "p0030",
+    "name": "U1 Drzwi prawe (zawiasy P) 318x1167"
+   },
+   "face": "y+",
+   "world": {
+    "p": [
+     591.0,
+     -170.0,
+     1697.5
+    ],
+    "dir": [
+     0,
+     -1,
+     0
+    ]
+   },
+   "local": {
+    "u": 32.0,
+    "v": 561.5,
+    "u_from": "hinge edge",
+    "v_from": "door bottom edge",
+    "face": "back"
+   },
+   "dia": 2.5,
+   "depth": 10,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0023",
+   "cabinet": "U1",
+   "kind": "hinge-screw",
+   "hardware": "609.1500",
+   "part": {
+    "id": "p0030",
+    "name": "U1 Drzwi prawe (zawiasy P) 318x1167"
+   },
+   "face": "y+",
+   "world": {
+    "p": [
+     591.0,
+     -170.0,
+     1742.5
+    ],
+    "dir": [
+     0,
+     -1,
+     0
+    ]
+   },
+   "local": {
+    "u": 32.0,
+    "v": 606.5,
+    "u_from": "hinge edge",
+    "v_from": "door bottom edge",
+    "face": "back"
+   },
+   "dia": 2.5,
+   "depth": 10,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0024",
+   "cabinet": "U1",
+   "kind": "plate-screw",
+   "hardware": "173L6100",
+   "part": {
+    "id": "p0022",
+    "name": "U1 Bok L 1171x170"
+   },
+   "face": "x-",
+   "world": {
+    "p": [
+     607.0,
+     -133.0,
+     1704.0
+    ],
+    "dir": [
+     1,
+     0,
+     0
+    ]
+   },
+   "local": {
+    "u": 37,
+    "v": 570.0,
+    "u_from": "front edge",
+    "v_from": "panel bottom edge",
+    "face": "inner (towards the door centre)"
+   },
+   "dia": 2.5,
+   "depth": 10,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0025",
+   "cabinet": "U1",
+   "kind": "plate-screw",
+   "hardware": "173L6100",
+   "part": {
+    "id": "p0022",
+    "name": "U1 Bok L 1171x170"
+   },
+   "face": "x-",
+   "world": {
+    "p": [
+     607.0,
+     -133.0,
+     1736.0
+    ],
+    "dir": [
+     1,
+     0,
+     0
+    ]
+   },
+   "local": {
+    "u": 37,
+    "v": 602.0,
+    "u_from": "front edge",
+    "v_from": "panel bottom edge",
+    "face": "inner (towards the door centre)"
+   },
+   "dia": 2.5,
+   "depth": 10,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0026",
+   "cabinet": "U1",
+   "kind": "hinge-cup",
+   "hardware": "71B3550",
+   "part": {
+    "id": "p0030",
+    "name": "U1 Drzwi prawe (zawiasy P) 318x1167"
+   },
+   "face": "y+",
+   "world": {
+    "p": [
+     600.5,
+     -170.0,
+     2203.0
+    ],
+    "dir": [
+     0,
+     -1,
+     0
+    ]
+   },
+   "local": {
+    "u": 22.5,
+    "v": 1067.0,
+    "u_from": "hinge edge",
+    "v_from": "door bottom edge",
+    "face": "back"
+   },
+   "dia": 35,
+   "depth": 13,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0027",
+   "cabinet": "U1",
+   "kind": "hinge-screw",
+   "hardware": "609.1500",
+   "part": {
+    "id": "p0030",
+    "name": "U1 Drzwi prawe (zawiasy P) 318x1167"
+   },
+   "face": "y+",
+   "world": {
+    "p": [
+     591.0,
+     -170.0,
+     2180.5
+    ],
+    "dir": [
+     0,
+     -1,
+     0
+    ]
+   },
+   "local": {
+    "u": 32.0,
+    "v": 1044.5,
+    "u_from": "hinge edge",
+    "v_from": "door bottom edge",
+    "face": "back"
+   },
+   "dia": 2.5,
+   "depth": 10,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0028",
+   "cabinet": "U1",
+   "kind": "hinge-screw",
+   "hardware": "609.1500",
+   "part": {
+    "id": "p0030",
+    "name": "U1 Drzwi prawe (zawiasy P) 318x1167"
+   },
+   "face": "y+",
+   "world": {
+    "p": [
+     591.0,
+     -170.0,
+     2225.5
+    ],
+    "dir": [
+     0,
+     -1,
+     0
+    ]
+   },
+   "local": {
+    "u": 32.0,
+    "v": 1089.5,
+    "u_from": "hinge edge",
+    "v_from": "door bottom edge",
+    "face": "back"
+   },
+   "dia": 2.5,
+   "depth": 10,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0029",
+   "cabinet": "U1",
+   "kind": "plate-screw",
+   "hardware": "173L6100",
+   "part": {
+    "id": "p0022",
+    "name": "U1 Bok L 1171x170"
+   },
+   "face": "x-",
+   "world": {
+    "p": [
+     607.0,
+     -133.0,
+     2187.0
+    ],
+    "dir": [
+     1,
+     0,
+     0
+    ]
+   },
+   "local": {
+    "u": 37,
+    "v": 1053.0,
+    "u_from": "front edge",
+    "v_from": "panel bottom edge",
+    "face": "inner (towards the door centre)"
+   },
+   "dia": 2.5,
+   "depth": 10,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0030",
+   "cabinet": "U1",
+   "kind": "plate-screw",
+   "hardware": "173L6100",
+   "part": {
+    "id": "p0022",
+    "name": "U1 Bok L 1171x170"
+   },
+   "face": "x-",
+   "world": {
+    "p": [
+     607.0,
+     -133.0,
+     2219.0
+    ],
+    "dir": [
+     1,
+     0,
+     0
+    ]
+   },
+   "local": {
+    "u": 37,
+    "v": 1085.0,
+    "u_from": "front edge",
+    "v_from": "panel bottom edge",
+    "face": "inner (towards the door centre)"
+   },
+   "dia": 2.5,
+   "depth": 10,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0031",
+   "cabinet": "U1",
+   "kind": "hinge-cup",
+   "hardware": "71B3550",
+   "part": {
+    "id": "p0031",
+    "name": "U1 Drzwi lewe (zawiasy L) 318x1167"
+   },
+   "face": "y+",
+   "world": {
+    "p": [
+     6.5,
+     -170.0,
+     1236.0
+    ],
+    "dir": [
+     0,
+     -1,
+     0
+    ]
+   },
+   "local": {
+    "u": 22.5,
+    "v": 100.0,
+    "u_from": "hinge edge",
+    "v_from": "door bottom edge",
+    "face": "back"
+   },
+   "dia": 35,
+   "depth": 13,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0032",
+   "cabinet": "U1",
+   "kind": "hinge-screw",
+   "hardware": "609.1500",
+   "part": {
+    "id": "p0031",
+    "name": "U1 Drzwi lewe (zawiasy L) 318x1167"
+   },
+   "face": "y+",
+   "world": {
+    "p": [
+     16.0,
+     -170.0,
+     1213.5
+    ],
+    "dir": [
+     0,
+     -1,
+     0
+    ]
+   },
+   "local": {
+    "u": 32.0,
+    "v": 77.5,
+    "u_from": "hinge edge",
+    "v_from": "door bottom edge",
+    "face": "back"
+   },
+   "dia": 2.5,
+   "depth": 10,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0033",
+   "cabinet": "U1",
+   "kind": "hinge-screw",
+   "hardware": "609.1500",
+   "part": {
+    "id": "p0031",
+    "name": "U1 Drzwi lewe (zawiasy L) 318x1167"
+   },
+   "face": "y+",
+   "world": {
+    "p": [
+     16.0,
+     -170.0,
+     1258.5
+    ],
+    "dir": [
+     0,
+     -1,
+     0
+    ]
+   },
+   "local": {
+    "u": 32.0,
+    "v": 122.5,
+    "u_from": "hinge edge",
+    "v_from": "door bottom edge",
+    "face": "back"
+   },
+   "dia": 2.5,
+   "depth": 10,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0034",
+   "cabinet": "U1",
+   "kind": "plate-screw",
+   "hardware": "173L6100",
+   "part": {
+    "id": "p0023",
+    "name": "U1 Bok P 1171x170"
+   },
+   "face": "x+",
+   "world": {
+    "p": [
+     0.0,
+     -133.0,
+     1220.0
+    ],
+    "dir": [
+     -1,
+     0,
+     0
+    ]
+   },
+   "local": {
+    "u": 37,
+    "v": 86.0,
+    "u_from": "front edge",
+    "v_from": "panel bottom edge",
+    "face": "inner (towards the door centre)"
+   },
+   "dia": 2.5,
+   "depth": 10,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0035",
+   "cabinet": "U1",
+   "kind": "plate-screw",
+   "hardware": "173L6100",
+   "part": {
+    "id": "p0023",
+    "name": "U1 Bok P 1171x170"
+   },
+   "face": "x+",
+   "world": {
+    "p": [
+     0.0,
+     -133.0,
+     1252.0
+    ],
+    "dir": [
+     -1,
+     0,
+     0
+    ]
+   },
+   "local": {
+    "u": 37,
+    "v": 118.0,
+    "u_from": "front edge",
+    "v_from": "panel bottom edge",
+    "face": "inner (towards the door centre)"
+   },
+   "dia": 2.5,
+   "depth": 10,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0036",
+   "cabinet": "U1",
+   "kind": "hinge-cup",
+   "hardware": "71B3550",
+   "part": {
+    "id": "p0031",
+    "name": "U1 Drzwi lewe (zawiasy L) 318x1167"
+   },
+   "face": "y+",
+   "world": {
+    "p": [
+     6.5,
+     -170.0,
+     1720.0
+    ],
+    "dir": [
+     0,
+     -1,
+     0
+    ]
+   },
+   "local": {
+    "u": 22.5,
+    "v": 584.0,
+    "u_from": "hinge edge",
+    "v_from": "door bottom edge",
+    "face": "back"
+   },
+   "dia": 35,
+   "depth": 13,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0037",
+   "cabinet": "U1",
+   "kind": "hinge-screw",
+   "hardware": "609.1500",
+   "part": {
+    "id": "p0031",
+    "name": "U1 Drzwi lewe (zawiasy L) 318x1167"
+   },
+   "face": "y+",
+   "world": {
+    "p": [
+     16.0,
+     -170.0,
+     1697.5
+    ],
+    "dir": [
+     0,
+     -1,
+     0
+    ]
+   },
+   "local": {
+    "u": 32.0,
+    "v": 561.5,
+    "u_from": "hinge edge",
+    "v_from": "door bottom edge",
+    "face": "back"
+   },
+   "dia": 2.5,
+   "depth": 10,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0038",
+   "cabinet": "U1",
+   "kind": "hinge-screw",
+   "hardware": "609.1500",
+   "part": {
+    "id": "p0031",
+    "name": "U1 Drzwi lewe (zawiasy L) 318x1167"
+   },
+   "face": "y+",
+   "world": {
+    "p": [
+     16.0,
+     -170.0,
+     1742.5
+    ],
+    "dir": [
+     0,
+     -1,
+     0
+    ]
+   },
+   "local": {
+    "u": 32.0,
+    "v": 606.5,
+    "u_from": "hinge edge",
+    "v_from": "door bottom edge",
+    "face": "back"
+   },
+   "dia": 2.5,
+   "depth": 10,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0039",
+   "cabinet": "U1",
+   "kind": "plate-screw",
+   "hardware": "173L6100",
+   "part": {
+    "id": "p0023",
+    "name": "U1 Bok P 1171x170"
+   },
+   "face": "x+",
+   "world": {
+    "p": [
+     0.0,
+     -133.0,
+     1704.0
+    ],
+    "dir": [
+     -1,
+     0,
+     0
+    ]
+   },
+   "local": {
+    "u": 37,
+    "v": 570.0,
+    "u_from": "front edge",
+    "v_from": "panel bottom edge",
+    "face": "inner (towards the door centre)"
+   },
+   "dia": 2.5,
+   "depth": 10,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0040",
+   "cabinet": "U1",
+   "kind": "plate-screw",
+   "hardware": "173L6100",
+   "part": {
+    "id": "p0023",
+    "name": "U1 Bok P 1171x170"
+   },
+   "face": "x+",
+   "world": {
+    "p": [
+     0.0,
+     -133.0,
+     1736.0
+    ],
+    "dir": [
+     -1,
+     0,
+     0
+    ]
+   },
+   "local": {
+    "u": 37,
+    "v": 602.0,
+    "u_from": "front edge",
+    "v_from": "panel bottom edge",
+    "face": "inner (towards the door centre)"
+   },
+   "dia": 2.5,
+   "depth": 10,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0041",
+   "cabinet": "U1",
+   "kind": "hinge-cup",
+   "hardware": "71B3550",
+   "part": {
+    "id": "p0031",
+    "name": "U1 Drzwi lewe (zawiasy L) 318x1167"
+   },
+   "face": "y+",
+   "world": {
+    "p": [
+     6.5,
+     -170.0,
+     2203.0
+    ],
+    "dir": [
+     0,
+     -1,
+     0
+    ]
+   },
+   "local": {
+    "u": 22.5,
+    "v": 1067.0,
+    "u_from": "hinge edge",
+    "v_from": "door bottom edge",
+    "face": "back"
+   },
+   "dia": 35,
+   "depth": 13,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0042",
+   "cabinet": "U1",
+   "kind": "hinge-screw",
+   "hardware": "609.1500",
+   "part": {
+    "id": "p0031",
+    "name": "U1 Drzwi lewe (zawiasy L) 318x1167"
+   },
+   "face": "y+",
+   "world": {
+    "p": [
+     16.0,
+     -170.0,
+     2180.5
+    ],
+    "dir": [
+     0,
+     -1,
+     0
+    ]
+   },
+   "local": {
+    "u": 32.0,
+    "v": 1044.5,
+    "u_from": "hinge edge",
+    "v_from": "door bottom edge",
+    "face": "back"
+   },
+   "dia": 2.5,
+   "depth": 10,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0043",
+   "cabinet": "U1",
+   "kind": "hinge-screw",
+   "hardware": "609.1500",
+   "part": {
+    "id": "p0031",
+    "name": "U1 Drzwi lewe (zawiasy L) 318x1167"
+   },
+   "face": "y+",
+   "world": {
+    "p": [
+     16.0,
+     -170.0,
+     2225.5
+    ],
+    "dir": [
+     0,
+     -1,
+     0
+    ]
+   },
+   "local": {
+    "u": 32.0,
+    "v": 1089.5,
+    "u_from": "hinge edge",
+    "v_from": "door bottom edge",
+    "face": "back"
+   },
+   "dia": 2.5,
+   "depth": 10,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0044",
+   "cabinet": "U1",
+   "kind": "plate-screw",
+   "hardware": "173L6100",
+   "part": {
+    "id": "p0023",
+    "name": "U1 Bok P 1171x170"
+   },
+   "face": "x+",
+   "world": {
+    "p": [
+     0.0,
+     -133.0,
+     2187.0
+    ],
+    "dir": [
+     -1,
+     0,
+     0
+    ]
+   },
+   "local": {
+    "u": 37,
+    "v": 1053.0,
+    "u_from": "front edge",
+    "v_from": "panel bottom edge",
+    "face": "inner (towards the door centre)"
+   },
+   "dia": 2.5,
+   "depth": 10,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0045",
+   "cabinet": "U1",
+   "kind": "plate-screw",
+   "hardware": "173L6100",
+   "part": {
+    "id": "p0023",
+    "name": "U1 Bok P 1171x170"
+   },
+   "face": "x+",
+   "world": {
+    "p": [
+     0.0,
+     -133.0,
+     2219.0
+    ],
+    "dir": [
+     -1,
+     0,
+     0
+    ]
+   },
+   "local": {
+    "u": 37,
+    "v": 1085.0,
+    "u_from": "front edge",
+    "v_from": "panel bottom edge",
+    "face": "inner (towards the door centre)"
+   },
+   "dia": 2.5,
+   "depth": 10,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0046",
+   "cabinet": "U2",
+   "kind": "hinge-cup",
+   "hardware": "71B3550",
+   "part": {
+    "id": "p0040",
+    "name": "U2 Drzwi (zawiasy P) 417x1167"
+   },
+   "face": "y+",
+   "world": {
+    "p": [
+     1021.5,
+     -170.0,
+     1236.0
+    ],
+    "dir": [
+     0,
+     -1,
+     0
+    ]
+   },
+   "local": {
+    "u": 22.5,
+    "v": 100.0,
+    "u_from": "hinge edge",
+    "v_from": "door bottom edge",
+    "face": "back"
+   },
+   "dia": 35,
+   "depth": 13,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0047",
+   "cabinet": "U2",
+   "kind": "hinge-screw",
+   "hardware": "609.1500",
+   "part": {
+    "id": "p0040",
+    "name": "U2 Drzwi (zawiasy P) 417x1167"
+   },
+   "face": "y+",
+   "world": {
+    "p": [
+     1012.0,
+     -170.0,
+     1213.5
+    ],
+    "dir": [
+     0,
+     -1,
+     0
+    ]
+   },
+   "local": {
+    "u": 32.0,
+    "v": 77.5,
+    "u_from": "hinge edge",
+    "v_from": "door bottom edge",
+    "face": "back"
+   },
+   "dia": 2.5,
+   "depth": 10,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0048",
+   "cabinet": "U2",
+   "kind": "hinge-screw",
+   "hardware": "609.1500",
+   "part": {
+    "id": "p0040",
+    "name": "U2 Drzwi (zawiasy P) 417x1167"
+   },
+   "face": "y+",
+   "world": {
+    "p": [
+     1012.0,
+     -170.0,
+     1258.5
+    ],
+    "dir": [
+     0,
+     -1,
+     0
+    ]
+   },
+   "local": {
+    "u": 32.0,
+    "v": 122.5,
+    "u_from": "hinge edge",
+    "v_from": "door bottom edge",
+    "face": "back"
+   },
+   "dia": 2.5,
+   "depth": 10,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0049",
+   "cabinet": "U2",
+   "kind": "plate-screw",
+   "hardware": "173L6100",
+   "part": {
+    "id": "p0032",
+    "name": "U2 Bok L 1171x170"
+   },
+   "face": "x-",
+   "world": {
+    "p": [
+     1028.0,
+     -133.0,
+     1220.0
+    ],
+    "dir": [
+     1,
+     0,
+     0
+    ]
+   },
+   "local": {
+    "u": 37,
+    "v": 86.0,
+    "u_from": "front edge",
+    "v_from": "panel bottom edge",
+    "face": "inner (towards the door centre)"
+   },
+   "dia": 2.5,
+   "depth": 10,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0050",
+   "cabinet": "U2",
+   "kind": "plate-screw",
+   "hardware": "173L6100",
+   "part": {
+    "id": "p0032",
+    "name": "U2 Bok L 1171x170"
+   },
+   "face": "x-",
+   "world": {
+    "p": [
+     1028.0,
+     -133.0,
+     1252.0
+    ],
+    "dir": [
+     1,
+     0,
+     0
+    ]
+   },
+   "local": {
+    "u": 37,
+    "v": 118.0,
+    "u_from": "front edge",
+    "v_from": "panel bottom edge",
+    "face": "inner (towards the door centre)"
+   },
+   "dia": 2.5,
+   "depth": 10,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0051",
+   "cabinet": "U2",
+   "kind": "hinge-cup",
+   "hardware": "71B3550",
+   "part": {
+    "id": "p0040",
+    "name": "U2 Drzwi (zawiasy P) 417x1167"
+   },
+   "face": "y+",
+   "world": {
+    "p": [
+     1021.5,
+     -170.0,
+     1756.0
+    ],
+    "dir": [
+     0,
+     -1,
+     0
+    ]
+   },
+   "local": {
+    "u": 22.5,
+    "v": 620.0,
+    "u_from": "hinge edge",
+    "v_from": "door bottom edge",
+    "face": "back"
+   },
+   "dia": 35,
+   "depth": 13,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0052",
+   "cabinet": "U2",
+   "kind": "hinge-screw",
+   "hardware": "609.1500",
+   "part": {
+    "id": "p0040",
+    "name": "U2 Drzwi (zawiasy P) 417x1167"
+   },
+   "face": "y+",
+   "world": {
+    "p": [
+     1012.0,
+     -170.0,
+     1733.5
+    ],
+    "dir": [
+     0,
+     -1,
+     0
+    ]
+   },
+   "local": {
+    "u": 32.0,
+    "v": 597.5,
+    "u_from": "hinge edge",
+    "v_from": "door bottom edge",
+    "face": "back"
+   },
+   "dia": 2.5,
+   "depth": 10,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0053",
+   "cabinet": "U2",
+   "kind": "hinge-screw",
+   "hardware": "609.1500",
+   "part": {
+    "id": "p0040",
+    "name": "U2 Drzwi (zawiasy P) 417x1167"
+   },
+   "face": "y+",
+   "world": {
+    "p": [
+     1012.0,
+     -170.0,
+     1778.5
+    ],
+    "dir": [
+     0,
+     -1,
+     0
+    ]
+   },
+   "local": {
+    "u": 32.0,
+    "v": 642.5,
+    "u_from": "hinge edge",
+    "v_from": "door bottom edge",
+    "face": "back"
+   },
+   "dia": 2.5,
+   "depth": 10,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0054",
+   "cabinet": "U2",
+   "kind": "plate-screw",
+   "hardware": "173L6100",
+   "part": {
+    "id": "p0032",
+    "name": "U2 Bok L 1171x170"
+   },
+   "face": "x-",
+   "world": {
+    "p": [
+     1028.0,
+     -133.0,
+     1740.0
+    ],
+    "dir": [
+     1,
+     0,
+     0
+    ]
+   },
+   "local": {
+    "u": 37,
+    "v": 606.0,
+    "u_from": "front edge",
+    "v_from": "panel bottom edge",
+    "face": "inner (towards the door centre)"
+   },
+   "dia": 2.5,
+   "depth": 10,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0055",
+   "cabinet": "U2",
+   "kind": "plate-screw",
+   "hardware": "173L6100",
+   "part": {
+    "id": "p0032",
+    "name": "U2 Bok L 1171x170"
+   },
+   "face": "x-",
+   "world": {
+    "p": [
+     1028.0,
+     -133.0,
+     1772.0
+    ],
+    "dir": [
+     1,
+     0,
+     0
+    ]
+   },
+   "local": {
+    "u": 37,
+    "v": 638.0,
+    "u_from": "front edge",
+    "v_from": "panel bottom edge",
+    "face": "inner (towards the door centre)"
+   },
+   "dia": 2.5,
+   "depth": 10,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0056",
+   "cabinet": "U2",
+   "kind": "hinge-cup",
+   "hardware": "71B3550",
+   "part": {
+    "id": "p0040",
+    "name": "U2 Drzwi (zawiasy P) 417x1167"
+   },
+   "face": "y+",
+   "world": {
+    "p": [
+     1021.5,
+     -170.0,
+     2203.0
+    ],
+    "dir": [
+     0,
+     -1,
+     0
+    ]
+   },
+   "local": {
+    "u": 22.5,
+    "v": 1067.0,
+    "u_from": "hinge edge",
+    "v_from": "door bottom edge",
+    "face": "back"
+   },
+   "dia": 35,
+   "depth": 13,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0057",
+   "cabinet": "U2",
+   "kind": "hinge-screw",
+   "hardware": "609.1500",
+   "part": {
+    "id": "p0040",
+    "name": "U2 Drzwi (zawiasy P) 417x1167"
+   },
+   "face": "y+",
+   "world": {
+    "p": [
+     1012.0,
+     -170.0,
+     2180.5
+    ],
+    "dir": [
+     0,
+     -1,
+     0
+    ]
+   },
+   "local": {
+    "u": 32.0,
+    "v": 1044.5,
+    "u_from": "hinge edge",
+    "v_from": "door bottom edge",
+    "face": "back"
+   },
+   "dia": 2.5,
+   "depth": 10,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0058",
+   "cabinet": "U2",
+   "kind": "hinge-screw",
+   "hardware": "609.1500",
+   "part": {
+    "id": "p0040",
+    "name": "U2 Drzwi (zawiasy P) 417x1167"
+   },
+   "face": "y+",
+   "world": {
+    "p": [
+     1012.0,
+     -170.0,
+     2225.5
+    ],
+    "dir": [
+     0,
+     -1,
+     0
+    ]
+   },
+   "local": {
+    "u": 32.0,
+    "v": 1089.5,
+    "u_from": "hinge edge",
+    "v_from": "door bottom edge",
+    "face": "back"
+   },
+   "dia": 2.5,
+   "depth": 10,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0059",
+   "cabinet": "U2",
+   "kind": "plate-screw",
+   "hardware": "173L6100",
+   "part": {
+    "id": "p0032",
+    "name": "U2 Bok L 1171x170"
+   },
+   "face": "x-",
+   "world": {
+    "p": [
+     1028.0,
+     -133.0,
+     2187.0
+    ],
+    "dir": [
+     1,
+     0,
+     0
+    ]
+   },
+   "local": {
+    "u": 37,
+    "v": 1053.0,
+    "u_from": "front edge",
+    "v_from": "panel bottom edge",
+    "face": "inner (towards the door centre)"
+   },
+   "dia": 2.5,
+   "depth": 10,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0060",
+   "cabinet": "U2",
+   "kind": "plate-screw",
+   "hardware": "173L6100",
+   "part": {
+    "id": "p0032",
+    "name": "U2 Bok L 1171x170"
+   },
+   "face": "x-",
+   "world": {
+    "p": [
+     1028.0,
+     -133.0,
+     2219.0
+    ],
+    "dir": [
+     1,
+     0,
+     0
+    ]
+   },
+   "local": {
+    "u": 37,
+    "v": 1085.0,
+    "u_from": "front edge",
+    "v_from": "panel bottom edge",
+    "face": "inner (towards the door centre)"
+   },
+   "dia": 2.5,
+   "depth": 10,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0061",
+   "cabinet": "R1",
+   "kind": "shelf-pin",
+   "hardware": "podporka 5 mm",
+   "part": {
+    "id": "p0013",
+    "name": "R1 Bok P 1098x170"
+   },
+   "face": "x+",
+   "world": {
+    "p": [
+     643.0,
+     -113.0,
+     289.5
+    ],
+    "dir": [
+     -1,
+     0,
+     0
+    ]
+   },
+   "local": {
+    "u": 57.0,
+    "v": 253.5,
+    "u_from": "front edge",
+    "v_from": "panel bottom edge",
+    "face": "inner"
+   },
+   "dia": 5,
+   "depth": 10,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0062",
+   "cabinet": "R1",
+   "kind": "shelf-pin",
+   "hardware": "podporka 5 mm",
+   "part": {
+    "id": "p0013",
+    "name": "R1 Bok P 1098x170"
+   },
+   "face": "x+",
+   "world": {
+    "p": [
+     643.0,
+     -37.0,
+     289.5
+    ],
+    "dir": [
+     -1,
+     0,
+     0
+    ]
+   },
+   "local": {
+    "u": 133.0,
+    "v": 253.5,
+    "u_from": "front edge",
+    "v_from": "panel bottom edge",
+    "face": "inner"
+   },
+   "dia": 5,
+   "depth": 10,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0063",
+   "cabinet": "R1",
+   "kind": "shelf-pin",
+   "hardware": "podporka 5 mm",
+   "part": {
+    "id": "p0012",
+    "name": "R1 Bok L 1098x170"
+   },
+   "face": "x-",
+   "world": {
+    "p": [
+     1028.0,
+     -113.0,
+     289.5
+    ],
+    "dir": [
+     1,
+     0,
+     0
+    ]
+   },
+   "local": {
+    "u": 57.0,
+    "v": 253.5,
+    "u_from": "front edge",
+    "v_from": "panel bottom edge",
+    "face": "inner"
+   },
+   "dia": 5,
+   "depth": 10,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0064",
+   "cabinet": "R1",
+   "kind": "shelf-pin",
+   "hardware": "podporka 5 mm",
+   "part": {
+    "id": "p0012",
+    "name": "R1 Bok L 1098x170"
+   },
+   "face": "x-",
+   "world": {
+    "p": [
+     1028.0,
+     -37.0,
+     289.5
+    ],
+    "dir": [
+     1,
+     0,
+     0
+    ]
+   },
+   "local": {
+    "u": 133.0,
+    "v": 253.5,
+    "u_from": "front edge",
+    "v_from": "panel bottom edge",
+    "face": "inner"
+   },
+   "dia": 5,
+   "depth": 10,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0065",
+   "cabinet": "R1",
+   "kind": "shelf-pin",
+   "hardware": "podporka 5 mm",
+   "part": {
+    "id": "p0013",
+    "name": "R1 Bok P 1098x170"
+   },
+   "face": "x+",
+   "world": {
+    "p": [
+     643.0,
+     -113.0,
+     564.5
+    ],
+    "dir": [
+     -1,
+     0,
+     0
+    ]
+   },
+   "local": {
+    "u": 57.0,
+    "v": 528.5,
+    "u_from": "front edge",
+    "v_from": "panel bottom edge",
+    "face": "inner"
+   },
+   "dia": 5,
+   "depth": 10,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0066",
+   "cabinet": "R1",
+   "kind": "shelf-pin",
+   "hardware": "podporka 5 mm",
+   "part": {
+    "id": "p0013",
+    "name": "R1 Bok P 1098x170"
+   },
+   "face": "x+",
+   "world": {
+    "p": [
+     643.0,
+     -37.0,
+     564.5
+    ],
+    "dir": [
+     -1,
+     0,
+     0
+    ]
+   },
+   "local": {
+    "u": 133.0,
+    "v": 528.5,
+    "u_from": "front edge",
+    "v_from": "panel bottom edge",
+    "face": "inner"
+   },
+   "dia": 5,
+   "depth": 10,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0067",
+   "cabinet": "R1",
+   "kind": "shelf-pin",
+   "hardware": "podporka 5 mm",
+   "part": {
+    "id": "p0012",
+    "name": "R1 Bok L 1098x170"
+   },
+   "face": "x-",
+   "world": {
+    "p": [
+     1028.0,
+     -113.0,
+     564.5
+    ],
+    "dir": [
+     1,
+     0,
+     0
+    ]
+   },
+   "local": {
+    "u": 57.0,
+    "v": 528.5,
+    "u_from": "front edge",
+    "v_from": "panel bottom edge",
+    "face": "inner"
+   },
+   "dia": 5,
+   "depth": 10,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0068",
+   "cabinet": "R1",
+   "kind": "shelf-pin",
+   "hardware": "podporka 5 mm",
+   "part": {
+    "id": "p0012",
+    "name": "R1 Bok L 1098x170"
+   },
+   "face": "x-",
+   "world": {
+    "p": [
+     1028.0,
+     -37.0,
+     564.5
+    ],
+    "dir": [
+     1,
+     0,
+     0
+    ]
+   },
+   "local": {
+    "u": 133.0,
+    "v": 528.5,
+    "u_from": "front edge",
+    "v_from": "panel bottom edge",
+    "face": "inner"
+   },
+   "dia": 5,
+   "depth": 10,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0069",
+   "cabinet": "R1",
+   "kind": "shelf-pin",
+   "hardware": "podporka 5 mm",
+   "part": {
+    "id": "p0013",
+    "name": "R1 Bok P 1098x170"
+   },
+   "face": "x+",
+   "world": {
+    "p": [
+     643.0,
+     -113.0,
+     838.5
+    ],
+    "dir": [
+     -1,
+     0,
+     0
+    ]
+   },
+   "local": {
+    "u": 57.0,
+    "v": 802.5,
+    "u_from": "front edge",
+    "v_from": "panel bottom edge",
+    "face": "inner"
+   },
+   "dia": 5,
+   "depth": 10,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0070",
+   "cabinet": "R1",
+   "kind": "shelf-pin",
+   "hardware": "podporka 5 mm",
+   "part": {
+    "id": "p0013",
+    "name": "R1 Bok P 1098x170"
+   },
+   "face": "x+",
+   "world": {
+    "p": [
+     643.0,
+     -37.0,
+     838.5
+    ],
+    "dir": [
+     -1,
+     0,
+     0
+    ]
+   },
+   "local": {
+    "u": 133.0,
+    "v": 802.5,
+    "u_from": "front edge",
+    "v_from": "panel bottom edge",
+    "face": "inner"
+   },
+   "dia": 5,
+   "depth": 10,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0071",
+   "cabinet": "R1",
+   "kind": "shelf-pin",
+   "hardware": "podporka 5 mm",
+   "part": {
+    "id": "p0012",
+    "name": "R1 Bok L 1098x170"
+   },
+   "face": "x-",
+   "world": {
+    "p": [
+     1028.0,
+     -113.0,
+     838.5
+    ],
+    "dir": [
+     1,
+     0,
+     0
+    ]
+   },
+   "local": {
+    "u": 57.0,
+    "v": 802.5,
+    "u_from": "front edge",
+    "v_from": "panel bottom edge",
+    "face": "inner"
+   },
+   "dia": 5,
+   "depth": 10,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0072",
+   "cabinet": "R1",
+   "kind": "shelf-pin",
+   "hardware": "podporka 5 mm",
+   "part": {
+    "id": "p0012",
+    "name": "R1 Bok L 1098x170"
+   },
+   "face": "x-",
+   "world": {
+    "p": [
+     1028.0,
+     -37.0,
+     838.5
+    ],
+    "dir": [
+     1,
+     0,
+     0
+    ]
+   },
+   "local": {
+    "u": 133.0,
+    "v": 802.5,
+    "u_from": "front edge",
+    "v_from": "panel bottom edge",
+    "face": "inner"
+   },
+   "dia": 5,
+   "depth": 10,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0073",
+   "cabinet": "U1",
+   "kind": "shelf-pin",
+   "hardware": "podporka 5 mm",
+   "part": {
+    "id": "p0023",
+    "name": "U1 Bok P 1171x170"
+   },
+   "face": "x+",
+   "world": {
+    "p": [
+     0.0,
+     -113.0,
+     1551.5
+    ],
+    "dir": [
+     -1,
+     0,
+     0
+    ]
+   },
+   "local": {
+    "u": 57.0,
+    "v": 417.5,
+    "u_from": "front edge",
+    "v_from": "panel bottom edge",
+    "face": "inner"
+   },
+   "dia": 5,
+   "depth": 10,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0074",
+   "cabinet": "U1",
+   "kind": "shelf-pin",
+   "hardware": "podporka 5 mm",
+   "part": {
+    "id": "p0023",
+    "name": "U1 Bok P 1171x170"
+   },
+   "face": "x+",
+   "world": {
+    "p": [
+     0.0,
+     -37.0,
+     1551.5
+    ],
+    "dir": [
+     -1,
+     0,
+     0
+    ]
+   },
+   "local": {
+    "u": 133.0,
+    "v": 417.5,
+    "u_from": "front edge",
+    "v_from": "panel bottom edge",
+    "face": "inner"
+   },
+   "dia": 5,
+   "depth": 10,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0075",
+   "cabinet": "U1",
+   "kind": "shelf-pin",
+   "hardware": "podporka 5 mm",
+   "part": {
+    "id": "p0022",
+    "name": "U1 Bok L 1171x170"
+   },
+   "face": "x-",
+   "world": {
+    "p": [
+     607.0,
+     -113.0,
+     1551.5
+    ],
+    "dir": [
+     1,
+     0,
+     0
+    ]
+   },
+   "local": {
+    "u": 57.0,
+    "v": 417.5,
+    "u_from": "front edge",
+    "v_from": "panel bottom edge",
+    "face": "inner"
+   },
+   "dia": 5,
+   "depth": 10,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0076",
+   "cabinet": "U1",
+   "kind": "shelf-pin",
+   "hardware": "podporka 5 mm",
+   "part": {
+    "id": "p0022",
+    "name": "U1 Bok L 1171x170"
+   },
+   "face": "x-",
+   "world": {
+    "p": [
+     607.0,
+     -37.0,
+     1551.5
+    ],
+    "dir": [
+     1,
+     0,
+     0
+    ]
+   },
+   "local": {
+    "u": 133.0,
+    "v": 417.5,
+    "u_from": "front edge",
+    "v_from": "panel bottom edge",
+    "face": "inner"
+   },
+   "dia": 5,
+   "depth": 10,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0077",
+   "cabinet": "U1",
+   "kind": "shelf-pin",
+   "hardware": "podporka 5 mm",
+   "part": {
+    "id": "p0023",
+    "name": "U1 Bok P 1171x170"
+   },
+   "face": "x+",
+   "world": {
+    "p": [
+     0.0,
+     -113.0,
+     1791.5
+    ],
+    "dir": [
+     -1,
+     0,
+     0
+    ]
+   },
+   "local": {
+    "u": 57.0,
+    "v": 657.5,
+    "u_from": "front edge",
+    "v_from": "panel bottom edge",
+    "face": "inner"
+   },
+   "dia": 5,
+   "depth": 10,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0078",
+   "cabinet": "U1",
+   "kind": "shelf-pin",
+   "hardware": "podporka 5 mm",
+   "part": {
+    "id": "p0023",
+    "name": "U1 Bok P 1171x170"
+   },
+   "face": "x+",
+   "world": {
+    "p": [
+     0.0,
+     -37.0,
+     1791.5
+    ],
+    "dir": [
+     -1,
+     0,
+     0
+    ]
+   },
+   "local": {
+    "u": 133.0,
+    "v": 657.5,
+    "u_from": "front edge",
+    "v_from": "panel bottom edge",
+    "face": "inner"
+   },
+   "dia": 5,
+   "depth": 10,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0079",
+   "cabinet": "U1",
+   "kind": "shelf-pin",
+   "hardware": "podporka 5 mm",
+   "part": {
+    "id": "p0022",
+    "name": "U1 Bok L 1171x170"
+   },
+   "face": "x-",
+   "world": {
+    "p": [
+     607.0,
+     -113.0,
+     1791.5
+    ],
+    "dir": [
+     1,
+     0,
+     0
+    ]
+   },
+   "local": {
+    "u": 57.0,
+    "v": 657.5,
+    "u_from": "front edge",
+    "v_from": "panel bottom edge",
+    "face": "inner"
+   },
+   "dia": 5,
+   "depth": 10,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0080",
+   "cabinet": "U1",
+   "kind": "shelf-pin",
+   "hardware": "podporka 5 mm",
+   "part": {
+    "id": "p0022",
+    "name": "U1 Bok L 1171x170"
+   },
+   "face": "x-",
+   "world": {
+    "p": [
+     607.0,
+     -37.0,
+     1791.5
+    ],
+    "dir": [
+     1,
+     0,
+     0
+    ]
+   },
+   "local": {
+    "u": 133.0,
+    "v": 657.5,
+    "u_from": "front edge",
+    "v_from": "panel bottom edge",
+    "face": "inner"
+   },
+   "dia": 5,
+   "depth": 10,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0081",
+   "cabinet": "U1",
+   "kind": "shelf-pin",
+   "hardware": "podporka 5 mm",
+   "part": {
+    "id": "p0023",
+    "name": "U1 Bok P 1171x170"
+   },
+   "face": "x+",
+   "world": {
+    "p": [
+     0.0,
+     -113.0,
+     2031.5
+    ],
+    "dir": [
+     -1,
+     0,
+     0
+    ]
+   },
+   "local": {
+    "u": 57.0,
+    "v": 897.5,
+    "u_from": "front edge",
+    "v_from": "panel bottom edge",
+    "face": "inner"
+   },
+   "dia": 5,
+   "depth": 10,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0082",
+   "cabinet": "U1",
+   "kind": "shelf-pin",
+   "hardware": "podporka 5 mm",
+   "part": {
+    "id": "p0023",
+    "name": "U1 Bok P 1171x170"
+   },
+   "face": "x+",
+   "world": {
+    "p": [
+     0.0,
+     -37.0,
+     2031.5
+    ],
+    "dir": [
+     -1,
+     0,
+     0
+    ]
+   },
+   "local": {
+    "u": 133.0,
+    "v": 897.5,
+    "u_from": "front edge",
+    "v_from": "panel bottom edge",
+    "face": "inner"
+   },
+   "dia": 5,
+   "depth": 10,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0083",
+   "cabinet": "U1",
+   "kind": "shelf-pin",
+   "hardware": "podporka 5 mm",
+   "part": {
+    "id": "p0022",
+    "name": "U1 Bok L 1171x170"
+   },
+   "face": "x-",
+   "world": {
+    "p": [
+     607.0,
+     -113.0,
+     2031.5
+    ],
+    "dir": [
+     1,
+     0,
+     0
+    ]
+   },
+   "local": {
+    "u": 57.0,
+    "v": 897.5,
+    "u_from": "front edge",
+    "v_from": "panel bottom edge",
+    "face": "inner"
+   },
+   "dia": 5,
+   "depth": 10,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0084",
+   "cabinet": "U1",
+   "kind": "shelf-pin",
+   "hardware": "podporka 5 mm",
+   "part": {
+    "id": "p0022",
+    "name": "U1 Bok L 1171x170"
+   },
+   "face": "x-",
+   "world": {
+    "p": [
+     607.0,
+     -37.0,
+     2031.5
+    ],
+    "dir": [
+     1,
+     0,
+     0
+    ]
+   },
+   "local": {
+    "u": 133.0,
+    "v": 897.5,
+    "u_from": "front edge",
+    "v_from": "panel bottom edge",
+    "face": "inner"
+   },
+   "dia": 5,
+   "depth": 10,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0085",
+   "cabinet": "U2",
+   "kind": "shelf-pin",
+   "hardware": "podporka 5 mm",
+   "part": {
+    "id": "p0033",
+    "name": "U2 Bok P 1171x170"
+   },
+   "face": "x+",
+   "world": {
+    "p": [
+     643.0,
+     -113.0,
+     1419.5
+    ],
+    "dir": [
+     -1,
+     0,
+     0
+    ]
+   },
+   "local": {
+    "u": 57.0,
+    "v": 285.5,
+    "u_from": "front edge",
+    "v_from": "panel bottom edge",
+    "face": "inner"
+   },
+   "dia": 5,
+   "depth": 10,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0086",
+   "cabinet": "U2",
+   "kind": "shelf-pin",
+   "hardware": "podporka 5 mm",
+   "part": {
+    "id": "p0033",
+    "name": "U2 Bok P 1171x170"
+   },
+   "face": "x+",
+   "world": {
+    "p": [
+     643.0,
+     -37.0,
+     1419.5
+    ],
+    "dir": [
+     -1,
+     0,
+     0
+    ]
+   },
+   "local": {
+    "u": 133.0,
+    "v": 285.5,
+    "u_from": "front edge",
+    "v_from": "panel bottom edge",
+    "face": "inner"
+   },
+   "dia": 5,
+   "depth": 10,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0087",
+   "cabinet": "U2",
+   "kind": "shelf-pin",
+   "hardware": "podporka 5 mm",
+   "part": {
+    "id": "p0032",
+    "name": "U2 Bok L 1171x170"
+   },
+   "face": "x-",
+   "world": {
+    "p": [
+     1028.0,
+     -113.0,
+     1419.5
+    ],
+    "dir": [
+     1,
+     0,
+     0
+    ]
+   },
+   "local": {
+    "u": 57.0,
+    "v": 285.5,
+    "u_from": "front edge",
+    "v_from": "panel bottom edge",
+    "face": "inner"
+   },
+   "dia": 5,
+   "depth": 10,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0088",
+   "cabinet": "U2",
+   "kind": "shelf-pin",
+   "hardware": "podporka 5 mm",
+   "part": {
+    "id": "p0032",
+    "name": "U2 Bok L 1171x170"
+   },
+   "face": "x-",
+   "world": {
+    "p": [
+     1028.0,
+     -37.0,
+     1419.5
+    ],
+    "dir": [
+     1,
+     0,
+     0
+    ]
+   },
+   "local": {
+    "u": 133.0,
+    "v": 285.5,
+    "u_from": "front edge",
+    "v_from": "panel bottom edge",
+    "face": "inner"
+   },
+   "dia": 5,
+   "depth": 10,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0089",
+   "cabinet": "U2",
+   "kind": "shelf-pin",
+   "hardware": "podporka 5 mm",
+   "part": {
+    "id": "p0033",
+    "name": "U2 Bok P 1171x170"
+   },
+   "face": "x+",
+   "world": {
+    "p": [
+     643.0,
+     -113.0,
+     1707.5
+    ],
+    "dir": [
+     -1,
+     0,
+     0
+    ]
+   },
+   "local": {
+    "u": 57.0,
+    "v": 573.5,
+    "u_from": "front edge",
+    "v_from": "panel bottom edge",
+    "face": "inner"
+   },
+   "dia": 5,
+   "depth": 10,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0090",
+   "cabinet": "U2",
+   "kind": "shelf-pin",
+   "hardware": "podporka 5 mm",
+   "part": {
+    "id": "p0033",
+    "name": "U2 Bok P 1171x170"
+   },
+   "face": "x+",
+   "world": {
+    "p": [
+     643.0,
+     -37.0,
+     1707.5
+    ],
+    "dir": [
+     -1,
+     0,
+     0
+    ]
+   },
+   "local": {
+    "u": 133.0,
+    "v": 573.5,
+    "u_from": "front edge",
+    "v_from": "panel bottom edge",
+    "face": "inner"
+   },
+   "dia": 5,
+   "depth": 10,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0091",
+   "cabinet": "U2",
+   "kind": "shelf-pin",
+   "hardware": "podporka 5 mm",
+   "part": {
+    "id": "p0032",
+    "name": "U2 Bok L 1171x170"
+   },
+   "face": "x-",
+   "world": {
+    "p": [
+     1028.0,
+     -113.0,
+     1707.5
+    ],
+    "dir": [
+     1,
+     0,
+     0
+    ]
+   },
+   "local": {
+    "u": 57.0,
+    "v": 573.5,
+    "u_from": "front edge",
+    "v_from": "panel bottom edge",
+    "face": "inner"
+   },
+   "dia": 5,
+   "depth": 10,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0092",
+   "cabinet": "U2",
+   "kind": "shelf-pin",
+   "hardware": "podporka 5 mm",
+   "part": {
+    "id": "p0032",
+    "name": "U2 Bok L 1171x170"
+   },
+   "face": "x-",
+   "world": {
+    "p": [
+     1028.0,
+     -37.0,
+     1707.5
+    ],
+    "dir": [
+     1,
+     0,
+     0
+    ]
+   },
+   "local": {
+    "u": 133.0,
+    "v": 573.5,
+    "u_from": "front edge",
+    "v_from": "panel bottom edge",
+    "face": "inner"
+   },
+   "dia": 5,
+   "depth": 10,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0093",
+   "cabinet": "U2",
+   "kind": "shelf-pin",
+   "hardware": "podporka 5 mm",
+   "part": {
+    "id": "p0033",
+    "name": "U2 Bok P 1171x170"
+   },
+   "face": "x+",
+   "world": {
+    "p": [
+     643.0,
+     -113.0,
+     1996.5
+    ],
+    "dir": [
+     -1,
+     0,
+     0
+    ]
+   },
+   "local": {
+    "u": 57.0,
+    "v": 862.5,
+    "u_from": "front edge",
+    "v_from": "panel bottom edge",
+    "face": "inner"
+   },
+   "dia": 5,
+   "depth": 10,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0094",
+   "cabinet": "U2",
+   "kind": "shelf-pin",
+   "hardware": "podporka 5 mm",
+   "part": {
+    "id": "p0033",
+    "name": "U2 Bok P 1171x170"
+   },
+   "face": "x+",
+   "world": {
+    "p": [
+     643.0,
+     -37.0,
+     1996.5
+    ],
+    "dir": [
+     -1,
+     0,
+     0
+    ]
+   },
+   "local": {
+    "u": 133.0,
+    "v": 862.5,
+    "u_from": "front edge",
+    "v_from": "panel bottom edge",
+    "face": "inner"
+   },
+   "dia": 5,
+   "depth": 10,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0095",
+   "cabinet": "U2",
+   "kind": "shelf-pin",
+   "hardware": "podporka 5 mm",
+   "part": {
+    "id": "p0032",
+    "name": "U2 Bok L 1171x170"
+   },
+   "face": "x-",
+   "world": {
+    "p": [
+     1028.0,
+     -113.0,
+     1996.5
+    ],
+    "dir": [
+     1,
+     0,
+     0
+    ]
+   },
+   "local": {
+    "u": 57.0,
+    "v": 862.5,
+    "u_from": "front edge",
+    "v_from": "panel bottom edge",
+    "face": "inner"
+   },
+   "dia": 5,
+   "depth": 10,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0096",
+   "cabinet": "U2",
+   "kind": "shelf-pin",
+   "hardware": "podporka 5 mm",
+   "part": {
+    "id": "p0032",
+    "name": "U2 Bok L 1171x170"
+   },
+   "face": "x-",
+   "world": {
+    "p": [
+     1028.0,
+     -37.0,
+     1996.5
+    ],
+    "dir": [
+     1,
+     0,
+     0
+    ]
+   },
+   "local": {
+    "u": 133.0,
+    "v": 862.5,
+    "u_from": "front edge",
+    "v_from": "panel bottom edge",
+    "face": "inner"
+   },
+   "dia": 5,
+   "depth": 10,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0097",
+   "cabinet": "R1",
+   "kind": "tipon-bore",
+   "hardware": "956A1006",
+   "part": {
+    "id": "p0013",
+    "name": "R1 Bok P 1098x170"
+   },
+   "face": "y-",
+   "world": {
+    "p": [
+     635.5,
+     -170.0,
+     1032.0
+    ],
+    "dir": [
+     0,
+     1,
+     0
+    ]
+   },
+   "local": {
+    "u": 7.5,
+    "v": 996.0,
+    "u_from": "inner face (bore in the FRONT EDGE of the panel)",
+    "v_from": "panel bottom edge",
+    "face": "front edge"
+   },
+   "dia": 10,
+   "depth": 76,
+   "note": "Blum template 65.5010; position allowed +-300 mm in height",
+   "verify": false
+  },
+  {
+   "id": "f0098",
+   "cabinet": "U1",
+   "kind": "tipon-bore",
+   "hardware": "956A1006",
+   "part": {
+    "id": "p0025",
+    "name": "U1 Wieniec gorny 607x170"
+   },
+   "face": "y-",
+   "world": {
+    "p": [
+     365.0,
+     -170.0,
+     2294.5
+    ],
+    "dir": [
+     0,
+     1,
+     0
+    ]
+   },
+   "local": {
+    "u": 365.0,
+    "v": 7.5,
+    "u_from": "left end of the panel (viewed from the front)",
+    "v_from": "inner (door-side) face; bore in the FRONT EDGE",
+    "face": "front edge"
+   },
+   "dia": 10,
+   "depth": 76,
+   "note": "double door: unit in the top/bottom panel, 60 mm from the opening edge",
+   "verify": false
+  },
+  {
+   "id": "f0099",
+   "cabinet": "U1",
+   "kind": "tipon-bore",
+   "hardware": "956A1006",
+   "part": {
+    "id": "p0025",
+    "name": "U1 Wieniec gorny 607x170"
+   },
+   "face": "y-",
+   "world": {
+    "p": [
+     242.0,
+     -170.0,
+     2294.5
+    ],
+    "dir": [
+     0,
+     1,
+     0
+    ]
+   },
+   "local": {
+    "u": 242.0,
+    "v": 7.5,
+    "u_from": "left end of the panel (viewed from the front)",
+    "v_from": "inner (door-side) face; bore in the FRONT EDGE",
+    "face": "front edge"
+   },
+   "dia": 10,
+   "depth": 76,
+   "note": "double door: unit in the top/bottom panel, 60 mm from the opening edge",
+   "verify": false
+  },
+  {
+   "id": "f0100",
+   "cabinet": "U2",
+   "kind": "tipon-bore",
+   "hardware": "956A1006",
+   "part": {
+    "id": "p0033",
+    "name": "U2 Bok P 1171x170"
+   },
+   "face": "y-",
+   "world": {
+    "p": [
+     635.5,
+     -170.0,
+     1720.0
+    ],
+    "dir": [
+     0,
+     1,
+     0
+    ]
+   },
+   "local": {
+    "u": 7.5,
+    "v": 586.0,
+    "u_from": "inner face (bore in the FRONT EDGE of the panel)",
+    "v_from": "panel bottom edge",
+    "face": "front edge"
+   },
+   "dia": 10,
+   "depth": 76,
+   "note": "Blum template 65.5010; position allowed +-300 mm in height",
+   "verify": false
+  }
+ ]
+}

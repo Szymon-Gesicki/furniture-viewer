@@ -4994,7 +4994,7 @@
     },
     {
       "id": "p0108",
-      "name": "P2 Szuflada dolna Dno 16mm 513x490",
+      "name": "P2 Szuflada dolna Dno 16mm 513x474",
       "group": "g7",
       "unit": "g7",
       "layer": "drawers",
@@ -5007,7 +5007,7 @@
           144
         ],
         "max": [
-          1830,
+          1814,
           -993.5,
           160
         ]
@@ -5023,12 +5023,12 @@
       "meta": {
         "thickness": 16,
         "tag": "Szuflady P2",
-        "code": "KIT-35"
+        "code": "KIT-121"
       }
     },
     {
       "id": "p0109",
-      "name": "P2 Szuflada dolna Tyl 16mm 513x172",
+      "name": "P2 Szuflada dolna Tyl 16mm 513x184",
       "group": "g7",
       "unit": "g7",
       "layer": "drawers",
@@ -5038,12 +5038,12 @@
         "min": [
           1814,
           -1506.5,
-          160
+          144
         ],
         "max": [
           1830,
           -993.5,
-          332
+          328
         ]
       },
       "edges": {
@@ -5056,7 +5056,7 @@
       "meta": {
         "thickness": 16,
         "tag": "Szuflady P2",
-        "code": "KIT-36"
+        "code": "KIT-122"
       }
     },
     {
@@ -5119,7 +5119,7 @@
     },
     {
       "id": "p0112",
-      "name": "P2 Szuflada srodkowa Dno 16mm 513x490",
+      "name": "P2 Szuflada srodkowa Dno 16mm 513x474",
       "group": "g7",
       "unit": "g7",
       "layer": "drawers",
@@ -5132,7 +5132,7 @@
           461
         ],
         "max": [
-          1830,
+          1814,
           -993.5,
           477
         ]
@@ -5148,12 +5148,12 @@
       "meta": {
         "thickness": 16,
         "tag": "Szuflady P2",
-        "code": "KIT-39"
+        "code": "KIT-123"
       }
     },
     {
       "id": "p0113",
-      "name": "P2 Szuflada srodkowa Tyl 16mm 513x109",
+      "name": "P2 Szuflada srodkowa Tyl 16mm 513x121",
       "group": "g7",
       "unit": "g7",
       "layer": "drawers",
@@ -5163,12 +5163,12 @@
         "min": [
           1814,
           -1506.5,
-          477
+          461
         ],
         "max": [
           1830,
           -993.5,
-          586
+          582
         ]
       },
       "edges": {
@@ -5181,7 +5181,7 @@
       "meta": {
         "thickness": 16,
         "tag": "Szuflady P2",
-        "code": "KIT-40"
+        "code": "KIT-124"
       }
     },
     {
@@ -5244,7 +5244,7 @@
     },
     {
       "id": "p0116",
-      "name": "P2 Szuflada gorna Dno 16mm 513x490",
+      "name": "P2 Szuflada gorna Dno 16mm 513x474",
       "group": "g7",
       "unit": "g7",
       "layer": "drawers",
@@ -5257,7 +5257,7 @@
           714
         ],
         "max": [
-          1830,
+          1814,
           -993.5,
           730
         ]
@@ -5273,12 +5273,12 @@
       "meta": {
         "thickness": 16,
         "tag": "Szuflady P2",
-        "code": "KIT-43"
+        "code": "KIT-125"
       }
     },
     {
       "id": "p0117",
-      "name": "P2 Szuflada gorna Tyl 16mm 513x71",
+      "name": "P2 Szuflada gorna Tyl 16mm 513x83",
       "group": "g7",
       "unit": "g7",
       "layer": "drawers",
@@ -5288,12 +5288,12 @@
         "min": [
           1814,
           -1506.5,
-          730
+          714
         ],
         "max": [
           1830,
           -993.5,
-          801
+          797
         ]
       },
       "edges": {
@@ -5306,7 +5306,7 @@
       "meta": {
         "thickness": 16,
         "tag": "Szuflady P2",
-        "code": "KIT-44"
+        "code": "KIT-126"
       }
     },
     {
@@ -6188,7 +6188,7 @@
     },
     {
       "id": "p0148",
-      "name": "P3 Szuflada dolna Dno 16mm 413x490",
+      "name": "P3 Szuflada dolna Dno 16mm 413x474",
       "group": "g8",
       "unit": "g8",
       "layer": "drawers",
@@ -6201,7 +6201,7 @@
           144
         ],
         "max": [
-          1830,
+          1814,
           -1593.5,
           160
         ]
@@ -6217,12 +6217,12 @@
       "meta": {
         "thickness": 16,
         "tag": "Szuflady P3",
-        "code": "KIT-56"
+        "code": "KIT-127"
       }
     },
     {
       "id": "p0149",
-      "name": "P3 Szuflada dolna Tyl 16mm 413x172",
+      "name": "P3 Szuflada dolna Tyl 16mm 413x184",
       "group": "g8",
       "unit": "g8",
       "layer": "drawers",
@@ -6232,12 +6232,12 @@
         "min": [
           1814,
           -2006.5,
-          160
+          144
         ],
         "max": [
           1830,
           -1593.5,
-          332
+          328
         ]
       },
       "edges": {
@@ -6250,7 +6250,7 @@
       "meta": {
         "thickness": 16,
         "tag": "Szuflady P3",
-        "code": "KIT-57"
+        "code": "KIT-128"
       }
     },
     {
@@ -6313,7 +6313,7 @@
     },
     {
       "id": "p0152",
-      "name": "P3 Szuflada srodkowa Dno 16mm 413x490",
+      "name": "P3 Szuflada srodkowa Dno 16mm 413x474",
       "group": "g8",
       "unit": "g8",
       "layer": "drawers",
@@ -6326,7 +6326,7 @@
           461
         ],
         "max": [
-          1830,
+          1814,
           -1593.5,
           477
         ]
@@ -6342,12 +6342,12 @@
       "meta": {
         "thickness": 16,
         "tag": "Szuflady P3",
-        "code": "KIT-60"
+        "code": "KIT-129"
       }
     },
     {
       "id": "p0153",
-      "name": "P3 Szuflada srodkowa Tyl 16mm 413x109",
+      "name": "P3 Szuflada srodkowa Tyl 16mm 413x121",
       "group": "g8",
       "unit": "g8",
       "layer": "drawers",
@@ -6357,12 +6357,12 @@
         "min": [
           1814,
           -2006.5,
-          477
+          461
         ],
         "max": [
           1830,
           -1593.5,
-          586
+          582
         ]
       },
       "edges": {
@@ -6375,7 +6375,7 @@
       "meta": {
         "thickness": 16,
         "tag": "Szuflady P3",
-        "code": "KIT-61"
+        "code": "KIT-130"
       }
     },
     {
@@ -6438,7 +6438,7 @@
     },
     {
       "id": "p0156",
-      "name": "P3 Szuflada gorna Dno 16mm 413x490",
+      "name": "P3 Szuflada gorna Dno 16mm 413x474",
       "group": "g8",
       "unit": "g8",
       "layer": "drawers",
@@ -6451,7 +6451,7 @@
           714
         ],
         "max": [
-          1830,
+          1814,
           -1593.5,
           730
         ]
@@ -6467,12 +6467,12 @@
       "meta": {
         "thickness": 16,
         "tag": "Szuflady P3",
-        "code": "KIT-64"
+        "code": "KIT-131"
       }
     },
     {
       "id": "p0157",
-      "name": "P3 Szuflada gorna Tyl 16mm 413x71",
+      "name": "P3 Szuflada gorna Tyl 16mm 413x83",
       "group": "g8",
       "unit": "g8",
       "layer": "drawers",
@@ -6482,12 +6482,12 @@
         "min": [
           1814,
           -2006.5,
-          730
+          714
         ],
         "max": [
           1830,
           -1593.5,
-          801
+          797
         ]
       },
       "edges": {
@@ -6500,7 +6500,7 @@
       "meta": {
         "thickness": 16,
         "tag": "Szuflady P3",
-        "code": "KIT-65"
+        "code": "KIT-132"
       }
     },
     {
@@ -9453,6 +9453,6 @@
   ],
   "codes": {
     "prefix": "KIT",
-    "next": 121
+    "next": 133
   }
 }

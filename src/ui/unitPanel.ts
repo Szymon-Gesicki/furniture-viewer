@@ -7,12 +7,12 @@ export interface UnitPanelOptions {
   onClose(): void;
 }
 
-export function unitPanel(el: HTMLElement, opts: UnitPanelOptions): { show(s: UnitSummary | null, groups?: UnitPartGroup[], inFocus?: boolean): void } {
+export function unitPanel(el: HTMLElement, opts: UnitPanelOptions): { show(s: UnitSummary | null, groups?: UnitPartGroup[], inFocus?: boolean, extra?: HTMLElement | null): void } {
   el.className = 'info';
   el.hidden = true;
   el.setAttribute('aria-live', 'polite');
 
-  const show = (s: UnitSummary | null, groups: UnitPartGroup[] = [], inFocus = false) => {
+  const show = (s: UnitSummary | null, groups: UnitPartGroup[] = [], inFocus = false, extra: HTMLElement | null = null) => {
     el.replaceChildren();
     el.hidden = !s;
     if (!s) return;
@@ -45,7 +45,9 @@ export function unitPanel(el: HTMLElement, opts: UnitPanelOptions): { show(s: Un
         list.append(row);
       }
     }
-    el.append(close, title, meta, list);
+    el.append(close, title, meta);
+    if (extra) el.append(extra);
+    el.append(list);
 
     if (!inFocus) {
       const actions = document.createElement('div');

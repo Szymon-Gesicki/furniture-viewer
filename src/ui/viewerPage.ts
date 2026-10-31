@@ -12,7 +12,24 @@ import { defaultVisibility } from '../viewer/layers';
 import { layersPanel } from './layersPanel';
 import { infoPanel } from './infoPanel';
 import { unitPanel } from './unitPanel';
-import { projectHash } from './route';
+import { buildHash, drillHash, projectHash } from './route';
+import { Raycaster, Vector2, type Material, type MeshStandardMaterial } from 'three';
+import { unitFrontNormal } from '../drilling/plan';
+import { DRILL_KINDS, type DrillFeature } from '../drilling/schema';
+import { HW_GROUPS, groupOf, itemLabel, notesFor } from '../drilling/catalog';
+import { mergeParams } from '../drilling/params';
+import { hardwareCount } from '../drilling/hardware';
+import { createDrillMarkers } from '../viewer/drillMarkers';
+import { createDrillOverlay } from '../viewer/drillOverlay';
+import type { ViewDir } from '../viewer/scene';
+import { drillPanel, type ExtraRows } from './drillPanel';
+import { drillPartSection, type DrillCtx } from './drillInfo';
+import { drillSummary } from './drillSummary';
+import { featureLines } from './drillFormat';
+import { loadDrillView, saveDrillView } from './drillState';
+import type { DrillSession } from './drillSession';
+import { openDatasheet, openParams } from './drillDialogs';
+import { sourceOf, statusBadge } from './drillBlocks';
 import { loadSettings, saveSettings } from './settings';
 import { loadState, restoreState, saveState, type Walls } from './storage';
 
@@ -57,7 +74,8 @@ function saveThumb(ctx: SceneCtx, id: string) {
 }
 
 export function viewerPage(el: HTMLElement, model: Model, unit: string | null = null,
-                           edit: EditMode = { mode: 'off', reason: 'Changing layers is disabled' }): ViewerPage {
+                           edit: EditMode = { mode: 'off', reason: 'Changing layers is disabled' },
+                           session?: DrillSession): ViewerPage {
   // --- layout ---
   const root = h('div', 'viewer');
   const stage = h('div', 'stage');
@@ -74,6 +92,11 @@ export function viewerPage(el: HTMLElement, model: Model, unit: string | null = 
   layersSec.append(h('h2', undefined, 'Layers'));
   const layersHost = h('div');
   layersSec.append(layersHost);
+
+  const drillSec = h('section');
+  drillSec.append(h('h2', undefined, 'Okucia (wiercenia)'));
+  const drillHost = h('div');
+  drillSec.append(drillHost);
 
   const wallsSec = h('section');
   wallsSec.append(h('h2', undefined, 'Walls'));
@@ -103,20 +126,32 @@ export function viewerPage(el: HTMLElement, model: Model, unit: string | null = 
   explodeLab.append(slider);
   const views = h('div', 'views');
   const bFit = h('button', 'btn', 'Fit');
-  const bFront = h('button', 'btn', 'Front');
-  const bTop = h('button', 'btn', 'Top');
-  views.append(bFit, bFront, bTop);
+  bFit.type = 'button';
+  // PLAN 4.1: free 3D + orthographic views from the 6 sides of the project / the selected cabinet
+  const VIEW_BTNS: [ViewDir, string][] = [['3d', '3D'], ['front', 'Przód'], ['back', 'Tył'], ['left', 'Lewo'], ['right', 'Prawo'], ['top', 'Góra'], ['bottom', 'Dół']];
+  const viewSeg = h('div', 'view-seg');
+  viewSeg.setAttribute('role', 'group'); viewSeg.setAttribute('aria-label', 'View');
+  const viewBtns = new Map<ViewDir, HTMLButtonElement>();
+  for (const [id, label] of VIEW_BTNS) {
+    const b = h('button', 'btn-view', label); b.type = 'button';
+    viewSeg.append(b); viewBtns.set(id, b);
+  }
+  views.append(bFit, viewSeg);
   const drawerBtn = h('button', 'btn drawer-toggle', 'Layers');
   drawerBtn.setAttribute('aria-expanded', 'false');
   bar.append(drawerBtn, explodeLab, views);
 
   const hasWalls = model.parts.some((p) => p.layer === 'room');
-  panel.append(layersSec);
+  panel.append(layersSec, drillSec);
   if (hasWalls) panel.append(wallsSec);
   panel.append(lookSec);
   const unitInfo = h('aside');
   const info = h('aside');
-  root.append(stage, top, panel, unitInfo, info, bar);
+  const tip = h('div', 'drill-tip');
+  tip.hidden = true;
+  const overlayHint = h('div', 'overlay-hint');
+  overlayHint.hidden = true;
+  root.append(stage, top, panel, unitInfo, info, bar, tip, overlayHint);
   el.append(root);
 
   // --- scene ---
@@ -155,7 +190,9 @@ export function viewerPage(el: HTMLElement, model: Model, unit: string | null = 
       onClose: () => selection.clear(),
     });
     const selection = attachSelection(ctx, built, {
-      candidates: () => meshes.filter((m) => m.visible && !(state.walls === 'xray' && m.userData.part.layer === 'room')),
+      // x-rayed walls and fronts let the click through
+      candidates: () => meshes.filter((m) => m.visible && !(state.walls === 'xray' && m.userData.part.layer === 'room')
+        && !(drillView.on && drillView.xray && m.userData.part.layer === 'front')),
       // single click: cabinet (a part in cabinet mode); double click: always a part
       resolve: (hit, double) => {
         if (!hit) return null;
@@ -164,12 +201,153 @@ export function viewerPage(el: HTMLElement, model: Model, unit: string | null = 
         if (isRoomUnit(model.parts, p.unit)) return null;
         return double ? { kind: 'part', id: p.id } : { kind: 'unit', unit: p.unit };
       },
-      onChange: (sel) => {
-        if (sel?.kind === 'unit') unitApi.show(unitSummary(model, sel.unit), unitParts(model, sel.unit), focus !== null);
-        else unitApi.show(null);
-        const part = sel?.kind === 'part' ? (built.partsById.get(sel.id)!.userData.part as Part) : null;
-        infoApi.show(part, part ? { enabled: edit.mode === 'github', hint: edit.mode === 'off' ? edit.reason : undefined, onChange: (layer) => changeLayer(part, layer) } : undefined);
-      },
+      onChange: () => showSelection(),
+    });
+    function showSelection() {
+      const sel = selection.get();
+      if (sel?.kind === 'unit') unitApi.show(unitSummary(model, sel.unit), unitParts(model, sel.unit), focus !== null,
+        drillSummary(ds.plan, sel.unit, drillHash(model.id, { kind: 'cab', unit: sel.unit }), mergeParams(ds.overrides.params).jig.cup_from_edge,
+          buildHash(model.id, sel.unit)));
+      else unitApi.show(null);
+      const part = sel?.kind === 'part' ? (built.partsById.get(sel.id)!.userData.part as Part) : null;
+      infoApi.show(part, part ? { enabled: edit.mode === 'github', hint: edit.mode === 'off' ? edit.reason : undefined, onChange: (layer) => changeLayer(part, layer) } : undefined,
+        part ? () => drillPartSection(part, drillCtx()) : undefined);
+    }
+
+    // --- drilling plan (session = model + drilling.json); markers follow their parts ---
+    const ds: DrillSession = session ?? { overrides: { hingeSide: {}, shelfMode: {}, hingeZ: {}, params: {}, notes: {}, partNotes: {}, done: {} },
+      plan: { hinges: [], drawers: [], shelves: [], handles: [], tipons: [], hangers: [], warnings: [], features: [] },
+      enabled: false, syncError: '', save: async () => {}, onChange: () => () => {}, recompute: () => {} };
+    const markers = createDrillMarkers(built, ds.plan.features);
+    const overlay = createDrillOverlay(stage, (id) => built.partsById.get(id));
+    const drillView = loadDrillView(model.id);
+    const kindsOn = () => new Set(HW_GROUPS.filter((g) => drillView.groups[g.id] !== false).flatMap((g) => g.kinds as string[]));
+    const narrowed = () => HW_GROUPS.some((g) => drillView.groups[g.id] === false);
+    const partOf = (f: DrillFeature) => built.partsById.get(f.part.id)?.userData.part as Part | undefined;
+    const showOptional = () => ds.overrides.extraShelfRows === true;
+    const shownFeatures = () => {
+      const k = kindsOn();
+      return ds.plan.features.filter((f) => k.has(f.kind) && (!f.optional || showOptional()) && !!partOf(f) && inScope(partOf(f)!));
+    };
+    // fronts see-through so the inside of the carcasses shows (materials of the front layer are not shared with others)
+    const frontMats = new Set<Material>(meshes.filter((m) => m.userData.part.layer === 'front').map((m) => m.material as Material));
+    const applyXray = () => {
+      for (const m of frontMats) {
+        const mat = m as MeshStandardMaterial, x = drillView.on && drillView.xray;
+        mat.transparent = x; mat.opacity = x ? 0.2 : 1; mat.depthWrite = !x; mat.needsUpdate = true;
+      }
+    };
+    const applyDrill = () => {
+      const k = kindsOn();
+      markers.setFilter({ on: drillView.on, kinds: Object.fromEntries(DRILL_KINDS.map((x) => [x.id, k.has(x.id)])), optional: showOptional() });
+      markers.setHighlight(drillView.on && narrowed() ? new Set(shownFeatures().map((f) => f.part.id)) : new Set());
+      applyXray();
+    };
+    const drillCtx = (): DrillCtx => ({
+      plan: ds.plan, overrides: ds.overrides, enabled: ds.enabled, hint: ds.hint,
+      sheetHref: (p) => drillHash(model.id, { kind: 'part', code: typeof p.meta.code === 'string' ? p.meta.code : p.id }),
+      save: (e) => ds.save(e),
+    });
+    const renderDrill = () => {
+      const counts: Record<string, number> = {};
+      for (const f of ds.plan.features) {
+        const p = partOf(f);
+        if (!p || !inScope(p) || f.kind === 'runner-line' || (f.optional && !showOptional())) continue;
+        counts[groupOf(f.kind)] = (counts[groupOf(f.kind)] ?? 0) + 1;
+      }
+      const shown = shownFeatures();
+      drillPanel(drillHost, {
+        view: drillView, counts, editEnabled: ds.enabled, hint: ds.hint,
+        extraRows: ds.overrides.extraShelfRows === undefined ? 'auto' : ds.overrides.extraShelfRows ? 'on' : 'off',
+        hardware: hardwareCount({ features: shown, drawers: kindsOn().has('front-fixing') ? ds.plan.drawers.filter((d) => focus === null || d.unit === focus) : [] }),
+        warnings: ds.plan.warnings.filter((w) => focus === null || w.unit === focus).map((w) => w.text),
+        onView: (v) => { Object.assign(drillView, v); saveDrillView(model.id, drillView); applyDrill(); renderDrill(); if (!v.on) { tip.hidden = true; overlay.clear(); } },
+        onExtraRows: (v: ExtraRows) => ds.save({ kind: 'extraShelfRows', value: v === 'auto' ? undefined : v === 'on' }),
+        onParams: () => openParams(ds),
+      });
+    };
+    const offSession = ds.onChange(() => { markers.rebuild(ds.plan.features); applyDrill(); renderDrill(); showSelection(); });
+
+    // hover tooltip over drilling markers; a click pins it (source link, datasheet)
+    const ray = new Raycaster();
+    let tipRaf = 0, pinned = false;
+    const pickAt = (e: { clientX: number; clientY: number }) => {
+      const r = ctx.renderer.domElement.getBoundingClientRect();
+      built.group.updateMatrixWorld();
+      ray.setFromCamera(new Vector2(((e.clientX - r.left) / r.width) * 2 - 1, -((e.clientY - r.top) / r.height) * 2 + 1), ctx.camera);
+      return markers.pick(ray);
+    };
+    const showTip = (f: DrillFeature, e: { clientX: number; clientY: number }, pin: boolean) => {
+      const p = partOf(f);
+      tip.replaceChildren();
+      tip.classList.toggle('pinned', pin);
+      const head = h('strong', undefined, `${itemLabel(f.item)}`);
+      head.append(' ', statusBadge(f.status));
+      tip.append(head);
+      for (const line of featureLines(f)) tip.append(h('div', undefined, line));
+      const note = notesFor(f.item, ds.overrides.notes)[0];
+      if (note) tip.append(h('div', 'tip-note', note.text));
+      tip.append(h('div', 'meta', `${typeof p?.meta.code === 'string' ? p.meta.code + ' · ' : ''}${f.part.name}`));
+      if (pin) {
+        const act = h('div', 'actions');
+        const src = sourceOf(f.item);
+        if (src?.startsWith('http')) { const a = h('a', 'btn-small', 'źródło'); a.href = src; a.target = '_blank'; a.rel = 'noopener'; act.append(a); }
+        const sheet = h('button', 'btn-small', 'karta okucia'); sheet.type = 'button';
+        sheet.addEventListener('click', () => openDatasheet(f.item, ds));
+        const close = h('button', 'btn-small', 'zamknij'); close.type = 'button';
+        close.addEventListener('click', () => { pinned = false; tip.hidden = true; });
+        act.append(sheet, close);
+        tip.append(act);
+      }
+      const rr = root.getBoundingClientRect();
+      tip.style.left = `${Math.max(8, Math.min(e.clientX - rr.left + 14, rr.width - 310))}px`;
+      tip.style.top = `${Math.min(e.clientY - rr.top + 14, rr.height - 200)}px`;
+      tip.hidden = false;
+    };
+    const onMove = (e: PointerEvent) => {
+      if (pinned) return;
+      if (!drillView.on || e.buttons) { tip.hidden = true; return; }
+      cancelAnimationFrame(tipRaf);
+      tipRaf = requestAnimationFrame(() => {
+        if (pinned) return;
+        const f = pickAt(e);
+        if (f) showTip(f, e, false); else tip.hidden = true;
+      });
+    };
+    const onLeave = () => { if (!pinned) tip.hidden = true; };
+    let downAt: { x: number; y: number } | null = null;
+    const onDown = (e: PointerEvent) => { downAt = { x: e.clientX, y: e.clientY }; };
+    const onClick = (e: PointerEvent) => {
+      if (!drillView.on || !downAt || Math.hypot(e.clientX - downAt.x, e.clientY - downAt.y) > 5) return;
+      cancelAnimationFrame(tipRaf);
+      const f = pickAt(e);
+      pinned = !!f;
+      if (f) showTip(f, e, true); else tip.hidden = true;
+    };
+    ctx.renderer.domElement.addEventListener('pointermove', onMove);
+    ctx.renderer.domElement.addEventListener('pointerleave', onLeave);
+    ctx.renderer.domElement.addEventListener('pointerdown', onDown);
+    ctx.renderer.domElement.addEventListener('pointerup', onClick);
+
+    // orthographic views: Figma-style dimension overlay for the selected part or the filtered hardware groups
+    // recomputed only when the camera, the selection or the filter changes (occlusion test is a raycast per hole)
+    let overlayKey = '';
+    ctx.onFrame(() => {
+      if (ctx.viewDir === '3d' || !drillView.on) { overlay.clear(); overlayHint.hidden = true; overlayKey = ''; return; }
+      const sel = selection.get();
+      const r = ctx.renderer.domElement.getBoundingClientRect();
+      const cam = ctx.camera;
+      const key = [...cam.matrixWorld.elements.map((x) => x.toFixed(2)), cam.zoom, r.width, r.height, sel?.kind === 'part' ? sel.id : '',
+        JSON.stringify(drillView), ds.plan.features.length, [...built.partsById.values()].map((m) => m.position.x + m.position.y + m.position.z).reduce((a, b) => a + b, 0).toFixed(1),
+        meshes.filter((m) => m.visible).length].join('|');
+      if (key === overlayKey) return;
+      overlayKey = key;
+      const fs = sel?.kind === 'part' ? shownFeatures().filter((f) => f.part.id === sel.id) : shownFeatures();
+      // a selected part shows all its holes; otherwise holes hidden behind other boards are skipped
+      const occluders = sel?.kind === 'part' ? [] : meshes.filter((m) => m.visible && m.userData.part.layer !== 'room' && !(drillView.xray && m.userData.part.layer === 'front'));
+      const hint = overlay.update(fs, cam, r.width, r.height, occluders);
+      overlayHint.textContent = hint;
+      overlayHint.hidden = !hint;
     });
 
     const applyVisibility = () => {
@@ -279,6 +457,7 @@ export function viewerPage(el: HTMLElement, model: Model, unit: string | null = 
       }
       if (state.visibility[layer] === undefined) state.visibility = { ...state.visibility, ...defaultVisibility([layer]) };
       renderLayers(); applyWalls(); applyVisibility(); retarget(); save();   // applyWalls: the part may have moved to the walls
+      ds.recompute();                             // the layer decides what counts as a carcass panel
     }
 
     // --- reveal and select a part (part list, search) ---
@@ -310,10 +489,11 @@ export function viewerPage(el: HTMLElement, model: Model, unit: string | null = 
       focus = u;
       focusExplode = 0;
       slider.value = String(explodeValue());
-      renderTop(); renderLayers(); applyWalls(); applyVisibility();
+      renderTop(); renderLayers(); renderDrill(); applyWalls(); applyVisibility();
       retarget(true);                             // no animation, so the framing uses the target positions
       if (focus === null) fitScope();
       else fitExploded();
+      if (ctx.viewDir !== '3d') setViewDir(ctx.viewDir);   // orthographic view follows the cabinet's front
     };
 
     // Esc: first deselect, then leave cabinet mode
@@ -325,15 +505,24 @@ export function viewerPage(el: HTMLElement, model: Model, unit: string | null = 
     window.addEventListener('keydown', onKey);
 
     bFit.addEventListener('click', fitScope);
-    bFront.addEventListener('click', () => ctx.view('front'));
-    bTop.addEventListener('click', () => ctx.view('top'));
+    const furniture = () => {
+      const f = meshes.filter((m) => inScope(m.userData.part) && m.userData.part.layer !== 'room');
+      const vis = f.filter((m) => m.visible);
+      return vis.length ? vis : f;
+    };
+    const setViewDir = (v: ViewDir) => {
+      ctx.setView(v, unitFrontNormal(model, focus), furniture());
+      for (const [id, b] of viewBtns) b.classList.toggle('on', id === v);
+    };
+    for (const [id, b] of viewBtns) b.addEventListener('click', () => setViewDir(id));
+    viewBtns.get('3d')!.classList.add('on');
     drawerBtn.addEventListener('click', () => {
       const open = root.classList.toggle('drawer-open');
       drawerBtn.setAttribute('aria-expanded', String(open));
     });
 
     slider.value = String(explodeValue());
-    renderTop(); renderLayers(); applyWalls(); applyVisibility();
+    renderTop(); renderLayers(); renderDrill(); applyDrill(); applyWalls(); applyVisibility();
     retarget(true);
     fitScope();
     saveThumb(ctx, model.id);
@@ -343,7 +532,15 @@ export function viewerPage(el: HTMLElement, model: Model, unit: string | null = 
       setUnit,
       dispose: () => {
         window.removeEventListener('keydown', onKey);
+        ctx.renderer.domElement.removeEventListener('pointermove', onMove);
+        ctx.renderer.domElement.removeEventListener('pointerleave', onLeave);
+        ctx.renderer.domElement.removeEventListener('pointerdown', onDown);
+        ctx.renderer.domElement.removeEventListener('pointerup', onClick);
+        cancelAnimationFrame(tipRaf);
+        offSession();
+        overlay.dispose();
         selection.dispose();
+        markers.dispose();
         ctx.dispose();
         root.remove();
       },

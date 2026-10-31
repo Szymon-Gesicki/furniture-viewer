@@ -3,6 +3,8 @@ import { pathToFileURL } from 'node:url';
 import { join, resolve } from 'node:path';
 import { ModelSchema, type Model, LAYER_IDS } from '../src/model/schema';
 import { CodeBookSchema, assignCodes, codeModel, emptyCodeBook, type CodeBook } from '../src/model/codes';
+import { parseOverrides, serializeOverrides } from '../src/drilling/overrides';
+import { emptyOverrides, type DrillOverrides } from '../src/drilling/schema';
 
 export type Importer = (absPath: string) => Promise<any>;
 const nodeImport: Importer = (p) => import(pathToFileURL(p).href);
@@ -57,6 +59,17 @@ export async function buildProject(root: string, id: string, importer: Importer 
   return { model: r.model };
 }
 
+// drilling exceptions (projects/<id>/drilling.json) – validated, published next to the model
+export function loadDrillOverrides(root: string, id: string): DrillOverrides | null {
+  const f = join(root, 'projects', id, 'drilling.json');
+  if (!existsSync(f)) return null;
+  try {
+    return parseOverrides(readFileSync(f, 'utf8'));
+  } catch (e) {
+    throw new Error(`${f}: ${e instanceof Error ? e.message : String(e)}`);
+  }
+}
+
 async function main() {
   const root = process.cwd();
   rmSync('public/projects', { recursive: true, force: true });
@@ -66,6 +79,7 @@ async function main() {
     const r = await buildProject(root, id);
     if (!r) continue;
     writeFileSync(`public/projects/${id}.json`, JSON.stringify(r.model));
+    writeFileSync(`public/projects/${id}.drilling.json`, serializeOverrides(loadDrillOverrides(root, id) ?? emptyOverrides()));
     index.push(summarize(r.model));
   }
   writeFileSync('public/projects/index.json', JSON.stringify(index, null, 2));

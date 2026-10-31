@@ -1,0 +1,395 @@
+{
+ "format": "hardware-catalog",
+ "version": 1,
+ "units": "mm",
+ "status_legend": {
+  "verified": "from manufacturer data",
+  "standard": "industry/system-32 standard, check on the part",
+  "placeholder": "user must measure – show 'verify'"
+ },
+ "items": [
+  {
+   "id": "blum-cliptop-71B3550",
+   "label": "Blum CLIP top BLUMOTION 110° (screw-on)",
+   "group": "hinge",
+   "articles": [
+    "71B3550",
+    "71B7550",
+    "71B3750"
+   ],
+   "template": {
+    "part": "door",
+    "face": "back",
+    "origin": "hinge centre on the hinge edge",
+    "holes": [
+     {
+      "name": "cup",
+      "u": "B+17.5",
+      "v": 0,
+      "dia": 35,
+      "depth": 13,
+      "status": "verified"
+     },
+     {
+      "name": "screw-1",
+      "u": "B+27",
+      "v": -22.5,
+      "dia": 2.5,
+      "depth": 10,
+      "status": "standard"
+     },
+     {
+      "name": "screw-2",
+      "u": "B+27",
+      "v": 22.5,
+      "dia": 2.5,
+      "depth": 10,
+      "status": "standard"
+     }
+    ],
+    "params": {
+     "B": "overlay-11",
+     "B_range": {
+      "71B3550": [
+       3,
+       7
+      ],
+      "71B7550": [
+       3,
+       8
+      ]
+     }
+    }
+   },
+   "sources": [
+    "https://downloads.cabinetparts.com/auto/110-clip-top-blumotion.pdf",
+    "https://cabinotch.us/media/wysiwyg/FAQ/BlumHingeSpecifications.pdf"
+   ]
+  },
+  {
+   "id": "blum-plate-173L6100",
+   "label": "Blum cruciform plate 0 mm 37/32",
+   "group": "hinge",
+   "template": {
+    "part": "side panel",
+    "face": "inner",
+    "origin": "hinge centre height, front edge",
+    "holes": [
+     {
+      "name": "screw-1",
+      "u": 37,
+      "v": -16,
+      "dia": 2.5,
+      "depth": 10,
+      "status": "standard"
+     },
+     {
+      "name": "screw-2",
+      "u": 37,
+      "v": 16,
+      "dia": 2.5,
+      "depth": 10,
+      "status": "standard"
+     }
+    ],
+    "params": {
+     "setback_inset": "37+door_thickness+1.5"
+    }
+   },
+   "sources": [
+    "https://publications.blum.com/2022/catalogue/en/147/"
+   ]
+  },
+  {
+   "id": "blum-merivobox-runner-NL500",
+   "label": "MERIVOBOX runner 450.5001B (NL 500, 40 kg)",
+   "group": "drawer",
+   "template": {
+    "part": "side panel",
+    "face": "inner",
+    "origin": "front edge, runner bottom line (front bottom + 16)",
+    "line": {
+     "name": "runner bottom",
+     "v": 0
+    },
+    "holes": [
+     {
+      "name": "screw@19",
+      "u": 19,
+      "v": 6,
+      "dia": 2.5,
+      "depth": 10,
+      "status": "placeholder-height"
+     },
+     {
+      "name": "screw@37",
+      "u": 37,
+      "v": 6,
+      "dia": 2.5,
+      "depth": 10,
+      "status": "placeholder-height"
+     },
+     {
+      "name": "screw@69",
+      "u": 69,
+      "v": 6,
+      "dia": 2.5,
+      "depth": 10,
+      "status": "placeholder-height"
+     },
+     {
+      "name": "screw@261",
+      "u": 261,
+      "v": 6,
+      "dia": 2.5,
+      "depth": 10,
+      "status": "placeholder-height"
+     },
+     {
+      "name": "screw@293",
+      "u": 293,
+      "v": 6,
+      "dia": 2.5,
+      "depth": 10,
+      "status": "placeholder-height"
+     }
+    ]
+   },
+   "sources": [
+    "Blum E-SERVICES configuration PDF (MERIVOBOX M/K/E, 2026-10-24)"
+   ]
+  },
+  {
+   "id": "blum-inserta-ZF4.10I2",
+   "label": "MERIVOBOX INSERTA lower front fixing",
+   "group": "drawer",
+   "template": {
+    "part": "drawer front",
+    "face": "back",
+    "origin": "front bottom corner (each side, mirrored)",
+    "holes": [
+     {
+      "name": "lower",
+      "u": 36.5,
+      "v": 49.5,
+      "dia": 10,
+      "depth": 12,
+      "status": "verified"
+     },
+     {
+      "name": "upper",
+      "u": 36.5,
+      "v": 81.5,
+      "dia": 10,
+      "depth": 12,
+      "status": "verified"
+     }
+    ]
+   }
+  },
+  {
+   "id": "blum-inserta-ZF4.50I2",
+   "label": "MERIVOBOX INSERTA upper fixing (gallery)",
+   "group": "drawer",
+   "template": {
+    "part": "drawer front (E with gallery)",
+    "face": "back",
+    "origin": "front bottom corner (each side)",
+    "holes": [
+     {
+      "name": "top",
+      "u": 36.5,
+      "v": 209.5,
+      "dia": 10,
+      "depth": 12,
+      "status": "verified"
+     }
+    ]
+   },
+   "sources": [
+    "https://d2.blum.com/services/PAI_Planningmapping_Service/Pool/EFI_EinbaumaszeFrontINSERTA/Blum_A_EFI-MVX-VAZ-FAZ-ME1REL-BM-FST_E_2_PL_BAU_$SALL_$APK02_$V1.gif"
+   ]
+  },
+  {
+   "id": "blum-stabiliser-Z96.10E1",
+   "label": "Front stabiliser",
+   "group": "drawer",
+   "template": {
+    "part": "drawer front",
+    "face": "back",
+    "origin": "front centre, bottom edge",
+    "holes": [
+     {
+      "u": -16,
+      "v": 34.5,
+      "dia": 10,
+      "depth": 12,
+      "status": "verified"
+     },
+     {
+      "u": 16,
+      "v": 34.5,
+      "dia": 10,
+      "depth": 12,
+      "status": "verified"
+     }
+    ]
+   }
+  },
+  {
+   "id": "blum-tipon-956A1006",
+   "label": "Blum TIP-ON 956A1006 (bored)",
+   "group": "tipon",
+   "template": {
+    "part": "side/top panel at the opening edge",
+    "face": "front edge",
+    "origin": "inner face",
+    "holes": [
+     {
+      "u": 7.5,
+      "v": "handle height ±300",
+      "dia": 10,
+      "depth": 76,
+      "status": "verified"
+     }
+    ]
+   },
+   "sources": [
+    "https://publications.blum.com/2024/catalogue/en/192/",
+    "https://publications.blum.com/2024/catalogue/en/676/"
+   ]
+  },
+  {
+   "id": "camar-801",
+   "label": "Camar 801 wall-cabinet hanger",
+   "group": "hanger",
+   "template": {
+    "part": "wall-cabinet side panel",
+    "face": "inner",
+    "origin": "back edge, underside of the top panel",
+    "holes": [
+     {
+      "name": "dowel-1",
+      "u": 20,
+      "v": -42,
+      "dia": 10,
+      "depth": 10.5,
+      "status": "placeholder-u"
+     },
+     {
+      "name": "dowel-2",
+      "u": 52,
+      "v": -42,
+      "dia": 10,
+      "depth": 10.5,
+      "status": "placeholder-u"
+     }
+    ],
+    "params": {
+     "first_dowel_from_back_edge": 20,
+     "dowel_spacing": 32,
+     "dowel_axis": "depth"
+    }
+   },
+   "sources": [
+    "https://laserowo.com.pl/pl/p/Szablon-do-zawieszek-Camar-807801/153",
+    "https://mebleconsulta.pl/wp-content/uploads/2025/04/Katalog-system-zawieszki-Camar-Hafele.pdf"
+   ]
+  },
+  {
+   "id": "nomet-techno-320",
+   "label": "Nomet TECHNO 320 (C-1149-320.P61)",
+   "group": "handle",
+   "template": {
+    "part": "front",
+    "face": "front",
+    "origin": "handle centre",
+    "holes": [
+     {
+      "u": -160,
+      "v": 0,
+      "dia": 5,
+      "depth": 18,
+      "status": "verified"
+     },
+     {
+      "u": 160,
+      "v": 0,
+      "dia": 5,
+      "depth": 18,
+      "status": "verified"
+     }
+    ]
+   },
+   "sources": [
+    "https://bivert24.pl/uchwyt-meblowy-techno-c-1149-320-mm-czarny-mat-n,3,2514,114942"
+   ]
+  },
+  {
+   "id": "nomet-techno-128",
+   "label": "Nomet TECHNO 128",
+   "group": "handle",
+   "template": {
+    "part": "front",
+    "face": "front",
+    "origin": "handle centre",
+    "holes": [
+     {
+      "u": 0,
+      "v": -64,
+      "dia": 5,
+      "depth": 18,
+      "status": "verified"
+     },
+     {
+      "u": 0,
+      "v": 64,
+      "dia": 5,
+      "depth": 18,
+      "status": "verified"
+     }
+    ]
+   }
+  },
+  {
+   "id": "shelf-pin-5",
+   "label": "Shelf pin Ø5",
+   "group": "shelf",
+   "template": {
+    "part": "side panel",
+    "face": "inner",
+    "origin": "shelf front edge / underside",
+    "holes": [
+     {
+      "u": 37,
+      "v": -2.5,
+      "dia": 5,
+      "depth": 10,
+      "status": "standard"
+     },
+     {
+      "u": "depth-37",
+      "v": -2.5,
+      "dia": 5,
+      "depth": 10,
+      "status": "standard"
+     }
+    ]
+   }
+  }
+ ],
+ "kind_to_item": {
+  "hinge-cup": "blum-cliptop-71B3550",
+  "hinge-screw": "blum-cliptop-71B3550",
+  "plate-screw": "blum-plate-173L6100",
+  "runner-screw": "blum-merivobox-runner-NL500",
+  "front-fixing": "blum-inserta-ZF4.10I2",
+  "front-fixing-top": "blum-inserta-ZF4.50I2",
+  "front-stabiliser": "blum-stabiliser-Z96.10E1",
+  "tipon-bore": "blum-tipon-956A1006",
+  "hanger-dowel": "camar-801",
+  "handle-hole": "nomet-techno-320|nomet-techno-128 (by hardware code)",
+  "shelf-pin": "shelf-pin-5",
+  "shelf-screw": "fixed shelf"
+ }
+}

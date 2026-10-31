@@ -1,0 +1,2006 @@
+{
+ "format": "drill-plan",
+ "version": 1,
+ "project": "fuse-box-cabinet",
+ "generated_from": "sources/sketchup/fuse-box-cabinet.rb",
+ "units": "mm, world coordinates of the viewer model (Z up); local u/v measured on the named face",
+ "parameters": {
+  "hinge": {
+   "overlay_formula": "B = overlay - 11 (CLIP top 110 deg 71B3550 and 155 deg 71B7550, 0 mm plate)",
+   "cup_dia": 35,
+   "cup_depth": 13,
+   "cup_edge_offset": 17.5,
+   "screw_spacing": 45,
+   "screw_offset": 9.5,
+   "screw_dia": 2.5,
+   "screw_depth": 10,
+   "plate_setback": 37,
+   "plate_screw_spacing": 32,
+   "plate_screw_dia": 2.5,
+   "plate_screw_depth": 10,
+   "plate_half_height": 25,
+   "edge_dist_tall": 100,
+   "edge_dist_small_factor": 0.22,
+   "edge_dist_min": 45,
+   "count": [
+    [
+     900,
+     2
+    ],
+    [
+     1600,
+     3
+    ],
+    [
+     2000,
+     4
+    ],
+    [
+     2400,
+     5
+    ]
+   ],
+   "B_range": {
+    "71B3550": [
+     3,
+     7
+    ],
+    "71B7550": [
+     3,
+     8
+    ]
+   }
+  },
+  "shelf": {
+   "pin_dia": 5,
+   "pin_depth": 10,
+   "pin_from_edge": 37,
+   "pin_below_shelf": 2.5,
+   "screw_dia": 4,
+   "screw_from_edge": 40
+  },
+  "drawer": {
+   "FA_side": 16,
+   "FA_bottom": 16,
+   "front_hole_x": 20.5,
+   "front_hole_z1": 33.5,
+   "front_hole_pitch": 32,
+   "front_hole_dia": 10,
+   "front_hole_depth": 12,
+   "stab_below_first": 15,
+   "stab_pitch": 32,
+   "runner_screws_from_front": [
+    19,
+    37,
+    69,
+    261,
+    293
+   ],
+   "runner_screw_dia": 2.5,
+   "runner_screw_depth": 10,
+   "runner_screw_above_runner_bottom": 6
+  },
+  "handle": {
+   "dia": 5,
+   "depth": 18,
+   "drawer_from_top": 50,
+   "door_from_opening_edge": 40,
+   "door_end_hole_from_edge": 60,
+   "long": {
+    "code": "C-1149-320.P61",
+    "name": "Nomet TECHNO 320 czarny mat",
+    "cc": 320
+   },
+   "short": {
+    "code": "C-1149-128.P61 (verify code)",
+    "name": "Nomet TECHNO 128 czarny mat",
+    "cc": 128
+   }
+  },
+  "tipon": {
+   "code": "956A1006",
+   "bore_dia": 10,
+   "bore_depth": 76,
+   "from_inner_face": 7.5,
+   "from_opening_edge_on_panel": 60,
+   "two_units_above": 1500
+  },
+  "camar801": {
+   "dowel_dia": 10,
+   "dowel_depth": 10.5,
+   "below_top_panel_underside": 42,
+   "first_dowel_from_back_edge": 20,
+   "dowel_spacing": 32,
+   "dowel_axis": "depth",
+   "VERIFY": "first_dowel_from_back_edge, dowel_spacing and dowel_axis are placeholders - measure the real hanger"
+  }
+ },
+ "hinges": [
+  {
+   "cabinet": "Rozdzielnia",
+   "door": {
+    "id": "p0023",
+    "name": "Drzwi gorne 446x528 (zawiasy L, 2 szt.)"
+   },
+   "size": [
+    446.0,
+    528.0
+   ],
+   "hinge_side": "L",
+   "hinge_side_reason": "label",
+   "hardware": "71B3550",
+   "inset": false,
+   "side_panel": {
+    "id": "p0017",
+    "name": "Bok L 2196x122 (zawiasy)"
+   },
+   "overlay": 16.0,
+   "B": 5.0,
+   "cup_from_edge": 22.5,
+   "plate_setback": 37,
+   "hinges_from_door_bottom": [
+    100.0,
+    428.0
+   ],
+   "plates_from_side_bottom": [
+    1784.0,
+    2112.0
+   ],
+   "moved": []
+  },
+  {
+   "cabinet": "Rozdzielnia",
+   "door": {
+    "id": "p0024",
+    "name": "Drzwi dolne 446x1696 (zawiasy L, 4 szt.)"
+   },
+   "size": [
+    446.0,
+    1696.0
+   ],
+   "hinge_side": "L",
+   "hinge_side_reason": "label",
+   "hardware": "71B3550",
+   "inset": false,
+   "side_panel": {
+    "id": "p0017",
+    "name": "Bok L 2196x122 (zawiasy)"
+   },
+   "overlay": 16.0,
+   "B": 5.0,
+   "cup_from_edge": 22.5,
+   "plate_setback": 37,
+   "hinges_from_door_bottom": [
+    100.0,
+    599.0,
+    1097.0,
+    1596.0
+   ],
+   "plates_from_side_bottom": [
+    84.0,
+    583.0,
+    1081.0,
+    1580.0
+   ],
+   "moved": []
+  }
+ ],
+ "drawers": [],
+ "shelves": [
+  {
+   "cabinet": "Przegroda",
+   "shelf": {
+    "id": "p0019",
+    "name": "Przegroda pod rozdzielnia 414x122 (wyciecie z tylu 80x30 na przewody)"
+   },
+   "fixed": false,
+   "z_bottom": 1841.0,
+   "holes": [
+    {
+     "panel": "Bok L 2196x122 (zawiasy)",
+     "u": 37.0,
+     "v": 1670.5
+    },
+    {
+     "panel": "Bok L 2196x122 (zawiasy)",
+     "u": 85.0,
+     "v": 1670.5
+    },
+    {
+     "panel": "Bok P 2196x122",
+     "u": 37.0,
+     "v": 1670.5
+    },
+    {
+     "panel": "Bok P 2196x122",
+     "u": 85.0,
+     "v": 1670.5
+    }
+   ]
+  },
+  {
+   "cabinet": "Polka",
+   "shelf": {
+    "id": "p0020",
+    "name": "Polka 3 nad gniazdkiem 414x122 (wyciecie z tylu 80x30 na przewody)"
+   },
+   "fixed": false,
+   "z_bottom": 1500.0,
+   "holes": [
+    {
+     "panel": "Bok L 2196x122 (zawiasy)",
+     "u": 37.0,
+     "v": 1329.5
+    },
+    {
+     "panel": "Bok L 2196x122 (zawiasy)",
+     "u": 85.0,
+     "v": 1329.5
+    },
+    {
+     "panel": "Bok P 2196x122",
+     "u": 37.0,
+     "v": 1329.5
+    },
+    {
+     "panel": "Bok P 2196x122",
+     "u": 85.0,
+     "v": 1329.5
+    }
+   ]
+  },
+  {
+   "cabinet": "Polka",
+   "shelf": {
+    "id": "p0021",
+    "name": "Polka 2 pod gniazdkiem 414x122"
+   },
+   "fixed": false,
+   "z_bottom": 1000.0,
+   "holes": [
+    {
+     "panel": "Bok L 2196x122 (zawiasy)",
+     "u": 37.0,
+     "v": 829.5
+    },
+    {
+     "panel": "Bok L 2196x122 (zawiasy)",
+     "u": 85.0,
+     "v": 829.5
+    },
+    {
+     "panel": "Bok P 2196x122",
+     "u": 37.0,
+     "v": 829.5
+    },
+    {
+     "panel": "Bok P 2196x122",
+     "u": 85.0,
+     "v": 829.5
+    }
+   ]
+  },
+  {
+   "cabinet": "Polka",
+   "shelf": {
+    "id": "p0022",
+    "name": "Polka 1 dolna 414x122"
+   },
+   "fixed": false,
+   "z_bottom": 550.0,
+   "holes": [
+    {
+     "panel": "Bok L 2196x122 (zawiasy)",
+     "u": 37.0,
+     "v": 379.5
+    },
+    {
+     "panel": "Bok L 2196x122 (zawiasy)",
+     "u": 85.0,
+     "v": 379.5
+    },
+    {
+     "panel": "Bok P 2196x122",
+     "u": 37.0,
+     "v": 379.5
+    },
+    {
+     "panel": "Bok P 2196x122",
+     "u": 85.0,
+     "v": 379.5
+    }
+   ]
+  }
+ ],
+ "handles": [],
+ "tipons": [
+  {
+   "door": "Drzwi gorne 446x528 (zawiasy L, 2 szt.)",
+   "panel": "Bok P 2196x122",
+   "v_from_panel_bottom": 1784.0,
+   "v_from_door_bottom": 100
+  },
+  {
+   "door": "Drzwi dolne 446x1696 (zawiasy L, 4 szt.)",
+   "panel": "Bok P 2196x122",
+   "v_from_panel_bottom": 578.0,
+   "v_from_door_bottom": 594
+  },
+  {
+   "door": "Drzwi dolne 446x1696 (zawiasy L, 4 szt.)",
+   "panel": "Bok P 2196x122",
+   "v_from_panel_bottom": 1086.0,
+   "v_from_door_bottom": 1102
+  }
+ ],
+ "hangers": [],
+ "warnings": [],
+ "features": [
+  {
+   "id": "f0001",
+   "cabinet": "Rozdzielnia",
+   "kind": "hinge-cup",
+   "hardware": "71B3550",
+   "part": {
+    "id": "p0023",
+    "name": "Drzwi gorne 446x528 (zawiasy L, 2 szt.)"
+   },
+   "face": "y+",
+   "world": {
+    "p": [
+     24.5,
+     -122.0,
+     1952.0
+    ],
+    "dir": [
+     0,
+     -1,
+     0
+    ]
+   },
+   "local": {
+    "u": 22.5,
+    "v": 100.0,
+    "u_from": "hinge edge",
+    "v_from": "door bottom edge",
+    "face": "back"
+   },
+   "dia": 35,
+   "depth": 13,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0002",
+   "cabinet": "Rozdzielnia",
+   "kind": "hinge-screw",
+   "hardware": "609.1500",
+   "part": {
+    "id": "p0023",
+    "name": "Drzwi gorne 446x528 (zawiasy L, 2 szt.)"
+   },
+   "face": "y+",
+   "world": {
+    "p": [
+     34.0,
+     -122.0,
+     1929.5
+    ],
+    "dir": [
+     0,
+     -1,
+     0
+    ]
+   },
+   "local": {
+    "u": 32.0,
+    "v": 77.5,
+    "u_from": "hinge edge",
+    "v_from": "door bottom edge",
+    "face": "back"
+   },
+   "dia": 2.5,
+   "depth": 10,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0003",
+   "cabinet": "Rozdzielnia",
+   "kind": "hinge-screw",
+   "hardware": "609.1500",
+   "part": {
+    "id": "p0023",
+    "name": "Drzwi gorne 446x528 (zawiasy L, 2 szt.)"
+   },
+   "face": "y+",
+   "world": {
+    "p": [
+     34.0,
+     -122.0,
+     1974.5
+    ],
+    "dir": [
+     0,
+     -1,
+     0
+    ]
+   },
+   "local": {
+    "u": 32.0,
+    "v": 122.5,
+    "u_from": "hinge edge",
+    "v_from": "door bottom edge",
+    "face": "back"
+   },
+   "dia": 2.5,
+   "depth": 10,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0004",
+   "cabinet": "Rozdzielnia",
+   "kind": "plate-screw",
+   "hardware": "173L6100",
+   "part": {
+    "id": "p0017",
+    "name": "Bok L 2196x122 (zawiasy)"
+   },
+   "face": "x+",
+   "world": {
+    "p": [
+     18.0,
+     -85.0,
+     1936.0
+    ],
+    "dir": [
+     -1,
+     0,
+     0
+    ]
+   },
+   "local": {
+    "u": 37,
+    "v": 1768.0,
+    "u_from": "front edge",
+    "v_from": "panel bottom edge",
+    "face": "inner (towards the door centre)"
+   },
+   "dia": 2.5,
+   "depth": 10,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0005",
+   "cabinet": "Rozdzielnia",
+   "kind": "plate-screw",
+   "hardware": "173L6100",
+   "part": {
+    "id": "p0017",
+    "name": "Bok L 2196x122 (zawiasy)"
+   },
+   "face": "x+",
+   "world": {
+    "p": [
+     18.0,
+     -85.0,
+     1968.0
+    ],
+    "dir": [
+     -1,
+     0,
+     0
+    ]
+   },
+   "local": {
+    "u": 37,
+    "v": 1800.0,
+    "u_from": "front edge",
+    "v_from": "panel bottom edge",
+    "face": "inner (towards the door centre)"
+   },
+   "dia": 2.5,
+   "depth": 10,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0006",
+   "cabinet": "Rozdzielnia",
+   "kind": "hinge-cup",
+   "hardware": "71B3550",
+   "part": {
+    "id": "p0023",
+    "name": "Drzwi gorne 446x528 (zawiasy L, 2 szt.)"
+   },
+   "face": "y+",
+   "world": {
+    "p": [
+     24.5,
+     -122.0,
+     2280.0
+    ],
+    "dir": [
+     0,
+     -1,
+     0
+    ]
+   },
+   "local": {
+    "u": 22.5,
+    "v": 428.0,
+    "u_from": "hinge edge",
+    "v_from": "door bottom edge",
+    "face": "back"
+   },
+   "dia": 35,
+   "depth": 13,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0007",
+   "cabinet": "Rozdzielnia",
+   "kind": "hinge-screw",
+   "hardware": "609.1500",
+   "part": {
+    "id": "p0023",
+    "name": "Drzwi gorne 446x528 (zawiasy L, 2 szt.)"
+   },
+   "face": "y+",
+   "world": {
+    "p": [
+     34.0,
+     -122.0,
+     2257.5
+    ],
+    "dir": [
+     0,
+     -1,
+     0
+    ]
+   },
+   "local": {
+    "u": 32.0,
+    "v": 405.5,
+    "u_from": "hinge edge",
+    "v_from": "door bottom edge",
+    "face": "back"
+   },
+   "dia": 2.5,
+   "depth": 10,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0008",
+   "cabinet": "Rozdzielnia",
+   "kind": "hinge-screw",
+   "hardware": "609.1500",
+   "part": {
+    "id": "p0023",
+    "name": "Drzwi gorne 446x528 (zawiasy L, 2 szt.)"
+   },
+   "face": "y+",
+   "world": {
+    "p": [
+     34.0,
+     -122.0,
+     2302.5
+    ],
+    "dir": [
+     0,
+     -1,
+     0
+    ]
+   },
+   "local": {
+    "u": 32.0,
+    "v": 450.5,
+    "u_from": "hinge edge",
+    "v_from": "door bottom edge",
+    "face": "back"
+   },
+   "dia": 2.5,
+   "depth": 10,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0009",
+   "cabinet": "Rozdzielnia",
+   "kind": "plate-screw",
+   "hardware": "173L6100",
+   "part": {
+    "id": "p0017",
+    "name": "Bok L 2196x122 (zawiasy)"
+   },
+   "face": "x+",
+   "world": {
+    "p": [
+     18.0,
+     -85.0,
+     2264.0
+    ],
+    "dir": [
+     -1,
+     0,
+     0
+    ]
+   },
+   "local": {
+    "u": 37,
+    "v": 2096.0,
+    "u_from": "front edge",
+    "v_from": "panel bottom edge",
+    "face": "inner (towards the door centre)"
+   },
+   "dia": 2.5,
+   "depth": 10,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0010",
+   "cabinet": "Rozdzielnia",
+   "kind": "plate-screw",
+   "hardware": "173L6100",
+   "part": {
+    "id": "p0017",
+    "name": "Bok L 2196x122 (zawiasy)"
+   },
+   "face": "x+",
+   "world": {
+    "p": [
+     18.0,
+     -85.0,
+     2296.0
+    ],
+    "dir": [
+     -1,
+     0,
+     0
+    ]
+   },
+   "local": {
+    "u": 37,
+    "v": 2128.0,
+    "u_from": "front edge",
+    "v_from": "panel bottom edge",
+    "face": "inner (towards the door centre)"
+   },
+   "dia": 2.5,
+   "depth": 10,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0011",
+   "cabinet": "Rozdzielnia",
+   "kind": "hinge-cup",
+   "hardware": "71B3550",
+   "part": {
+    "id": "p0024",
+    "name": "Drzwi dolne 446x1696 (zawiasy L, 4 szt.)"
+   },
+   "face": "y+",
+   "world": {
+    "p": [
+     24.5,
+     -122.0,
+     252.0
+    ],
+    "dir": [
+     0,
+     -1,
+     0
+    ]
+   },
+   "local": {
+    "u": 22.5,
+    "v": 100.0,
+    "u_from": "hinge edge",
+    "v_from": "door bottom edge",
+    "face": "back"
+   },
+   "dia": 35,
+   "depth": 13,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0012",
+   "cabinet": "Rozdzielnia",
+   "kind": "hinge-screw",
+   "hardware": "609.1500",
+   "part": {
+    "id": "p0024",
+    "name": "Drzwi dolne 446x1696 (zawiasy L, 4 szt.)"
+   },
+   "face": "y+",
+   "world": {
+    "p": [
+     34.0,
+     -122.0,
+     229.5
+    ],
+    "dir": [
+     0,
+     -1,
+     0
+    ]
+   },
+   "local": {
+    "u": 32.0,
+    "v": 77.5,
+    "u_from": "hinge edge",
+    "v_from": "door bottom edge",
+    "face": "back"
+   },
+   "dia": 2.5,
+   "depth": 10,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0013",
+   "cabinet": "Rozdzielnia",
+   "kind": "hinge-screw",
+   "hardware": "609.1500",
+   "part": {
+    "id": "p0024",
+    "name": "Drzwi dolne 446x1696 (zawiasy L, 4 szt.)"
+   },
+   "face": "y+",
+   "world": {
+    "p": [
+     34.0,
+     -122.0,
+     274.5
+    ],
+    "dir": [
+     0,
+     -1,
+     0
+    ]
+   },
+   "local": {
+    "u": 32.0,
+    "v": 122.5,
+    "u_from": "hinge edge",
+    "v_from": "door bottom edge",
+    "face": "back"
+   },
+   "dia": 2.5,
+   "depth": 10,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0014",
+   "cabinet": "Rozdzielnia",
+   "kind": "plate-screw",
+   "hardware": "173L6100",
+   "part": {
+    "id": "p0017",
+    "name": "Bok L 2196x122 (zawiasy)"
+   },
+   "face": "x+",
+   "world": {
+    "p": [
+     18.0,
+     -85.0,
+     236.0
+    ],
+    "dir": [
+     -1,
+     0,
+     0
+    ]
+   },
+   "local": {
+    "u": 37,
+    "v": 68.0,
+    "u_from": "front edge",
+    "v_from": "panel bottom edge",
+    "face": "inner (towards the door centre)"
+   },
+   "dia": 2.5,
+   "depth": 10,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0015",
+   "cabinet": "Rozdzielnia",
+   "kind": "plate-screw",
+   "hardware": "173L6100",
+   "part": {
+    "id": "p0017",
+    "name": "Bok L 2196x122 (zawiasy)"
+   },
+   "face": "x+",
+   "world": {
+    "p": [
+     18.0,
+     -85.0,
+     268.0
+    ],
+    "dir": [
+     -1,
+     0,
+     0
+    ]
+   },
+   "local": {
+    "u": 37,
+    "v": 100.0,
+    "u_from": "front edge",
+    "v_from": "panel bottom edge",
+    "face": "inner (towards the door centre)"
+   },
+   "dia": 2.5,
+   "depth": 10,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0016",
+   "cabinet": "Rozdzielnia",
+   "kind": "hinge-cup",
+   "hardware": "71B3550",
+   "part": {
+    "id": "p0024",
+    "name": "Drzwi dolne 446x1696 (zawiasy L, 4 szt.)"
+   },
+   "face": "y+",
+   "world": {
+    "p": [
+     24.5,
+     -122.0,
+     751.0
+    ],
+    "dir": [
+     0,
+     -1,
+     0
+    ]
+   },
+   "local": {
+    "u": 22.5,
+    "v": 599.0,
+    "u_from": "hinge edge",
+    "v_from": "door bottom edge",
+    "face": "back"
+   },
+   "dia": 35,
+   "depth": 13,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0017",
+   "cabinet": "Rozdzielnia",
+   "kind": "hinge-screw",
+   "hardware": "609.1500",
+   "part": {
+    "id": "p0024",
+    "name": "Drzwi dolne 446x1696 (zawiasy L, 4 szt.)"
+   },
+   "face": "y+",
+   "world": {
+    "p": [
+     34.0,
+     -122.0,
+     728.5
+    ],
+    "dir": [
+     0,
+     -1,
+     0
+    ]
+   },
+   "local": {
+    "u": 32.0,
+    "v": 576.5,
+    "u_from": "hinge edge",
+    "v_from": "door bottom edge",
+    "face": "back"
+   },
+   "dia": 2.5,
+   "depth": 10,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0018",
+   "cabinet": "Rozdzielnia",
+   "kind": "hinge-screw",
+   "hardware": "609.1500",
+   "part": {
+    "id": "p0024",
+    "name": "Drzwi dolne 446x1696 (zawiasy L, 4 szt.)"
+   },
+   "face": "y+",
+   "world": {
+    "p": [
+     34.0,
+     -122.0,
+     773.5
+    ],
+    "dir": [
+     0,
+     -1,
+     0
+    ]
+   },
+   "local": {
+    "u": 32.0,
+    "v": 621.5,
+    "u_from": "hinge edge",
+    "v_from": "door bottom edge",
+    "face": "back"
+   },
+   "dia": 2.5,
+   "depth": 10,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0019",
+   "cabinet": "Rozdzielnia",
+   "kind": "plate-screw",
+   "hardware": "173L6100",
+   "part": {
+    "id": "p0017",
+    "name": "Bok L 2196x122 (zawiasy)"
+   },
+   "face": "x+",
+   "world": {
+    "p": [
+     18.0,
+     -85.0,
+     735.0
+    ],
+    "dir": [
+     -1,
+     0,
+     0
+    ]
+   },
+   "local": {
+    "u": 37,
+    "v": 567.0,
+    "u_from": "front edge",
+    "v_from": "panel bottom edge",
+    "face": "inner (towards the door centre)"
+   },
+   "dia": 2.5,
+   "depth": 10,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0020",
+   "cabinet": "Rozdzielnia",
+   "kind": "plate-screw",
+   "hardware": "173L6100",
+   "part": {
+    "id": "p0017",
+    "name": "Bok L 2196x122 (zawiasy)"
+   },
+   "face": "x+",
+   "world": {
+    "p": [
+     18.0,
+     -85.0,
+     767.0
+    ],
+    "dir": [
+     -1,
+     0,
+     0
+    ]
+   },
+   "local": {
+    "u": 37,
+    "v": 599.0,
+    "u_from": "front edge",
+    "v_from": "panel bottom edge",
+    "face": "inner (towards the door centre)"
+   },
+   "dia": 2.5,
+   "depth": 10,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0021",
+   "cabinet": "Rozdzielnia",
+   "kind": "hinge-cup",
+   "hardware": "71B3550",
+   "part": {
+    "id": "p0024",
+    "name": "Drzwi dolne 446x1696 (zawiasy L, 4 szt.)"
+   },
+   "face": "y+",
+   "world": {
+    "p": [
+     24.5,
+     -122.0,
+     1249.0
+    ],
+    "dir": [
+     0,
+     -1,
+     0
+    ]
+   },
+   "local": {
+    "u": 22.5,
+    "v": 1097.0,
+    "u_from": "hinge edge",
+    "v_from": "door bottom edge",
+    "face": "back"
+   },
+   "dia": 35,
+   "depth": 13,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0022",
+   "cabinet": "Rozdzielnia",
+   "kind": "hinge-screw",
+   "hardware": "609.1500",
+   "part": {
+    "id": "p0024",
+    "name": "Drzwi dolne 446x1696 (zawiasy L, 4 szt.)"
+   },
+   "face": "y+",
+   "world": {
+    "p": [
+     34.0,
+     -122.0,
+     1226.5
+    ],
+    "dir": [
+     0,
+     -1,
+     0
+    ]
+   },
+   "local": {
+    "u": 32.0,
+    "v": 1074.5,
+    "u_from": "hinge edge",
+    "v_from": "door bottom edge",
+    "face": "back"
+   },
+   "dia": 2.5,
+   "depth": 10,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0023",
+   "cabinet": "Rozdzielnia",
+   "kind": "hinge-screw",
+   "hardware": "609.1500",
+   "part": {
+    "id": "p0024",
+    "name": "Drzwi dolne 446x1696 (zawiasy L, 4 szt.)"
+   },
+   "face": "y+",
+   "world": {
+    "p": [
+     34.0,
+     -122.0,
+     1271.5
+    ],
+    "dir": [
+     0,
+     -1,
+     0
+    ]
+   },
+   "local": {
+    "u": 32.0,
+    "v": 1119.5,
+    "u_from": "hinge edge",
+    "v_from": "door bottom edge",
+    "face": "back"
+   },
+   "dia": 2.5,
+   "depth": 10,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0024",
+   "cabinet": "Rozdzielnia",
+   "kind": "plate-screw",
+   "hardware": "173L6100",
+   "part": {
+    "id": "p0017",
+    "name": "Bok L 2196x122 (zawiasy)"
+   },
+   "face": "x+",
+   "world": {
+    "p": [
+     18.0,
+     -85.0,
+     1233.0
+    ],
+    "dir": [
+     -1,
+     0,
+     0
+    ]
+   },
+   "local": {
+    "u": 37,
+    "v": 1065.0,
+    "u_from": "front edge",
+    "v_from": "panel bottom edge",
+    "face": "inner (towards the door centre)"
+   },
+   "dia": 2.5,
+   "depth": 10,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0025",
+   "cabinet": "Rozdzielnia",
+   "kind": "plate-screw",
+   "hardware": "173L6100",
+   "part": {
+    "id": "p0017",
+    "name": "Bok L 2196x122 (zawiasy)"
+   },
+   "face": "x+",
+   "world": {
+    "p": [
+     18.0,
+     -85.0,
+     1265.0
+    ],
+    "dir": [
+     -1,
+     0,
+     0
+    ]
+   },
+   "local": {
+    "u": 37,
+    "v": 1097.0,
+    "u_from": "front edge",
+    "v_from": "panel bottom edge",
+    "face": "inner (towards the door centre)"
+   },
+   "dia": 2.5,
+   "depth": 10,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0026",
+   "cabinet": "Rozdzielnia",
+   "kind": "hinge-cup",
+   "hardware": "71B3550",
+   "part": {
+    "id": "p0024",
+    "name": "Drzwi dolne 446x1696 (zawiasy L, 4 szt.)"
+   },
+   "face": "y+",
+   "world": {
+    "p": [
+     24.5,
+     -122.0,
+     1748.0
+    ],
+    "dir": [
+     0,
+     -1,
+     0
+    ]
+   },
+   "local": {
+    "u": 22.5,
+    "v": 1596.0,
+    "u_from": "hinge edge",
+    "v_from": "door bottom edge",
+    "face": "back"
+   },
+   "dia": 35,
+   "depth": 13,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0027",
+   "cabinet": "Rozdzielnia",
+   "kind": "hinge-screw",
+   "hardware": "609.1500",
+   "part": {
+    "id": "p0024",
+    "name": "Drzwi dolne 446x1696 (zawiasy L, 4 szt.)"
+   },
+   "face": "y+",
+   "world": {
+    "p": [
+     34.0,
+     -122.0,
+     1725.5
+    ],
+    "dir": [
+     0,
+     -1,
+     0
+    ]
+   },
+   "local": {
+    "u": 32.0,
+    "v": 1573.5,
+    "u_from": "hinge edge",
+    "v_from": "door bottom edge",
+    "face": "back"
+   },
+   "dia": 2.5,
+   "depth": 10,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0028",
+   "cabinet": "Rozdzielnia",
+   "kind": "hinge-screw",
+   "hardware": "609.1500",
+   "part": {
+    "id": "p0024",
+    "name": "Drzwi dolne 446x1696 (zawiasy L, 4 szt.)"
+   },
+   "face": "y+",
+   "world": {
+    "p": [
+     34.0,
+     -122.0,
+     1770.5
+    ],
+    "dir": [
+     0,
+     -1,
+     0
+    ]
+   },
+   "local": {
+    "u": 32.0,
+    "v": 1618.5,
+    "u_from": "hinge edge",
+    "v_from": "door bottom edge",
+    "face": "back"
+   },
+   "dia": 2.5,
+   "depth": 10,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0029",
+   "cabinet": "Rozdzielnia",
+   "kind": "plate-screw",
+   "hardware": "173L6100",
+   "part": {
+    "id": "p0017",
+    "name": "Bok L 2196x122 (zawiasy)"
+   },
+   "face": "x+",
+   "world": {
+    "p": [
+     18.0,
+     -85.0,
+     1732.0
+    ],
+    "dir": [
+     -1,
+     0,
+     0
+    ]
+   },
+   "local": {
+    "u": 37,
+    "v": 1564.0,
+    "u_from": "front edge",
+    "v_from": "panel bottom edge",
+    "face": "inner (towards the door centre)"
+   },
+   "dia": 2.5,
+   "depth": 10,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0030",
+   "cabinet": "Rozdzielnia",
+   "kind": "plate-screw",
+   "hardware": "173L6100",
+   "part": {
+    "id": "p0017",
+    "name": "Bok L 2196x122 (zawiasy)"
+   },
+   "face": "x+",
+   "world": {
+    "p": [
+     18.0,
+     -85.0,
+     1764.0
+    ],
+    "dir": [
+     -1,
+     0,
+     0
+    ]
+   },
+   "local": {
+    "u": 37,
+    "v": 1596.0,
+    "u_from": "front edge",
+    "v_from": "panel bottom edge",
+    "face": "inner (towards the door centre)"
+   },
+   "dia": 2.5,
+   "depth": 10,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0031",
+   "cabinet": "Przegroda",
+   "kind": "shelf-pin",
+   "hardware": "podporka 5 mm",
+   "part": {
+    "id": "p0017",
+    "name": "Bok L 2196x122 (zawiasy)"
+   },
+   "face": "x+",
+   "world": {
+    "p": [
+     18.0,
+     -85.0,
+     1838.5
+    ],
+    "dir": [
+     -1,
+     0,
+     0
+    ]
+   },
+   "local": {
+    "u": 37.0,
+    "v": 1670.5,
+    "u_from": "front edge",
+    "v_from": "panel bottom edge",
+    "face": "inner"
+   },
+   "dia": 5,
+   "depth": 10,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0032",
+   "cabinet": "Przegroda",
+   "kind": "shelf-pin",
+   "hardware": "podporka 5 mm",
+   "part": {
+    "id": "p0017",
+    "name": "Bok L 2196x122 (zawiasy)"
+   },
+   "face": "x+",
+   "world": {
+    "p": [
+     18.0,
+     -37.0,
+     1838.5
+    ],
+    "dir": [
+     -1,
+     0,
+     0
+    ]
+   },
+   "local": {
+    "u": 85.0,
+    "v": 1670.5,
+    "u_from": "front edge",
+    "v_from": "panel bottom edge",
+    "face": "inner"
+   },
+   "dia": 5,
+   "depth": 10,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0033",
+   "cabinet": "Przegroda",
+   "kind": "shelf-pin",
+   "hardware": "podporka 5 mm",
+   "part": {
+    "id": "p0018",
+    "name": "Bok P 2196x122"
+   },
+   "face": "x-",
+   "world": {
+    "p": [
+     432.0,
+     -85.0,
+     1838.5
+    ],
+    "dir": [
+     1,
+     0,
+     0
+    ]
+   },
+   "local": {
+    "u": 37.0,
+    "v": 1670.5,
+    "u_from": "front edge",
+    "v_from": "panel bottom edge",
+    "face": "inner"
+   },
+   "dia": 5,
+   "depth": 10,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0034",
+   "cabinet": "Przegroda",
+   "kind": "shelf-pin",
+   "hardware": "podporka 5 mm",
+   "part": {
+    "id": "p0018",
+    "name": "Bok P 2196x122"
+   },
+   "face": "x-",
+   "world": {
+    "p": [
+     432.0,
+     -37.0,
+     1838.5
+    ],
+    "dir": [
+     1,
+     0,
+     0
+    ]
+   },
+   "local": {
+    "u": 85.0,
+    "v": 1670.5,
+    "u_from": "front edge",
+    "v_from": "panel bottom edge",
+    "face": "inner"
+   },
+   "dia": 5,
+   "depth": 10,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0035",
+   "cabinet": "Polka",
+   "kind": "shelf-pin",
+   "hardware": "podporka 5 mm",
+   "part": {
+    "id": "p0017",
+    "name": "Bok L 2196x122 (zawiasy)"
+   },
+   "face": "x+",
+   "world": {
+    "p": [
+     18.0,
+     -85.0,
+     1497.5
+    ],
+    "dir": [
+     -1,
+     0,
+     0
+    ]
+   },
+   "local": {
+    "u": 37.0,
+    "v": 1329.5,
+    "u_from": "front edge",
+    "v_from": "panel bottom edge",
+    "face": "inner"
+   },
+   "dia": 5,
+   "depth": 10,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0036",
+   "cabinet": "Polka",
+   "kind": "shelf-pin",
+   "hardware": "podporka 5 mm",
+   "part": {
+    "id": "p0017",
+    "name": "Bok L 2196x122 (zawiasy)"
+   },
+   "face": "x+",
+   "world": {
+    "p": [
+     18.0,
+     -37.0,
+     1497.5
+    ],
+    "dir": [
+     -1,
+     0,
+     0
+    ]
+   },
+   "local": {
+    "u": 85.0,
+    "v": 1329.5,
+    "u_from": "front edge",
+    "v_from": "panel bottom edge",
+    "face": "inner"
+   },
+   "dia": 5,
+   "depth": 10,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0037",
+   "cabinet": "Polka",
+   "kind": "shelf-pin",
+   "hardware": "podporka 5 mm",
+   "part": {
+    "id": "p0018",
+    "name": "Bok P 2196x122"
+   },
+   "face": "x-",
+   "world": {
+    "p": [
+     432.0,
+     -85.0,
+     1497.5
+    ],
+    "dir": [
+     1,
+     0,
+     0
+    ]
+   },
+   "local": {
+    "u": 37.0,
+    "v": 1329.5,
+    "u_from": "front edge",
+    "v_from": "panel bottom edge",
+    "face": "inner"
+   },
+   "dia": 5,
+   "depth": 10,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0038",
+   "cabinet": "Polka",
+   "kind": "shelf-pin",
+   "hardware": "podporka 5 mm",
+   "part": {
+    "id": "p0018",
+    "name": "Bok P 2196x122"
+   },
+   "face": "x-",
+   "world": {
+    "p": [
+     432.0,
+     -37.0,
+     1497.5
+    ],
+    "dir": [
+     1,
+     0,
+     0
+    ]
+   },
+   "local": {
+    "u": 85.0,
+    "v": 1329.5,
+    "u_from": "front edge",
+    "v_from": "panel bottom edge",
+    "face": "inner"
+   },
+   "dia": 5,
+   "depth": 10,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0039",
+   "cabinet": "Polka",
+   "kind": "shelf-pin",
+   "hardware": "podporka 5 mm",
+   "part": {
+    "id": "p0017",
+    "name": "Bok L 2196x122 (zawiasy)"
+   },
+   "face": "x+",
+   "world": {
+    "p": [
+     18.0,
+     -85.0,
+     997.5
+    ],
+    "dir": [
+     -1,
+     0,
+     0
+    ]
+   },
+   "local": {
+    "u": 37.0,
+    "v": 829.5,
+    "u_from": "front edge",
+    "v_from": "panel bottom edge",
+    "face": "inner"
+   },
+   "dia": 5,
+   "depth": 10,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0040",
+   "cabinet": "Polka",
+   "kind": "shelf-pin",
+   "hardware": "podporka 5 mm",
+   "part": {
+    "id": "p0017",
+    "name": "Bok L 2196x122 (zawiasy)"
+   },
+   "face": "x+",
+   "world": {
+    "p": [
+     18.0,
+     -37.0,
+     997.5
+    ],
+    "dir": [
+     -1,
+     0,
+     0
+    ]
+   },
+   "local": {
+    "u": 85.0,
+    "v": 829.5,
+    "u_from": "front edge",
+    "v_from": "panel bottom edge",
+    "face": "inner"
+   },
+   "dia": 5,
+   "depth": 10,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0041",
+   "cabinet": "Polka",
+   "kind": "shelf-pin",
+   "hardware": "podporka 5 mm",
+   "part": {
+    "id": "p0018",
+    "name": "Bok P 2196x122"
+   },
+   "face": "x-",
+   "world": {
+    "p": [
+     432.0,
+     -85.0,
+     997.5
+    ],
+    "dir": [
+     1,
+     0,
+     0
+    ]
+   },
+   "local": {
+    "u": 37.0,
+    "v": 829.5,
+    "u_from": "front edge",
+    "v_from": "panel bottom edge",
+    "face": "inner"
+   },
+   "dia": 5,
+   "depth": 10,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0042",
+   "cabinet": "Polka",
+   "kind": "shelf-pin",
+   "hardware": "podporka 5 mm",
+   "part": {
+    "id": "p0018",
+    "name": "Bok P 2196x122"
+   },
+   "face": "x-",
+   "world": {
+    "p": [
+     432.0,
+     -37.0,
+     997.5
+    ],
+    "dir": [
+     1,
+     0,
+     0
+    ]
+   },
+   "local": {
+    "u": 85.0,
+    "v": 829.5,
+    "u_from": "front edge",
+    "v_from": "panel bottom edge",
+    "face": "inner"
+   },
+   "dia": 5,
+   "depth": 10,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0043",
+   "cabinet": "Polka",
+   "kind": "shelf-pin",
+   "hardware": "podporka 5 mm",
+   "part": {
+    "id": "p0017",
+    "name": "Bok L 2196x122 (zawiasy)"
+   },
+   "face": "x+",
+   "world": {
+    "p": [
+     18.0,
+     -85.0,
+     547.5
+    ],
+    "dir": [
+     -1,
+     0,
+     0
+    ]
+   },
+   "local": {
+    "u": 37.0,
+    "v": 379.5,
+    "u_from": "front edge",
+    "v_from": "panel bottom edge",
+    "face": "inner"
+   },
+   "dia": 5,
+   "depth": 10,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0044",
+   "cabinet": "Polka",
+   "kind": "shelf-pin",
+   "hardware": "podporka 5 mm",
+   "part": {
+    "id": "p0017",
+    "name": "Bok L 2196x122 (zawiasy)"
+   },
+   "face": "x+",
+   "world": {
+    "p": [
+     18.0,
+     -37.0,
+     547.5
+    ],
+    "dir": [
+     -1,
+     0,
+     0
+    ]
+   },
+   "local": {
+    "u": 85.0,
+    "v": 379.5,
+    "u_from": "front edge",
+    "v_from": "panel bottom edge",
+    "face": "inner"
+   },
+   "dia": 5,
+   "depth": 10,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0045",
+   "cabinet": "Polka",
+   "kind": "shelf-pin",
+   "hardware": "podporka 5 mm",
+   "part": {
+    "id": "p0018",
+    "name": "Bok P 2196x122"
+   },
+   "face": "x-",
+   "world": {
+    "p": [
+     432.0,
+     -85.0,
+     547.5
+    ],
+    "dir": [
+     1,
+     0,
+     0
+    ]
+   },
+   "local": {
+    "u": 37.0,
+    "v": 379.5,
+    "u_from": "front edge",
+    "v_from": "panel bottom edge",
+    "face": "inner"
+   },
+   "dia": 5,
+   "depth": 10,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0046",
+   "cabinet": "Polka",
+   "kind": "shelf-pin",
+   "hardware": "podporka 5 mm",
+   "part": {
+    "id": "p0018",
+    "name": "Bok P 2196x122"
+   },
+   "face": "x-",
+   "world": {
+    "p": [
+     432.0,
+     -37.0,
+     547.5
+    ],
+    "dir": [
+     1,
+     0,
+     0
+    ]
+   },
+   "local": {
+    "u": 85.0,
+    "v": 379.5,
+    "u_from": "front edge",
+    "v_from": "panel bottom edge",
+    "face": "inner"
+   },
+   "dia": 5,
+   "depth": 10,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0047",
+   "cabinet": "Rozdzielnia",
+   "kind": "tipon-bore",
+   "hardware": "956A1006",
+   "part": {
+    "id": "p0018",
+    "name": "Bok P 2196x122"
+   },
+   "face": "y-",
+   "world": {
+    "p": [
+     439.5,
+     -122.0,
+     1952.0
+    ],
+    "dir": [
+     0,
+     1,
+     0
+    ]
+   },
+   "local": {
+    "u": 7.5,
+    "v": 1784.0,
+    "u_from": "inner face (bore in the FRONT EDGE of the panel)",
+    "v_from": "panel bottom edge",
+    "face": "front edge"
+   },
+   "dia": 10,
+   "depth": 76,
+   "note": "Blum template 65.5010; position allowed +-300 mm in height",
+   "verify": false
+  },
+  {
+   "id": "f0048",
+   "cabinet": "Rozdzielnia",
+   "kind": "tipon-bore",
+   "hardware": "956A1006",
+   "part": {
+    "id": "p0018",
+    "name": "Bok P 2196x122"
+   },
+   "face": "y-",
+   "world": {
+    "p": [
+     439.5,
+     -122.0,
+     746.0
+    ],
+    "dir": [
+     0,
+     1,
+     0
+    ]
+   },
+   "local": {
+    "u": 7.5,
+    "v": 578.0,
+    "u_from": "inner face (bore in the FRONT EDGE of the panel)",
+    "v_from": "panel bottom edge",
+    "face": "front edge"
+   },
+   "dia": 10,
+   "depth": 76,
+   "note": "Blum template 65.5010; position allowed +-300 mm in height",
+   "verify": false
+  },
+  {
+   "id": "f0049",
+   "cabinet": "Rozdzielnia",
+   "kind": "tipon-bore",
+   "hardware": "956A1006",
+   "part": {
+    "id": "p0018",
+    "name": "Bok P 2196x122"
+   },
+   "face": "y-",
+   "world": {
+    "p": [
+     439.5,
+     -122.0,
+     1254.0
+    ],
+    "dir": [
+     0,
+     1,
+     0
+    ]
+   },
+   "local": {
+    "u": 7.5,
+    "v": 1086.0,
+    "u_from": "inner face (bore in the FRONT EDGE of the panel)",
+    "v_from": "panel bottom edge",
+    "face": "front edge"
+   },
+   "dia": 10,
+   "depth": 76,
+   "note": "Blum template 65.5010; position allowed +-300 mm in height",
+   "verify": false
+  }
+ ]
+}

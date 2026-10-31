@@ -6,11 +6,12 @@ export interface LayerEdit { enabled: boolean; hint?: string; onChange(layer: La
 
 const layerLabel = (id: string) => LAYERS.find((l) => l.id === id)?.label ?? id;
 
-export function infoPanel(el: HTMLElement, model: Model, onClose: () => void, onUnit: (unit: string) => void): { show(part: Part | null, edit?: LayerEdit): void } {
+export function infoPanel(el: HTMLElement, model: Model, onClose: () => void, onUnit: (unit: string) => void): { show(part: Part | null, edit?: LayerEdit, extra?: () => HTMLElement | null): void } {
   el.className = 'info';
   el.hidden = true;
   el.setAttribute('aria-live', 'polite');
   let shown: Part | null = null;
+  let extraFor: (() => HTMLElement | null) | undefined;     // extra block (drilling), rebuilt on every render
 
   const layerControl = (part: Part, edit: LayerEdit): HTMLElement => {
     const wrap = document.createElement('div');
@@ -44,7 +45,7 @@ export function infoPanel(el: HTMLElement, model: Model, onClose: () => void, on
       sel.disabled = true;
       err.remove();
       edit.onChange(sel.value as LayerId)
-        .then(() => { if (shown === part) show(part, edit); })   // the part may have been hidden or deselected while saving
+        .then(() => { if (shown === part) show(part, edit, extraFor); })   // the part may have been hidden or deselected while saving
         .catch((e: unknown) => {
           sel.value = prev;
           sel.disabled = false;
@@ -55,8 +56,9 @@ export function infoPanel(el: HTMLElement, model: Model, onClose: () => void, on
     return wrap;
   };
 
-  const show = (part: Part | null, edit?: LayerEdit) => {
+  const show = (part: Part | null, edit?: LayerEdit, extra?: () => HTMLElement | null) => {
     shown = part;
+    extraFor = extra;
     el.replaceChildren();
     el.hidden = !part;
     if (!part) return;
@@ -105,6 +107,8 @@ export function infoPanel(el: HTMLElement, model: Model, onClose: () => void, on
       dl.append(dt, dd);
     }
     el.append(close, ...head, title, dl);
+    const x = extra?.();
+    if (x) el.append(x);
   };
   return { show };
 }

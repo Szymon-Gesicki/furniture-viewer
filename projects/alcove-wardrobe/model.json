@@ -46,7 +46,7 @@
   "groups": [
     {
       "id": "g1",
-      "name": "Szafa_wneka_v3",
+      "name": "Szafa_wneka_v4",
       "parent": null
     },
     {
@@ -1917,7 +1917,7 @@
     },
     {
       "id": "p0064",
-      "name": "P Pawlacz Przegroda 394x540 (nad podzialem slupkow)",
+      "name": "P Pawlacz Przegroda L 394x560 (nad bokiem S1)",
       "group": "g1",
       "unit": "g1",
       "layer": "carcass",
@@ -1925,12 +1925,12 @@
       "shape": {
         "type": "box",
         "min": [
-          423,
-          -562,
+          414,
+          -582,
           1918
         ],
         "max": [
-          441,
+          432,
           -22,
           2312
         ]
@@ -1945,11 +1945,44 @@
       "meta": {
         "thickness": 18,
         "tag": "Korpus P Pawlacz",
-        "code": "ALC-13"
+        "code": "ALC-31"
       }
     },
     {
       "id": "p0065",
+      "name": "P Pawlacz Przegroda P 394x560 (nad bokiem S2, zawiasy drzwi lewych)",
+      "group": "g1",
+      "unit": "g1",
+      "layer": "carcass",
+      "material": "korpus-kaszmir",
+      "shape": {
+        "type": "box",
+        "min": [
+          432,
+          -582,
+          1918
+        ],
+        "max": [
+          450,
+          -22,
+          2312
+        ]
+      },
+      "edges": {
+        "raw": [
+          "y+",
+          "z+",
+          "z-"
+        ]
+      },
+      "meta": {
+        "thickness": 18,
+        "tag": "Korpus P Pawlacz",
+        "code": "ALC-32"
+      }
+    },
+    {
+      "id": "p0066",
       "name": "P Pawlacz Plecy HDF 1130x430",
       "group": "g1",
       "unit": "g1",
@@ -1983,7 +2016,7 @@
       }
     },
     {
-      "id": "p0066",
+      "id": "p0067",
       "name": "P Drzwi nad schowkiem (zawiasy L) 396x426",
       "group": "g1",
       "unit": "g1",
@@ -2012,7 +2045,7 @@
       }
     },
     {
-      "id": "p0067",
+      "id": "p0068",
       "name": "P Drzwi lewe nad kurtkami (zawiasy L) 361x426",
       "group": "g1",
       "unit": "g1",
@@ -2041,7 +2074,7 @@
       }
     },
     {
-      "id": "p0068",
+      "id": "p0069",
       "name": "P Drzwi prawe nad kurtkami (zawiasy P) 361x426",
       "group": "g1",
       "unit": "g1",
@@ -2070,7 +2103,7 @@
       }
     },
     {
-      "id": "p0069",
+      "id": "p0070",
       "name": "Zawias puszkowy 35 (znacznik)",
       "group": "g1",
       "unit": "g1",
@@ -2087,34 +2120,6 @@
           73,
           -581,
           1997.5
-        ]
-      },
-      "edges": {
-        "raw": []
-      },
-      "meta": {
-        "thickness": 1,
-        "tag": "Fronty"
-      }
-    },
-    {
-      "id": "p0070",
-      "name": "Zawias puszkowy 35 (znacznik)",
-      "group": "g1",
-      "unit": "g1",
-      "layer": "assembly",
-      "material": "nozka-klips",
-      "shape": {
-        "type": "box",
-        "min": [
-          38,
-          -582,
-          2232.5
-        ],
-        "max": [
-          73,
-          -581,
-          2267.5
         ]
       },
       "edges": {
@@ -2135,14 +2140,14 @@
       "shape": {
         "type": "box",
         "min": [
-          438,
+          38,
           -582,
-          1962.5
+          2232.5
         ],
         "max": [
-          473,
+          73,
           -581,
-          1997.5
+          2267.5
         ]
       },
       "edges": {
@@ -2165,6 +2170,34 @@
         "min": [
           438,
           -582,
+          1962.5
+        ],
+        "max": [
+          473,
+          -581,
+          1997.5
+        ]
+      },
+      "edges": {
+        "raw": []
+      },
+      "meta": {
+        "thickness": 1,
+        "tag": "Fronty"
+      }
+    },
+    {
+      "id": "p0073",
+      "name": "Zawias puszkowy 35 (znacznik)",
+      "group": "g1",
+      "unit": "g1",
+      "layer": "assembly",
+      "material": "nozka-klips",
+      "shape": {
+        "type": "box",
+        "min": [
+          438,
+          -582,
           2232.5
         ],
         "max": [
@@ -2182,7 +2215,7 @@
       }
     },
     {
-      "id": "p0073",
+      "id": "p0074",
       "name": "Zawias puszkowy 35 (znacznik)",
       "group": "g1",
       "unit": "g1",
@@ -2210,7 +2243,7 @@
       }
     },
     {
-      "id": "p0074",
+      "id": "p0075",
       "name": "Zawias puszkowy 35 (znacznik)",
       "group": "g1",
       "unit": "g1",
@@ -2238,7 +2271,7 @@
       }
     },
     {
-      "id": "p0075",
+      "id": "p0076",
       "name": "Blenda boczna L 57x2426 (z naddatkiem; dotnij do sciany 32-37 i pod sufit)",
       "group": "g1",
       "unit": "g1",
@@ -2271,7 +2304,7 @@
       }
     },
     {
-      "id": "p0076",
+      "id": "p0077",
       "name": "Blenda boczna P 57x2426 (z naddatkiem; dotnij do sciany 32-37 i pod sufit)",
       "group": "g1",
       "unit": "g1",
@@ -2304,7 +2337,7 @@
       }
     },
     {
-      "id": "p0077",
+      "id": "p0078",
       "name": "Blenda gorna 1130x96 (miedzy blendami bocznymi; dotnij pod sufit do 66-76)",
       "group": "g1",
       "unit": "g1",
@@ -2337,7 +2370,7 @@
       }
     },
     {
-      "id": "p0078",
+      "id": "p0079",
       "name": "Cokol 1130x110 (miedzy blendami, cofniety 40 mm, na klipsach; dotnij do podlogi)",
       "group": "g1",
       "unit": "g1",
@@ -2371,7 +2404,7 @@
       }
     },
     {
-      "id": "p0079",
+      "id": "p0080",
       "name": "Klocek montazowy blendy L 100x100",
       "group": "g1",
       "unit": "g1",
@@ -2386,39 +2419,6 @@
         ],
         "max": [
           32,
-          -482,
-          450
-        ]
-      },
-      "edges": {
-        "raw": [
-          "y+",
-          "y-",
-          "z+",
-          "z-"
-        ]
-      },
-      "meta": {
-        "thickness": 18,
-        "tag": "Blendy i cokol"
-      }
-    },
-    {
-      "id": "p0080",
-      "name": "Klocek montazowy blendy P 100x100",
-      "group": "g1",
-      "unit": "g1",
-      "layer": "assembly",
-      "material": "listwa-montazowa-18",
-      "shape": {
-        "type": "box",
-        "min": [
-          1162,
-          -582,
-          350
-        ],
-        "max": [
-          1180,
           -482,
           450
         ]
@@ -2438,7 +2438,7 @@
     },
     {
       "id": "p0081",
-      "name": "Klocek montazowy blendy L 100x100",
+      "name": "Klocek montazowy blendy P 100x100",
       "group": "g1",
       "unit": "g1",
       "layer": "assembly",
@@ -2446,14 +2446,14 @@
       "shape": {
         "type": "box",
         "min": [
-          14,
+          1162,
           -582,
-          1150
+          350
         ],
         "max": [
-          32,
+          1180,
           -482,
-          1250
+          450
         ]
       },
       "edges": {
@@ -2471,7 +2471,7 @@
     },
     {
       "id": "p0082",
-      "name": "Klocek montazowy blendy P 100x100",
+      "name": "Klocek montazowy blendy L 100x100",
       "group": "g1",
       "unit": "g1",
       "layer": "assembly",
@@ -2479,12 +2479,12 @@
       "shape": {
         "type": "box",
         "min": [
-          1162,
+          14,
           -582,
           1150
         ],
         "max": [
-          1180,
+          32,
           -482,
           1250
         ]
@@ -2504,6 +2504,39 @@
     },
     {
       "id": "p0083",
+      "name": "Klocek montazowy blendy P 100x100",
+      "group": "g1",
+      "unit": "g1",
+      "layer": "assembly",
+      "material": "listwa-montazowa-18",
+      "shape": {
+        "type": "box",
+        "min": [
+          1162,
+          -582,
+          1150
+        ],
+        "max": [
+          1180,
+          -482,
+          1250
+        ]
+      },
+      "edges": {
+        "raw": [
+          "y+",
+          "y-",
+          "z+",
+          "z-"
+        ]
+      },
+      "meta": {
+        "thickness": 18,
+        "tag": "Blendy i cokol"
+      }
+    },
+    {
+      "id": "p0084",
       "name": "Klocek montazowy blendy L 100x100",
       "group": "g1",
       "unit": "g1",
@@ -2536,7 +2569,7 @@
       }
     },
     {
-      "id": "p0084",
+      "id": "p0085",
       "name": "Klocek montazowy blendy P 100x100",
       "group": "g1",
       "unit": "g1",
@@ -2569,7 +2602,7 @@
       }
     },
     {
-      "id": "p0085",
+      "id": "p0086",
       "name": "Klocek montazowy blendy gornej 100x100 (na pawlaczu)",
       "group": "g1",
       "unit": "g1",
@@ -2602,7 +2635,7 @@
       }
     },
     {
-      "id": "p0086",
+      "id": "p0087",
       "name": "Klocek montazowy blendy gornej 100x100 (na pawlaczu)",
       "group": "g1",
       "unit": "g1",
@@ -2635,7 +2668,7 @@
       }
     },
     {
-      "id": "p0087",
+      "id": "p0088",
       "name": "Klocek montazowy blendy gornej 100x100 (na pawlaczu)",
       "group": "g1",
       "unit": "g1",
@@ -2670,6 +2703,6 @@
   ],
   "codes": {
     "prefix": "ALC",
-    "next": 31
+    "next": 33
   }
 }

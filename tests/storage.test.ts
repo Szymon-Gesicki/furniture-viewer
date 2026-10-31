@@ -29,3 +29,15 @@ it('setItem throws → silent', () => {
   (globalThis as any).localStorage.setItem = () => { throw new Error('quota'); };
   expect(() => saveState('k', { visibility: {}, explode: 0, walls: 'visible' })).not.toThrow();
 });
+
+it('drilling view: off by default with every hardware group on; invalid values dropped; round trip', async () => {
+  const { loadDrillView, saveDrillView } = await import('../src/ui/drillState');
+  const d = loadDrillView('kitchen');
+  expect([d.on, d.xray]).toEqual([false, false]);
+  expect(Object.values(d.groups).every(Boolean)).toBe(true);
+  store.set('fv:drill:kitchen', JSON.stringify({ on: 'yes', groups: { shelf: false, hinge: 3, bogus: false }, xray: true }));
+  const e = loadDrillView('kitchen');
+  expect([e.on, e.groups.shelf, e.groups.hinge, 'bogus' in e.groups, e.xray]).toEqual([false, false, true, false, true]);
+  saveDrillView('kitchen', { ...e, on: true });
+  expect(loadDrillView('kitchen')).toEqual({ ...e, on: true });
+});

@@ -1,0 +1,14 @@
+{
+  "hingeSide": {
+    "B1 Drzwiczki (zawiasy od strony zmywarki, Blum 155 st.) 105x716": "P",
+    "B4 Drzwiczki narozne (zawiasy Blum 155 st. na boku B4, otw. w lewo, chowaja sie za drzwiami P1) 131x716": "L",
+    "P1 Drzwi (zawiasy Blum 155 st. od szuflad, otw. w prawo, otwierasz PIERWSZE) 367x716": "P",
+    "L6 Drzwi nadstawki 610x374": "L"
+  },
+  "shelfMode": {},
+  "hingeZ": {},
+  "rules": {
+    "handles": "techno",
+    "camar801": "^G[234] "
+  }
+}

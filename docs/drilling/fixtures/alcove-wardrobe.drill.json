@@ -1,0 +1,4416 @@
+{
+ "format": "drill-plan",
+ "version": 1,
+ "project": "alcove-wardrobe",
+ "generated_from": "sources/sketchup/alcove-wardrobe.rb",
+ "units": "mm, world coordinates of the viewer model (Z up); local u/v measured on the named face",
+ "parameters": {
+  "hinge": {
+   "overlay_formula": "B = overlay - 11 (CLIP top 110 deg 71B3550 and 155 deg 71B7550, 0 mm plate)",
+   "cup_dia": 35,
+   "cup_depth": 13,
+   "cup_edge_offset": 17.5,
+   "screw_spacing": 45,
+   "screw_offset": 9.5,
+   "screw_dia": 2.5,
+   "screw_depth": 10,
+   "plate_setback": 37,
+   "plate_screw_spacing": 32,
+   "plate_screw_dia": 2.5,
+   "plate_screw_depth": 10,
+   "plate_half_height": 25,
+   "edge_dist_tall": 100,
+   "edge_dist_small_factor": 0.22,
+   "edge_dist_min": 45,
+   "count": [
+    [
+     900,
+     2
+    ],
+    [
+     1600,
+     3
+    ],
+    [
+     2000,
+     4
+    ],
+    [
+     2400,
+     5
+    ]
+   ],
+   "B_range": {
+    "71B3550": [
+     3,
+     7
+    ],
+    "71B7550": [
+     3,
+     8
+    ]
+   }
+  },
+  "shelf": {
+   "pin_dia": 5,
+   "pin_depth": 10,
+   "pin_from_edge": 37,
+   "pin_below_shelf": 2.5,
+   "screw_dia": 4,
+   "screw_from_edge": 40
+  },
+  "drawer": {
+   "FA_side": 16,
+   "FA_bottom": 16,
+   "front_hole_x": 20.5,
+   "front_hole_z1": 33.5,
+   "front_hole_pitch": 32,
+   "front_hole_dia": 10,
+   "front_hole_depth": 12,
+   "stab_below_first": 15,
+   "stab_pitch": 32,
+   "runner_screws_from_front": [
+    19,
+    37,
+    69,
+    261,
+    293
+   ],
+   "runner_screw_dia": 2.5,
+   "runner_screw_depth": 10,
+   "runner_screw_above_runner_bottom": 6
+  },
+  "handle": {
+   "dia": 5,
+   "depth": 18,
+   "drawer_from_top": 50,
+   "door_from_opening_edge": 40,
+   "door_end_hole_from_edge": 60,
+   "long": {
+    "code": "C-1149-320.P61",
+    "name": "Nomet TECHNO 320 czarny mat",
+    "cc": 320
+   },
+   "short": {
+    "code": "C-1149-128.P61 (verify code)",
+    "name": "Nomet TECHNO 128 czarny mat",
+    "cc": 128
+   }
+  },
+  "tipon": {
+   "code": "956A1006",
+   "bore_dia": 10,
+   "bore_depth": 76,
+   "from_inner_face": 7.5,
+   "from_opening_edge_on_panel": 60,
+   "two_units_above": 1500
+  },
+  "camar801": {
+   "dowel_dia": 10,
+   "dowel_depth": 10.5,
+   "below_top_panel_underside": 42,
+   "first_dowel_from_back_edge": 20,
+   "dowel_spacing": 32,
+   "dowel_axis": "depth",
+   "VERIFY": "first_dowel_from_back_edge, dowel_spacing and dowel_axis are placeholders - measure the real hanger"
+  }
+ },
+ "hinges": [
+  {
+   "cabinet": "S1",
+   "door": {
+    "id": "p0027",
+    "name": "S1 Drzwi (zawiasy L) 396x1796"
+   },
+   "size": [
+    396.0,
+    1796.0
+   ],
+   "hinge_side": "L",
+   "hinge_side_reason": "label",
+   "hardware": "71B3550",
+   "inset": false,
+   "side_panel": {
+    "id": "p0011",
+    "name": "S1 Schowek Bok L 1782x560"
+   },
+   "overlay": 16.0,
+   "B": 5.0,
+   "cup_from_edge": 22.5,
+   "plate_setback": 37,
+   "hinges_from_door_bottom": [
+    100.0,
+    632.0,
+    1164.0,
+    1696.0
+   ],
+   "plates_from_side_bottom": [
+    84.0,
+    616.0,
+    1148.0,
+    1680.0
+   ],
+   "moved": []
+  },
+  {
+   "cabinet": "S2",
+   "door": {
+    "id": "p0050",
+    "name": "S2 Drzwi lewe (zawiasy L) 361x1796"
+   },
+   "size": [
+    361.0,
+    1796.0
+   ],
+   "hinge_side": "L",
+   "hinge_side_reason": "label",
+   "hardware": "71B3550",
+   "inset": false,
+   "side_panel": {
+    "id": "p0033",
+    "name": "S2 Kurtki Bok L 1782x560"
+   },
+   "overlay": 16.0,
+   "B": 5.0,
+   "cup_from_edge": 22.5,
+   "plate_setback": 37,
+   "hinges_from_door_bottom": [
+    100.0,
+    632.0,
+    1164.0,
+    1696.0
+   ],
+   "plates_from_side_bottom": [
+    84.0,
+    616.0,
+    1148.0,
+    1680.0
+   ],
+   "moved": []
+  },
+  {
+   "cabinet": "S2",
+   "door": {
+    "id": "p0051",
+    "name": "S2 Drzwi prawe (zawiasy P) 361x1796"
+   },
+   "size": [
+    361.0,
+    1796.0
+   ],
+   "hinge_side": "P",
+   "hinge_side_reason": "label",
+   "hardware": "71B3550",
+   "inset": false,
+   "side_panel": {
+    "id": "p0034",
+    "name": "S2 Kurtki Bok P 1782x560"
+   },
+   "overlay": 16.0,
+   "B": 5.0,
+   "cup_from_edge": 22.5,
+   "plate_setback": 37,
+   "hinges_from_door_bottom": [
+    100.0,
+    632.0,
+    1164.0,
+    1696.0
+   ],
+   "plates_from_side_bottom": [
+    84.0,
+    616.0,
+    1148.0,
+    1680.0
+   ],
+   "moved": []
+  },
+  {
+   "cabinet": "Pawlacz",
+   "door": {
+    "id": "p0067",
+    "name": "P Drzwi nad schowkiem (zawiasy L) 396x426"
+   },
+   "size": [
+    396.0,
+    426.0
+   ],
+   "hinge_side": "L",
+   "hinge_side_reason": "label",
+   "hardware": "71B3550",
+   "inset": false,
+   "side_panel": {
+    "id": "p0062",
+    "name": "P Pawlacz Bok L 430x560"
+   },
+   "overlay": 16.0,
+   "B": 5.0,
+   "cup_from_edge": 22.5,
+   "plate_setback": 37,
+   "hinges_from_door_bottom": [
+    100.0,
+    326.0
+   ],
+   "plates_from_side_bottom": [
+    102.0,
+    328.0
+   ],
+   "moved": []
+  },
+  {
+   "cabinet": "Pawlacz",
+   "door": {
+    "id": "p0068",
+    "name": "P Drzwi lewe nad kurtkami (zawiasy L) 361x426"
+   },
+   "size": [
+    361.0,
+    426.0
+   ],
+   "hinge_side": "L",
+   "hinge_side_reason": "label",
+   "hardware": "71B3550",
+   "inset": false,
+   "side_panel": {
+    "id": "p0065",
+    "name": "P Pawlacz Przegroda P 394x560 (nad bokiem S2, zawiasy drzwi lewych)"
+   },
+   "overlay": 16.0,
+   "B": 5.0,
+   "cup_from_edge": 22.5,
+   "plate_setback": 37,
+   "hinges_from_door_bottom": [
+    100.0,
+    326.0
+   ],
+   "plates_from_side_bottom": [
+    84.0,
+    310.0
+   ],
+   "moved": []
+  },
+  {
+   "cabinet": "Pawlacz",
+   "door": {
+    "id": "p0069",
+    "name": "P Drzwi prawe nad kurtkami (zawiasy P) 361x426"
+   },
+   "size": [
+    361.0,
+    426.0
+   ],
+   "hinge_side": "P",
+   "hinge_side_reason": "label",
+   "hardware": "71B3550",
+   "inset": false,
+   "side_panel": {
+    "id": "p0063",
+    "name": "P Pawlacz Bok P 430x560"
+   },
+   "overlay": 16.0,
+   "B": 5.0,
+   "cup_from_edge": 22.5,
+   "plate_setback": 37,
+   "hinges_from_door_bottom": [
+    100.0,
+    326.0
+   ],
+   "plates_from_side_bottom": [
+    102.0,
+    328.0
+   ],
+   "moved": []
+  }
+ ],
+ "drawers": [],
+ "shelves": [
+  {
+   "cabinet": "S1",
+   "shelf": {
+    "id": "p0015",
+    "name": "S1 Schowek Polka 364x540"
+   },
+   "fixed": false,
+   "z_bottom": 1318.0,
+   "holes": [
+    {
+     "panel": "S1 Schowek Bok L 1782x560",
+     "u": 57.0,
+     "v": 1197.5
+    },
+    {
+     "panel": "S1 Schowek Bok L 1782x560",
+     "u": 523.0,
+     "v": 1197.5
+    },
+    {
+     "panel": "S1 Schowek Bok P 1782x560",
+     "u": 57.0,
+     "v": 1197.5
+    },
+    {
+     "panel": "S1 Schowek Bok P 1782x560",
+     "u": 523.0,
+     "v": 1197.5
+    }
+   ]
+  },
+  {
+   "cabinet": "S1",
+   "shelf": {
+    "id": "p0016",
+    "name": "S1 Schowek Polka 364x540"
+   },
+   "fixed": false,
+   "z_bottom": 1600.0,
+   "holes": [
+    {
+     "panel": "S1 Schowek Bok L 1782x560",
+     "u": 57.0,
+     "v": 1479.5
+    },
+    {
+     "panel": "S1 Schowek Bok L 1782x560",
+     "u": 523.0,
+     "v": 1479.5
+    },
+    {
+     "panel": "S1 Schowek Bok P 1782x560",
+     "u": 57.0,
+     "v": 1479.5
+    },
+    {
+     "panel": "S1 Schowek Bok P 1782x560",
+     "u": 523.0,
+     "v": 1479.5
+    }
+   ]
+  },
+  {
+   "cabinet": "S2",
+   "shelf": {
+    "id": "p0037",
+    "name": "S2 Kurtki Polka 694x540"
+   },
+   "fixed": false,
+   "z_bottom": 300.0,
+   "holes": [
+    {
+     "panel": "S2 Kurtki Bok L 1782x560",
+     "u": 57.0,
+     "v": 179.5
+    },
+    {
+     "panel": "S2 Kurtki Bok L 1782x560",
+     "u": 523.0,
+     "v": 179.5
+    },
+    {
+     "panel": "S2 Kurtki Bok P 1782x560",
+     "u": 57.0,
+     "v": 179.5
+    },
+    {
+     "panel": "S2 Kurtki Bok P 1782x560",
+     "u": 523.0,
+     "v": 179.5
+    }
+   ]
+  },
+  {
+   "cabinet": "S2",
+   "shelf": {
+    "id": "p0038",
+    "name": "S2 Kurtki Polka 694x540"
+   },
+   "fixed": false,
+   "z_bottom": 500.0,
+   "holes": [
+    {
+     "panel": "S2 Kurtki Bok L 1782x560",
+     "u": 57.0,
+     "v": 379.5
+    },
+    {
+     "panel": "S2 Kurtki Bok L 1782x560",
+     "u": 523.0,
+     "v": 379.5
+    },
+    {
+     "panel": "S2 Kurtki Bok P 1782x560",
+     "u": 57.0,
+     "v": 379.5
+    },
+    {
+     "panel": "S2 Kurtki Bok P 1782x560",
+     "u": 523.0,
+     "v": 379.5
+    }
+   ]
+  }
+ ],
+ "handles": [],
+ "tipons": [
+  {
+   "door": "S1 Drzwi (zawiasy L) 396x1796",
+   "panel": "S1 Schowek Bok P 1782x560",
+   "v_from_panel_bottom": 613.0,
+   "v_from_door_bottom": 629
+  },
+  {
+   "door": "S1 Drzwi (zawiasy L) 396x1796",
+   "panel": "S1 Schowek Bok P 1782x560",
+   "v_from_panel_bottom": 1151.0,
+   "v_from_door_bottom": 1167
+  },
+  {
+   "door": "S2 Drzwi lewe (zawiasy L) 361x1796",
+   "panel": "S2 Kurtki Wieniec gorny (miedzy bokami) 694x560",
+   "u_from_panel_left": 285.0
+  },
+  {
+   "door": "S2 Drzwi lewe (zawiasy L) 361x1796",
+   "panel": "S2 Kurtki Wieniec dolny (pod bokami) 730x560",
+   "u_from_panel_left": 303.0
+  },
+  {
+   "door": "S2 Drzwi prawe (zawiasy P) 361x1796",
+   "panel": "S2 Kurtki Wieniec gorny (miedzy bokami) 694x560",
+   "u_from_panel_left": 409.0
+  },
+  {
+   "door": "S2 Drzwi prawe (zawiasy P) 361x1796",
+   "panel": "S2 Kurtki Wieniec dolny (pod bokami) 730x560",
+   "u_from_panel_left": 427.0
+  },
+  {
+   "door": "P Drzwi nad schowkiem (zawiasy L) 396x426",
+   "panel": "P Pawlacz Przegroda L 394x560 (nad bokiem S1)",
+   "v_from_panel_bottom": 84.0,
+   "v_from_door_bottom": 100
+  },
+  {
+   "door": "P Drzwi lewe nad kurtkami (zawiasy L) 361x426",
+   "panel": "P Pawlacz Wieniec gorny (miedzy bokami) 1094x560",
+   "u_from_panel_left": 685.0
+  },
+  {
+   "door": "P Drzwi prawe nad kurtkami (zawiasy P) 361x426",
+   "panel": "P Pawlacz Wieniec gorny (miedzy bokami) 1094x560",
+   "u_from_panel_left": 809.0
+  }
+ ],
+ "hangers": [],
+ "warnings": [],
+ "features": [
+  {
+   "id": "f0001",
+   "cabinet": "S1",
+   "kind": "hinge-cup",
+   "hardware": "71B3550",
+   "part": {
+    "id": "p0027",
+    "name": "S1 Drzwi (zawiasy L) 396x1796"
+   },
+   "face": "y+",
+   "world": {
+    "p": [
+     56.5,
+     -582.0,
+     202.0
+    ],
+    "dir": [
+     0,
+     -1,
+     0
+    ]
+   },
+   "local": {
+    "u": 22.5,
+    "v": 100.0,
+    "u_from": "hinge edge",
+    "v_from": "door bottom edge",
+    "face": "back"
+   },
+   "dia": 35,
+   "depth": 13,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0002",
+   "cabinet": "S1",
+   "kind": "hinge-screw",
+   "hardware": "609.1500",
+   "part": {
+    "id": "p0027",
+    "name": "S1 Drzwi (zawiasy L) 396x1796"
+   },
+   "face": "y+",
+   "world": {
+    "p": [
+     66.0,
+     -582.0,
+     179.5
+    ],
+    "dir": [
+     0,
+     -1,
+     0
+    ]
+   },
+   "local": {
+    "u": 32.0,
+    "v": 77.5,
+    "u_from": "hinge edge",
+    "v_from": "door bottom edge",
+    "face": "back"
+   },
+   "dia": 2.5,
+   "depth": 10,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0003",
+   "cabinet": "S1",
+   "kind": "hinge-screw",
+   "hardware": "609.1500",
+   "part": {
+    "id": "p0027",
+    "name": "S1 Drzwi (zawiasy L) 396x1796"
+   },
+   "face": "y+",
+   "world": {
+    "p": [
+     66.0,
+     -582.0,
+     224.5
+    ],
+    "dir": [
+     0,
+     -1,
+     0
+    ]
+   },
+   "local": {
+    "u": 32.0,
+    "v": 122.5,
+    "u_from": "hinge edge",
+    "v_from": "door bottom edge",
+    "face": "back"
+   },
+   "dia": 2.5,
+   "depth": 10,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0004",
+   "cabinet": "S1",
+   "kind": "plate-screw",
+   "hardware": "173L6100",
+   "part": {
+    "id": "p0011",
+    "name": "S1 Schowek Bok L 1782x560"
+   },
+   "face": "x+",
+   "world": {
+    "p": [
+     50.0,
+     -545.0,
+     186.0
+    ],
+    "dir": [
+     -1,
+     0,
+     0
+    ]
+   },
+   "local": {
+    "u": 37,
+    "v": 68.0,
+    "u_from": "front edge",
+    "v_from": "panel bottom edge",
+    "face": "inner (towards the door centre)"
+   },
+   "dia": 2.5,
+   "depth": 10,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0005",
+   "cabinet": "S1",
+   "kind": "plate-screw",
+   "hardware": "173L6100",
+   "part": {
+    "id": "p0011",
+    "name": "S1 Schowek Bok L 1782x560"
+   },
+   "face": "x+",
+   "world": {
+    "p": [
+     50.0,
+     -545.0,
+     218.0
+    ],
+    "dir": [
+     -1,
+     0,
+     0
+    ]
+   },
+   "local": {
+    "u": 37,
+    "v": 100.0,
+    "u_from": "front edge",
+    "v_from": "panel bottom edge",
+    "face": "inner (towards the door centre)"
+   },
+   "dia": 2.5,
+   "depth": 10,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0006",
+   "cabinet": "S1",
+   "kind": "hinge-cup",
+   "hardware": "71B3550",
+   "part": {
+    "id": "p0027",
+    "name": "S1 Drzwi (zawiasy L) 396x1796"
+   },
+   "face": "y+",
+   "world": {
+    "p": [
+     56.5,
+     -582.0,
+     734.0
+    ],
+    "dir": [
+     0,
+     -1,
+     0
+    ]
+   },
+   "local": {
+    "u": 22.5,
+    "v": 632.0,
+    "u_from": "hinge edge",
+    "v_from": "door bottom edge",
+    "face": "back"
+   },
+   "dia": 35,
+   "depth": 13,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0007",
+   "cabinet": "S1",
+   "kind": "hinge-screw",
+   "hardware": "609.1500",
+   "part": {
+    "id": "p0027",
+    "name": "S1 Drzwi (zawiasy L) 396x1796"
+   },
+   "face": "y+",
+   "world": {
+    "p": [
+     66.0,
+     -582.0,
+     711.5
+    ],
+    "dir": [
+     0,
+     -1,
+     0
+    ]
+   },
+   "local": {
+    "u": 32.0,
+    "v": 609.5,
+    "u_from": "hinge edge",
+    "v_from": "door bottom edge",
+    "face": "back"
+   },
+   "dia": 2.5,
+   "depth": 10,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0008",
+   "cabinet": "S1",
+   "kind": "hinge-screw",
+   "hardware": "609.1500",
+   "part": {
+    "id": "p0027",
+    "name": "S1 Drzwi (zawiasy L) 396x1796"
+   },
+   "face": "y+",
+   "world": {
+    "p": [
+     66.0,
+     -582.0,
+     756.5
+    ],
+    "dir": [
+     0,
+     -1,
+     0
+    ]
+   },
+   "local": {
+    "u": 32.0,
+    "v": 654.5,
+    "u_from": "hinge edge",
+    "v_from": "door bottom edge",
+    "face": "back"
+   },
+   "dia": 2.5,
+   "depth": 10,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0009",
+   "cabinet": "S1",
+   "kind": "plate-screw",
+   "hardware": "173L6100",
+   "part": {
+    "id": "p0011",
+    "name": "S1 Schowek Bok L 1782x560"
+   },
+   "face": "x+",
+   "world": {
+    "p": [
+     50.0,
+     -545.0,
+     718.0
+    ],
+    "dir": [
+     -1,
+     0,
+     0
+    ]
+   },
+   "local": {
+    "u": 37,
+    "v": 600.0,
+    "u_from": "front edge",
+    "v_from": "panel bottom edge",
+    "face": "inner (towards the door centre)"
+   },
+   "dia": 2.5,
+   "depth": 10,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0010",
+   "cabinet": "S1",
+   "kind": "plate-screw",
+   "hardware": "173L6100",
+   "part": {
+    "id": "p0011",
+    "name": "S1 Schowek Bok L 1782x560"
+   },
+   "face": "x+",
+   "world": {
+    "p": [
+     50.0,
+     -545.0,
+     750.0
+    ],
+    "dir": [
+     -1,
+     0,
+     0
+    ]
+   },
+   "local": {
+    "u": 37,
+    "v": 632.0,
+    "u_from": "front edge",
+    "v_from": "panel bottom edge",
+    "face": "inner (towards the door centre)"
+   },
+   "dia": 2.5,
+   "depth": 10,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0011",
+   "cabinet": "S1",
+   "kind": "hinge-cup",
+   "hardware": "71B3550",
+   "part": {
+    "id": "p0027",
+    "name": "S1 Drzwi (zawiasy L) 396x1796"
+   },
+   "face": "y+",
+   "world": {
+    "p": [
+     56.5,
+     -582.0,
+     1266.0
+    ],
+    "dir": [
+     0,
+     -1,
+     0
+    ]
+   },
+   "local": {
+    "u": 22.5,
+    "v": 1164.0,
+    "u_from": "hinge edge",
+    "v_from": "door bottom edge",
+    "face": "back"
+   },
+   "dia": 35,
+   "depth": 13,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0012",
+   "cabinet": "S1",
+   "kind": "hinge-screw",
+   "hardware": "609.1500",
+   "part": {
+    "id": "p0027",
+    "name": "S1 Drzwi (zawiasy L) 396x1796"
+   },
+   "face": "y+",
+   "world": {
+    "p": [
+     66.0,
+     -582.0,
+     1243.5
+    ],
+    "dir": [
+     0,
+     -1,
+     0
+    ]
+   },
+   "local": {
+    "u": 32.0,
+    "v": 1141.5,
+    "u_from": "hinge edge",
+    "v_from": "door bottom edge",
+    "face": "back"
+   },
+   "dia": 2.5,
+   "depth": 10,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0013",
+   "cabinet": "S1",
+   "kind": "hinge-screw",
+   "hardware": "609.1500",
+   "part": {
+    "id": "p0027",
+    "name": "S1 Drzwi (zawiasy L) 396x1796"
+   },
+   "face": "y+",
+   "world": {
+    "p": [
+     66.0,
+     -582.0,
+     1288.5
+    ],
+    "dir": [
+     0,
+     -1,
+     0
+    ]
+   },
+   "local": {
+    "u": 32.0,
+    "v": 1186.5,
+    "u_from": "hinge edge",
+    "v_from": "door bottom edge",
+    "face": "back"
+   },
+   "dia": 2.5,
+   "depth": 10,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0014",
+   "cabinet": "S1",
+   "kind": "plate-screw",
+   "hardware": "173L6100",
+   "part": {
+    "id": "p0011",
+    "name": "S1 Schowek Bok L 1782x560"
+   },
+   "face": "x+",
+   "world": {
+    "p": [
+     50.0,
+     -545.0,
+     1250.0
+    ],
+    "dir": [
+     -1,
+     0,
+     0
+    ]
+   },
+   "local": {
+    "u": 37,
+    "v": 1132.0,
+    "u_from": "front edge",
+    "v_from": "panel bottom edge",
+    "face": "inner (towards the door centre)"
+   },
+   "dia": 2.5,
+   "depth": 10,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0015",
+   "cabinet": "S1",
+   "kind": "plate-screw",
+   "hardware": "173L6100",
+   "part": {
+    "id": "p0011",
+    "name": "S1 Schowek Bok L 1782x560"
+   },
+   "face": "x+",
+   "world": {
+    "p": [
+     50.0,
+     -545.0,
+     1282.0
+    ],
+    "dir": [
+     -1,
+     0,
+     0
+    ]
+   },
+   "local": {
+    "u": 37,
+    "v": 1164.0,
+    "u_from": "front edge",
+    "v_from": "panel bottom edge",
+    "face": "inner (towards the door centre)"
+   },
+   "dia": 2.5,
+   "depth": 10,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0016",
+   "cabinet": "S1",
+   "kind": "hinge-cup",
+   "hardware": "71B3550",
+   "part": {
+    "id": "p0027",
+    "name": "S1 Drzwi (zawiasy L) 396x1796"
+   },
+   "face": "y+",
+   "world": {
+    "p": [
+     56.5,
+     -582.0,
+     1798.0
+    ],
+    "dir": [
+     0,
+     -1,
+     0
+    ]
+   },
+   "local": {
+    "u": 22.5,
+    "v": 1696.0,
+    "u_from": "hinge edge",
+    "v_from": "door bottom edge",
+    "face": "back"
+   },
+   "dia": 35,
+   "depth": 13,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0017",
+   "cabinet": "S1",
+   "kind": "hinge-screw",
+   "hardware": "609.1500",
+   "part": {
+    "id": "p0027",
+    "name": "S1 Drzwi (zawiasy L) 396x1796"
+   },
+   "face": "y+",
+   "world": {
+    "p": [
+     66.0,
+     -582.0,
+     1775.5
+    ],
+    "dir": [
+     0,
+     -1,
+     0
+    ]
+   },
+   "local": {
+    "u": 32.0,
+    "v": 1673.5,
+    "u_from": "hinge edge",
+    "v_from": "door bottom edge",
+    "face": "back"
+   },
+   "dia": 2.5,
+   "depth": 10,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0018",
+   "cabinet": "S1",
+   "kind": "hinge-screw",
+   "hardware": "609.1500",
+   "part": {
+    "id": "p0027",
+    "name": "S1 Drzwi (zawiasy L) 396x1796"
+   },
+   "face": "y+",
+   "world": {
+    "p": [
+     66.0,
+     -582.0,
+     1820.5
+    ],
+    "dir": [
+     0,
+     -1,
+     0
+    ]
+   },
+   "local": {
+    "u": 32.0,
+    "v": 1718.5,
+    "u_from": "hinge edge",
+    "v_from": "door bottom edge",
+    "face": "back"
+   },
+   "dia": 2.5,
+   "depth": 10,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0019",
+   "cabinet": "S1",
+   "kind": "plate-screw",
+   "hardware": "173L6100",
+   "part": {
+    "id": "p0011",
+    "name": "S1 Schowek Bok L 1782x560"
+   },
+   "face": "x+",
+   "world": {
+    "p": [
+     50.0,
+     -545.0,
+     1782.0
+    ],
+    "dir": [
+     -1,
+     0,
+     0
+    ]
+   },
+   "local": {
+    "u": 37,
+    "v": 1664.0,
+    "u_from": "front edge",
+    "v_from": "panel bottom edge",
+    "face": "inner (towards the door centre)"
+   },
+   "dia": 2.5,
+   "depth": 10,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0020",
+   "cabinet": "S1",
+   "kind": "plate-screw",
+   "hardware": "173L6100",
+   "part": {
+    "id": "p0011",
+    "name": "S1 Schowek Bok L 1782x560"
+   },
+   "face": "x+",
+   "world": {
+    "p": [
+     50.0,
+     -545.0,
+     1814.0
+    ],
+    "dir": [
+     -1,
+     0,
+     0
+    ]
+   },
+   "local": {
+    "u": 37,
+    "v": 1696.0,
+    "u_from": "front edge",
+    "v_from": "panel bottom edge",
+    "face": "inner (towards the door centre)"
+   },
+   "dia": 2.5,
+   "depth": 10,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0021",
+   "cabinet": "S2",
+   "kind": "hinge-cup",
+   "hardware": "71B3550",
+   "part": {
+    "id": "p0050",
+    "name": "S2 Drzwi lewe (zawiasy L) 361x1796"
+   },
+   "face": "y+",
+   "world": {
+    "p": [
+     456.5,
+     -582.0,
+     202.0
+    ],
+    "dir": [
+     0,
+     -1,
+     0
+    ]
+   },
+   "local": {
+    "u": 22.5,
+    "v": 100.0,
+    "u_from": "hinge edge",
+    "v_from": "door bottom edge",
+    "face": "back"
+   },
+   "dia": 35,
+   "depth": 13,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0022",
+   "cabinet": "S2",
+   "kind": "hinge-screw",
+   "hardware": "609.1500",
+   "part": {
+    "id": "p0050",
+    "name": "S2 Drzwi lewe (zawiasy L) 361x1796"
+   },
+   "face": "y+",
+   "world": {
+    "p": [
+     466.0,
+     -582.0,
+     179.5
+    ],
+    "dir": [
+     0,
+     -1,
+     0
+    ]
+   },
+   "local": {
+    "u": 32.0,
+    "v": 77.5,
+    "u_from": "hinge edge",
+    "v_from": "door bottom edge",
+    "face": "back"
+   },
+   "dia": 2.5,
+   "depth": 10,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0023",
+   "cabinet": "S2",
+   "kind": "hinge-screw",
+   "hardware": "609.1500",
+   "part": {
+    "id": "p0050",
+    "name": "S2 Drzwi lewe (zawiasy L) 361x1796"
+   },
+   "face": "y+",
+   "world": {
+    "p": [
+     466.0,
+     -582.0,
+     224.5
+    ],
+    "dir": [
+     0,
+     -1,
+     0
+    ]
+   },
+   "local": {
+    "u": 32.0,
+    "v": 122.5,
+    "u_from": "hinge edge",
+    "v_from": "door bottom edge",
+    "face": "back"
+   },
+   "dia": 2.5,
+   "depth": 10,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0024",
+   "cabinet": "S2",
+   "kind": "plate-screw",
+   "hardware": "173L6100",
+   "part": {
+    "id": "p0033",
+    "name": "S2 Kurtki Bok L 1782x560"
+   },
+   "face": "x+",
+   "world": {
+    "p": [
+     450.0,
+     -545.0,
+     186.0
+    ],
+    "dir": [
+     -1,
+     0,
+     0
+    ]
+   },
+   "local": {
+    "u": 37,
+    "v": 68.0,
+    "u_from": "front edge",
+    "v_from": "panel bottom edge",
+    "face": "inner (towards the door centre)"
+   },
+   "dia": 2.5,
+   "depth": 10,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0025",
+   "cabinet": "S2",
+   "kind": "plate-screw",
+   "hardware": "173L6100",
+   "part": {
+    "id": "p0033",
+    "name": "S2 Kurtki Bok L 1782x560"
+   },
+   "face": "x+",
+   "world": {
+    "p": [
+     450.0,
+     -545.0,
+     218.0
+    ],
+    "dir": [
+     -1,
+     0,
+     0
+    ]
+   },
+   "local": {
+    "u": 37,
+    "v": 100.0,
+    "u_from": "front edge",
+    "v_from": "panel bottom edge",
+    "face": "inner (towards the door centre)"
+   },
+   "dia": 2.5,
+   "depth": 10,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0026",
+   "cabinet": "S2",
+   "kind": "hinge-cup",
+   "hardware": "71B3550",
+   "part": {
+    "id": "p0050",
+    "name": "S2 Drzwi lewe (zawiasy L) 361x1796"
+   },
+   "face": "y+",
+   "world": {
+    "p": [
+     456.5,
+     -582.0,
+     734.0
+    ],
+    "dir": [
+     0,
+     -1,
+     0
+    ]
+   },
+   "local": {
+    "u": 22.5,
+    "v": 632.0,
+    "u_from": "hinge edge",
+    "v_from": "door bottom edge",
+    "face": "back"
+   },
+   "dia": 35,
+   "depth": 13,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0027",
+   "cabinet": "S2",
+   "kind": "hinge-screw",
+   "hardware": "609.1500",
+   "part": {
+    "id": "p0050",
+    "name": "S2 Drzwi lewe (zawiasy L) 361x1796"
+   },
+   "face": "y+",
+   "world": {
+    "p": [
+     466.0,
+     -582.0,
+     711.5
+    ],
+    "dir": [
+     0,
+     -1,
+     0
+    ]
+   },
+   "local": {
+    "u": 32.0,
+    "v": 609.5,
+    "u_from": "hinge edge",
+    "v_from": "door bottom edge",
+    "face": "back"
+   },
+   "dia": 2.5,
+   "depth": 10,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0028",
+   "cabinet": "S2",
+   "kind": "hinge-screw",
+   "hardware": "609.1500",
+   "part": {
+    "id": "p0050",
+    "name": "S2 Drzwi lewe (zawiasy L) 361x1796"
+   },
+   "face": "y+",
+   "world": {
+    "p": [
+     466.0,
+     -582.0,
+     756.5
+    ],
+    "dir": [
+     0,
+     -1,
+     0
+    ]
+   },
+   "local": {
+    "u": 32.0,
+    "v": 654.5,
+    "u_from": "hinge edge",
+    "v_from": "door bottom edge",
+    "face": "back"
+   },
+   "dia": 2.5,
+   "depth": 10,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0029",
+   "cabinet": "S2",
+   "kind": "plate-screw",
+   "hardware": "173L6100",
+   "part": {
+    "id": "p0033",
+    "name": "S2 Kurtki Bok L 1782x560"
+   },
+   "face": "x+",
+   "world": {
+    "p": [
+     450.0,
+     -545.0,
+     718.0
+    ],
+    "dir": [
+     -1,
+     0,
+     0
+    ]
+   },
+   "local": {
+    "u": 37,
+    "v": 600.0,
+    "u_from": "front edge",
+    "v_from": "panel bottom edge",
+    "face": "inner (towards the door centre)"
+   },
+   "dia": 2.5,
+   "depth": 10,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0030",
+   "cabinet": "S2",
+   "kind": "plate-screw",
+   "hardware": "173L6100",
+   "part": {
+    "id": "p0033",
+    "name": "S2 Kurtki Bok L 1782x560"
+   },
+   "face": "x+",
+   "world": {
+    "p": [
+     450.0,
+     -545.0,
+     750.0
+    ],
+    "dir": [
+     -1,
+     0,
+     0
+    ]
+   },
+   "local": {
+    "u": 37,
+    "v": 632.0,
+    "u_from": "front edge",
+    "v_from": "panel bottom edge",
+    "face": "inner (towards the door centre)"
+   },
+   "dia": 2.5,
+   "depth": 10,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0031",
+   "cabinet": "S2",
+   "kind": "hinge-cup",
+   "hardware": "71B3550",
+   "part": {
+    "id": "p0050",
+    "name": "S2 Drzwi lewe (zawiasy L) 361x1796"
+   },
+   "face": "y+",
+   "world": {
+    "p": [
+     456.5,
+     -582.0,
+     1266.0
+    ],
+    "dir": [
+     0,
+     -1,
+     0
+    ]
+   },
+   "local": {
+    "u": 22.5,
+    "v": 1164.0,
+    "u_from": "hinge edge",
+    "v_from": "door bottom edge",
+    "face": "back"
+   },
+   "dia": 35,
+   "depth": 13,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0032",
+   "cabinet": "S2",
+   "kind": "hinge-screw",
+   "hardware": "609.1500",
+   "part": {
+    "id": "p0050",
+    "name": "S2 Drzwi lewe (zawiasy L) 361x1796"
+   },
+   "face": "y+",
+   "world": {
+    "p": [
+     466.0,
+     -582.0,
+     1243.5
+    ],
+    "dir": [
+     0,
+     -1,
+     0
+    ]
+   },
+   "local": {
+    "u": 32.0,
+    "v": 1141.5,
+    "u_from": "hinge edge",
+    "v_from": "door bottom edge",
+    "face": "back"
+   },
+   "dia": 2.5,
+   "depth": 10,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0033",
+   "cabinet": "S2",
+   "kind": "hinge-screw",
+   "hardware": "609.1500",
+   "part": {
+    "id": "p0050",
+    "name": "S2 Drzwi lewe (zawiasy L) 361x1796"
+   },
+   "face": "y+",
+   "world": {
+    "p": [
+     466.0,
+     -582.0,
+     1288.5
+    ],
+    "dir": [
+     0,
+     -1,
+     0
+    ]
+   },
+   "local": {
+    "u": 32.0,
+    "v": 1186.5,
+    "u_from": "hinge edge",
+    "v_from": "door bottom edge",
+    "face": "back"
+   },
+   "dia": 2.5,
+   "depth": 10,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0034",
+   "cabinet": "S2",
+   "kind": "plate-screw",
+   "hardware": "173L6100",
+   "part": {
+    "id": "p0033",
+    "name": "S2 Kurtki Bok L 1782x560"
+   },
+   "face": "x+",
+   "world": {
+    "p": [
+     450.0,
+     -545.0,
+     1250.0
+    ],
+    "dir": [
+     -1,
+     0,
+     0
+    ]
+   },
+   "local": {
+    "u": 37,
+    "v": 1132.0,
+    "u_from": "front edge",
+    "v_from": "panel bottom edge",
+    "face": "inner (towards the door centre)"
+   },
+   "dia": 2.5,
+   "depth": 10,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0035",
+   "cabinet": "S2",
+   "kind": "plate-screw",
+   "hardware": "173L6100",
+   "part": {
+    "id": "p0033",
+    "name": "S2 Kurtki Bok L 1782x560"
+   },
+   "face": "x+",
+   "world": {
+    "p": [
+     450.0,
+     -545.0,
+     1282.0
+    ],
+    "dir": [
+     -1,
+     0,
+     0
+    ]
+   },
+   "local": {
+    "u": 37,
+    "v": 1164.0,
+    "u_from": "front edge",
+    "v_from": "panel bottom edge",
+    "face": "inner (towards the door centre)"
+   },
+   "dia": 2.5,
+   "depth": 10,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0036",
+   "cabinet": "S2",
+   "kind": "hinge-cup",
+   "hardware": "71B3550",
+   "part": {
+    "id": "p0050",
+    "name": "S2 Drzwi lewe (zawiasy L) 361x1796"
+   },
+   "face": "y+",
+   "world": {
+    "p": [
+     456.5,
+     -582.0,
+     1798.0
+    ],
+    "dir": [
+     0,
+     -1,
+     0
+    ]
+   },
+   "local": {
+    "u": 22.5,
+    "v": 1696.0,
+    "u_from": "hinge edge",
+    "v_from": "door bottom edge",
+    "face": "back"
+   },
+   "dia": 35,
+   "depth": 13,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0037",
+   "cabinet": "S2",
+   "kind": "hinge-screw",
+   "hardware": "609.1500",
+   "part": {
+    "id": "p0050",
+    "name": "S2 Drzwi lewe (zawiasy L) 361x1796"
+   },
+   "face": "y+",
+   "world": {
+    "p": [
+     466.0,
+     -582.0,
+     1775.5
+    ],
+    "dir": [
+     0,
+     -1,
+     0
+    ]
+   },
+   "local": {
+    "u": 32.0,
+    "v": 1673.5,
+    "u_from": "hinge edge",
+    "v_from": "door bottom edge",
+    "face": "back"
+   },
+   "dia": 2.5,
+   "depth": 10,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0038",
+   "cabinet": "S2",
+   "kind": "hinge-screw",
+   "hardware": "609.1500",
+   "part": {
+    "id": "p0050",
+    "name": "S2 Drzwi lewe (zawiasy L) 361x1796"
+   },
+   "face": "y+",
+   "world": {
+    "p": [
+     466.0,
+     -582.0,
+     1820.5
+    ],
+    "dir": [
+     0,
+     -1,
+     0
+    ]
+   },
+   "local": {
+    "u": 32.0,
+    "v": 1718.5,
+    "u_from": "hinge edge",
+    "v_from": "door bottom edge",
+    "face": "back"
+   },
+   "dia": 2.5,
+   "depth": 10,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0039",
+   "cabinet": "S2",
+   "kind": "plate-screw",
+   "hardware": "173L6100",
+   "part": {
+    "id": "p0033",
+    "name": "S2 Kurtki Bok L 1782x560"
+   },
+   "face": "x+",
+   "world": {
+    "p": [
+     450.0,
+     -545.0,
+     1782.0
+    ],
+    "dir": [
+     -1,
+     0,
+     0
+    ]
+   },
+   "local": {
+    "u": 37,
+    "v": 1664.0,
+    "u_from": "front edge",
+    "v_from": "panel bottom edge",
+    "face": "inner (towards the door centre)"
+   },
+   "dia": 2.5,
+   "depth": 10,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0040",
+   "cabinet": "S2",
+   "kind": "plate-screw",
+   "hardware": "173L6100",
+   "part": {
+    "id": "p0033",
+    "name": "S2 Kurtki Bok L 1782x560"
+   },
+   "face": "x+",
+   "world": {
+    "p": [
+     450.0,
+     -545.0,
+     1814.0
+    ],
+    "dir": [
+     -1,
+     0,
+     0
+    ]
+   },
+   "local": {
+    "u": 37,
+    "v": 1696.0,
+    "u_from": "front edge",
+    "v_from": "panel bottom edge",
+    "face": "inner (towards the door centre)"
+   },
+   "dia": 2.5,
+   "depth": 10,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0041",
+   "cabinet": "S2",
+   "kind": "hinge-cup",
+   "hardware": "71B3550",
+   "part": {
+    "id": "p0051",
+    "name": "S2 Drzwi prawe (zawiasy P) 361x1796"
+   },
+   "face": "y+",
+   "world": {
+    "p": [
+     1137.5,
+     -582.0,
+     202.0
+    ],
+    "dir": [
+     0,
+     -1,
+     0
+    ]
+   },
+   "local": {
+    "u": 22.5,
+    "v": 100.0,
+    "u_from": "hinge edge",
+    "v_from": "door bottom edge",
+    "face": "back"
+   },
+   "dia": 35,
+   "depth": 13,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0042",
+   "cabinet": "S2",
+   "kind": "hinge-screw",
+   "hardware": "609.1500",
+   "part": {
+    "id": "p0051",
+    "name": "S2 Drzwi prawe (zawiasy P) 361x1796"
+   },
+   "face": "y+",
+   "world": {
+    "p": [
+     1128.0,
+     -582.0,
+     179.5
+    ],
+    "dir": [
+     0,
+     -1,
+     0
+    ]
+   },
+   "local": {
+    "u": 32.0,
+    "v": 77.5,
+    "u_from": "hinge edge",
+    "v_from": "door bottom edge",
+    "face": "back"
+   },
+   "dia": 2.5,
+   "depth": 10,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0043",
+   "cabinet": "S2",
+   "kind": "hinge-screw",
+   "hardware": "609.1500",
+   "part": {
+    "id": "p0051",
+    "name": "S2 Drzwi prawe (zawiasy P) 361x1796"
+   },
+   "face": "y+",
+   "world": {
+    "p": [
+     1128.0,
+     -582.0,
+     224.5
+    ],
+    "dir": [
+     0,
+     -1,
+     0
+    ]
+   },
+   "local": {
+    "u": 32.0,
+    "v": 122.5,
+    "u_from": "hinge edge",
+    "v_from": "door bottom edge",
+    "face": "back"
+   },
+   "dia": 2.5,
+   "depth": 10,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0044",
+   "cabinet": "S2",
+   "kind": "plate-screw",
+   "hardware": "173L6100",
+   "part": {
+    "id": "p0034",
+    "name": "S2 Kurtki Bok P 1782x560"
+   },
+   "face": "x-",
+   "world": {
+    "p": [
+     1144.0,
+     -545.0,
+     186.0
+    ],
+    "dir": [
+     1,
+     0,
+     0
+    ]
+   },
+   "local": {
+    "u": 37,
+    "v": 68.0,
+    "u_from": "front edge",
+    "v_from": "panel bottom edge",
+    "face": "inner (towards the door centre)"
+   },
+   "dia": 2.5,
+   "depth": 10,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0045",
+   "cabinet": "S2",
+   "kind": "plate-screw",
+   "hardware": "173L6100",
+   "part": {
+    "id": "p0034",
+    "name": "S2 Kurtki Bok P 1782x560"
+   },
+   "face": "x-",
+   "world": {
+    "p": [
+     1144.0,
+     -545.0,
+     218.0
+    ],
+    "dir": [
+     1,
+     0,
+     0
+    ]
+   },
+   "local": {
+    "u": 37,
+    "v": 100.0,
+    "u_from": "front edge",
+    "v_from": "panel bottom edge",
+    "face": "inner (towards the door centre)"
+   },
+   "dia": 2.5,
+   "depth": 10,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0046",
+   "cabinet": "S2",
+   "kind": "hinge-cup",
+   "hardware": "71B3550",
+   "part": {
+    "id": "p0051",
+    "name": "S2 Drzwi prawe (zawiasy P) 361x1796"
+   },
+   "face": "y+",
+   "world": {
+    "p": [
+     1137.5,
+     -582.0,
+     734.0
+    ],
+    "dir": [
+     0,
+     -1,
+     0
+    ]
+   },
+   "local": {
+    "u": 22.5,
+    "v": 632.0,
+    "u_from": "hinge edge",
+    "v_from": "door bottom edge",
+    "face": "back"
+   },
+   "dia": 35,
+   "depth": 13,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0047",
+   "cabinet": "S2",
+   "kind": "hinge-screw",
+   "hardware": "609.1500",
+   "part": {
+    "id": "p0051",
+    "name": "S2 Drzwi prawe (zawiasy P) 361x1796"
+   },
+   "face": "y+",
+   "world": {
+    "p": [
+     1128.0,
+     -582.0,
+     711.5
+    ],
+    "dir": [
+     0,
+     -1,
+     0
+    ]
+   },
+   "local": {
+    "u": 32.0,
+    "v": 609.5,
+    "u_from": "hinge edge",
+    "v_from": "door bottom edge",
+    "face": "back"
+   },
+   "dia": 2.5,
+   "depth": 10,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0048",
+   "cabinet": "S2",
+   "kind": "hinge-screw",
+   "hardware": "609.1500",
+   "part": {
+    "id": "p0051",
+    "name": "S2 Drzwi prawe (zawiasy P) 361x1796"
+   },
+   "face": "y+",
+   "world": {
+    "p": [
+     1128.0,
+     -582.0,
+     756.5
+    ],
+    "dir": [
+     0,
+     -1,
+     0
+    ]
+   },
+   "local": {
+    "u": 32.0,
+    "v": 654.5,
+    "u_from": "hinge edge",
+    "v_from": "door bottom edge",
+    "face": "back"
+   },
+   "dia": 2.5,
+   "depth": 10,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0049",
+   "cabinet": "S2",
+   "kind": "plate-screw",
+   "hardware": "173L6100",
+   "part": {
+    "id": "p0034",
+    "name": "S2 Kurtki Bok P 1782x560"
+   },
+   "face": "x-",
+   "world": {
+    "p": [
+     1144.0,
+     -545.0,
+     718.0
+    ],
+    "dir": [
+     1,
+     0,
+     0
+    ]
+   },
+   "local": {
+    "u": 37,
+    "v": 600.0,
+    "u_from": "front edge",
+    "v_from": "panel bottom edge",
+    "face": "inner (towards the door centre)"
+   },
+   "dia": 2.5,
+   "depth": 10,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0050",
+   "cabinet": "S2",
+   "kind": "plate-screw",
+   "hardware": "173L6100",
+   "part": {
+    "id": "p0034",
+    "name": "S2 Kurtki Bok P 1782x560"
+   },
+   "face": "x-",
+   "world": {
+    "p": [
+     1144.0,
+     -545.0,
+     750.0
+    ],
+    "dir": [
+     1,
+     0,
+     0
+    ]
+   },
+   "local": {
+    "u": 37,
+    "v": 632.0,
+    "u_from": "front edge",
+    "v_from": "panel bottom edge",
+    "face": "inner (towards the door centre)"
+   },
+   "dia": 2.5,
+   "depth": 10,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0051",
+   "cabinet": "S2",
+   "kind": "hinge-cup",
+   "hardware": "71B3550",
+   "part": {
+    "id": "p0051",
+    "name": "S2 Drzwi prawe (zawiasy P) 361x1796"
+   },
+   "face": "y+",
+   "world": {
+    "p": [
+     1137.5,
+     -582.0,
+     1266.0
+    ],
+    "dir": [
+     0,
+     -1,
+     0
+    ]
+   },
+   "local": {
+    "u": 22.5,
+    "v": 1164.0,
+    "u_from": "hinge edge",
+    "v_from": "door bottom edge",
+    "face": "back"
+   },
+   "dia": 35,
+   "depth": 13,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0052",
+   "cabinet": "S2",
+   "kind": "hinge-screw",
+   "hardware": "609.1500",
+   "part": {
+    "id": "p0051",
+    "name": "S2 Drzwi prawe (zawiasy P) 361x1796"
+   },
+   "face": "y+",
+   "world": {
+    "p": [
+     1128.0,
+     -582.0,
+     1243.5
+    ],
+    "dir": [
+     0,
+     -1,
+     0
+    ]
+   },
+   "local": {
+    "u": 32.0,
+    "v": 1141.5,
+    "u_from": "hinge edge",
+    "v_from": "door bottom edge",
+    "face": "back"
+   },
+   "dia": 2.5,
+   "depth": 10,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0053",
+   "cabinet": "S2",
+   "kind": "hinge-screw",
+   "hardware": "609.1500",
+   "part": {
+    "id": "p0051",
+    "name": "S2 Drzwi prawe (zawiasy P) 361x1796"
+   },
+   "face": "y+",
+   "world": {
+    "p": [
+     1128.0,
+     -582.0,
+     1288.5
+    ],
+    "dir": [
+     0,
+     -1,
+     0
+    ]
+   },
+   "local": {
+    "u": 32.0,
+    "v": 1186.5,
+    "u_from": "hinge edge",
+    "v_from": "door bottom edge",
+    "face": "back"
+   },
+   "dia": 2.5,
+   "depth": 10,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0054",
+   "cabinet": "S2",
+   "kind": "plate-screw",
+   "hardware": "173L6100",
+   "part": {
+    "id": "p0034",
+    "name": "S2 Kurtki Bok P 1782x560"
+   },
+   "face": "x-",
+   "world": {
+    "p": [
+     1144.0,
+     -545.0,
+     1250.0
+    ],
+    "dir": [
+     1,
+     0,
+     0
+    ]
+   },
+   "local": {
+    "u": 37,
+    "v": 1132.0,
+    "u_from": "front edge",
+    "v_from": "panel bottom edge",
+    "face": "inner (towards the door centre)"
+   },
+   "dia": 2.5,
+   "depth": 10,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0055",
+   "cabinet": "S2",
+   "kind": "plate-screw",
+   "hardware": "173L6100",
+   "part": {
+    "id": "p0034",
+    "name": "S2 Kurtki Bok P 1782x560"
+   },
+   "face": "x-",
+   "world": {
+    "p": [
+     1144.0,
+     -545.0,
+     1282.0
+    ],
+    "dir": [
+     1,
+     0,
+     0
+    ]
+   },
+   "local": {
+    "u": 37,
+    "v": 1164.0,
+    "u_from": "front edge",
+    "v_from": "panel bottom edge",
+    "face": "inner (towards the door centre)"
+   },
+   "dia": 2.5,
+   "depth": 10,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0056",
+   "cabinet": "S2",
+   "kind": "hinge-cup",
+   "hardware": "71B3550",
+   "part": {
+    "id": "p0051",
+    "name": "S2 Drzwi prawe (zawiasy P) 361x1796"
+   },
+   "face": "y+",
+   "world": {
+    "p": [
+     1137.5,
+     -582.0,
+     1798.0
+    ],
+    "dir": [
+     0,
+     -1,
+     0
+    ]
+   },
+   "local": {
+    "u": 22.5,
+    "v": 1696.0,
+    "u_from": "hinge edge",
+    "v_from": "door bottom edge",
+    "face": "back"
+   },
+   "dia": 35,
+   "depth": 13,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0057",
+   "cabinet": "S2",
+   "kind": "hinge-screw",
+   "hardware": "609.1500",
+   "part": {
+    "id": "p0051",
+    "name": "S2 Drzwi prawe (zawiasy P) 361x1796"
+   },
+   "face": "y+",
+   "world": {
+    "p": [
+     1128.0,
+     -582.0,
+     1775.5
+    ],
+    "dir": [
+     0,
+     -1,
+     0
+    ]
+   },
+   "local": {
+    "u": 32.0,
+    "v": 1673.5,
+    "u_from": "hinge edge",
+    "v_from": "door bottom edge",
+    "face": "back"
+   },
+   "dia": 2.5,
+   "depth": 10,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0058",
+   "cabinet": "S2",
+   "kind": "hinge-screw",
+   "hardware": "609.1500",
+   "part": {
+    "id": "p0051",
+    "name": "S2 Drzwi prawe (zawiasy P) 361x1796"
+   },
+   "face": "y+",
+   "world": {
+    "p": [
+     1128.0,
+     -582.0,
+     1820.5
+    ],
+    "dir": [
+     0,
+     -1,
+     0
+    ]
+   },
+   "local": {
+    "u": 32.0,
+    "v": 1718.5,
+    "u_from": "hinge edge",
+    "v_from": "door bottom edge",
+    "face": "back"
+   },
+   "dia": 2.5,
+   "depth": 10,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0059",
+   "cabinet": "S2",
+   "kind": "plate-screw",
+   "hardware": "173L6100",
+   "part": {
+    "id": "p0034",
+    "name": "S2 Kurtki Bok P 1782x560"
+   },
+   "face": "x-",
+   "world": {
+    "p": [
+     1144.0,
+     -545.0,
+     1782.0
+    ],
+    "dir": [
+     1,
+     0,
+     0
+    ]
+   },
+   "local": {
+    "u": 37,
+    "v": 1664.0,
+    "u_from": "front edge",
+    "v_from": "panel bottom edge",
+    "face": "inner (towards the door centre)"
+   },
+   "dia": 2.5,
+   "depth": 10,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0060",
+   "cabinet": "S2",
+   "kind": "plate-screw",
+   "hardware": "173L6100",
+   "part": {
+    "id": "p0034",
+    "name": "S2 Kurtki Bok P 1782x560"
+   },
+   "face": "x-",
+   "world": {
+    "p": [
+     1144.0,
+     -545.0,
+     1814.0
+    ],
+    "dir": [
+     1,
+     0,
+     0
+    ]
+   },
+   "local": {
+    "u": 37,
+    "v": 1696.0,
+    "u_from": "front edge",
+    "v_from": "panel bottom edge",
+    "face": "inner (towards the door centre)"
+   },
+   "dia": 2.5,
+   "depth": 10,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0061",
+   "cabinet": "Pawlacz",
+   "kind": "hinge-cup",
+   "hardware": "71B3550",
+   "part": {
+    "id": "p0067",
+    "name": "P Drzwi nad schowkiem (zawiasy L) 396x426"
+   },
+   "face": "y+",
+   "world": {
+    "p": [
+     56.5,
+     -582.0,
+     2002.0
+    ],
+    "dir": [
+     0,
+     -1,
+     0
+    ]
+   },
+   "local": {
+    "u": 22.5,
+    "v": 100.0,
+    "u_from": "hinge edge",
+    "v_from": "door bottom edge",
+    "face": "back"
+   },
+   "dia": 35,
+   "depth": 13,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0062",
+   "cabinet": "Pawlacz",
+   "kind": "hinge-screw",
+   "hardware": "609.1500",
+   "part": {
+    "id": "p0067",
+    "name": "P Drzwi nad schowkiem (zawiasy L) 396x426"
+   },
+   "face": "y+",
+   "world": {
+    "p": [
+     66.0,
+     -582.0,
+     1979.5
+    ],
+    "dir": [
+     0,
+     -1,
+     0
+    ]
+   },
+   "local": {
+    "u": 32.0,
+    "v": 77.5,
+    "u_from": "hinge edge",
+    "v_from": "door bottom edge",
+    "face": "back"
+   },
+   "dia": 2.5,
+   "depth": 10,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0063",
+   "cabinet": "Pawlacz",
+   "kind": "hinge-screw",
+   "hardware": "609.1500",
+   "part": {
+    "id": "p0067",
+    "name": "P Drzwi nad schowkiem (zawiasy L) 396x426"
+   },
+   "face": "y+",
+   "world": {
+    "p": [
+     66.0,
+     -582.0,
+     2024.5
+    ],
+    "dir": [
+     0,
+     -1,
+     0
+    ]
+   },
+   "local": {
+    "u": 32.0,
+    "v": 122.5,
+    "u_from": "hinge edge",
+    "v_from": "door bottom edge",
+    "face": "back"
+   },
+   "dia": 2.5,
+   "depth": 10,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0064",
+   "cabinet": "Pawlacz",
+   "kind": "plate-screw",
+   "hardware": "173L6100",
+   "part": {
+    "id": "p0062",
+    "name": "P Pawlacz Bok L 430x560"
+   },
+   "face": "x+",
+   "world": {
+    "p": [
+     50.0,
+     -545.0,
+     1986.0
+    ],
+    "dir": [
+     -1,
+     0,
+     0
+    ]
+   },
+   "local": {
+    "u": 37,
+    "v": 86.0,
+    "u_from": "front edge",
+    "v_from": "panel bottom edge",
+    "face": "inner (towards the door centre)"
+   },
+   "dia": 2.5,
+   "depth": 10,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0065",
+   "cabinet": "Pawlacz",
+   "kind": "plate-screw",
+   "hardware": "173L6100",
+   "part": {
+    "id": "p0062",
+    "name": "P Pawlacz Bok L 430x560"
+   },
+   "face": "x+",
+   "world": {
+    "p": [
+     50.0,
+     -545.0,
+     2018.0
+    ],
+    "dir": [
+     -1,
+     0,
+     0
+    ]
+   },
+   "local": {
+    "u": 37,
+    "v": 118.0,
+    "u_from": "front edge",
+    "v_from": "panel bottom edge",
+    "face": "inner (towards the door centre)"
+   },
+   "dia": 2.5,
+   "depth": 10,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0066",
+   "cabinet": "Pawlacz",
+   "kind": "hinge-cup",
+   "hardware": "71B3550",
+   "part": {
+    "id": "p0067",
+    "name": "P Drzwi nad schowkiem (zawiasy L) 396x426"
+   },
+   "face": "y+",
+   "world": {
+    "p": [
+     56.5,
+     -582.0,
+     2228.0
+    ],
+    "dir": [
+     0,
+     -1,
+     0
+    ]
+   },
+   "local": {
+    "u": 22.5,
+    "v": 326.0,
+    "u_from": "hinge edge",
+    "v_from": "door bottom edge",
+    "face": "back"
+   },
+   "dia": 35,
+   "depth": 13,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0067",
+   "cabinet": "Pawlacz",
+   "kind": "hinge-screw",
+   "hardware": "609.1500",
+   "part": {
+    "id": "p0067",
+    "name": "P Drzwi nad schowkiem (zawiasy L) 396x426"
+   },
+   "face": "y+",
+   "world": {
+    "p": [
+     66.0,
+     -582.0,
+     2205.5
+    ],
+    "dir": [
+     0,
+     -1,
+     0
+    ]
+   },
+   "local": {
+    "u": 32.0,
+    "v": 303.5,
+    "u_from": "hinge edge",
+    "v_from": "door bottom edge",
+    "face": "back"
+   },
+   "dia": 2.5,
+   "depth": 10,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0068",
+   "cabinet": "Pawlacz",
+   "kind": "hinge-screw",
+   "hardware": "609.1500",
+   "part": {
+    "id": "p0067",
+    "name": "P Drzwi nad schowkiem (zawiasy L) 396x426"
+   },
+   "face": "y+",
+   "world": {
+    "p": [
+     66.0,
+     -582.0,
+     2250.5
+    ],
+    "dir": [
+     0,
+     -1,
+     0
+    ]
+   },
+   "local": {
+    "u": 32.0,
+    "v": 348.5,
+    "u_from": "hinge edge",
+    "v_from": "door bottom edge",
+    "face": "back"
+   },
+   "dia": 2.5,
+   "depth": 10,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0069",
+   "cabinet": "Pawlacz",
+   "kind": "plate-screw",
+   "hardware": "173L6100",
+   "part": {
+    "id": "p0062",
+    "name": "P Pawlacz Bok L 430x560"
+   },
+   "face": "x+",
+   "world": {
+    "p": [
+     50.0,
+     -545.0,
+     2212.0
+    ],
+    "dir": [
+     -1,
+     0,
+     0
+    ]
+   },
+   "local": {
+    "u": 37,
+    "v": 312.0,
+    "u_from": "front edge",
+    "v_from": "panel bottom edge",
+    "face": "inner (towards the door centre)"
+   },
+   "dia": 2.5,
+   "depth": 10,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0070",
+   "cabinet": "Pawlacz",
+   "kind": "plate-screw",
+   "hardware": "173L6100",
+   "part": {
+    "id": "p0062",
+    "name": "P Pawlacz Bok L 430x560"
+   },
+   "face": "x+",
+   "world": {
+    "p": [
+     50.0,
+     -545.0,
+     2244.0
+    ],
+    "dir": [
+     -1,
+     0,
+     0
+    ]
+   },
+   "local": {
+    "u": 37,
+    "v": 344.0,
+    "u_from": "front edge",
+    "v_from": "panel bottom edge",
+    "face": "inner (towards the door centre)"
+   },
+   "dia": 2.5,
+   "depth": 10,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0071",
+   "cabinet": "Pawlacz",
+   "kind": "hinge-cup",
+   "hardware": "71B3550",
+   "part": {
+    "id": "p0068",
+    "name": "P Drzwi lewe nad kurtkami (zawiasy L) 361x426"
+   },
+   "face": "y+",
+   "world": {
+    "p": [
+     456.5,
+     -582.0,
+     2002.0
+    ],
+    "dir": [
+     0,
+     -1,
+     0
+    ]
+   },
+   "local": {
+    "u": 22.5,
+    "v": 100.0,
+    "u_from": "hinge edge",
+    "v_from": "door bottom edge",
+    "face": "back"
+   },
+   "dia": 35,
+   "depth": 13,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0072",
+   "cabinet": "Pawlacz",
+   "kind": "hinge-screw",
+   "hardware": "609.1500",
+   "part": {
+    "id": "p0068",
+    "name": "P Drzwi lewe nad kurtkami (zawiasy L) 361x426"
+   },
+   "face": "y+",
+   "world": {
+    "p": [
+     466.0,
+     -582.0,
+     1979.5
+    ],
+    "dir": [
+     0,
+     -1,
+     0
+    ]
+   },
+   "local": {
+    "u": 32.0,
+    "v": 77.5,
+    "u_from": "hinge edge",
+    "v_from": "door bottom edge",
+    "face": "back"
+   },
+   "dia": 2.5,
+   "depth": 10,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0073",
+   "cabinet": "Pawlacz",
+   "kind": "hinge-screw",
+   "hardware": "609.1500",
+   "part": {
+    "id": "p0068",
+    "name": "P Drzwi lewe nad kurtkami (zawiasy L) 361x426"
+   },
+   "face": "y+",
+   "world": {
+    "p": [
+     466.0,
+     -582.0,
+     2024.5
+    ],
+    "dir": [
+     0,
+     -1,
+     0
+    ]
+   },
+   "local": {
+    "u": 32.0,
+    "v": 122.5,
+    "u_from": "hinge edge",
+    "v_from": "door bottom edge",
+    "face": "back"
+   },
+   "dia": 2.5,
+   "depth": 10,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0074",
+   "cabinet": "Pawlacz",
+   "kind": "plate-screw",
+   "hardware": "173L6100",
+   "part": {
+    "id": "p0065",
+    "name": "P Pawlacz Przegroda P 394x560 (nad bokiem S2, zawiasy drzwi lewych)"
+   },
+   "face": "x+",
+   "world": {
+    "p": [
+     450.0,
+     -545.0,
+     1986.0
+    ],
+    "dir": [
+     -1,
+     0,
+     0
+    ]
+   },
+   "local": {
+    "u": 37,
+    "v": 68.0,
+    "u_from": "front edge",
+    "v_from": "panel bottom edge",
+    "face": "inner (towards the door centre)"
+   },
+   "dia": 2.5,
+   "depth": 10,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0075",
+   "cabinet": "Pawlacz",
+   "kind": "plate-screw",
+   "hardware": "173L6100",
+   "part": {
+    "id": "p0065",
+    "name": "P Pawlacz Przegroda P 394x560 (nad bokiem S2, zawiasy drzwi lewych)"
+   },
+   "face": "x+",
+   "world": {
+    "p": [
+     450.0,
+     -545.0,
+     2018.0
+    ],
+    "dir": [
+     -1,
+     0,
+     0
+    ]
+   },
+   "local": {
+    "u": 37,
+    "v": 100.0,
+    "u_from": "front edge",
+    "v_from": "panel bottom edge",
+    "face": "inner (towards the door centre)"
+   },
+   "dia": 2.5,
+   "depth": 10,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0076",
+   "cabinet": "Pawlacz",
+   "kind": "hinge-cup",
+   "hardware": "71B3550",
+   "part": {
+    "id": "p0068",
+    "name": "P Drzwi lewe nad kurtkami (zawiasy L) 361x426"
+   },
+   "face": "y+",
+   "world": {
+    "p": [
+     456.5,
+     -582.0,
+     2228.0
+    ],
+    "dir": [
+     0,
+     -1,
+     0
+    ]
+   },
+   "local": {
+    "u": 22.5,
+    "v": 326.0,
+    "u_from": "hinge edge",
+    "v_from": "door bottom edge",
+    "face": "back"
+   },
+   "dia": 35,
+   "depth": 13,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0077",
+   "cabinet": "Pawlacz",
+   "kind": "hinge-screw",
+   "hardware": "609.1500",
+   "part": {
+    "id": "p0068",
+    "name": "P Drzwi lewe nad kurtkami (zawiasy L) 361x426"
+   },
+   "face": "y+",
+   "world": {
+    "p": [
+     466.0,
+     -582.0,
+     2205.5
+    ],
+    "dir": [
+     0,
+     -1,
+     0
+    ]
+   },
+   "local": {
+    "u": 32.0,
+    "v": 303.5,
+    "u_from": "hinge edge",
+    "v_from": "door bottom edge",
+    "face": "back"
+   },
+   "dia": 2.5,
+   "depth": 10,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0078",
+   "cabinet": "Pawlacz",
+   "kind": "hinge-screw",
+   "hardware": "609.1500",
+   "part": {
+    "id": "p0068",
+    "name": "P Drzwi lewe nad kurtkami (zawiasy L) 361x426"
+   },
+   "face": "y+",
+   "world": {
+    "p": [
+     466.0,
+     -582.0,
+     2250.5
+    ],
+    "dir": [
+     0,
+     -1,
+     0
+    ]
+   },
+   "local": {
+    "u": 32.0,
+    "v": 348.5,
+    "u_from": "hinge edge",
+    "v_from": "door bottom edge",
+    "face": "back"
+   },
+   "dia": 2.5,
+   "depth": 10,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0079",
+   "cabinet": "Pawlacz",
+   "kind": "plate-screw",
+   "hardware": "173L6100",
+   "part": {
+    "id": "p0065",
+    "name": "P Pawlacz Przegroda P 394x560 (nad bokiem S2, zawiasy drzwi lewych)"
+   },
+   "face": "x+",
+   "world": {
+    "p": [
+     450.0,
+     -545.0,
+     2212.0
+    ],
+    "dir": [
+     -1,
+     0,
+     0
+    ]
+   },
+   "local": {
+    "u": 37,
+    "v": 294.0,
+    "u_from": "front edge",
+    "v_from": "panel bottom edge",
+    "face": "inner (towards the door centre)"
+   },
+   "dia": 2.5,
+   "depth": 10,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0080",
+   "cabinet": "Pawlacz",
+   "kind": "plate-screw",
+   "hardware": "173L6100",
+   "part": {
+    "id": "p0065",
+    "name": "P Pawlacz Przegroda P 394x560 (nad bokiem S2, zawiasy drzwi lewych)"
+   },
+   "face": "x+",
+   "world": {
+    "p": [
+     450.0,
+     -545.0,
+     2244.0
+    ],
+    "dir": [
+     -1,
+     0,
+     0
+    ]
+   },
+   "local": {
+    "u": 37,
+    "v": 326.0,
+    "u_from": "front edge",
+    "v_from": "panel bottom edge",
+    "face": "inner (towards the door centre)"
+   },
+   "dia": 2.5,
+   "depth": 10,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0081",
+   "cabinet": "Pawlacz",
+   "kind": "hinge-cup",
+   "hardware": "71B3550",
+   "part": {
+    "id": "p0069",
+    "name": "P Drzwi prawe nad kurtkami (zawiasy P) 361x426"
+   },
+   "face": "y+",
+   "world": {
+    "p": [
+     1137.5,
+     -582.0,
+     2002.0
+    ],
+    "dir": [
+     0,
+     -1,
+     0
+    ]
+   },
+   "local": {
+    "u": 22.5,
+    "v": 100.0,
+    "u_from": "hinge edge",
+    "v_from": "door bottom edge",
+    "face": "back"
+   },
+   "dia": 35,
+   "depth": 13,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0082",
+   "cabinet": "Pawlacz",
+   "kind": "hinge-screw",
+   "hardware": "609.1500",
+   "part": {
+    "id": "p0069",
+    "name": "P Drzwi prawe nad kurtkami (zawiasy P) 361x426"
+   },
+   "face": "y+",
+   "world": {
+    "p": [
+     1128.0,
+     -582.0,
+     1979.5
+    ],
+    "dir": [
+     0,
+     -1,
+     0
+    ]
+   },
+   "local": {
+    "u": 32.0,
+    "v": 77.5,
+    "u_from": "hinge edge",
+    "v_from": "door bottom edge",
+    "face": "back"
+   },
+   "dia": 2.5,
+   "depth": 10,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0083",
+   "cabinet": "Pawlacz",
+   "kind": "hinge-screw",
+   "hardware": "609.1500",
+   "part": {
+    "id": "p0069",
+    "name": "P Drzwi prawe nad kurtkami (zawiasy P) 361x426"
+   },
+   "face": "y+",
+   "world": {
+    "p": [
+     1128.0,
+     -582.0,
+     2024.5
+    ],
+    "dir": [
+     0,
+     -1,
+     0
+    ]
+   },
+   "local": {
+    "u": 32.0,
+    "v": 122.5,
+    "u_from": "hinge edge",
+    "v_from": "door bottom edge",
+    "face": "back"
+   },
+   "dia": 2.5,
+   "depth": 10,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0084",
+   "cabinet": "Pawlacz",
+   "kind": "plate-screw",
+   "hardware": "173L6100",
+   "part": {
+    "id": "p0063",
+    "name": "P Pawlacz Bok P 430x560"
+   },
+   "face": "x-",
+   "world": {
+    "p": [
+     1144.0,
+     -545.0,
+     1986.0
+    ],
+    "dir": [
+     1,
+     0,
+     0
+    ]
+   },
+   "local": {
+    "u": 37,
+    "v": 86.0,
+    "u_from": "front edge",
+    "v_from": "panel bottom edge",
+    "face": "inner (towards the door centre)"
+   },
+   "dia": 2.5,
+   "depth": 10,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0085",
+   "cabinet": "Pawlacz",
+   "kind": "plate-screw",
+   "hardware": "173L6100",
+   "part": {
+    "id": "p0063",
+    "name": "P Pawlacz Bok P 430x560"
+   },
+   "face": "x-",
+   "world": {
+    "p": [
+     1144.0,
+     -545.0,
+     2018.0
+    ],
+    "dir": [
+     1,
+     0,
+     0
+    ]
+   },
+   "local": {
+    "u": 37,
+    "v": 118.0,
+    "u_from": "front edge",
+    "v_from": "panel bottom edge",
+    "face": "inner (towards the door centre)"
+   },
+   "dia": 2.5,
+   "depth": 10,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0086",
+   "cabinet": "Pawlacz",
+   "kind": "hinge-cup",
+   "hardware": "71B3550",
+   "part": {
+    "id": "p0069",
+    "name": "P Drzwi prawe nad kurtkami (zawiasy P) 361x426"
+   },
+   "face": "y+",
+   "world": {
+    "p": [
+     1137.5,
+     -582.0,
+     2228.0
+    ],
+    "dir": [
+     0,
+     -1,
+     0
+    ]
+   },
+   "local": {
+    "u": 22.5,
+    "v": 326.0,
+    "u_from": "hinge edge",
+    "v_from": "door bottom edge",
+    "face": "back"
+   },
+   "dia": 35,
+   "depth": 13,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0087",
+   "cabinet": "Pawlacz",
+   "kind": "hinge-screw",
+   "hardware": "609.1500",
+   "part": {
+    "id": "p0069",
+    "name": "P Drzwi prawe nad kurtkami (zawiasy P) 361x426"
+   },
+   "face": "y+",
+   "world": {
+    "p": [
+     1128.0,
+     -582.0,
+     2205.5
+    ],
+    "dir": [
+     0,
+     -1,
+     0
+    ]
+   },
+   "local": {
+    "u": 32.0,
+    "v": 303.5,
+    "u_from": "hinge edge",
+    "v_from": "door bottom edge",
+    "face": "back"
+   },
+   "dia": 2.5,
+   "depth": 10,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0088",
+   "cabinet": "Pawlacz",
+   "kind": "hinge-screw",
+   "hardware": "609.1500",
+   "part": {
+    "id": "p0069",
+    "name": "P Drzwi prawe nad kurtkami (zawiasy P) 361x426"
+   },
+   "face": "y+",
+   "world": {
+    "p": [
+     1128.0,
+     -582.0,
+     2250.5
+    ],
+    "dir": [
+     0,
+     -1,
+     0
+    ]
+   },
+   "local": {
+    "u": 32.0,
+    "v": 348.5,
+    "u_from": "hinge edge",
+    "v_from": "door bottom edge",
+    "face": "back"
+   },
+   "dia": 2.5,
+   "depth": 10,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0089",
+   "cabinet": "Pawlacz",
+   "kind": "plate-screw",
+   "hardware": "173L6100",
+   "part": {
+    "id": "p0063",
+    "name": "P Pawlacz Bok P 430x560"
+   },
+   "face": "x-",
+   "world": {
+    "p": [
+     1144.0,
+     -545.0,
+     2212.0
+    ],
+    "dir": [
+     1,
+     0,
+     0
+    ]
+   },
+   "local": {
+    "u": 37,
+    "v": 312.0,
+    "u_from": "front edge",
+    "v_from": "panel bottom edge",
+    "face": "inner (towards the door centre)"
+   },
+   "dia": 2.5,
+   "depth": 10,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0090",
+   "cabinet": "Pawlacz",
+   "kind": "plate-screw",
+   "hardware": "173L6100",
+   "part": {
+    "id": "p0063",
+    "name": "P Pawlacz Bok P 430x560"
+   },
+   "face": "x-",
+   "world": {
+    "p": [
+     1144.0,
+     -545.0,
+     2244.0
+    ],
+    "dir": [
+     1,
+     0,
+     0
+    ]
+   },
+   "local": {
+    "u": 37,
+    "v": 344.0,
+    "u_from": "front edge",
+    "v_from": "panel bottom edge",
+    "face": "inner (towards the door centre)"
+   },
+   "dia": 2.5,
+   "depth": 10,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0091",
+   "cabinet": "S1",
+   "kind": "shelf-pin",
+   "hardware": "podporka 5 mm",
+   "part": {
+    "id": "p0011",
+    "name": "S1 Schowek Bok L 1782x560"
+   },
+   "face": "x+",
+   "world": {
+    "p": [
+     50.0,
+     -525.0,
+     1315.5
+    ],
+    "dir": [
+     -1,
+     0,
+     0
+    ]
+   },
+   "local": {
+    "u": 57.0,
+    "v": 1197.5,
+    "u_from": "front edge",
+    "v_from": "panel bottom edge",
+    "face": "inner"
+   },
+   "dia": 5,
+   "depth": 10,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0092",
+   "cabinet": "S1",
+   "kind": "shelf-pin",
+   "hardware": "podporka 5 mm",
+   "part": {
+    "id": "p0011",
+    "name": "S1 Schowek Bok L 1782x560"
+   },
+   "face": "x+",
+   "world": {
+    "p": [
+     50.0,
+     -59.0,
+     1315.5
+    ],
+    "dir": [
+     -1,
+     0,
+     0
+    ]
+   },
+   "local": {
+    "u": 523.0,
+    "v": 1197.5,
+    "u_from": "front edge",
+    "v_from": "panel bottom edge",
+    "face": "inner"
+   },
+   "dia": 5,
+   "depth": 10,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0093",
+   "cabinet": "S1",
+   "kind": "shelf-pin",
+   "hardware": "podporka 5 mm",
+   "part": {
+    "id": "p0012",
+    "name": "S1 Schowek Bok P 1782x560"
+   },
+   "face": "x-",
+   "world": {
+    "p": [
+     414.0,
+     -525.0,
+     1315.5
+    ],
+    "dir": [
+     1,
+     0,
+     0
+    ]
+   },
+   "local": {
+    "u": 57.0,
+    "v": 1197.5,
+    "u_from": "front edge",
+    "v_from": "panel bottom edge",
+    "face": "inner"
+   },
+   "dia": 5,
+   "depth": 10,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0094",
+   "cabinet": "S1",
+   "kind": "shelf-pin",
+   "hardware": "podporka 5 mm",
+   "part": {
+    "id": "p0012",
+    "name": "S1 Schowek Bok P 1782x560"
+   },
+   "face": "x-",
+   "world": {
+    "p": [
+     414.0,
+     -59.0,
+     1315.5
+    ],
+    "dir": [
+     1,
+     0,
+     0
+    ]
+   },
+   "local": {
+    "u": 523.0,
+    "v": 1197.5,
+    "u_from": "front edge",
+    "v_from": "panel bottom edge",
+    "face": "inner"
+   },
+   "dia": 5,
+   "depth": 10,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0095",
+   "cabinet": "S1",
+   "kind": "shelf-pin",
+   "hardware": "podporka 5 mm",
+   "part": {
+    "id": "p0011",
+    "name": "S1 Schowek Bok L 1782x560"
+   },
+   "face": "x+",
+   "world": {
+    "p": [
+     50.0,
+     -525.0,
+     1597.5
+    ],
+    "dir": [
+     -1,
+     0,
+     0
+    ]
+   },
+   "local": {
+    "u": 57.0,
+    "v": 1479.5,
+    "u_from": "front edge",
+    "v_from": "panel bottom edge",
+    "face": "inner"
+   },
+   "dia": 5,
+   "depth": 10,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0096",
+   "cabinet": "S1",
+   "kind": "shelf-pin",
+   "hardware": "podporka 5 mm",
+   "part": {
+    "id": "p0011",
+    "name": "S1 Schowek Bok L 1782x560"
+   },
+   "face": "x+",
+   "world": {
+    "p": [
+     50.0,
+     -59.0,
+     1597.5
+    ],
+    "dir": [
+     -1,
+     0,
+     0
+    ]
+   },
+   "local": {
+    "u": 523.0,
+    "v": 1479.5,
+    "u_from": "front edge",
+    "v_from": "panel bottom edge",
+    "face": "inner"
+   },
+   "dia": 5,
+   "depth": 10,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0097",
+   "cabinet": "S1",
+   "kind": "shelf-pin",
+   "hardware": "podporka 5 mm",
+   "part": {
+    "id": "p0012",
+    "name": "S1 Schowek Bok P 1782x560"
+   },
+   "face": "x-",
+   "world": {
+    "p": [
+     414.0,
+     -525.0,
+     1597.5
+    ],
+    "dir": [
+     1,
+     0,
+     0
+    ]
+   },
+   "local": {
+    "u": 57.0,
+    "v": 1479.5,
+    "u_from": "front edge",
+    "v_from": "panel bottom edge",
+    "face": "inner"
+   },
+   "dia": 5,
+   "depth": 10,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0098",
+   "cabinet": "S1",
+   "kind": "shelf-pin",
+   "hardware": "podporka 5 mm",
+   "part": {
+    "id": "p0012",
+    "name": "S1 Schowek Bok P 1782x560"
+   },
+   "face": "x-",
+   "world": {
+    "p": [
+     414.0,
+     -59.0,
+     1597.5
+    ],
+    "dir": [
+     1,
+     0,
+     0
+    ]
+   },
+   "local": {
+    "u": 523.0,
+    "v": 1479.5,
+    "u_from": "front edge",
+    "v_from": "panel bottom edge",
+    "face": "inner"
+   },
+   "dia": 5,
+   "depth": 10,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0099",
+   "cabinet": "S2",
+   "kind": "shelf-pin",
+   "hardware": "podporka 5 mm",
+   "part": {
+    "id": "p0033",
+    "name": "S2 Kurtki Bok L 1782x560"
+   },
+   "face": "x+",
+   "world": {
+    "p": [
+     450.0,
+     -525.0,
+     297.5
+    ],
+    "dir": [
+     -1,
+     0,
+     0
+    ]
+   },
+   "local": {
+    "u": 57.0,
+    "v": 179.5,
+    "u_from": "front edge",
+    "v_from": "panel bottom edge",
+    "face": "inner"
+   },
+   "dia": 5,
+   "depth": 10,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0100",
+   "cabinet": "S2",
+   "kind": "shelf-pin",
+   "hardware": "podporka 5 mm",
+   "part": {
+    "id": "p0033",
+    "name": "S2 Kurtki Bok L 1782x560"
+   },
+   "face": "x+",
+   "world": {
+    "p": [
+     450.0,
+     -59.0,
+     297.5
+    ],
+    "dir": [
+     -1,
+     0,
+     0
+    ]
+   },
+   "local": {
+    "u": 523.0,
+    "v": 179.5,
+    "u_from": "front edge",
+    "v_from": "panel bottom edge",
+    "face": "inner"
+   },
+   "dia": 5,
+   "depth": 10,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0101",
+   "cabinet": "S2",
+   "kind": "shelf-pin",
+   "hardware": "podporka 5 mm",
+   "part": {
+    "id": "p0034",
+    "name": "S2 Kurtki Bok P 1782x560"
+   },
+   "face": "x-",
+   "world": {
+    "p": [
+     1144.0,
+     -525.0,
+     297.5
+    ],
+    "dir": [
+     1,
+     0,
+     0
+    ]
+   },
+   "local": {
+    "u": 57.0,
+    "v": 179.5,
+    "u_from": "front edge",
+    "v_from": "panel bottom edge",
+    "face": "inner"
+   },
+   "dia": 5,
+   "depth": 10,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0102",
+   "cabinet": "S2",
+   "kind": "shelf-pin",
+   "hardware": "podporka 5 mm",
+   "part": {
+    "id": "p0034",
+    "name": "S2 Kurtki Bok P 1782x560"
+   },
+   "face": "x-",
+   "world": {
+    "p": [
+     1144.0,
+     -59.0,
+     297.5
+    ],
+    "dir": [
+     1,
+     0,
+     0
+    ]
+   },
+   "local": {
+    "u": 523.0,
+    "v": 179.5,
+    "u_from": "front edge",
+    "v_from": "panel bottom edge",
+    "face": "inner"
+   },
+   "dia": 5,
+   "depth": 10,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0103",
+   "cabinet": "S2",
+   "kind": "shelf-pin",
+   "hardware": "podporka 5 mm",
+   "part": {
+    "id": "p0033",
+    "name": "S2 Kurtki Bok L 1782x560"
+   },
+   "face": "x+",
+   "world": {
+    "p": [
+     450.0,
+     -525.0,
+     497.5
+    ],
+    "dir": [
+     -1,
+     0,
+     0
+    ]
+   },
+   "local": {
+    "u": 57.0,
+    "v": 379.5,
+    "u_from": "front edge",
+    "v_from": "panel bottom edge",
+    "face": "inner"
+   },
+   "dia": 5,
+   "depth": 10,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0104",
+   "cabinet": "S2",
+   "kind": "shelf-pin",
+   "hardware": "podporka 5 mm",
+   "part": {
+    "id": "p0033",
+    "name": "S2 Kurtki Bok L 1782x560"
+   },
+   "face": "x+",
+   "world": {
+    "p": [
+     450.0,
+     -59.0,
+     497.5
+    ],
+    "dir": [
+     -1,
+     0,
+     0
+    ]
+   },
+   "local": {
+    "u": 523.0,
+    "v": 379.5,
+    "u_from": "front edge",
+    "v_from": "panel bottom edge",
+    "face": "inner"
+   },
+   "dia": 5,
+   "depth": 10,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0105",
+   "cabinet": "S2",
+   "kind": "shelf-pin",
+   "hardware": "podporka 5 mm",
+   "part": {
+    "id": "p0034",
+    "name": "S2 Kurtki Bok P 1782x560"
+   },
+   "face": "x-",
+   "world": {
+    "p": [
+     1144.0,
+     -525.0,
+     497.5
+    ],
+    "dir": [
+     1,
+     0,
+     0
+    ]
+   },
+   "local": {
+    "u": 57.0,
+    "v": 379.5,
+    "u_from": "front edge",
+    "v_from": "panel bottom edge",
+    "face": "inner"
+   },
+   "dia": 5,
+   "depth": 10,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0106",
+   "cabinet": "S2",
+   "kind": "shelf-pin",
+   "hardware": "podporka 5 mm",
+   "part": {
+    "id": "p0034",
+    "name": "S2 Kurtki Bok P 1782x560"
+   },
+   "face": "x-",
+   "world": {
+    "p": [
+     1144.0,
+     -59.0,
+     497.5
+    ],
+    "dir": [
+     1,
+     0,
+     0
+    ]
+   },
+   "local": {
+    "u": 523.0,
+    "v": 379.5,
+    "u_from": "front edge",
+    "v_from": "panel bottom edge",
+    "face": "inner"
+   },
+   "dia": 5,
+   "depth": 10,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0107",
+   "cabinet": "S1",
+   "kind": "tipon-bore",
+   "hardware": "956A1006",
+   "part": {
+    "id": "p0012",
+    "name": "S1 Schowek Bok P 1782x560"
+   },
+   "face": "y-",
+   "world": {
+    "p": [
+     421.5,
+     -582.0,
+     731.0
+    ],
+    "dir": [
+     0,
+     1,
+     0
+    ]
+   },
+   "local": {
+    "u": 7.5,
+    "v": 613.0,
+    "u_from": "inner face (bore in the FRONT EDGE of the panel)",
+    "v_from": "panel bottom edge",
+    "face": "front edge"
+   },
+   "dia": 10,
+   "depth": 76,
+   "note": "Blum template 65.5010; position allowed +-300 mm in height",
+   "verify": false
+  },
+  {
+   "id": "f0108",
+   "cabinet": "S1",
+   "kind": "tipon-bore",
+   "hardware": "956A1006",
+   "part": {
+    "id": "p0012",
+    "name": "S1 Schowek Bok P 1782x560"
+   },
+   "face": "y-",
+   "world": {
+    "p": [
+     421.5,
+     -582.0,
+     1269.0
+    ],
+    "dir": [
+     0,
+     1,
+     0
+    ]
+   },
+   "local": {
+    "u": 7.5,
+    "v": 1151.0,
+    "u_from": "inner face (bore in the FRONT EDGE of the panel)",
+    "v_from": "panel bottom edge",
+    "face": "front edge"
+   },
+   "dia": 10,
+   "depth": 76,
+   "note": "Blum template 65.5010; position allowed +-300 mm in height",
+   "verify": false
+  },
+  {
+   "id": "f0109",
+   "cabinet": "S2",
+   "kind": "tipon-bore",
+   "hardware": "956A1006",
+   "part": {
+    "id": "p0035",
+    "name": "S2 Kurtki Wieniec gorny (miedzy bokami) 694x560"
+   },
+   "face": "y-",
+   "world": {
+    "p": [
+     735.0,
+     -582.0,
+     1889.5
+    ],
+    "dir": [
+     0,
+     1,
+     0
+    ]
+   },
+   "local": {
+    "u": 285.0,
+    "v": 7.5,
+    "u_from": "left end of the panel (viewed from the front)",
+    "v_from": "inner (door-side) face; bore in the FRONT EDGE",
+    "face": "front edge"
+   },
+   "dia": 10,
+   "depth": 76,
+   "note": "double door: unit in the top/bottom panel, 60 mm from the opening edge",
+   "verify": false
+  },
+  {
+   "id": "f0110",
+   "cabinet": "S2",
+   "kind": "tipon-bore",
+   "hardware": "956A1006",
+   "part": {
+    "id": "p0032",
+    "name": "S2 Kurtki Wieniec dolny (pod bokami) 730x560"
+   },
+   "face": "y-",
+   "world": {
+    "p": [
+     735.0,
+     -582.0,
+     110.5
+    ],
+    "dir": [
+     0,
+     1,
+     0
+    ]
+   },
+   "local": {
+    "u": 303.0,
+    "v": 7.5,
+    "u_from": "left end of the panel (viewed from the front)",
+    "v_from": "inner (door-side) face; bore in the FRONT EDGE",
+    "face": "front edge"
+   },
+   "dia": 10,
+   "depth": 76,
+   "note": "double door: unit in the top/bottom panel, 60 mm from the opening edge",
+   "verify": false
+  },
+  {
+   "id": "f0111",
+   "cabinet": "S2",
+   "kind": "tipon-bore",
+   "hardware": "956A1006",
+   "part": {
+    "id": "p0035",
+    "name": "S2 Kurtki Wieniec gorny (miedzy bokami) 694x560"
+   },
+   "face": "y-",
+   "world": {
+    "p": [
+     859.0,
+     -582.0,
+     1889.5
+    ],
+    "dir": [
+     0,
+     1,
+     0
+    ]
+   },
+   "local": {
+    "u": 409.0,
+    "v": 7.5,
+    "u_from": "left end of the panel (viewed from the front)",
+    "v_from": "inner (door-side) face; bore in the FRONT EDGE",
+    "face": "front edge"
+   },
+   "dia": 10,
+   "depth": 76,
+   "note": "double door: unit in the top/bottom panel, 60 mm from the opening edge",
+   "verify": false
+  },
+  {
+   "id": "f0112",
+   "cabinet": "S2",
+   "kind": "tipon-bore",
+   "hardware": "956A1006",
+   "part": {
+    "id": "p0032",
+    "name": "S2 Kurtki Wieniec dolny (pod bokami) 730x560"
+   },
+   "face": "y-",
+   "world": {
+    "p": [
+     859.0,
+     -582.0,
+     110.5
+    ],
+    "dir": [
+     0,
+     1,
+     0
+    ]
+   },
+   "local": {
+    "u": 427.0,
+    "v": 7.5,
+    "u_from": "left end of the panel (viewed from the front)",
+    "v_from": "inner (door-side) face; bore in the FRONT EDGE",
+    "face": "front edge"
+   },
+   "dia": 10,
+   "depth": 76,
+   "note": "double door: unit in the top/bottom panel, 60 mm from the opening edge",
+   "verify": false
+  },
+  {
+   "id": "f0113",
+   "cabinet": "Pawlacz",
+   "kind": "tipon-bore",
+   "hardware": "956A1006",
+   "part": {
+    "id": "p0064",
+    "name": "P Pawlacz Przegroda L 394x560 (nad bokiem S1)"
+   },
+   "face": "y-",
+   "world": {
+    "p": [
+     421.5,
+     -582.0,
+     2002.0
+    ],
+    "dir": [
+     0,
+     1,
+     0
+    ]
+   },
+   "local": {
+    "u": 7.5,
+    "v": 84.0,
+    "u_from": "inner face (bore in the FRONT EDGE of the panel)",
+    "v_from": "panel bottom edge",
+    "face": "front edge"
+   },
+   "dia": 10,
+   "depth": 76,
+   "note": "Blum template 65.5010; position allowed +-300 mm in height",
+   "verify": false
+  },
+  {
+   "id": "f0114",
+   "cabinet": "Pawlacz",
+   "kind": "tipon-bore",
+   "hardware": "956A1006",
+   "part": {
+    "id": "p0061",
+    "name": "P Pawlacz Wieniec gorny (miedzy bokami) 1094x560"
+   },
+   "face": "y-",
+   "world": {
+    "p": [
+     735.0,
+     -582.0,
+     2319.5
+    ],
+    "dir": [
+     0,
+     1,
+     0
+    ]
+   },
+   "local": {
+    "u": 685.0,
+    "v": 7.5,
+    "u_from": "left end of the panel (viewed from the front)",
+    "v_from": "inner (door-side) face; bore in the FRONT EDGE",
+    "face": "front edge"
+   },
+   "dia": 10,
+   "depth": 76,
+   "note": "double door: unit in the top/bottom panel, 60 mm from the opening edge",
+   "verify": false
+  },
+  {
+   "id": "f0115",
+   "cabinet": "Pawlacz",
+   "kind": "tipon-bore",
+   "hardware": "956A1006",
+   "part": {
+    "id": "p0061",
+    "name": "P Pawlacz Wieniec gorny (miedzy bokami) 1094x560"
+   },
+   "face": "y-",
+   "world": {
+    "p": [
+     859.0,
+     -582.0,
+     2319.5
+    ],
+    "dir": [
+     0,
+     1,
+     0
+    ]
+   },
+   "local": {
+    "u": 809.0,
+    "v": 7.5,
+    "u_from": "left end of the panel (viewed from the front)",
+    "v_from": "inner (door-side) face; bore in the FRONT EDGE",
+    "face": "front edge"
+   },
+   "dia": 10,
+   "depth": 76,
+   "note": "double door: unit in the top/bottom panel, 60 mm from the opening edge",
+   "verify": false
+  }
+ ]
+}

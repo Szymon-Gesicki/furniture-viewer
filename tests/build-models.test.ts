@@ -49,3 +49,12 @@ it('folder without a model → null; broken codes.json → error naming the file
   writeFileSync(join(root, 'projects', 'a', 'codes.json'), '{bad');
   expect(() => loadCodeBook(root, 'a')).toThrow(/codes\.json/);
 });
+it('drilling.json is validated; a broken file names the path', async () => {
+  const { loadDrillOverrides } = await import('../tools/build-models');
+  const root = tmpProject();
+  expect(loadDrillOverrides(root, 'a')).toBeNull();
+  writeFileSync(join(root, 'projects', 'a', 'drilling.json'), JSON.stringify({ hingeSide: { 'D 1': 'L' } }));
+  expect(loadDrillOverrides(root, 'a')).toEqual({ hingeSide: { 'D 1': 'L' }, shelfMode: {}, hingeZ: {}, params: {}, notes: {}, partNotes: {}, done: {} });
+  writeFileSync(join(root, 'projects', 'a', 'drilling.json'), JSON.stringify({ hingeSide: { 'D 1': 'X' } }));
+  expect(() => loadDrillOverrides(root, 'a')).toThrow(/drilling\.json/);
+});

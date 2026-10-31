@@ -1,0 +1,10140 @@
+{
+ "format": "drill-plan",
+ "version": 1,
+ "project": "kitchen",
+ "generated_from": "sources/sketchup/kitchen-in-room.rb",
+ "units": "mm, world coordinates of the viewer model (Z up); local u/v measured on the named face",
+ "parameters": {
+  "hinge": {
+   "overlay_formula": "B = overlay - 11 (CLIP top 110 deg 71B3550 and 155 deg 71B7550, 0 mm plate)",
+   "cup_dia": 35,
+   "cup_depth": 13,
+   "cup_edge_offset": 17.5,
+   "screw_spacing": 45,
+   "screw_offset": 9.5,
+   "screw_dia": 2.5,
+   "screw_depth": 10,
+   "plate_setback": 37,
+   "plate_screw_spacing": 32,
+   "plate_screw_dia": 2.5,
+   "plate_screw_depth": 10,
+   "plate_half_height": 25,
+   "edge_dist_tall": 100,
+   "edge_dist_small_factor": 0.22,
+   "edge_dist_min": 45,
+   "count": [
+    [
+     900,
+     2
+    ],
+    [
+     1600,
+     3
+    ],
+    [
+     2000,
+     4
+    ],
+    [
+     2400,
+     5
+    ]
+   ],
+   "B_range": {
+    "71B3550": [
+     3,
+     7
+    ],
+    "71B7550": [
+     3,
+     8
+    ]
+   }
+  },
+  "shelf": {
+   "pin_dia": 5,
+   "pin_depth": 10,
+   "pin_from_edge": 37,
+   "pin_below_shelf": 2.5,
+   "screw_dia": 4,
+   "screw_from_edge": 40
+  },
+  "drawer": {
+   "FA_side": 16,
+   "FA_bottom": 16,
+   "front_hole_x": 20.5,
+   "front_hole_z1": 33.5,
+   "front_hole_pitch": 32,
+   "front_hole_dia": 10,
+   "front_hole_depth": 12,
+   "stab_below_first": 15,
+   "stab_pitch": 32,
+   "runner_screws_from_front": [
+    19,
+    37,
+    69,
+    261,
+    293
+   ],
+   "runner_screw_dia": 2.5,
+   "runner_screw_depth": 10,
+   "runner_screw_above_runner_bottom": 6
+  },
+  "handle": {
+   "dia": 5,
+   "depth": 18,
+   "drawer_from_top": 50,
+   "door_from_opening_edge": 40,
+   "door_end_hole_from_edge": 60,
+   "long": {
+    "code": "C-1149-320.P61",
+    "name": "Nomet TECHNO 320 czarny mat",
+    "cc": 320
+   },
+   "short": {
+    "code": "C-1149-128.P61 (verify code)",
+    "name": "Nomet TECHNO 128 czarny mat",
+    "cc": 128
+   }
+  },
+  "tipon": {
+   "code": "956A1006",
+   "bore_dia": 10,
+   "bore_depth": 76,
+   "from_inner_face": 7.5,
+   "from_opening_edge_on_panel": 60,
+   "two_units_above": 1500
+  },
+  "camar801": {
+   "dowel_dia": 10,
+   "dowel_depth": 10.5,
+   "below_top_panel_underside": 42,
+   "first_dowel_from_back_edge": 20,
+   "dowel_spacing": 32,
+   "dowel_axis": "depth",
+   "VERIFY": "first_dowel_from_back_edge, dowel_spacing and dowel_axis are placeholders - measure the real hanger"
+  }
+ },
+ "hinges": [
+  {
+   "cabinet": "B1",
+   "door": {
+    "id": "p0015",
+    "name": "B1 Drzwiczki (zawiasy od strony zmywarki, Blum 155 st.) 105x716"
+   },
+   "size": [
+    105.0,
+    716.0
+   ],
+   "hinge_side": "P",
+   "hinge_side_reason": "label: hinges on the dishwasher side",
+   "hardware": "71B7550",
+   "inset": false,
+   "side_panel": {
+    "id": "p0011",
+    "name": "B1 Bok L 702x510"
+   },
+   "overlay": 16.0,
+   "B": 5.0,
+   "cup_from_edge": 22.5,
+   "plate_setback": 37,
+   "hinges_from_door_bottom": [
+    100.0,
+    616.0
+   ],
+   "plates_from_side_bottom": [
+    84.0,
+    600.0
+   ],
+   "moved": []
+  },
+  {
+   "cabinet": "B3",
+   "door": {
+    "id": "p0033",
+    "name": "B3 Klapa schowka (2 zawiasy na dole, otwiera sie w dol) 596x82"
+   },
+   "size": [
+    596.0,
+    82.0
+   ],
+   "hinge_side": "bottom (flap)",
+   "hinge_side_reason": "label",
+   "hardware": "71B3550",
+   "inset": false,
+   "side_panel": {
+    "id": "p0027",
+    "name": "B3 Wieniec dolny (pod bokami) 600x510"
+   },
+   "overlay": 16.0,
+   "B": 5.0,
+   "cup_from_edge": 22.5,
+   "plate_setback": 37,
+   "hinges_from_door_left": [
+    100,
+    496.0
+   ],
+   "moved": []
+  },
+  {
+   "cabinet": "B4",
+   "door": {
+    "id": "p0049",
+    "name": "B4 Drzwiczki narozne (zawiasy Blum 155 st. na boku B4, otw. w lewo, chowaja sie za drzwiami P1) 131x716"
+   },
+   "size": [
+    131.0,
+    716.0
+   ],
+   "hinge_side": "L",
+   "hinge_side_reason": "label: hinges on B4 side, opens left",
+   "hardware": "71B7550",
+   "inset": false,
+   "side_panel": {
+    "id": "p0047",
+    "name": "B4 Bok L 702x492 (skrec z bokiem B3, tu zawiasy drzwiczek)"
+   },
+   "overlay": 17.0,
+   "B": 6.0,
+   "cup_from_edge": 23.5,
+   "plate_setback": 37,
+   "hinges_from_door_bottom": [
+    100.0,
+    616.0
+   ],
+   "plates_from_side_bottom": [
+    84.0,
+    600.0
+   ],
+   "moved": []
+  },
+  {
+   "cabinet": "P1",
+   "door": {
+    "id": "p0063",
+    "name": "P1 Drzwi (zawiasy Blum 155 st. od szuflad, otw. w prawo, otwierasz PIERWSZE) 367x716"
+   },
+   "size": [
+    367.0,
+    716.0
+   ],
+   "hinge_side": "P",
+   "hinge_side_reason": "label: hinges on the drawer (P2) side",
+   "hardware": "71B7550",
+   "inset": false,
+   "side_panel": {
+    "id": "p0057",
+    "name": "P1 Bok L 702x505"
+   },
+   "overlay": 16.0,
+   "B": 5.0,
+   "cup_from_edge": 22.5,
+   "plate_setback": 37,
+   "hinges_from_door_bottom": [
+    100.0,
+    616.0
+   ],
+   "plates_from_side_bottom": [
+    84.0,
+    600.0
+   ],
+   "moved": []
+  },
+  {
+   "cabinet": "G2",
+   "door": {
+    "id": "p0179",
+    "name": "G2 Drzwi (zawiasy L) 446x896"
+   },
+   "size": [
+    446.0,
+    896.0
+   ],
+   "hinge_side": "L",
+   "hinge_side_reason": "label",
+   "hardware": "71B3550",
+   "inset": false,
+   "side_panel": {
+    "id": "p0174",
+    "name": "G2 Bok P 900x332"
+   },
+   "overlay": 16.0,
+   "B": 5.0,
+   "cup_from_edge": 22.5,
+   "plate_setback": 37,
+   "hinges_from_door_bottom": [
+    100.0,
+    796.0
+   ],
+   "plates_from_side_bottom": [
+    102.0,
+    798.0
+   ],
+   "moved": []
+  },
+  {
+   "cabinet": "G3",
+   "door": {
+    "id": "p0189",
+    "name": "G3 Drzwi (zawiasy L) 596x896"
+   },
+   "size": [
+    596.0,
+    896.0
+   ],
+   "hinge_side": "L",
+   "hinge_side_reason": "label",
+   "hardware": "71B3550",
+   "inset": false,
+   "side_panel": {
+    "id": "p0182",
+    "name": "G3 Bok P 900x332"
+   },
+   "overlay": 16.0,
+   "B": 5.0,
+   "cup_from_edge": 22.5,
+   "plate_setback": 37,
+   "hinges_from_door_bottom": [
+    100.0,
+    796.0
+   ],
+   "plates_from_side_bottom": [
+    102.0,
+    798.0
+   ],
+   "moved": []
+  },
+  {
+   "cabinet": "G4",
+   "door": {
+    "id": "p0197",
+    "name": "G4 Drzwi (zawiasy P) 596x896"
+   },
+   "size": [
+    596.0,
+    896.0
+   ],
+   "hinge_side": "P",
+   "hinge_side_reason": "label",
+   "hardware": "71B3550",
+   "inset": false,
+   "side_panel": {
+    "id": "p0191",
+    "name": "G4 Bok L 900x332"
+   },
+   "overlay": 16.0,
+   "B": 5.0,
+   "cup_from_edge": 22.5,
+   "plate_setback": 37,
+   "hinges_from_door_bottom": [
+    100.0,
+    796.0
+   ],
+   "plates_from_side_bottom": [
+    102.0,
+    798.0
+   ],
+   "moved": []
+  },
+  {
+   "cabinet": "Z1",
+   "door": {
+    "id": "p0223",
+    "name": "Z1 Drzwi L 365x716"
+   },
+   "size": [
+    365.0,
+    716.0
+   ],
+   "hinge_side": "P",
+   "hinge_side_reason": "opposite the handle",
+   "hardware": "71B3550",
+   "inset": false,
+   "side_panel": {
+    "id": "p0219",
+    "name": "Z1 Bok L 702x330"
+   },
+   "overlay": 18.0,
+   "B": 7.0,
+   "cup_from_edge": 24.5,
+   "plate_setback": 37,
+   "hinges_from_door_bottom": [
+    100.0,
+    585.0
+   ],
+   "plates_from_side_bottom": [
+    84.0,
+    569.0
+   ],
+   "moved": [
+    {
+     "hinge": 2,
+     "from": 616.0,
+     "to": 585.0,
+     "because": "Z1 Trawers przod pionowy 696x100"
+    }
+   ]
+  },
+  {
+   "cabinet": "Z1",
+   "door": {
+    "id": "p0224",
+    "name": "Z1 Drzwi P 364x716"
+   },
+   "size": [
+    364.0,
+    716.0
+   ],
+   "hinge_side": "L",
+   "hinge_side_reason": "opposite the handle",
+   "hardware": "71B3550",
+   "inset": false,
+   "side_panel": {
+    "id": "p0220",
+    "name": "Z1 Bok P 702x330"
+   },
+   "overlay": 18.0,
+   "B": 7.0,
+   "cup_from_edge": 24.5,
+   "plate_setback": 37,
+   "hinges_from_door_bottom": [
+    100.0,
+    585.0
+   ],
+   "plates_from_side_bottom": [
+    84.0,
+    569.0
+   ],
+   "moved": [
+    {
+     "hinge": 2,
+     "from": 616.0,
+     "to": 585.0,
+     "because": "Z1 Trawers przod pionowy 696x100"
+    }
+   ]
+  },
+  {
+   "cabinet": "L6",
+   "door": {
+    "id": "p0246",
+    "name": "L6 Drzwi nadstawki 610x374"
+   },
+   "size": [
+    610.0,
+    374.0
+   ],
+   "hinge_side": "L",
+   "hinge_side_reason": "confirmed: hinge on the living-room side (L2)",
+   "hardware": "71B3750",
+   "inset": true,
+   "side_panel": {
+    "id": "p0238",
+    "name": "L2 Bok lodowki (strona salonu) 688x2414 (z naddatkiem, dotnij)"
+   },
+   "overlay": -2.0,
+   "B": 5.0,
+   "cup_from_edge": 22.5,
+   "plate_setback": 56.5,
+   "hinges_from_door_bottom": [
+    82.0,
+    292.0
+   ],
+   "plates_from_side_bottom": [
+    2056.0,
+    2266.0
+   ],
+   "moved": []
+  }
+ ],
+ "drawers": [
+  {
+   "cabinet": "P2",
+   "front": {
+    "id": "p0086",
+    "name": "P2 Szuflada dolna (E + galeria) 596x320"
+   },
+   "type": "E",
+   "front_size": [
+    596.0,
+    320.0
+   ],
+   "inner_width": 564.0,
+   "overlays": [
+    16.0,
+    16.0
+   ],
+   "runner_bottom_from_side_bottom": [
+    0.0,
+    0.0
+   ],
+   "runner_bottom_world_z": 129.0,
+   "bottom_panel": [
+    513.0,
+    474
+   ],
+   "back_panel": [
+    513.0,
+    184
+   ],
+   "side_panels": [
+    {
+     "id": "p0081",
+     "name": "P2 Bok L 702x505"
+    },
+    {
+     "id": "p0082",
+     "name": "P2 Bok P 702x505"
+    }
+   ]
+  },
+  {
+   "cabinet": "P2",
+   "front": {
+    "id": "p0087",
+    "name": "P2 Szuflada srodkowa (K) 596x250"
+   },
+   "type": "K",
+   "front_size": [
+    596.0,
+    250.0
+   ],
+   "inner_width": 564.0,
+   "overlays": [
+    16.0,
+    16.0
+   ],
+   "runner_bottom_from_side_bottom": [
+    323.0,
+    323.0
+   ],
+   "runner_bottom_world_z": 452.0,
+   "bottom_panel": [
+    513.0,
+    474
+   ],
+   "back_panel": [
+    513.0,
+    121
+   ],
+   "side_panels": [
+    {
+     "id": "p0081",
+     "name": "P2 Bok L 702x505"
+    },
+    {
+     "id": "p0082",
+     "name": "P2 Bok P 702x505"
+    }
+   ]
+  },
+  {
+   "cabinet": "P2",
+   "front": {
+    "id": "p0088",
+    "name": "P2 Szuflada gorna (M, sztucce) 596x140"
+   },
+   "type": "M",
+   "front_size": [
+    596.0,
+    140.0
+   ],
+   "inner_width": 564.0,
+   "overlays": [
+    16.0,
+    16.0
+   ],
+   "runner_bottom_from_side_bottom": [
+    576.0,
+    576.0
+   ],
+   "runner_bottom_world_z": 705.0,
+   "bottom_panel": [
+    513.0,
+    474
+   ],
+   "back_panel": [
+    513.0,
+    83
+   ],
+   "side_panels": [
+    {
+     "id": "p0081",
+     "name": "P2 Bok L 702x505"
+    },
+    {
+     "id": "p0082",
+     "name": "P2 Bok P 702x505"
+    }
+   ]
+  },
+  {
+   "cabinet": "P3",
+   "front": {
+    "id": "p0126",
+    "name": "P3 Szuflada dolna (E + galeria) 496x320"
+   },
+   "type": "E",
+   "front_size": [
+    496.0,
+    320.0
+   ],
+   "inner_width": 464.0,
+   "overlays": [
+    16.0,
+    16.0
+   ],
+   "runner_bottom_from_side_bottom": [
+    0.0,
+    0.0
+   ],
+   "runner_bottom_world_z": 129.0,
+   "bottom_panel": [
+    413.0,
+    474
+   ],
+   "back_panel": [
+    413.0,
+    184
+   ],
+   "side_panels": [
+    {
+     "id": "p0121",
+     "name": "P3 Bok L 702x505"
+    },
+    {
+     "id": "p0122",
+     "name": "P3 Bok P 702x505"
+    }
+   ]
+  },
+  {
+   "cabinet": "P3",
+   "front": {
+    "id": "p0127",
+    "name": "P3 Szuflada srodkowa (K) 496x250"
+   },
+   "type": "K",
+   "front_size": [
+    496.0,
+    250.0
+   ],
+   "inner_width": 464.0,
+   "overlays": [
+    16.0,
+    16.0
+   ],
+   "runner_bottom_from_side_bottom": [
+    323.0,
+    323.0
+   ],
+   "runner_bottom_world_z": 452.0,
+   "bottom_panel": [
+    413.0,
+    474
+   ],
+   "back_panel": [
+    413.0,
+    121
+   ],
+   "side_panels": [
+    {
+     "id": "p0121",
+     "name": "P3 Bok L 702x505"
+    },
+    {
+     "id": "p0122",
+     "name": "P3 Bok P 702x505"
+    }
+   ]
+  },
+  {
+   "cabinet": "P3",
+   "front": {
+    "id": "p0128",
+    "name": "P3 Szuflada gorna (M, sztucce) 496x140"
+   },
+   "type": "M",
+   "front_size": [
+    496.0,
+    140.0
+   ],
+   "inner_width": 464.0,
+   "overlays": [
+    16.0,
+    16.0
+   ],
+   "runner_bottom_from_side_bottom": [
+    576.0,
+    576.0
+   ],
+   "runner_bottom_world_z": 705.0,
+   "bottom_panel": [
+    413.0,
+    474
+   ],
+   "back_panel": [
+    413.0,
+    83
+   ],
+   "side_panels": [
+    {
+     "id": "p0121",
+     "name": "P3 Bok L 702x505"
+    },
+    {
+     "id": "p0122",
+     "name": "P3 Bok P 702x505"
+    }
+   ]
+  }
+ ],
+ "shelves": [
+  {
+   "cabinet": "B3",
+   "shelf": {
+    "id": "p0030",
+    "name": "B3 Polka pod piekarnik (plyta 16mm) 564x470 (40 mm szczeliny z tylu - wentylacja)"
+   },
+   "fixed": true,
+   "z_bottom": 189.0,
+   "holes": [
+    {
+     "panel": "B3 Bok P 702x510",
+     "u": 40.0,
+     "v": 68.0
+    },
+    {
+     "panel": "B3 Bok P 702x510",
+     "u": 235.0,
+     "v": 68.0
+    },
+    {
+     "panel": "B3 Bok P 702x510",
+     "u": 430.0,
+     "v": 68.0
+    },
+    {
+     "panel": "B3 Bok L 702x510",
+     "u": 40.0,
+     "v": 68.0
+    },
+    {
+     "panel": "B3 Bok L 702x510",
+     "u": 235.0,
+     "v": 68.0
+    },
+    {
+     "panel": "B3 Bok L 702x510",
+     "u": 430.0,
+     "v": 68.0
+    }
+   ]
+  },
+  {
+   "cabinet": "P1",
+   "shelf": {
+    "id": "p0062",
+    "name": "P1 Polka 864x485"
+   },
+   "fixed": false,
+   "z_bottom": 451.0,
+   "holes": [
+    {
+     "panel": "P1 Bok L 702x505",
+     "u": 57.0,
+     "v": 319.5
+    },
+    {
+     "panel": "P1 Bok L 702x505",
+     "u": 468.0,
+     "v": 319.5
+    },
+    {
+     "panel": "P1 Bok tylny przy scianie 702x640 (jeden kawalek do boku B3, zamyka tyl B4)",
+     "u": 192.0,
+     "v": 319.5
+    },
+    {
+     "panel": "P1 Bok tylny przy scianie 702x640 (jeden kawalek do boku B3, zamyka tyl B4)",
+     "u": 603.0,
+     "v": 319.5
+    }
+   ]
+  },
+  {
+   "cabinet": "G2",
+   "shelf": {
+    "id": "p0178",
+    "name": "G2 Polka 414x312"
+   },
+   "fixed": false,
+   "z_bottom": 1869.0,
+   "holes": [
+    {
+     "panel": "G2 Bok P 900x332",
+     "u": 57.0,
+     "v": 447.5
+    },
+    {
+     "panel": "G2 Bok P 900x332",
+     "u": 295.0,
+     "v": 447.5
+    },
+    {
+     "panel": "G2 Bok L 900x332",
+     "u": 57.0,
+     "v": 447.5
+    },
+    {
+     "panel": "G2 Bok L 900x332",
+     "u": 295.0,
+     "v": 447.5
+    }
+   ]
+  },
+  {
+   "cabinet": "G4",
+   "shelf": {
+    "id": "p0196",
+    "name": "G4 Polka 564x312"
+   },
+   "fixed": false,
+   "z_bottom": 1869.0,
+   "holes": [
+    {
+     "panel": "G4 Bok P 900x332",
+     "u": 57.0,
+     "v": 447.5
+    },
+    {
+     "panel": "G4 Bok P 900x332",
+     "u": 295.0,
+     "v": 447.5
+    },
+    {
+     "panel": "G4 Bok L 900x332",
+     "u": 57.0,
+     "v": 447.5
+    },
+    {
+     "panel": "G4 Bok L 900x332",
+     "u": 295.0,
+     "v": 447.5
+    }
+   ]
+  }
+ ],
+ "handles": [
+  {
+   "front": "B1 Drzwiczki (zawiasy od strony zmywarki, Blum 155 st.) 105x716",
+   "handle": "Nomet TECHNO 128 czarny mat",
+   "holes_uv": [
+    [
+     40.0,
+     528.0
+    ],
+    [
+     40.0,
+     656.0
+    ]
+   ]
+  },
+  {
+   "front": "B2 Zmywarka Front 446x716",
+   "handle": "Nomet TECHNO 320 czarny mat",
+   "holes_uv": [
+    [
+     63.0,
+     666.0
+    ],
+    [
+     383.0,
+     666.0
+    ]
+   ]
+  },
+  {
+   "front": "B3 Klapa schowka (2 zawiasy na dole, otwiera sie w dol) 596x82",
+   "handle": "Nomet TECHNO 128 czarny mat",
+   "holes_uv": [
+    [
+     234.0,
+     41.0
+    ],
+    [
+     362.0,
+     41.0
+    ]
+   ]
+  },
+  {
+   "front": "B4 Drzwiczki narozne (zawiasy Blum 155 st. na boku B4, otw. w lewo, chowaja sie za drzwiami P1) 131x716",
+   "handle": "Nomet TECHNO 128 czarny mat",
+   "holes_uv": [
+    [
+     91.0,
+     528.0
+    ],
+    [
+     91.0,
+     656.0
+    ]
+   ]
+  },
+  {
+   "front": "P1 Drzwi (zawiasy Blum 155 st. od szuflad, otw. w prawo, otwierasz PIERWSZE) 367x716",
+   "handle": "Nomet TECHNO 128 czarny mat",
+   "holes_uv": [
+    [
+     40.0,
+     528.0
+    ],
+    [
+     40.0,
+     656.0
+    ]
+   ]
+  },
+  {
+   "front": "P2 Szuflada dolna (E + galeria) 596x320",
+   "handle": "Nomet TECHNO 320 czarny mat",
+   "holes_uv": [
+    [
+     138.0,
+     270.0
+    ],
+    [
+     458.0,
+     270.0
+    ]
+   ]
+  },
+  {
+   "front": "P2 Szuflada srodkowa (K) 596x250",
+   "handle": "Nomet TECHNO 320 czarny mat",
+   "holes_uv": [
+    [
+     138.0,
+     200.0
+    ],
+    [
+     458.0,
+     200.0
+    ]
+   ]
+  },
+  {
+   "front": "P2 Szuflada gorna (M, sztucce) 596x140",
+   "handle": "Nomet TECHNO 320 czarny mat",
+   "holes_uv": [
+    [
+     138.0,
+     90.0
+    ],
+    [
+     458.0,
+     90.0
+    ]
+   ]
+  },
+  {
+   "front": "P3 Szuflada dolna (E + galeria) 496x320",
+   "handle": "Nomet TECHNO 320 czarny mat",
+   "holes_uv": [
+    [
+     88.0,
+     270.0
+    ],
+    [
+     408.0,
+     270.0
+    ]
+   ]
+  },
+  {
+   "front": "P3 Szuflada srodkowa (K) 496x250",
+   "handle": "Nomet TECHNO 320 czarny mat",
+   "holes_uv": [
+    [
+     88.0,
+     200.0
+    ],
+    [
+     408.0,
+     200.0
+    ]
+   ]
+  },
+  {
+   "front": "P3 Szuflada gorna (M, sztucce) 496x140",
+   "handle": "Nomet TECHNO 320 czarny mat",
+   "holes_uv": [
+    [
+     88.0,
+     90.0
+    ],
+    [
+     408.0,
+     90.0
+    ]
+   ]
+  },
+  {
+   "front": "G2 Drzwi (zawiasy L) 446x896",
+   "handle": "Nomet TECHNO 128 czarny mat",
+   "holes_uv": [
+    [
+     406.0,
+     60.0
+    ],
+    [
+     406.0,
+     188.0
+    ]
+   ]
+  },
+  {
+   "front": "G3 Drzwi (zawiasy L) 596x896",
+   "handle": "Nomet TECHNO 128 czarny mat",
+   "holes_uv": [
+    [
+     556.0,
+     60.0
+    ],
+    [
+     556.0,
+     188.0
+    ]
+   ]
+  },
+  {
+   "front": "G4 Drzwi (zawiasy P) 596x896",
+   "handle": "Nomet TECHNO 128 czarny mat",
+   "holes_uv": [
+    [
+     40.0,
+     60.0
+    ],
+    [
+     40.0,
+     188.0
+    ]
+   ]
+  },
+  {
+   "front": "Z1 Drzwi L 365x716",
+   "handle": "Nomet TECHNO 128 czarny mat",
+   "holes_uv": [
+    [
+     40.0,
+     528.0
+    ],
+    [
+     40.0,
+     656.0
+    ]
+   ]
+  },
+  {
+   "front": "Z1 Drzwi P 364x716",
+   "handle": "Nomet TECHNO 128 czarny mat",
+   "holes_uv": [
+    [
+     324.0,
+     528.0
+    ],
+    [
+     324.0,
+     656.0
+    ]
+   ]
+  },
+  {
+   "front": "L6 Drzwi nadstawki 610x374",
+   "handle": "Nomet TECHNO 128 czarny mat",
+   "holes_uv": [
+    [
+     570.0,
+     60.0
+    ],
+    [
+     570.0,
+     188.0
+    ]
+   ]
+  }
+ ],
+ "tipons": [],
+ "hangers": [
+  {
+   "panel": "G2 Bok L 900x332",
+   "dowel_axis_below_top": 60.0,
+   "v_from_bottom": 840.0
+  },
+  {
+   "panel": "G2 Bok P 900x332",
+   "dowel_axis_below_top": 60.0,
+   "v_from_bottom": 840.0
+  },
+  {
+   "panel": "G3 Bok L 900x332",
+   "dowel_axis_below_top": 60.0,
+   "v_from_bottom": 840.0
+  },
+  {
+   "panel": "G3 Bok P 900x332",
+   "dowel_axis_below_top": 60.0,
+   "v_from_bottom": 840.0
+  },
+  {
+   "panel": "G4 Bok L 900x332",
+   "dowel_axis_below_top": 60.0,
+   "v_from_bottom": 840.0
+  },
+  {
+   "panel": "G4 Bok P 900x332",
+   "dowel_axis_below_top": 60.0,
+   "v_from_bottom": 840.0
+  }
+ ],
+ "warnings": [],
+ "features": [
+  {
+   "id": "f0001",
+   "cabinet": "B1",
+   "kind": "hinge-cup",
+   "hardware": "71B7550",
+   "part": {
+    "id": "p0015",
+    "name": "B1 Drzwiczki (zawiasy od strony zmywarki, Blum 155 st.) 105x716"
+   },
+   "face": "y+",
+   "world": {
+    "p": [
+     120.5,
+     -560.0,
+     213.0
+    ],
+    "dir": [
+     0,
+     -1,
+     0
+    ]
+   },
+   "local": {
+    "u": 22.5,
+    "v": 100.0,
+    "u_from": "hinge edge",
+    "v_from": "door bottom edge",
+    "face": "back"
+   },
+   "dia": 35,
+   "depth": 13,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0002",
+   "cabinet": "B1",
+   "kind": "hinge-screw",
+   "hardware": "609.1500",
+   "part": {
+    "id": "p0015",
+    "name": "B1 Drzwiczki (zawiasy od strony zmywarki, Blum 155 st.) 105x716"
+   },
+   "face": "y+",
+   "world": {
+    "p": [
+     111.0,
+     -560.0,
+     190.5
+    ],
+    "dir": [
+     0,
+     -1,
+     0
+    ]
+   },
+   "local": {
+    "u": 32.0,
+    "v": 77.5,
+    "u_from": "hinge edge",
+    "v_from": "door bottom edge",
+    "face": "back"
+   },
+   "dia": 2.5,
+   "depth": 10,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0003",
+   "cabinet": "B1",
+   "kind": "hinge-screw",
+   "hardware": "609.1500",
+   "part": {
+    "id": "p0015",
+    "name": "B1 Drzwiczki (zawiasy od strony zmywarki, Blum 155 st.) 105x716"
+   },
+   "face": "y+",
+   "world": {
+    "p": [
+     111.0,
+     -560.0,
+     235.5
+    ],
+    "dir": [
+     0,
+     -1,
+     0
+    ]
+   },
+   "local": {
+    "u": 32.0,
+    "v": 122.5,
+    "u_from": "hinge edge",
+    "v_from": "door bottom edge",
+    "face": "back"
+   },
+   "dia": 2.5,
+   "depth": 10,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0004",
+   "cabinet": "B1",
+   "kind": "plate-screw",
+   "hardware": "173L6100",
+   "part": {
+    "id": "p0011",
+    "name": "B1 Bok L 702x510"
+   },
+   "face": "x-",
+   "world": {
+    "p": [
+     127.0,
+     -523.0,
+     197.0
+    ],
+    "dir": [
+     1,
+     0,
+     0
+    ]
+   },
+   "local": {
+    "u": 37,
+    "v": 68.0,
+    "u_from": "front edge",
+    "v_from": "panel bottom edge",
+    "face": "inner (towards the door centre)"
+   },
+   "dia": 2.5,
+   "depth": 10,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0005",
+   "cabinet": "B1",
+   "kind": "plate-screw",
+   "hardware": "173L6100",
+   "part": {
+    "id": "p0011",
+    "name": "B1 Bok L 702x510"
+   },
+   "face": "x-",
+   "world": {
+    "p": [
+     127.0,
+     -523.0,
+     229.0
+    ],
+    "dir": [
+     1,
+     0,
+     0
+    ]
+   },
+   "local": {
+    "u": 37,
+    "v": 100.0,
+    "u_from": "front edge",
+    "v_from": "panel bottom edge",
+    "face": "inner (towards the door centre)"
+   },
+   "dia": 2.5,
+   "depth": 10,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0006",
+   "cabinet": "B1",
+   "kind": "hinge-cup",
+   "hardware": "71B7550",
+   "part": {
+    "id": "p0015",
+    "name": "B1 Drzwiczki (zawiasy od strony zmywarki, Blum 155 st.) 105x716"
+   },
+   "face": "y+",
+   "world": {
+    "p": [
+     120.5,
+     -560.0,
+     729.0
+    ],
+    "dir": [
+     0,
+     -1,
+     0
+    ]
+   },
+   "local": {
+    "u": 22.5,
+    "v": 616.0,
+    "u_from": "hinge edge",
+    "v_from": "door bottom edge",
+    "face": "back"
+   },
+   "dia": 35,
+   "depth": 13,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0007",
+   "cabinet": "B1",
+   "kind": "hinge-screw",
+   "hardware": "609.1500",
+   "part": {
+    "id": "p0015",
+    "name": "B1 Drzwiczki (zawiasy od strony zmywarki, Blum 155 st.) 105x716"
+   },
+   "face": "y+",
+   "world": {
+    "p": [
+     111.0,
+     -560.0,
+     706.5
+    ],
+    "dir": [
+     0,
+     -1,
+     0
+    ]
+   },
+   "local": {
+    "u": 32.0,
+    "v": 593.5,
+    "u_from": "hinge edge",
+    "v_from": "door bottom edge",
+    "face": "back"
+   },
+   "dia": 2.5,
+   "depth": 10,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0008",
+   "cabinet": "B1",
+   "kind": "hinge-screw",
+   "hardware": "609.1500",
+   "part": {
+    "id": "p0015",
+    "name": "B1 Drzwiczki (zawiasy od strony zmywarki, Blum 155 st.) 105x716"
+   },
+   "face": "y+",
+   "world": {
+    "p": [
+     111.0,
+     -560.0,
+     751.5
+    ],
+    "dir": [
+     0,
+     -1,
+     0
+    ]
+   },
+   "local": {
+    "u": 32.0,
+    "v": 638.5,
+    "u_from": "hinge edge",
+    "v_from": "door bottom edge",
+    "face": "back"
+   },
+   "dia": 2.5,
+   "depth": 10,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0009",
+   "cabinet": "B1",
+   "kind": "plate-screw",
+   "hardware": "173L6100",
+   "part": {
+    "id": "p0011",
+    "name": "B1 Bok L 702x510"
+   },
+   "face": "x-",
+   "world": {
+    "p": [
+     127.0,
+     -523.0,
+     713.0
+    ],
+    "dir": [
+     1,
+     0,
+     0
+    ]
+   },
+   "local": {
+    "u": 37,
+    "v": 584.0,
+    "u_from": "front edge",
+    "v_from": "panel bottom edge",
+    "face": "inner (towards the door centre)"
+   },
+   "dia": 2.5,
+   "depth": 10,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0010",
+   "cabinet": "B1",
+   "kind": "plate-screw",
+   "hardware": "173L6100",
+   "part": {
+    "id": "p0011",
+    "name": "B1 Bok L 702x510"
+   },
+   "face": "x-",
+   "world": {
+    "p": [
+     127.0,
+     -523.0,
+     745.0
+    ],
+    "dir": [
+     1,
+     0,
+     0
+    ]
+   },
+   "local": {
+    "u": 37,
+    "v": 616.0,
+    "u_from": "front edge",
+    "v_from": "panel bottom edge",
+    "face": "inner (towards the door centre)"
+   },
+   "dia": 2.5,
+   "depth": 10,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0011",
+   "cabinet": "B3",
+   "kind": "hinge-cup",
+   "hardware": "71B3550",
+   "part": {
+    "id": "p0033",
+    "name": "B3 Klapa schowka (2 zawiasy na dole, otwiera sie w dol) 596x82"
+   },
+   "face": "y+",
+   "world": {
+    "p": [
+     697.0,
+     -560.0,
+     135.5
+    ],
+    "dir": [
+     0,
+     -1,
+     0
+    ]
+   },
+   "local": {
+    "u": 100,
+    "v": 22.5,
+    "u_from": "left edge (viewed from the front)",
+    "v_from": "bottom (hinge) edge",
+    "face": "back"
+   },
+   "dia": 35,
+   "depth": 13,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0012",
+   "cabinet": "B3",
+   "kind": "hinge-screw",
+   "hardware": "609.1500",
+   "part": {
+    "id": "p0033",
+    "name": "B3 Klapa schowka (2 zawiasy na dole, otwiera sie w dol) 596x82"
+   },
+   "face": "y+",
+   "world": {
+    "p": [
+     674.5,
+     -560.0,
+     145.0
+    ],
+    "dir": [
+     0,
+     -1,
+     0
+    ]
+   },
+   "local": {
+    "u": 77.5,
+    "v": 32.0,
+    "u_from": "left edge (viewed from the front)",
+    "v_from": "bottom (hinge) edge",
+    "face": "back"
+   },
+   "dia": 2.5,
+   "depth": 10,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0013",
+   "cabinet": "B3",
+   "kind": "plate-screw",
+   "hardware": "173L6100",
+   "part": {
+    "id": "p0027",
+    "name": "B3 Wieniec dolny (pod bokami) 600x510"
+   },
+   "face": "z+",
+   "world": {
+    "p": [
+     681.0,
+     -523.0,
+     129.0
+    ],
+    "dir": [
+     0,
+     0,
+     -1
+    ]
+   },
+   "local": {
+    "u": 37,
+    "v": 86.0,
+    "u_from": "front edge",
+    "v_from": "left end of the panel (viewed from the front)",
+    "face": "top"
+   },
+   "dia": 2.5,
+   "depth": 10,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0014",
+   "cabinet": "B3",
+   "kind": "hinge-screw",
+   "hardware": "609.1500",
+   "part": {
+    "id": "p0033",
+    "name": "B3 Klapa schowka (2 zawiasy na dole, otwiera sie w dol) 596x82"
+   },
+   "face": "y+",
+   "world": {
+    "p": [
+     719.5,
+     -560.0,
+     145.0
+    ],
+    "dir": [
+     0,
+     -1,
+     0
+    ]
+   },
+   "local": {
+    "u": 122.5,
+    "v": 32.0,
+    "u_from": "left edge (viewed from the front)",
+    "v_from": "bottom (hinge) edge",
+    "face": "back"
+   },
+   "dia": 2.5,
+   "depth": 10,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0015",
+   "cabinet": "B3",
+   "kind": "plate-screw",
+   "hardware": "173L6100",
+   "part": {
+    "id": "p0027",
+    "name": "B3 Wieniec dolny (pod bokami) 600x510"
+   },
+   "face": "z+",
+   "world": {
+    "p": [
+     713.0,
+     -523.0,
+     129.0
+    ],
+    "dir": [
+     0,
+     0,
+     -1
+    ]
+   },
+   "local": {
+    "u": 37,
+    "v": 118.0,
+    "u_from": "front edge",
+    "v_from": "left end of the panel (viewed from the front)",
+    "face": "top"
+   },
+   "dia": 2.5,
+   "depth": 10,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0016",
+   "cabinet": "B3",
+   "kind": "hinge-cup",
+   "hardware": "71B3550",
+   "part": {
+    "id": "p0033",
+    "name": "B3 Klapa schowka (2 zawiasy na dole, otwiera sie w dol) 596x82"
+   },
+   "face": "y+",
+   "world": {
+    "p": [
+     1093.0,
+     -560.0,
+     135.5
+    ],
+    "dir": [
+     0,
+     -1,
+     0
+    ]
+   },
+   "local": {
+    "u": 496.0,
+    "v": 22.5,
+    "u_from": "left edge (viewed from the front)",
+    "v_from": "bottom (hinge) edge",
+    "face": "back"
+   },
+   "dia": 35,
+   "depth": 13,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0017",
+   "cabinet": "B3",
+   "kind": "hinge-screw",
+   "hardware": "609.1500",
+   "part": {
+    "id": "p0033",
+    "name": "B3 Klapa schowka (2 zawiasy na dole, otwiera sie w dol) 596x82"
+   },
+   "face": "y+",
+   "world": {
+    "p": [
+     1070.5,
+     -560.0,
+     145.0
+    ],
+    "dir": [
+     0,
+     -1,
+     0
+    ]
+   },
+   "local": {
+    "u": 473.5,
+    "v": 32.0,
+    "u_from": "left edge (viewed from the front)",
+    "v_from": "bottom (hinge) edge",
+    "face": "back"
+   },
+   "dia": 2.5,
+   "depth": 10,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0018",
+   "cabinet": "B3",
+   "kind": "plate-screw",
+   "hardware": "173L6100",
+   "part": {
+    "id": "p0027",
+    "name": "B3 Wieniec dolny (pod bokami) 600x510"
+   },
+   "face": "z+",
+   "world": {
+    "p": [
+     1077.0,
+     -523.0,
+     129.0
+    ],
+    "dir": [
+     0,
+     0,
+     -1
+    ]
+   },
+   "local": {
+    "u": 37,
+    "v": 482.0,
+    "u_from": "front edge",
+    "v_from": "left end of the panel (viewed from the front)",
+    "face": "top"
+   },
+   "dia": 2.5,
+   "depth": 10,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0019",
+   "cabinet": "B3",
+   "kind": "hinge-screw",
+   "hardware": "609.1500",
+   "part": {
+    "id": "p0033",
+    "name": "B3 Klapa schowka (2 zawiasy na dole, otwiera sie w dol) 596x82"
+   },
+   "face": "y+",
+   "world": {
+    "p": [
+     1115.5,
+     -560.0,
+     145.0
+    ],
+    "dir": [
+     0,
+     -1,
+     0
+    ]
+   },
+   "local": {
+    "u": 518.5,
+    "v": 32.0,
+    "u_from": "left edge (viewed from the front)",
+    "v_from": "bottom (hinge) edge",
+    "face": "back"
+   },
+   "dia": 2.5,
+   "depth": 10,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0020",
+   "cabinet": "B3",
+   "kind": "plate-screw",
+   "hardware": "173L6100",
+   "part": {
+    "id": "p0027",
+    "name": "B3 Wieniec dolny (pod bokami) 600x510"
+   },
+   "face": "z+",
+   "world": {
+    "p": [
+     1109.0,
+     -523.0,
+     129.0
+    ],
+    "dir": [
+     0,
+     0,
+     -1
+    ]
+   },
+   "local": {
+    "u": 37,
+    "v": 514.0,
+    "u_from": "front edge",
+    "v_from": "left end of the panel (viewed from the front)",
+    "face": "top"
+   },
+   "dia": 2.5,
+   "depth": 10,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0021",
+   "cabinet": "B4",
+   "kind": "hinge-cup",
+   "hardware": "71B7550",
+   "part": {
+    "id": "p0049",
+    "name": "B4 Drzwiczki narozne (zawiasy Blum 155 st. na boku B4, otw. w lewo, chowaja sie za drzwiami P1) 131x716"
+   },
+   "face": "y+",
+   "world": {
+    "p": [
+     1219.5,
+     -560.0,
+     213.0
+    ],
+    "dir": [
+     0,
+     -1,
+     0
+    ]
+   },
+   "local": {
+    "u": 23.5,
+    "v": 100.0,
+    "u_from": "hinge edge",
+    "v_from": "door bottom edge",
+    "face": "back"
+   },
+   "dia": 35,
+   "depth": 13,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0022",
+   "cabinet": "B4",
+   "kind": "hinge-screw",
+   "hardware": "609.1500",
+   "part": {
+    "id": "p0049",
+    "name": "B4 Drzwiczki narozne (zawiasy Blum 155 st. na boku B4, otw. w lewo, chowaja sie za drzwiami P1) 131x716"
+   },
+   "face": "y+",
+   "world": {
+    "p": [
+     1229.0,
+     -560.0,
+     190.5
+    ],
+    "dir": [
+     0,
+     -1,
+     0
+    ]
+   },
+   "local": {
+    "u": 33.0,
+    "v": 77.5,
+    "u_from": "hinge edge",
+    "v_from": "door bottom edge",
+    "face": "back"
+   },
+   "dia": 2.5,
+   "depth": 10,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0023",
+   "cabinet": "B4",
+   "kind": "hinge-screw",
+   "hardware": "609.1500",
+   "part": {
+    "id": "p0049",
+    "name": "B4 Drzwiczki narozne (zawiasy Blum 155 st. na boku B4, otw. w lewo, chowaja sie za drzwiami P1) 131x716"
+   },
+   "face": "y+",
+   "world": {
+    "p": [
+     1229.0,
+     -560.0,
+     235.5
+    ],
+    "dir": [
+     0,
+     -1,
+     0
+    ]
+   },
+   "local": {
+    "u": 33.0,
+    "v": 122.5,
+    "u_from": "hinge edge",
+    "v_from": "door bottom edge",
+    "face": "back"
+   },
+   "dia": 2.5,
+   "depth": 10,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0024",
+   "cabinet": "B4",
+   "kind": "plate-screw",
+   "hardware": "173L6100",
+   "part": {
+    "id": "p0047",
+    "name": "B4 Bok L 702x492 (skrec z bokiem B3, tu zawiasy drzwiczek)"
+   },
+   "face": "x+",
+   "world": {
+    "p": [
+     1213.0,
+     -523.0,
+     197.0
+    ],
+    "dir": [
+     -1,
+     0,
+     0
+    ]
+   },
+   "local": {
+    "u": 37,
+    "v": 68.0,
+    "u_from": "front edge",
+    "v_from": "panel bottom edge",
+    "face": "inner (towards the door centre)"
+   },
+   "dia": 2.5,
+   "depth": 10,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0025",
+   "cabinet": "B4",
+   "kind": "plate-screw",
+   "hardware": "173L6100",
+   "part": {
+    "id": "p0047",
+    "name": "B4 Bok L 702x492 (skrec z bokiem B3, tu zawiasy drzwiczek)"
+   },
+   "face": "x+",
+   "world": {
+    "p": [
+     1213.0,
+     -523.0,
+     229.0
+    ],
+    "dir": [
+     -1,
+     0,
+     0
+    ]
+   },
+   "local": {
+    "u": 37,
+    "v": 100.0,
+    "u_from": "front edge",
+    "v_from": "panel bottom edge",
+    "face": "inner (towards the door centre)"
+   },
+   "dia": 2.5,
+   "depth": 10,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0026",
+   "cabinet": "B4",
+   "kind": "hinge-cup",
+   "hardware": "71B7550",
+   "part": {
+    "id": "p0049",
+    "name": "B4 Drzwiczki narozne (zawiasy Blum 155 st. na boku B4, otw. w lewo, chowaja sie za drzwiami P1) 131x716"
+   },
+   "face": "y+",
+   "world": {
+    "p": [
+     1219.5,
+     -560.0,
+     729.0
+    ],
+    "dir": [
+     0,
+     -1,
+     0
+    ]
+   },
+   "local": {
+    "u": 23.5,
+    "v": 616.0,
+    "u_from": "hinge edge",
+    "v_from": "door bottom edge",
+    "face": "back"
+   },
+   "dia": 35,
+   "depth": 13,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0027",
+   "cabinet": "B4",
+   "kind": "hinge-screw",
+   "hardware": "609.1500",
+   "part": {
+    "id": "p0049",
+    "name": "B4 Drzwiczki narozne (zawiasy Blum 155 st. na boku B4, otw. w lewo, chowaja sie za drzwiami P1) 131x716"
+   },
+   "face": "y+",
+   "world": {
+    "p": [
+     1229.0,
+     -560.0,
+     706.5
+    ],
+    "dir": [
+     0,
+     -1,
+     0
+    ]
+   },
+   "local": {
+    "u": 33.0,
+    "v": 593.5,
+    "u_from": "hinge edge",
+    "v_from": "door bottom edge",
+    "face": "back"
+   },
+   "dia": 2.5,
+   "depth": 10,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0028",
+   "cabinet": "B4",
+   "kind": "hinge-screw",
+   "hardware": "609.1500",
+   "part": {
+    "id": "p0049",
+    "name": "B4 Drzwiczki narozne (zawiasy Blum 155 st. na boku B4, otw. w lewo, chowaja sie za drzwiami P1) 131x716"
+   },
+   "face": "y+",
+   "world": {
+    "p": [
+     1229.0,
+     -560.0,
+     751.5
+    ],
+    "dir": [
+     0,
+     -1,
+     0
+    ]
+   },
+   "local": {
+    "u": 33.0,
+    "v": 638.5,
+    "u_from": "hinge edge",
+    "v_from": "door bottom edge",
+    "face": "back"
+   },
+   "dia": 2.5,
+   "depth": 10,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0029",
+   "cabinet": "B4",
+   "kind": "plate-screw",
+   "hardware": "173L6100",
+   "part": {
+    "id": "p0047",
+    "name": "B4 Bok L 702x492 (skrec z bokiem B3, tu zawiasy drzwiczek)"
+   },
+   "face": "x+",
+   "world": {
+    "p": [
+     1213.0,
+     -523.0,
+     713.0
+    ],
+    "dir": [
+     -1,
+     0,
+     0
+    ]
+   },
+   "local": {
+    "u": 37,
+    "v": 584.0,
+    "u_from": "front edge",
+    "v_from": "panel bottom edge",
+    "face": "inner (towards the door centre)"
+   },
+   "dia": 2.5,
+   "depth": 10,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0030",
+   "cabinet": "B4",
+   "kind": "plate-screw",
+   "hardware": "173L6100",
+   "part": {
+    "id": "p0047",
+    "name": "B4 Bok L 702x492 (skrec z bokiem B3, tu zawiasy drzwiczek)"
+   },
+   "face": "x+",
+   "world": {
+    "p": [
+     1213.0,
+     -523.0,
+     745.0
+    ],
+    "dir": [
+     -1,
+     0,
+     0
+    ]
+   },
+   "local": {
+    "u": 37,
+    "v": 616.0,
+    "u_from": "front edge",
+    "v_from": "panel bottom edge",
+    "face": "inner (towards the door centre)"
+   },
+   "dia": 2.5,
+   "depth": 10,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0031",
+   "cabinet": "P1",
+   "kind": "hinge-cup",
+   "hardware": "71B7550",
+   "part": {
+    "id": "p0063",
+    "name": "P1 Drzwi (zawiasy Blum 155 st. od szuflad, otw. w prawo, otwierasz PIERWSZE) 367x716"
+   },
+   "face": "x+",
+   "world": {
+    "p": [
+     1330.0,
+     -925.5,
+     213.0
+    ],
+    "dir": [
+     -1,
+     0,
+     0
+    ]
+   },
+   "local": {
+    "u": 22.5,
+    "v": 100.0,
+    "u_from": "hinge edge",
+    "v_from": "door bottom edge",
+    "face": "back"
+   },
+   "dia": 35,
+   "depth": 13,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0032",
+   "cabinet": "P1",
+   "kind": "hinge-screw",
+   "hardware": "609.1500",
+   "part": {
+    "id": "p0063",
+    "name": "P1 Drzwi (zawiasy Blum 155 st. od szuflad, otw. w prawo, otwierasz PIERWSZE) 367x716"
+   },
+   "face": "x+",
+   "world": {
+    "p": [
+     1330.0,
+     -916.0,
+     190.5
+    ],
+    "dir": [
+     -1,
+     0,
+     0
+    ]
+   },
+   "local": {
+    "u": 32.0,
+    "v": 77.5,
+    "u_from": "hinge edge",
+    "v_from": "door bottom edge",
+    "face": "back"
+   },
+   "dia": 2.5,
+   "depth": 10,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0033",
+   "cabinet": "P1",
+   "kind": "hinge-screw",
+   "hardware": "609.1500",
+   "part": {
+    "id": "p0063",
+    "name": "P1 Drzwi (zawiasy Blum 155 st. od szuflad, otw. w prawo, otwierasz PIERWSZE) 367x716"
+   },
+   "face": "x+",
+   "world": {
+    "p": [
+     1330.0,
+     -916.0,
+     235.5
+    ],
+    "dir": [
+     -1,
+     0,
+     0
+    ]
+   },
+   "local": {
+    "u": 32.0,
+    "v": 122.5,
+    "u_from": "hinge edge",
+    "v_from": "door bottom edge",
+    "face": "back"
+   },
+   "dia": 2.5,
+   "depth": 10,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0034",
+   "cabinet": "P1",
+   "kind": "plate-screw",
+   "hardware": "173L6100",
+   "part": {
+    "id": "p0057",
+    "name": "P1 Bok L 702x505"
+   },
+   "face": "y+",
+   "world": {
+    "p": [
+     1367.0,
+     -932.0,
+     197.0
+    ],
+    "dir": [
+     0,
+     -1,
+     0
+    ]
+   },
+   "local": {
+    "u": 37,
+    "v": 68.0,
+    "u_from": "front edge",
+    "v_from": "panel bottom edge",
+    "face": "inner (towards the door centre)"
+   },
+   "dia": 2.5,
+   "depth": 10,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0035",
+   "cabinet": "P1",
+   "kind": "plate-screw",
+   "hardware": "173L6100",
+   "part": {
+    "id": "p0057",
+    "name": "P1 Bok L 702x505"
+   },
+   "face": "y+",
+   "world": {
+    "p": [
+     1367.0,
+     -932.0,
+     229.0
+    ],
+    "dir": [
+     0,
+     -1,
+     0
+    ]
+   },
+   "local": {
+    "u": 37,
+    "v": 100.0,
+    "u_from": "front edge",
+    "v_from": "panel bottom edge",
+    "face": "inner (towards the door centre)"
+   },
+   "dia": 2.5,
+   "depth": 10,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0036",
+   "cabinet": "P1",
+   "kind": "hinge-cup",
+   "hardware": "71B7550",
+   "part": {
+    "id": "p0063",
+    "name": "P1 Drzwi (zawiasy Blum 155 st. od szuflad, otw. w prawo, otwierasz PIERWSZE) 367x716"
+   },
+   "face": "x+",
+   "world": {
+    "p": [
+     1330.0,
+     -925.5,
+     729.0
+    ],
+    "dir": [
+     -1,
+     0,
+     0
+    ]
+   },
+   "local": {
+    "u": 22.5,
+    "v": 616.0,
+    "u_from": "hinge edge",
+    "v_from": "door bottom edge",
+    "face": "back"
+   },
+   "dia": 35,
+   "depth": 13,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0037",
+   "cabinet": "P1",
+   "kind": "hinge-screw",
+   "hardware": "609.1500",
+   "part": {
+    "id": "p0063",
+    "name": "P1 Drzwi (zawiasy Blum 155 st. od szuflad, otw. w prawo, otwierasz PIERWSZE) 367x716"
+   },
+   "face": "x+",
+   "world": {
+    "p": [
+     1330.0,
+     -916.0,
+     706.5
+    ],
+    "dir": [
+     -1,
+     0,
+     0
+    ]
+   },
+   "local": {
+    "u": 32.0,
+    "v": 593.5,
+    "u_from": "hinge edge",
+    "v_from": "door bottom edge",
+    "face": "back"
+   },
+   "dia": 2.5,
+   "depth": 10,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0038",
+   "cabinet": "P1",
+   "kind": "hinge-screw",
+   "hardware": "609.1500",
+   "part": {
+    "id": "p0063",
+    "name": "P1 Drzwi (zawiasy Blum 155 st. od szuflad, otw. w prawo, otwierasz PIERWSZE) 367x716"
+   },
+   "face": "x+",
+   "world": {
+    "p": [
+     1330.0,
+     -916.0,
+     751.5
+    ],
+    "dir": [
+     -1,
+     0,
+     0
+    ]
+   },
+   "local": {
+    "u": 32.0,
+    "v": 638.5,
+    "u_from": "hinge edge",
+    "v_from": "door bottom edge",
+    "face": "back"
+   },
+   "dia": 2.5,
+   "depth": 10,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0039",
+   "cabinet": "P1",
+   "kind": "plate-screw",
+   "hardware": "173L6100",
+   "part": {
+    "id": "p0057",
+    "name": "P1 Bok L 702x505"
+   },
+   "face": "y+",
+   "world": {
+    "p": [
+     1367.0,
+     -932.0,
+     713.0
+    ],
+    "dir": [
+     0,
+     -1,
+     0
+    ]
+   },
+   "local": {
+    "u": 37,
+    "v": 584.0,
+    "u_from": "front edge",
+    "v_from": "panel bottom edge",
+    "face": "inner (towards the door centre)"
+   },
+   "dia": 2.5,
+   "depth": 10,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0040",
+   "cabinet": "P1",
+   "kind": "plate-screw",
+   "hardware": "173L6100",
+   "part": {
+    "id": "p0057",
+    "name": "P1 Bok L 702x505"
+   },
+   "face": "y+",
+   "world": {
+    "p": [
+     1367.0,
+     -932.0,
+     745.0
+    ],
+    "dir": [
+     0,
+     -1,
+     0
+    ]
+   },
+   "local": {
+    "u": 37,
+    "v": 616.0,
+    "u_from": "front edge",
+    "v_from": "panel bottom edge",
+    "face": "inner (towards the door centre)"
+   },
+   "dia": 2.5,
+   "depth": 10,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0041",
+   "cabinet": "P2",
+   "kind": "front-fixing",
+   "hardware": "ZF4.10I2 (INSERTA)",
+   "part": {
+    "id": "p0086",
+    "name": "P2 Szuflada dolna (E + galeria) 596x320"
+   },
+   "face": "x+",
+   "world": {
+    "p": [
+     1330.0,
+     -988.5,
+     162.5
+    ],
+    "dir": [
+     -1,
+     0,
+     0
+    ]
+   },
+   "local": {
+    "u": 36.5,
+    "v": 49.5,
+    "u_from": "left edge (viewed from the front)",
+    "v_from": "front bottom edge",
+    "face": "back"
+   },
+   "dia": 10,
+   "depth": 12,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0042",
+   "cabinet": "P2",
+   "kind": "front-fixing",
+   "hardware": "ZF4.10I2 (INSERTA)",
+   "part": {
+    "id": "p0086",
+    "name": "P2 Szuflada dolna (E + galeria) 596x320"
+   },
+   "face": "x+",
+   "world": {
+    "p": [
+     1330.0,
+     -1511.5,
+     162.5
+    ],
+    "dir": [
+     -1,
+     0,
+     0
+    ]
+   },
+   "local": {
+    "u": 559.5,
+    "v": 49.5,
+    "u_from": "left edge (viewed from the front)",
+    "v_from": "front bottom edge",
+    "face": "back"
+   },
+   "dia": 10,
+   "depth": 12,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0043",
+   "cabinet": "P2",
+   "kind": "front-fixing",
+   "hardware": "ZF4.10I2 (INSERTA)",
+   "part": {
+    "id": "p0086",
+    "name": "P2 Szuflada dolna (E + galeria) 596x320"
+   },
+   "face": "x+",
+   "world": {
+    "p": [
+     1330.0,
+     -988.5,
+     194.5
+    ],
+    "dir": [
+     -1,
+     0,
+     0
+    ]
+   },
+   "local": {
+    "u": 36.5,
+    "v": 81.5,
+    "u_from": "left edge (viewed from the front)",
+    "v_from": "front bottom edge",
+    "face": "back"
+   },
+   "dia": 10,
+   "depth": 12,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0044",
+   "cabinet": "P2",
+   "kind": "front-fixing",
+   "hardware": "ZF4.10I2 (INSERTA)",
+   "part": {
+    "id": "p0086",
+    "name": "P2 Szuflada dolna (E + galeria) 596x320"
+   },
+   "face": "x+",
+   "world": {
+    "p": [
+     1330.0,
+     -1511.5,
+     194.5
+    ],
+    "dir": [
+     -1,
+     0,
+     0
+    ]
+   },
+   "local": {
+    "u": 559.5,
+    "v": 81.5,
+    "u_from": "left edge (viewed from the front)",
+    "v_from": "front bottom edge",
+    "face": "back"
+   },
+   "dia": 10,
+   "depth": 12,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0045",
+   "cabinet": "P2",
+   "kind": "front-fixing-top",
+   "hardware": "ZF4.50I2 (INSERTA, gallery rail)",
+   "part": {
+    "id": "p0086",
+    "name": "P2 Szuflada dolna (E + galeria) 596x320"
+   },
+   "face": "x+",
+   "world": {
+    "p": [
+     1330.0,
+     -988.5,
+     322.5
+    ],
+    "dir": [
+     -1,
+     0,
+     0
+    ]
+   },
+   "local": {
+    "u": 36.5,
+    "v": 209.5,
+    "u_from": "left edge (viewed from the front)",
+    "v_from": "front bottom edge",
+    "face": "back"
+   },
+   "dia": 10,
+   "depth": 12,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0046",
+   "cabinet": "P2",
+   "kind": "front-fixing-top",
+   "hardware": "ZF4.50I2 (INSERTA, gallery rail)",
+   "part": {
+    "id": "p0086",
+    "name": "P2 Szuflada dolna (E + galeria) 596x320"
+   },
+   "face": "x+",
+   "world": {
+    "p": [
+     1330.0,
+     -1511.5,
+     322.5
+    ],
+    "dir": [
+     -1,
+     0,
+     0
+    ]
+   },
+   "local": {
+    "u": 559.5,
+    "v": 209.5,
+    "u_from": "left edge (viewed from the front)",
+    "v_from": "front bottom edge",
+    "face": "back"
+   },
+   "dia": 10,
+   "depth": 12,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0047",
+   "cabinet": "P2",
+   "kind": "front-stabiliser",
+   "hardware": "Z96.10E1",
+   "part": {
+    "id": "p0086",
+    "name": "P2 Szuflada dolna (E + galeria) 596x320"
+   },
+   "face": "x+",
+   "world": {
+    "p": [
+     1330.0,
+     -1234.0,
+     147.5
+    ],
+    "dir": [
+     -1,
+     0,
+     0
+    ]
+   },
+   "local": {
+    "u": 282.0,
+    "v": 34.5,
+    "u_from": "left edge (viewed from the front)",
+    "v_from": "front bottom edge",
+    "face": "back"
+   },
+   "dia": 10,
+   "depth": 12,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0048",
+   "cabinet": "P2",
+   "kind": "front-stabiliser",
+   "hardware": "Z96.10E1",
+   "part": {
+    "id": "p0086",
+    "name": "P2 Szuflada dolna (E + galeria) 596x320"
+   },
+   "face": "x+",
+   "world": {
+    "p": [
+     1330.0,
+     -1266.0,
+     147.5
+    ],
+    "dir": [
+     -1,
+     0,
+     0
+    ]
+   },
+   "local": {
+    "u": 314.0,
+    "v": 34.5,
+    "u_from": "left edge (viewed from the front)",
+    "v_from": "front bottom edge",
+    "face": "back"
+   },
+   "dia": 10,
+   "depth": 12,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0049",
+   "cabinet": "P2",
+   "kind": "runner-screw",
+   "hardware": "450.5001B + screws 4x15",
+   "part": {
+    "id": "p0081",
+    "name": "P2 Bok L 702x505"
+   },
+   "face": "y+",
+   "world": {
+    "p": [
+     1349.0,
+     -1532.0,
+     135.0
+    ],
+    "dir": [
+     0,
+     -1,
+     0
+    ]
+   },
+   "local": {
+    "u": 19,
+    "v": 6.0,
+    "u_from": "front edge",
+    "v_from": "panel bottom edge",
+    "face": "inner",
+    "runner_line_v": 0.0
+   },
+   "dia": 2.5,
+   "depth": 10,
+   "note": "screw height approximate - place the runner bottom on runner_line_v and drill through the runner holes",
+   "verify": true
+  },
+  {
+   "id": "f0050",
+   "cabinet": "P2",
+   "kind": "runner-screw",
+   "hardware": "450.5001B + screws 4x15",
+   "part": {
+    "id": "p0081",
+    "name": "P2 Bok L 702x505"
+   },
+   "face": "y+",
+   "world": {
+    "p": [
+     1367.0,
+     -1532.0,
+     135.0
+    ],
+    "dir": [
+     0,
+     -1,
+     0
+    ]
+   },
+   "local": {
+    "u": 37,
+    "v": 6.0,
+    "u_from": "front edge",
+    "v_from": "panel bottom edge",
+    "face": "inner",
+    "runner_line_v": 0.0
+   },
+   "dia": 2.5,
+   "depth": 10,
+   "note": "screw height approximate - place the runner bottom on runner_line_v and drill through the runner holes",
+   "verify": true
+  },
+  {
+   "id": "f0051",
+   "cabinet": "P2",
+   "kind": "runner-screw",
+   "hardware": "450.5001B + screws 4x15",
+   "part": {
+    "id": "p0081",
+    "name": "P2 Bok L 702x505"
+   },
+   "face": "y+",
+   "world": {
+    "p": [
+     1399.0,
+     -1532.0,
+     135.0
+    ],
+    "dir": [
+     0,
+     -1,
+     0
+    ]
+   },
+   "local": {
+    "u": 69,
+    "v": 6.0,
+    "u_from": "front edge",
+    "v_from": "panel bottom edge",
+    "face": "inner",
+    "runner_line_v": 0.0
+   },
+   "dia": 2.5,
+   "depth": 10,
+   "note": "screw height approximate - place the runner bottom on runner_line_v and drill through the runner holes",
+   "verify": true
+  },
+  {
+   "id": "f0052",
+   "cabinet": "P2",
+   "kind": "runner-screw",
+   "hardware": "450.5001B + screws 4x15",
+   "part": {
+    "id": "p0081",
+    "name": "P2 Bok L 702x505"
+   },
+   "face": "y+",
+   "world": {
+    "p": [
+     1591.0,
+     -1532.0,
+     135.0
+    ],
+    "dir": [
+     0,
+     -1,
+     0
+    ]
+   },
+   "local": {
+    "u": 261,
+    "v": 6.0,
+    "u_from": "front edge",
+    "v_from": "panel bottom edge",
+    "face": "inner",
+    "runner_line_v": 0.0
+   },
+   "dia": 2.5,
+   "depth": 10,
+   "note": "screw height approximate - place the runner bottom on runner_line_v and drill through the runner holes",
+   "verify": true
+  },
+  {
+   "id": "f0053",
+   "cabinet": "P2",
+   "kind": "runner-screw",
+   "hardware": "450.5001B + screws 4x15",
+   "part": {
+    "id": "p0081",
+    "name": "P2 Bok L 702x505"
+   },
+   "face": "y+",
+   "world": {
+    "p": [
+     1623.0,
+     -1532.0,
+     135.0
+    ],
+    "dir": [
+     0,
+     -1,
+     0
+    ]
+   },
+   "local": {
+    "u": 293,
+    "v": 6.0,
+    "u_from": "front edge",
+    "v_from": "panel bottom edge",
+    "face": "inner",
+    "runner_line_v": 0.0
+   },
+   "dia": 2.5,
+   "depth": 10,
+   "note": "screw height approximate - place the runner bottom on runner_line_v and drill through the runner holes",
+   "verify": true
+  },
+  {
+   "id": "f0054",
+   "cabinet": "P2",
+   "kind": "runner-screw",
+   "hardware": "450.5001B + screws 4x15",
+   "part": {
+    "id": "p0082",
+    "name": "P2 Bok P 702x505"
+   },
+   "face": "y-",
+   "world": {
+    "p": [
+     1349.0,
+     -968.0,
+     135.0
+    ],
+    "dir": [
+     0,
+     1,
+     0
+    ]
+   },
+   "local": {
+    "u": 19,
+    "v": 6.0,
+    "u_from": "front edge",
+    "v_from": "panel bottom edge",
+    "face": "inner",
+    "runner_line_v": 0.0
+   },
+   "dia": 2.5,
+   "depth": 10,
+   "note": "screw height approximate - place the runner bottom on runner_line_v and drill through the runner holes",
+   "verify": true
+  },
+  {
+   "id": "f0055",
+   "cabinet": "P2",
+   "kind": "runner-screw",
+   "hardware": "450.5001B + screws 4x15",
+   "part": {
+    "id": "p0082",
+    "name": "P2 Bok P 702x505"
+   },
+   "face": "y-",
+   "world": {
+    "p": [
+     1367.0,
+     -968.0,
+     135.0
+    ],
+    "dir": [
+     0,
+     1,
+     0
+    ]
+   },
+   "local": {
+    "u": 37,
+    "v": 6.0,
+    "u_from": "front edge",
+    "v_from": "panel bottom edge",
+    "face": "inner",
+    "runner_line_v": 0.0
+   },
+   "dia": 2.5,
+   "depth": 10,
+   "note": "screw height approximate - place the runner bottom on runner_line_v and drill through the runner holes",
+   "verify": true
+  },
+  {
+   "id": "f0056",
+   "cabinet": "P2",
+   "kind": "runner-screw",
+   "hardware": "450.5001B + screws 4x15",
+   "part": {
+    "id": "p0082",
+    "name": "P2 Bok P 702x505"
+   },
+   "face": "y-",
+   "world": {
+    "p": [
+     1399.0,
+     -968.0,
+     135.0
+    ],
+    "dir": [
+     0,
+     1,
+     0
+    ]
+   },
+   "local": {
+    "u": 69,
+    "v": 6.0,
+    "u_from": "front edge",
+    "v_from": "panel bottom edge",
+    "face": "inner",
+    "runner_line_v": 0.0
+   },
+   "dia": 2.5,
+   "depth": 10,
+   "note": "screw height approximate - place the runner bottom on runner_line_v and drill through the runner holes",
+   "verify": true
+  },
+  {
+   "id": "f0057",
+   "cabinet": "P2",
+   "kind": "runner-screw",
+   "hardware": "450.5001B + screws 4x15",
+   "part": {
+    "id": "p0082",
+    "name": "P2 Bok P 702x505"
+   },
+   "face": "y-",
+   "world": {
+    "p": [
+     1591.0,
+     -968.0,
+     135.0
+    ],
+    "dir": [
+     0,
+     1,
+     0
+    ]
+   },
+   "local": {
+    "u": 261,
+    "v": 6.0,
+    "u_from": "front edge",
+    "v_from": "panel bottom edge",
+    "face": "inner",
+    "runner_line_v": 0.0
+   },
+   "dia": 2.5,
+   "depth": 10,
+   "note": "screw height approximate - place the runner bottom on runner_line_v and drill through the runner holes",
+   "verify": true
+  },
+  {
+   "id": "f0058",
+   "cabinet": "P2",
+   "kind": "runner-screw",
+   "hardware": "450.5001B + screws 4x15",
+   "part": {
+    "id": "p0082",
+    "name": "P2 Bok P 702x505"
+   },
+   "face": "y-",
+   "world": {
+    "p": [
+     1623.0,
+     -968.0,
+     135.0
+    ],
+    "dir": [
+     0,
+     1,
+     0
+    ]
+   },
+   "local": {
+    "u": 293,
+    "v": 6.0,
+    "u_from": "front edge",
+    "v_from": "panel bottom edge",
+    "face": "inner",
+    "runner_line_v": 0.0
+   },
+   "dia": 2.5,
+   "depth": 10,
+   "note": "screw height approximate - place the runner bottom on runner_line_v and drill through the runner holes",
+   "verify": true
+  },
+  {
+   "id": "f0059",
+   "cabinet": "P2",
+   "kind": "front-fixing",
+   "hardware": "ZF4.10I2 (INSERTA)",
+   "part": {
+    "id": "p0087",
+    "name": "P2 Szuflada srodkowa (K) 596x250"
+   },
+   "face": "x+",
+   "world": {
+    "p": [
+     1330.0,
+     -988.5,
+     485.5
+    ],
+    "dir": [
+     -1,
+     0,
+     0
+    ]
+   },
+   "local": {
+    "u": 36.5,
+    "v": 49.5,
+    "u_from": "left edge (viewed from the front)",
+    "v_from": "front bottom edge",
+    "face": "back"
+   },
+   "dia": 10,
+   "depth": 12,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0060",
+   "cabinet": "P2",
+   "kind": "front-fixing",
+   "hardware": "ZF4.10I2 (INSERTA)",
+   "part": {
+    "id": "p0087",
+    "name": "P2 Szuflada srodkowa (K) 596x250"
+   },
+   "face": "x+",
+   "world": {
+    "p": [
+     1330.0,
+     -1511.5,
+     485.5
+    ],
+    "dir": [
+     -1,
+     0,
+     0
+    ]
+   },
+   "local": {
+    "u": 559.5,
+    "v": 49.5,
+    "u_from": "left edge (viewed from the front)",
+    "v_from": "front bottom edge",
+    "face": "back"
+   },
+   "dia": 10,
+   "depth": 12,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0061",
+   "cabinet": "P2",
+   "kind": "front-fixing",
+   "hardware": "ZF4.10I2 (INSERTA)",
+   "part": {
+    "id": "p0087",
+    "name": "P2 Szuflada srodkowa (K) 596x250"
+   },
+   "face": "x+",
+   "world": {
+    "p": [
+     1330.0,
+     -988.5,
+     517.5
+    ],
+    "dir": [
+     -1,
+     0,
+     0
+    ]
+   },
+   "local": {
+    "u": 36.5,
+    "v": 81.5,
+    "u_from": "left edge (viewed from the front)",
+    "v_from": "front bottom edge",
+    "face": "back"
+   },
+   "dia": 10,
+   "depth": 12,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0062",
+   "cabinet": "P2",
+   "kind": "front-fixing",
+   "hardware": "ZF4.10I2 (INSERTA)",
+   "part": {
+    "id": "p0087",
+    "name": "P2 Szuflada srodkowa (K) 596x250"
+   },
+   "face": "x+",
+   "world": {
+    "p": [
+     1330.0,
+     -1511.5,
+     517.5
+    ],
+    "dir": [
+     -1,
+     0,
+     0
+    ]
+   },
+   "local": {
+    "u": 559.5,
+    "v": 81.5,
+    "u_from": "left edge (viewed from the front)",
+    "v_from": "front bottom edge",
+    "face": "back"
+   },
+   "dia": 10,
+   "depth": 12,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0063",
+   "cabinet": "P2",
+   "kind": "front-stabiliser",
+   "hardware": "Z96.10E1",
+   "part": {
+    "id": "p0087",
+    "name": "P2 Szuflada srodkowa (K) 596x250"
+   },
+   "face": "x+",
+   "world": {
+    "p": [
+     1330.0,
+     -1234.0,
+     470.5
+    ],
+    "dir": [
+     -1,
+     0,
+     0
+    ]
+   },
+   "local": {
+    "u": 282.0,
+    "v": 34.5,
+    "u_from": "left edge (viewed from the front)",
+    "v_from": "front bottom edge",
+    "face": "back"
+   },
+   "dia": 10,
+   "depth": 12,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0064",
+   "cabinet": "P2",
+   "kind": "front-stabiliser",
+   "hardware": "Z96.10E1",
+   "part": {
+    "id": "p0087",
+    "name": "P2 Szuflada srodkowa (K) 596x250"
+   },
+   "face": "x+",
+   "world": {
+    "p": [
+     1330.0,
+     -1266.0,
+     470.5
+    ],
+    "dir": [
+     -1,
+     0,
+     0
+    ]
+   },
+   "local": {
+    "u": 314.0,
+    "v": 34.5,
+    "u_from": "left edge (viewed from the front)",
+    "v_from": "front bottom edge",
+    "face": "back"
+   },
+   "dia": 10,
+   "depth": 12,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0065",
+   "cabinet": "P2",
+   "kind": "runner-screw",
+   "hardware": "450.5001B + screws 4x15",
+   "part": {
+    "id": "p0081",
+    "name": "P2 Bok L 702x505"
+   },
+   "face": "y+",
+   "world": {
+    "p": [
+     1349.0,
+     -1532.0,
+     458.0
+    ],
+    "dir": [
+     0,
+     -1,
+     0
+    ]
+   },
+   "local": {
+    "u": 19,
+    "v": 329.0,
+    "u_from": "front edge",
+    "v_from": "panel bottom edge",
+    "face": "inner",
+    "runner_line_v": 323.0
+   },
+   "dia": 2.5,
+   "depth": 10,
+   "note": "screw height approximate - place the runner bottom on runner_line_v and drill through the runner holes",
+   "verify": true
+  },
+  {
+   "id": "f0066",
+   "cabinet": "P2",
+   "kind": "runner-screw",
+   "hardware": "450.5001B + screws 4x15",
+   "part": {
+    "id": "p0081",
+    "name": "P2 Bok L 702x505"
+   },
+   "face": "y+",
+   "world": {
+    "p": [
+     1367.0,
+     -1532.0,
+     458.0
+    ],
+    "dir": [
+     0,
+     -1,
+     0
+    ]
+   },
+   "local": {
+    "u": 37,
+    "v": 329.0,
+    "u_from": "front edge",
+    "v_from": "panel bottom edge",
+    "face": "inner",
+    "runner_line_v": 323.0
+   },
+   "dia": 2.5,
+   "depth": 10,
+   "note": "screw height approximate - place the runner bottom on runner_line_v and drill through the runner holes",
+   "verify": true
+  },
+  {
+   "id": "f0067",
+   "cabinet": "P2",
+   "kind": "runner-screw",
+   "hardware": "450.5001B + screws 4x15",
+   "part": {
+    "id": "p0081",
+    "name": "P2 Bok L 702x505"
+   },
+   "face": "y+",
+   "world": {
+    "p": [
+     1399.0,
+     -1532.0,
+     458.0
+    ],
+    "dir": [
+     0,
+     -1,
+     0
+    ]
+   },
+   "local": {
+    "u": 69,
+    "v": 329.0,
+    "u_from": "front edge",
+    "v_from": "panel bottom edge",
+    "face": "inner",
+    "runner_line_v": 323.0
+   },
+   "dia": 2.5,
+   "depth": 10,
+   "note": "screw height approximate - place the runner bottom on runner_line_v and drill through the runner holes",
+   "verify": true
+  },
+  {
+   "id": "f0068",
+   "cabinet": "P2",
+   "kind": "runner-screw",
+   "hardware": "450.5001B + screws 4x15",
+   "part": {
+    "id": "p0081",
+    "name": "P2 Bok L 702x505"
+   },
+   "face": "y+",
+   "world": {
+    "p": [
+     1591.0,
+     -1532.0,
+     458.0
+    ],
+    "dir": [
+     0,
+     -1,
+     0
+    ]
+   },
+   "local": {
+    "u": 261,
+    "v": 329.0,
+    "u_from": "front edge",
+    "v_from": "panel bottom edge",
+    "face": "inner",
+    "runner_line_v": 323.0
+   },
+   "dia": 2.5,
+   "depth": 10,
+   "note": "screw height approximate - place the runner bottom on runner_line_v and drill through the runner holes",
+   "verify": true
+  },
+  {
+   "id": "f0069",
+   "cabinet": "P2",
+   "kind": "runner-screw",
+   "hardware": "450.5001B + screws 4x15",
+   "part": {
+    "id": "p0081",
+    "name": "P2 Bok L 702x505"
+   },
+   "face": "y+",
+   "world": {
+    "p": [
+     1623.0,
+     -1532.0,
+     458.0
+    ],
+    "dir": [
+     0,
+     -1,
+     0
+    ]
+   },
+   "local": {
+    "u": 293,
+    "v": 329.0,
+    "u_from": "front edge",
+    "v_from": "panel bottom edge",
+    "face": "inner",
+    "runner_line_v": 323.0
+   },
+   "dia": 2.5,
+   "depth": 10,
+   "note": "screw height approximate - place the runner bottom on runner_line_v and drill through the runner holes",
+   "verify": true
+  },
+  {
+   "id": "f0070",
+   "cabinet": "P2",
+   "kind": "runner-screw",
+   "hardware": "450.5001B + screws 4x15",
+   "part": {
+    "id": "p0082",
+    "name": "P2 Bok P 702x505"
+   },
+   "face": "y-",
+   "world": {
+    "p": [
+     1349.0,
+     -968.0,
+     458.0
+    ],
+    "dir": [
+     0,
+     1,
+     0
+    ]
+   },
+   "local": {
+    "u": 19,
+    "v": 329.0,
+    "u_from": "front edge",
+    "v_from": "panel bottom edge",
+    "face": "inner",
+    "runner_line_v": 323.0
+   },
+   "dia": 2.5,
+   "depth": 10,
+   "note": "screw height approximate - place the runner bottom on runner_line_v and drill through the runner holes",
+   "verify": true
+  },
+  {
+   "id": "f0071",
+   "cabinet": "P2",
+   "kind": "runner-screw",
+   "hardware": "450.5001B + screws 4x15",
+   "part": {
+    "id": "p0082",
+    "name": "P2 Bok P 702x505"
+   },
+   "face": "y-",
+   "world": {
+    "p": [
+     1367.0,
+     -968.0,
+     458.0
+    ],
+    "dir": [
+     0,
+     1,
+     0
+    ]
+   },
+   "local": {
+    "u": 37,
+    "v": 329.0,
+    "u_from": "front edge",
+    "v_from": "panel bottom edge",
+    "face": "inner",
+    "runner_line_v": 323.0
+   },
+   "dia": 2.5,
+   "depth": 10,
+   "note": "screw height approximate - place the runner bottom on runner_line_v and drill through the runner holes",
+   "verify": true
+  },
+  {
+   "id": "f0072",
+   "cabinet": "P2",
+   "kind": "runner-screw",
+   "hardware": "450.5001B + screws 4x15",
+   "part": {
+    "id": "p0082",
+    "name": "P2 Bok P 702x505"
+   },
+   "face": "y-",
+   "world": {
+    "p": [
+     1399.0,
+     -968.0,
+     458.0
+    ],
+    "dir": [
+     0,
+     1,
+     0
+    ]
+   },
+   "local": {
+    "u": 69,
+    "v": 329.0,
+    "u_from": "front edge",
+    "v_from": "panel bottom edge",
+    "face": "inner",
+    "runner_line_v": 323.0
+   },
+   "dia": 2.5,
+   "depth": 10,
+   "note": "screw height approximate - place the runner bottom on runner_line_v and drill through the runner holes",
+   "verify": true
+  },
+  {
+   "id": "f0073",
+   "cabinet": "P2",
+   "kind": "runner-screw",
+   "hardware": "450.5001B + screws 4x15",
+   "part": {
+    "id": "p0082",
+    "name": "P2 Bok P 702x505"
+   },
+   "face": "y-",
+   "world": {
+    "p": [
+     1591.0,
+     -968.0,
+     458.0
+    ],
+    "dir": [
+     0,
+     1,
+     0
+    ]
+   },
+   "local": {
+    "u": 261,
+    "v": 329.0,
+    "u_from": "front edge",
+    "v_from": "panel bottom edge",
+    "face": "inner",
+    "runner_line_v": 323.0
+   },
+   "dia": 2.5,
+   "depth": 10,
+   "note": "screw height approximate - place the runner bottom on runner_line_v and drill through the runner holes",
+   "verify": true
+  },
+  {
+   "id": "f0074",
+   "cabinet": "P2",
+   "kind": "runner-screw",
+   "hardware": "450.5001B + screws 4x15",
+   "part": {
+    "id": "p0082",
+    "name": "P2 Bok P 702x505"
+   },
+   "face": "y-",
+   "world": {
+    "p": [
+     1623.0,
+     -968.0,
+     458.0
+    ],
+    "dir": [
+     0,
+     1,
+     0
+    ]
+   },
+   "local": {
+    "u": 293,
+    "v": 329.0,
+    "u_from": "front edge",
+    "v_from": "panel bottom edge",
+    "face": "inner",
+    "runner_line_v": 323.0
+   },
+   "dia": 2.5,
+   "depth": 10,
+   "note": "screw height approximate - place the runner bottom on runner_line_v and drill through the runner holes",
+   "verify": true
+  },
+  {
+   "id": "f0075",
+   "cabinet": "P2",
+   "kind": "front-fixing",
+   "hardware": "ZF4.10I2 (INSERTA)",
+   "part": {
+    "id": "p0088",
+    "name": "P2 Szuflada gorna (M, sztucce) 596x140"
+   },
+   "face": "x+",
+   "world": {
+    "p": [
+     1330.0,
+     -988.5,
+     738.5
+    ],
+    "dir": [
+     -1,
+     0,
+     0
+    ]
+   },
+   "local": {
+    "u": 36.5,
+    "v": 49.5,
+    "u_from": "left edge (viewed from the front)",
+    "v_from": "front bottom edge",
+    "face": "back"
+   },
+   "dia": 10,
+   "depth": 12,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0076",
+   "cabinet": "P2",
+   "kind": "front-fixing",
+   "hardware": "ZF4.10I2 (INSERTA)",
+   "part": {
+    "id": "p0088",
+    "name": "P2 Szuflada gorna (M, sztucce) 596x140"
+   },
+   "face": "x+",
+   "world": {
+    "p": [
+     1330.0,
+     -1511.5,
+     738.5
+    ],
+    "dir": [
+     -1,
+     0,
+     0
+    ]
+   },
+   "local": {
+    "u": 559.5,
+    "v": 49.5,
+    "u_from": "left edge (viewed from the front)",
+    "v_from": "front bottom edge",
+    "face": "back"
+   },
+   "dia": 10,
+   "depth": 12,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0077",
+   "cabinet": "P2",
+   "kind": "front-fixing",
+   "hardware": "ZF4.10I2 (INSERTA)",
+   "part": {
+    "id": "p0088",
+    "name": "P2 Szuflada gorna (M, sztucce) 596x140"
+   },
+   "face": "x+",
+   "world": {
+    "p": [
+     1330.0,
+     -988.5,
+     770.5
+    ],
+    "dir": [
+     -1,
+     0,
+     0
+    ]
+   },
+   "local": {
+    "u": 36.5,
+    "v": 81.5,
+    "u_from": "left edge (viewed from the front)",
+    "v_from": "front bottom edge",
+    "face": "back"
+   },
+   "dia": 10,
+   "depth": 12,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0078",
+   "cabinet": "P2",
+   "kind": "front-fixing",
+   "hardware": "ZF4.10I2 (INSERTA)",
+   "part": {
+    "id": "p0088",
+    "name": "P2 Szuflada gorna (M, sztucce) 596x140"
+   },
+   "face": "x+",
+   "world": {
+    "p": [
+     1330.0,
+     -1511.5,
+     770.5
+    ],
+    "dir": [
+     -1,
+     0,
+     0
+    ]
+   },
+   "local": {
+    "u": 559.5,
+    "v": 81.5,
+    "u_from": "left edge (viewed from the front)",
+    "v_from": "front bottom edge",
+    "face": "back"
+   },
+   "dia": 10,
+   "depth": 12,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0079",
+   "cabinet": "P2",
+   "kind": "front-stabiliser",
+   "hardware": "Z96.10E1",
+   "part": {
+    "id": "p0088",
+    "name": "P2 Szuflada gorna (M, sztucce) 596x140"
+   },
+   "face": "x+",
+   "world": {
+    "p": [
+     1330.0,
+     -1234.0,
+     723.5
+    ],
+    "dir": [
+     -1,
+     0,
+     0
+    ]
+   },
+   "local": {
+    "u": 282.0,
+    "v": 34.5,
+    "u_from": "left edge (viewed from the front)",
+    "v_from": "front bottom edge",
+    "face": "back"
+   },
+   "dia": 10,
+   "depth": 12,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0080",
+   "cabinet": "P2",
+   "kind": "front-stabiliser",
+   "hardware": "Z96.10E1",
+   "part": {
+    "id": "p0088",
+    "name": "P2 Szuflada gorna (M, sztucce) 596x140"
+   },
+   "face": "x+",
+   "world": {
+    "p": [
+     1330.0,
+     -1266.0,
+     723.5
+    ],
+    "dir": [
+     -1,
+     0,
+     0
+    ]
+   },
+   "local": {
+    "u": 314.0,
+    "v": 34.5,
+    "u_from": "left edge (viewed from the front)",
+    "v_from": "front bottom edge",
+    "face": "back"
+   },
+   "dia": 10,
+   "depth": 12,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0081",
+   "cabinet": "P2",
+   "kind": "runner-screw",
+   "hardware": "450.5001B + screws 4x15",
+   "part": {
+    "id": "p0081",
+    "name": "P2 Bok L 702x505"
+   },
+   "face": "y+",
+   "world": {
+    "p": [
+     1349.0,
+     -1532.0,
+     711.0
+    ],
+    "dir": [
+     0,
+     -1,
+     0
+    ]
+   },
+   "local": {
+    "u": 19,
+    "v": 582.0,
+    "u_from": "front edge",
+    "v_from": "panel bottom edge",
+    "face": "inner",
+    "runner_line_v": 576.0
+   },
+   "dia": 2.5,
+   "depth": 10,
+   "note": "screw height approximate - place the runner bottom on runner_line_v and drill through the runner holes",
+   "verify": true
+  },
+  {
+   "id": "f0082",
+   "cabinet": "P2",
+   "kind": "runner-screw",
+   "hardware": "450.5001B + screws 4x15",
+   "part": {
+    "id": "p0081",
+    "name": "P2 Bok L 702x505"
+   },
+   "face": "y+",
+   "world": {
+    "p": [
+     1367.0,
+     -1532.0,
+     711.0
+    ],
+    "dir": [
+     0,
+     -1,
+     0
+    ]
+   },
+   "local": {
+    "u": 37,
+    "v": 582.0,
+    "u_from": "front edge",
+    "v_from": "panel bottom edge",
+    "face": "inner",
+    "runner_line_v": 576.0
+   },
+   "dia": 2.5,
+   "depth": 10,
+   "note": "screw height approximate - place the runner bottom on runner_line_v and drill through the runner holes",
+   "verify": true
+  },
+  {
+   "id": "f0083",
+   "cabinet": "P2",
+   "kind": "runner-screw",
+   "hardware": "450.5001B + screws 4x15",
+   "part": {
+    "id": "p0081",
+    "name": "P2 Bok L 702x505"
+   },
+   "face": "y+",
+   "world": {
+    "p": [
+     1399.0,
+     -1532.0,
+     711.0
+    ],
+    "dir": [
+     0,
+     -1,
+     0
+    ]
+   },
+   "local": {
+    "u": 69,
+    "v": 582.0,
+    "u_from": "front edge",
+    "v_from": "panel bottom edge",
+    "face": "inner",
+    "runner_line_v": 576.0
+   },
+   "dia": 2.5,
+   "depth": 10,
+   "note": "screw height approximate - place the runner bottom on runner_line_v and drill through the runner holes",
+   "verify": true
+  },
+  {
+   "id": "f0084",
+   "cabinet": "P2",
+   "kind": "runner-screw",
+   "hardware": "450.5001B + screws 4x15",
+   "part": {
+    "id": "p0081",
+    "name": "P2 Bok L 702x505"
+   },
+   "face": "y+",
+   "world": {
+    "p": [
+     1591.0,
+     -1532.0,
+     711.0
+    ],
+    "dir": [
+     0,
+     -1,
+     0
+    ]
+   },
+   "local": {
+    "u": 261,
+    "v": 582.0,
+    "u_from": "front edge",
+    "v_from": "panel bottom edge",
+    "face": "inner",
+    "runner_line_v": 576.0
+   },
+   "dia": 2.5,
+   "depth": 10,
+   "note": "screw height approximate - place the runner bottom on runner_line_v and drill through the runner holes",
+   "verify": true
+  },
+  {
+   "id": "f0085",
+   "cabinet": "P2",
+   "kind": "runner-screw",
+   "hardware": "450.5001B + screws 4x15",
+   "part": {
+    "id": "p0081",
+    "name": "P2 Bok L 702x505"
+   },
+   "face": "y+",
+   "world": {
+    "p": [
+     1623.0,
+     -1532.0,
+     711.0
+    ],
+    "dir": [
+     0,
+     -1,
+     0
+    ]
+   },
+   "local": {
+    "u": 293,
+    "v": 582.0,
+    "u_from": "front edge",
+    "v_from": "panel bottom edge",
+    "face": "inner",
+    "runner_line_v": 576.0
+   },
+   "dia": 2.5,
+   "depth": 10,
+   "note": "screw height approximate - place the runner bottom on runner_line_v and drill through the runner holes",
+   "verify": true
+  },
+  {
+   "id": "f0086",
+   "cabinet": "P2",
+   "kind": "runner-screw",
+   "hardware": "450.5001B + screws 4x15",
+   "part": {
+    "id": "p0082",
+    "name": "P2 Bok P 702x505"
+   },
+   "face": "y-",
+   "world": {
+    "p": [
+     1349.0,
+     -968.0,
+     711.0
+    ],
+    "dir": [
+     0,
+     1,
+     0
+    ]
+   },
+   "local": {
+    "u": 19,
+    "v": 582.0,
+    "u_from": "front edge",
+    "v_from": "panel bottom edge",
+    "face": "inner",
+    "runner_line_v": 576.0
+   },
+   "dia": 2.5,
+   "depth": 10,
+   "note": "screw height approximate - place the runner bottom on runner_line_v and drill through the runner holes",
+   "verify": true
+  },
+  {
+   "id": "f0087",
+   "cabinet": "P2",
+   "kind": "runner-screw",
+   "hardware": "450.5001B + screws 4x15",
+   "part": {
+    "id": "p0082",
+    "name": "P2 Bok P 702x505"
+   },
+   "face": "y-",
+   "world": {
+    "p": [
+     1367.0,
+     -968.0,
+     711.0
+    ],
+    "dir": [
+     0,
+     1,
+     0
+    ]
+   },
+   "local": {
+    "u": 37,
+    "v": 582.0,
+    "u_from": "front edge",
+    "v_from": "panel bottom edge",
+    "face": "inner",
+    "runner_line_v": 576.0
+   },
+   "dia": 2.5,
+   "depth": 10,
+   "note": "screw height approximate - place the runner bottom on runner_line_v and drill through the runner holes",
+   "verify": true
+  },
+  {
+   "id": "f0088",
+   "cabinet": "P2",
+   "kind": "runner-screw",
+   "hardware": "450.5001B + screws 4x15",
+   "part": {
+    "id": "p0082",
+    "name": "P2 Bok P 702x505"
+   },
+   "face": "y-",
+   "world": {
+    "p": [
+     1399.0,
+     -968.0,
+     711.0
+    ],
+    "dir": [
+     0,
+     1,
+     0
+    ]
+   },
+   "local": {
+    "u": 69,
+    "v": 582.0,
+    "u_from": "front edge",
+    "v_from": "panel bottom edge",
+    "face": "inner",
+    "runner_line_v": 576.0
+   },
+   "dia": 2.5,
+   "depth": 10,
+   "note": "screw height approximate - place the runner bottom on runner_line_v and drill through the runner holes",
+   "verify": true
+  },
+  {
+   "id": "f0089",
+   "cabinet": "P2",
+   "kind": "runner-screw",
+   "hardware": "450.5001B + screws 4x15",
+   "part": {
+    "id": "p0082",
+    "name": "P2 Bok P 702x505"
+   },
+   "face": "y-",
+   "world": {
+    "p": [
+     1591.0,
+     -968.0,
+     711.0
+    ],
+    "dir": [
+     0,
+     1,
+     0
+    ]
+   },
+   "local": {
+    "u": 261,
+    "v": 582.0,
+    "u_from": "front edge",
+    "v_from": "panel bottom edge",
+    "face": "inner",
+    "runner_line_v": 576.0
+   },
+   "dia": 2.5,
+   "depth": 10,
+   "note": "screw height approximate - place the runner bottom on runner_line_v and drill through the runner holes",
+   "verify": true
+  },
+  {
+   "id": "f0090",
+   "cabinet": "P2",
+   "kind": "runner-screw",
+   "hardware": "450.5001B + screws 4x15",
+   "part": {
+    "id": "p0082",
+    "name": "P2 Bok P 702x505"
+   },
+   "face": "y-",
+   "world": {
+    "p": [
+     1623.0,
+     -968.0,
+     711.0
+    ],
+    "dir": [
+     0,
+     1,
+     0
+    ]
+   },
+   "local": {
+    "u": 293,
+    "v": 582.0,
+    "u_from": "front edge",
+    "v_from": "panel bottom edge",
+    "face": "inner",
+    "runner_line_v": 576.0
+   },
+   "dia": 2.5,
+   "depth": 10,
+   "note": "screw height approximate - place the runner bottom on runner_line_v and drill through the runner holes",
+   "verify": true
+  },
+  {
+   "id": "f0091",
+   "cabinet": "P3",
+   "kind": "front-fixing",
+   "hardware": "ZF4.10I2 (INSERTA)",
+   "part": {
+    "id": "p0126",
+    "name": "P3 Szuflada dolna (E + galeria) 496x320"
+   },
+   "face": "x+",
+   "world": {
+    "p": [
+     1330.0,
+     -1588.5,
+     162.5
+    ],
+    "dir": [
+     -1,
+     0,
+     0
+    ]
+   },
+   "local": {
+    "u": 36.5,
+    "v": 49.5,
+    "u_from": "left edge (viewed from the front)",
+    "v_from": "front bottom edge",
+    "face": "back"
+   },
+   "dia": 10,
+   "depth": 12,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0092",
+   "cabinet": "P3",
+   "kind": "front-fixing",
+   "hardware": "ZF4.10I2 (INSERTA)",
+   "part": {
+    "id": "p0126",
+    "name": "P3 Szuflada dolna (E + galeria) 496x320"
+   },
+   "face": "x+",
+   "world": {
+    "p": [
+     1330.0,
+     -2011.5,
+     162.5
+    ],
+    "dir": [
+     -1,
+     0,
+     0
+    ]
+   },
+   "local": {
+    "u": 459.5,
+    "v": 49.5,
+    "u_from": "left edge (viewed from the front)",
+    "v_from": "front bottom edge",
+    "face": "back"
+   },
+   "dia": 10,
+   "depth": 12,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0093",
+   "cabinet": "P3",
+   "kind": "front-fixing",
+   "hardware": "ZF4.10I2 (INSERTA)",
+   "part": {
+    "id": "p0126",
+    "name": "P3 Szuflada dolna (E + galeria) 496x320"
+   },
+   "face": "x+",
+   "world": {
+    "p": [
+     1330.0,
+     -1588.5,
+     194.5
+    ],
+    "dir": [
+     -1,
+     0,
+     0
+    ]
+   },
+   "local": {
+    "u": 36.5,
+    "v": 81.5,
+    "u_from": "left edge (viewed from the front)",
+    "v_from": "front bottom edge",
+    "face": "back"
+   },
+   "dia": 10,
+   "depth": 12,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0094",
+   "cabinet": "P3",
+   "kind": "front-fixing",
+   "hardware": "ZF4.10I2 (INSERTA)",
+   "part": {
+    "id": "p0126",
+    "name": "P3 Szuflada dolna (E + galeria) 496x320"
+   },
+   "face": "x+",
+   "world": {
+    "p": [
+     1330.0,
+     -2011.5,
+     194.5
+    ],
+    "dir": [
+     -1,
+     0,
+     0
+    ]
+   },
+   "local": {
+    "u": 459.5,
+    "v": 81.5,
+    "u_from": "left edge (viewed from the front)",
+    "v_from": "front bottom edge",
+    "face": "back"
+   },
+   "dia": 10,
+   "depth": 12,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0095",
+   "cabinet": "P3",
+   "kind": "front-fixing-top",
+   "hardware": "ZF4.50I2 (INSERTA, gallery rail)",
+   "part": {
+    "id": "p0126",
+    "name": "P3 Szuflada dolna (E + galeria) 496x320"
+   },
+   "face": "x+",
+   "world": {
+    "p": [
+     1330.0,
+     -1588.5,
+     322.5
+    ],
+    "dir": [
+     -1,
+     0,
+     0
+    ]
+   },
+   "local": {
+    "u": 36.5,
+    "v": 209.5,
+    "u_from": "left edge (viewed from the front)",
+    "v_from": "front bottom edge",
+    "face": "back"
+   },
+   "dia": 10,
+   "depth": 12,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0096",
+   "cabinet": "P3",
+   "kind": "front-fixing-top",
+   "hardware": "ZF4.50I2 (INSERTA, gallery rail)",
+   "part": {
+    "id": "p0126",
+    "name": "P3 Szuflada dolna (E + galeria) 496x320"
+   },
+   "face": "x+",
+   "world": {
+    "p": [
+     1330.0,
+     -2011.5,
+     322.5
+    ],
+    "dir": [
+     -1,
+     0,
+     0
+    ]
+   },
+   "local": {
+    "u": 459.5,
+    "v": 209.5,
+    "u_from": "left edge (viewed from the front)",
+    "v_from": "front bottom edge",
+    "face": "back"
+   },
+   "dia": 10,
+   "depth": 12,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0097",
+   "cabinet": "P3",
+   "kind": "front-stabiliser",
+   "hardware": "Z96.10E1",
+   "part": {
+    "id": "p0126",
+    "name": "P3 Szuflada dolna (E + galeria) 496x320"
+   },
+   "face": "x+",
+   "world": {
+    "p": [
+     1330.0,
+     -1784.0,
+     147.5
+    ],
+    "dir": [
+     -1,
+     0,
+     0
+    ]
+   },
+   "local": {
+    "u": 232.0,
+    "v": 34.5,
+    "u_from": "left edge (viewed from the front)",
+    "v_from": "front bottom edge",
+    "face": "back"
+   },
+   "dia": 10,
+   "depth": 12,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0098",
+   "cabinet": "P3",
+   "kind": "front-stabiliser",
+   "hardware": "Z96.10E1",
+   "part": {
+    "id": "p0126",
+    "name": "P3 Szuflada dolna (E + galeria) 496x320"
+   },
+   "face": "x+",
+   "world": {
+    "p": [
+     1330.0,
+     -1816.0,
+     147.5
+    ],
+    "dir": [
+     -1,
+     0,
+     0
+    ]
+   },
+   "local": {
+    "u": 264.0,
+    "v": 34.5,
+    "u_from": "left edge (viewed from the front)",
+    "v_from": "front bottom edge",
+    "face": "back"
+   },
+   "dia": 10,
+   "depth": 12,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0099",
+   "cabinet": "P3",
+   "kind": "runner-screw",
+   "hardware": "450.5001B + screws 4x15",
+   "part": {
+    "id": "p0121",
+    "name": "P3 Bok L 702x505"
+   },
+   "face": "y+",
+   "world": {
+    "p": [
+     1349.0,
+     -2032.0,
+     135.0
+    ],
+    "dir": [
+     0,
+     -1,
+     0
+    ]
+   },
+   "local": {
+    "u": 19,
+    "v": 6.0,
+    "u_from": "front edge",
+    "v_from": "panel bottom edge",
+    "face": "inner",
+    "runner_line_v": 0.0
+   },
+   "dia": 2.5,
+   "depth": 10,
+   "note": "screw height approximate - place the runner bottom on runner_line_v and drill through the runner holes",
+   "verify": true
+  },
+  {
+   "id": "f0100",
+   "cabinet": "P3",
+   "kind": "runner-screw",
+   "hardware": "450.5001B + screws 4x15",
+   "part": {
+    "id": "p0121",
+    "name": "P3 Bok L 702x505"
+   },
+   "face": "y+",
+   "world": {
+    "p": [
+     1367.0,
+     -2032.0,
+     135.0
+    ],
+    "dir": [
+     0,
+     -1,
+     0
+    ]
+   },
+   "local": {
+    "u": 37,
+    "v": 6.0,
+    "u_from": "front edge",
+    "v_from": "panel bottom edge",
+    "face": "inner",
+    "runner_line_v": 0.0
+   },
+   "dia": 2.5,
+   "depth": 10,
+   "note": "screw height approximate - place the runner bottom on runner_line_v and drill through the runner holes",
+   "verify": true
+  },
+  {
+   "id": "f0101",
+   "cabinet": "P3",
+   "kind": "runner-screw",
+   "hardware": "450.5001B + screws 4x15",
+   "part": {
+    "id": "p0121",
+    "name": "P3 Bok L 702x505"
+   },
+   "face": "y+",
+   "world": {
+    "p": [
+     1399.0,
+     -2032.0,
+     135.0
+    ],
+    "dir": [
+     0,
+     -1,
+     0
+    ]
+   },
+   "local": {
+    "u": 69,
+    "v": 6.0,
+    "u_from": "front edge",
+    "v_from": "panel bottom edge",
+    "face": "inner",
+    "runner_line_v": 0.0
+   },
+   "dia": 2.5,
+   "depth": 10,
+   "note": "screw height approximate - place the runner bottom on runner_line_v and drill through the runner holes",
+   "verify": true
+  },
+  {
+   "id": "f0102",
+   "cabinet": "P3",
+   "kind": "runner-screw",
+   "hardware": "450.5001B + screws 4x15",
+   "part": {
+    "id": "p0121",
+    "name": "P3 Bok L 702x505"
+   },
+   "face": "y+",
+   "world": {
+    "p": [
+     1591.0,
+     -2032.0,
+     135.0
+    ],
+    "dir": [
+     0,
+     -1,
+     0
+    ]
+   },
+   "local": {
+    "u": 261,
+    "v": 6.0,
+    "u_from": "front edge",
+    "v_from": "panel bottom edge",
+    "face": "inner",
+    "runner_line_v": 0.0
+   },
+   "dia": 2.5,
+   "depth": 10,
+   "note": "screw height approximate - place the runner bottom on runner_line_v and drill through the runner holes",
+   "verify": true
+  },
+  {
+   "id": "f0103",
+   "cabinet": "P3",
+   "kind": "runner-screw",
+   "hardware": "450.5001B + screws 4x15",
+   "part": {
+    "id": "p0121",
+    "name": "P3 Bok L 702x505"
+   },
+   "face": "y+",
+   "world": {
+    "p": [
+     1623.0,
+     -2032.0,
+     135.0
+    ],
+    "dir": [
+     0,
+     -1,
+     0
+    ]
+   },
+   "local": {
+    "u": 293,
+    "v": 6.0,
+    "u_from": "front edge",
+    "v_from": "panel bottom edge",
+    "face": "inner",
+    "runner_line_v": 0.0
+   },
+   "dia": 2.5,
+   "depth": 10,
+   "note": "screw height approximate - place the runner bottom on runner_line_v and drill through the runner holes",
+   "verify": true
+  },
+  {
+   "id": "f0104",
+   "cabinet": "P3",
+   "kind": "runner-screw",
+   "hardware": "450.5001B + screws 4x15",
+   "part": {
+    "id": "p0122",
+    "name": "P3 Bok P 702x505"
+   },
+   "face": "y-",
+   "world": {
+    "p": [
+     1349.0,
+     -1568.0,
+     135.0
+    ],
+    "dir": [
+     0,
+     1,
+     0
+    ]
+   },
+   "local": {
+    "u": 19,
+    "v": 6.0,
+    "u_from": "front edge",
+    "v_from": "panel bottom edge",
+    "face": "inner",
+    "runner_line_v": 0.0
+   },
+   "dia": 2.5,
+   "depth": 10,
+   "note": "screw height approximate - place the runner bottom on runner_line_v and drill through the runner holes",
+   "verify": true
+  },
+  {
+   "id": "f0105",
+   "cabinet": "P3",
+   "kind": "runner-screw",
+   "hardware": "450.5001B + screws 4x15",
+   "part": {
+    "id": "p0122",
+    "name": "P3 Bok P 702x505"
+   },
+   "face": "y-",
+   "world": {
+    "p": [
+     1367.0,
+     -1568.0,
+     135.0
+    ],
+    "dir": [
+     0,
+     1,
+     0
+    ]
+   },
+   "local": {
+    "u": 37,
+    "v": 6.0,
+    "u_from": "front edge",
+    "v_from": "panel bottom edge",
+    "face": "inner",
+    "runner_line_v": 0.0
+   },
+   "dia": 2.5,
+   "depth": 10,
+   "note": "screw height approximate - place the runner bottom on runner_line_v and drill through the runner holes",
+   "verify": true
+  },
+  {
+   "id": "f0106",
+   "cabinet": "P3",
+   "kind": "runner-screw",
+   "hardware": "450.5001B + screws 4x15",
+   "part": {
+    "id": "p0122",
+    "name": "P3 Bok P 702x505"
+   },
+   "face": "y-",
+   "world": {
+    "p": [
+     1399.0,
+     -1568.0,
+     135.0
+    ],
+    "dir": [
+     0,
+     1,
+     0
+    ]
+   },
+   "local": {
+    "u": 69,
+    "v": 6.0,
+    "u_from": "front edge",
+    "v_from": "panel bottom edge",
+    "face": "inner",
+    "runner_line_v": 0.0
+   },
+   "dia": 2.5,
+   "depth": 10,
+   "note": "screw height approximate - place the runner bottom on runner_line_v and drill through the runner holes",
+   "verify": true
+  },
+  {
+   "id": "f0107",
+   "cabinet": "P3",
+   "kind": "runner-screw",
+   "hardware": "450.5001B + screws 4x15",
+   "part": {
+    "id": "p0122",
+    "name": "P3 Bok P 702x505"
+   },
+   "face": "y-",
+   "world": {
+    "p": [
+     1591.0,
+     -1568.0,
+     135.0
+    ],
+    "dir": [
+     0,
+     1,
+     0
+    ]
+   },
+   "local": {
+    "u": 261,
+    "v": 6.0,
+    "u_from": "front edge",
+    "v_from": "panel bottom edge",
+    "face": "inner",
+    "runner_line_v": 0.0
+   },
+   "dia": 2.5,
+   "depth": 10,
+   "note": "screw height approximate - place the runner bottom on runner_line_v and drill through the runner holes",
+   "verify": true
+  },
+  {
+   "id": "f0108",
+   "cabinet": "P3",
+   "kind": "runner-screw",
+   "hardware": "450.5001B + screws 4x15",
+   "part": {
+    "id": "p0122",
+    "name": "P3 Bok P 702x505"
+   },
+   "face": "y-",
+   "world": {
+    "p": [
+     1623.0,
+     -1568.0,
+     135.0
+    ],
+    "dir": [
+     0,
+     1,
+     0
+    ]
+   },
+   "local": {
+    "u": 293,
+    "v": 6.0,
+    "u_from": "front edge",
+    "v_from": "panel bottom edge",
+    "face": "inner",
+    "runner_line_v": 0.0
+   },
+   "dia": 2.5,
+   "depth": 10,
+   "note": "screw height approximate - place the runner bottom on runner_line_v and drill through the runner holes",
+   "verify": true
+  },
+  {
+   "id": "f0109",
+   "cabinet": "P3",
+   "kind": "front-fixing",
+   "hardware": "ZF4.10I2 (INSERTA)",
+   "part": {
+    "id": "p0127",
+    "name": "P3 Szuflada srodkowa (K) 496x250"
+   },
+   "face": "x+",
+   "world": {
+    "p": [
+     1330.0,
+     -1588.5,
+     485.5
+    ],
+    "dir": [
+     -1,
+     0,
+     0
+    ]
+   },
+   "local": {
+    "u": 36.5,
+    "v": 49.5,
+    "u_from": "left edge (viewed from the front)",
+    "v_from": "front bottom edge",
+    "face": "back"
+   },
+   "dia": 10,
+   "depth": 12,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0110",
+   "cabinet": "P3",
+   "kind": "front-fixing",
+   "hardware": "ZF4.10I2 (INSERTA)",
+   "part": {
+    "id": "p0127",
+    "name": "P3 Szuflada srodkowa (K) 496x250"
+   },
+   "face": "x+",
+   "world": {
+    "p": [
+     1330.0,
+     -2011.5,
+     485.5
+    ],
+    "dir": [
+     -1,
+     0,
+     0
+    ]
+   },
+   "local": {
+    "u": 459.5,
+    "v": 49.5,
+    "u_from": "left edge (viewed from the front)",
+    "v_from": "front bottom edge",
+    "face": "back"
+   },
+   "dia": 10,
+   "depth": 12,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0111",
+   "cabinet": "P3",
+   "kind": "front-fixing",
+   "hardware": "ZF4.10I2 (INSERTA)",
+   "part": {
+    "id": "p0127",
+    "name": "P3 Szuflada srodkowa (K) 496x250"
+   },
+   "face": "x+",
+   "world": {
+    "p": [
+     1330.0,
+     -1588.5,
+     517.5
+    ],
+    "dir": [
+     -1,
+     0,
+     0
+    ]
+   },
+   "local": {
+    "u": 36.5,
+    "v": 81.5,
+    "u_from": "left edge (viewed from the front)",
+    "v_from": "front bottom edge",
+    "face": "back"
+   },
+   "dia": 10,
+   "depth": 12,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0112",
+   "cabinet": "P3",
+   "kind": "front-fixing",
+   "hardware": "ZF4.10I2 (INSERTA)",
+   "part": {
+    "id": "p0127",
+    "name": "P3 Szuflada srodkowa (K) 496x250"
+   },
+   "face": "x+",
+   "world": {
+    "p": [
+     1330.0,
+     -2011.5,
+     517.5
+    ],
+    "dir": [
+     -1,
+     0,
+     0
+    ]
+   },
+   "local": {
+    "u": 459.5,
+    "v": 81.5,
+    "u_from": "left edge (viewed from the front)",
+    "v_from": "front bottom edge",
+    "face": "back"
+   },
+   "dia": 10,
+   "depth": 12,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0113",
+   "cabinet": "P3",
+   "kind": "front-stabiliser",
+   "hardware": "Z96.10E1",
+   "part": {
+    "id": "p0127",
+    "name": "P3 Szuflada srodkowa (K) 496x250"
+   },
+   "face": "x+",
+   "world": {
+    "p": [
+     1330.0,
+     -1784.0,
+     470.5
+    ],
+    "dir": [
+     -1,
+     0,
+     0
+    ]
+   },
+   "local": {
+    "u": 232.0,
+    "v": 34.5,
+    "u_from": "left edge (viewed from the front)",
+    "v_from": "front bottom edge",
+    "face": "back"
+   },
+   "dia": 10,
+   "depth": 12,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0114",
+   "cabinet": "P3",
+   "kind": "front-stabiliser",
+   "hardware": "Z96.10E1",
+   "part": {
+    "id": "p0127",
+    "name": "P3 Szuflada srodkowa (K) 496x250"
+   },
+   "face": "x+",
+   "world": {
+    "p": [
+     1330.0,
+     -1816.0,
+     470.5
+    ],
+    "dir": [
+     -1,
+     0,
+     0
+    ]
+   },
+   "local": {
+    "u": 264.0,
+    "v": 34.5,
+    "u_from": "left edge (viewed from the front)",
+    "v_from": "front bottom edge",
+    "face": "back"
+   },
+   "dia": 10,
+   "depth": 12,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0115",
+   "cabinet": "P3",
+   "kind": "runner-screw",
+   "hardware": "450.5001B + screws 4x15",
+   "part": {
+    "id": "p0121",
+    "name": "P3 Bok L 702x505"
+   },
+   "face": "y+",
+   "world": {
+    "p": [
+     1349.0,
+     -2032.0,
+     458.0
+    ],
+    "dir": [
+     0,
+     -1,
+     0
+    ]
+   },
+   "local": {
+    "u": 19,
+    "v": 329.0,
+    "u_from": "front edge",
+    "v_from": "panel bottom edge",
+    "face": "inner",
+    "runner_line_v": 323.0
+   },
+   "dia": 2.5,
+   "depth": 10,
+   "note": "screw height approximate - place the runner bottom on runner_line_v and drill through the runner holes",
+   "verify": true
+  },
+  {
+   "id": "f0116",
+   "cabinet": "P3",
+   "kind": "runner-screw",
+   "hardware": "450.5001B + screws 4x15",
+   "part": {
+    "id": "p0121",
+    "name": "P3 Bok L 702x505"
+   },
+   "face": "y+",
+   "world": {
+    "p": [
+     1367.0,
+     -2032.0,
+     458.0
+    ],
+    "dir": [
+     0,
+     -1,
+     0
+    ]
+   },
+   "local": {
+    "u": 37,
+    "v": 329.0,
+    "u_from": "front edge",
+    "v_from": "panel bottom edge",
+    "face": "inner",
+    "runner_line_v": 323.0
+   },
+   "dia": 2.5,
+   "depth": 10,
+   "note": "screw height approximate - place the runner bottom on runner_line_v and drill through the runner holes",
+   "verify": true
+  },
+  {
+   "id": "f0117",
+   "cabinet": "P3",
+   "kind": "runner-screw",
+   "hardware": "450.5001B + screws 4x15",
+   "part": {
+    "id": "p0121",
+    "name": "P3 Bok L 702x505"
+   },
+   "face": "y+",
+   "world": {
+    "p": [
+     1399.0,
+     -2032.0,
+     458.0
+    ],
+    "dir": [
+     0,
+     -1,
+     0
+    ]
+   },
+   "local": {
+    "u": 69,
+    "v": 329.0,
+    "u_from": "front edge",
+    "v_from": "panel bottom edge",
+    "face": "inner",
+    "runner_line_v": 323.0
+   },
+   "dia": 2.5,
+   "depth": 10,
+   "note": "screw height approximate - place the runner bottom on runner_line_v and drill through the runner holes",
+   "verify": true
+  },
+  {
+   "id": "f0118",
+   "cabinet": "P3",
+   "kind": "runner-screw",
+   "hardware": "450.5001B + screws 4x15",
+   "part": {
+    "id": "p0121",
+    "name": "P3 Bok L 702x505"
+   },
+   "face": "y+",
+   "world": {
+    "p": [
+     1591.0,
+     -2032.0,
+     458.0
+    ],
+    "dir": [
+     0,
+     -1,
+     0
+    ]
+   },
+   "local": {
+    "u": 261,
+    "v": 329.0,
+    "u_from": "front edge",
+    "v_from": "panel bottom edge",
+    "face": "inner",
+    "runner_line_v": 323.0
+   },
+   "dia": 2.5,
+   "depth": 10,
+   "note": "screw height approximate - place the runner bottom on runner_line_v and drill through the runner holes",
+   "verify": true
+  },
+  {
+   "id": "f0119",
+   "cabinet": "P3",
+   "kind": "runner-screw",
+   "hardware": "450.5001B + screws 4x15",
+   "part": {
+    "id": "p0121",
+    "name": "P3 Bok L 702x505"
+   },
+   "face": "y+",
+   "world": {
+    "p": [
+     1623.0,
+     -2032.0,
+     458.0
+    ],
+    "dir": [
+     0,
+     -1,
+     0
+    ]
+   },
+   "local": {
+    "u": 293,
+    "v": 329.0,
+    "u_from": "front edge",
+    "v_from": "panel bottom edge",
+    "face": "inner",
+    "runner_line_v": 323.0
+   },
+   "dia": 2.5,
+   "depth": 10,
+   "note": "screw height approximate - place the runner bottom on runner_line_v and drill through the runner holes",
+   "verify": true
+  },
+  {
+   "id": "f0120",
+   "cabinet": "P3",
+   "kind": "runner-screw",
+   "hardware": "450.5001B + screws 4x15",
+   "part": {
+    "id": "p0122",
+    "name": "P3 Bok P 702x505"
+   },
+   "face": "y-",
+   "world": {
+    "p": [
+     1349.0,
+     -1568.0,
+     458.0
+    ],
+    "dir": [
+     0,
+     1,
+     0
+    ]
+   },
+   "local": {
+    "u": 19,
+    "v": 329.0,
+    "u_from": "front edge",
+    "v_from": "panel bottom edge",
+    "face": "inner",
+    "runner_line_v": 323.0
+   },
+   "dia": 2.5,
+   "depth": 10,
+   "note": "screw height approximate - place the runner bottom on runner_line_v and drill through the runner holes",
+   "verify": true
+  },
+  {
+   "id": "f0121",
+   "cabinet": "P3",
+   "kind": "runner-screw",
+   "hardware": "450.5001B + screws 4x15",
+   "part": {
+    "id": "p0122",
+    "name": "P3 Bok P 702x505"
+   },
+   "face": "y-",
+   "world": {
+    "p": [
+     1367.0,
+     -1568.0,
+     458.0
+    ],
+    "dir": [
+     0,
+     1,
+     0
+    ]
+   },
+   "local": {
+    "u": 37,
+    "v": 329.0,
+    "u_from": "front edge",
+    "v_from": "panel bottom edge",
+    "face": "inner",
+    "runner_line_v": 323.0
+   },
+   "dia": 2.5,
+   "depth": 10,
+   "note": "screw height approximate - place the runner bottom on runner_line_v and drill through the runner holes",
+   "verify": true
+  },
+  {
+   "id": "f0122",
+   "cabinet": "P3",
+   "kind": "runner-screw",
+   "hardware": "450.5001B + screws 4x15",
+   "part": {
+    "id": "p0122",
+    "name": "P3 Bok P 702x505"
+   },
+   "face": "y-",
+   "world": {
+    "p": [
+     1399.0,
+     -1568.0,
+     458.0
+    ],
+    "dir": [
+     0,
+     1,
+     0
+    ]
+   },
+   "local": {
+    "u": 69,
+    "v": 329.0,
+    "u_from": "front edge",
+    "v_from": "panel bottom edge",
+    "face": "inner",
+    "runner_line_v": 323.0
+   },
+   "dia": 2.5,
+   "depth": 10,
+   "note": "screw height approximate - place the runner bottom on runner_line_v and drill through the runner holes",
+   "verify": true
+  },
+  {
+   "id": "f0123",
+   "cabinet": "P3",
+   "kind": "runner-screw",
+   "hardware": "450.5001B + screws 4x15",
+   "part": {
+    "id": "p0122",
+    "name": "P3 Bok P 702x505"
+   },
+   "face": "y-",
+   "world": {
+    "p": [
+     1591.0,
+     -1568.0,
+     458.0
+    ],
+    "dir": [
+     0,
+     1,
+     0
+    ]
+   },
+   "local": {
+    "u": 261,
+    "v": 329.0,
+    "u_from": "front edge",
+    "v_from": "panel bottom edge",
+    "face": "inner",
+    "runner_line_v": 323.0
+   },
+   "dia": 2.5,
+   "depth": 10,
+   "note": "screw height approximate - place the runner bottom on runner_line_v and drill through the runner holes",
+   "verify": true
+  },
+  {
+   "id": "f0124",
+   "cabinet": "P3",
+   "kind": "runner-screw",
+   "hardware": "450.5001B + screws 4x15",
+   "part": {
+    "id": "p0122",
+    "name": "P3 Bok P 702x505"
+   },
+   "face": "y-",
+   "world": {
+    "p": [
+     1623.0,
+     -1568.0,
+     458.0
+    ],
+    "dir": [
+     0,
+     1,
+     0
+    ]
+   },
+   "local": {
+    "u": 293,
+    "v": 329.0,
+    "u_from": "front edge",
+    "v_from": "panel bottom edge",
+    "face": "inner",
+    "runner_line_v": 323.0
+   },
+   "dia": 2.5,
+   "depth": 10,
+   "note": "screw height approximate - place the runner bottom on runner_line_v and drill through the runner holes",
+   "verify": true
+  },
+  {
+   "id": "f0125",
+   "cabinet": "P3",
+   "kind": "front-fixing",
+   "hardware": "ZF4.10I2 (INSERTA)",
+   "part": {
+    "id": "p0128",
+    "name": "P3 Szuflada gorna (M, sztucce) 496x140"
+   },
+   "face": "x+",
+   "world": {
+    "p": [
+     1330.0,
+     -1588.5,
+     738.5
+    ],
+    "dir": [
+     -1,
+     0,
+     0
+    ]
+   },
+   "local": {
+    "u": 36.5,
+    "v": 49.5,
+    "u_from": "left edge (viewed from the front)",
+    "v_from": "front bottom edge",
+    "face": "back"
+   },
+   "dia": 10,
+   "depth": 12,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0126",
+   "cabinet": "P3",
+   "kind": "front-fixing",
+   "hardware": "ZF4.10I2 (INSERTA)",
+   "part": {
+    "id": "p0128",
+    "name": "P3 Szuflada gorna (M, sztucce) 496x140"
+   },
+   "face": "x+",
+   "world": {
+    "p": [
+     1330.0,
+     -2011.5,
+     738.5
+    ],
+    "dir": [
+     -1,
+     0,
+     0
+    ]
+   },
+   "local": {
+    "u": 459.5,
+    "v": 49.5,
+    "u_from": "left edge (viewed from the front)",
+    "v_from": "front bottom edge",
+    "face": "back"
+   },
+   "dia": 10,
+   "depth": 12,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0127",
+   "cabinet": "P3",
+   "kind": "front-fixing",
+   "hardware": "ZF4.10I2 (INSERTA)",
+   "part": {
+    "id": "p0128",
+    "name": "P3 Szuflada gorna (M, sztucce) 496x140"
+   },
+   "face": "x+",
+   "world": {
+    "p": [
+     1330.0,
+     -1588.5,
+     770.5
+    ],
+    "dir": [
+     -1,
+     0,
+     0
+    ]
+   },
+   "local": {
+    "u": 36.5,
+    "v": 81.5,
+    "u_from": "left edge (viewed from the front)",
+    "v_from": "front bottom edge",
+    "face": "back"
+   },
+   "dia": 10,
+   "depth": 12,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0128",
+   "cabinet": "P3",
+   "kind": "front-fixing",
+   "hardware": "ZF4.10I2 (INSERTA)",
+   "part": {
+    "id": "p0128",
+    "name": "P3 Szuflada gorna (M, sztucce) 496x140"
+   },
+   "face": "x+",
+   "world": {
+    "p": [
+     1330.0,
+     -2011.5,
+     770.5
+    ],
+    "dir": [
+     -1,
+     0,
+     0
+    ]
+   },
+   "local": {
+    "u": 459.5,
+    "v": 81.5,
+    "u_from": "left edge (viewed from the front)",
+    "v_from": "front bottom edge",
+    "face": "back"
+   },
+   "dia": 10,
+   "depth": 12,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0129",
+   "cabinet": "P3",
+   "kind": "front-stabiliser",
+   "hardware": "Z96.10E1",
+   "part": {
+    "id": "p0128",
+    "name": "P3 Szuflada gorna (M, sztucce) 496x140"
+   },
+   "face": "x+",
+   "world": {
+    "p": [
+     1330.0,
+     -1784.0,
+     723.5
+    ],
+    "dir": [
+     -1,
+     0,
+     0
+    ]
+   },
+   "local": {
+    "u": 232.0,
+    "v": 34.5,
+    "u_from": "left edge (viewed from the front)",
+    "v_from": "front bottom edge",
+    "face": "back"
+   },
+   "dia": 10,
+   "depth": 12,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0130",
+   "cabinet": "P3",
+   "kind": "front-stabiliser",
+   "hardware": "Z96.10E1",
+   "part": {
+    "id": "p0128",
+    "name": "P3 Szuflada gorna (M, sztucce) 496x140"
+   },
+   "face": "x+",
+   "world": {
+    "p": [
+     1330.0,
+     -1816.0,
+     723.5
+    ],
+    "dir": [
+     -1,
+     0,
+     0
+    ]
+   },
+   "local": {
+    "u": 264.0,
+    "v": 34.5,
+    "u_from": "left edge (viewed from the front)",
+    "v_from": "front bottom edge",
+    "face": "back"
+   },
+   "dia": 10,
+   "depth": 12,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0131",
+   "cabinet": "P3",
+   "kind": "runner-screw",
+   "hardware": "450.5001B + screws 4x15",
+   "part": {
+    "id": "p0121",
+    "name": "P3 Bok L 702x505"
+   },
+   "face": "y+",
+   "world": {
+    "p": [
+     1349.0,
+     -2032.0,
+     711.0
+    ],
+    "dir": [
+     0,
+     -1,
+     0
+    ]
+   },
+   "local": {
+    "u": 19,
+    "v": 582.0,
+    "u_from": "front edge",
+    "v_from": "panel bottom edge",
+    "face": "inner",
+    "runner_line_v": 576.0
+   },
+   "dia": 2.5,
+   "depth": 10,
+   "note": "screw height approximate - place the runner bottom on runner_line_v and drill through the runner holes",
+   "verify": true
+  },
+  {
+   "id": "f0132",
+   "cabinet": "P3",
+   "kind": "runner-screw",
+   "hardware": "450.5001B + screws 4x15",
+   "part": {
+    "id": "p0121",
+    "name": "P3 Bok L 702x505"
+   },
+   "face": "y+",
+   "world": {
+    "p": [
+     1367.0,
+     -2032.0,
+     711.0
+    ],
+    "dir": [
+     0,
+     -1,
+     0
+    ]
+   },
+   "local": {
+    "u": 37,
+    "v": 582.0,
+    "u_from": "front edge",
+    "v_from": "panel bottom edge",
+    "face": "inner",
+    "runner_line_v": 576.0
+   },
+   "dia": 2.5,
+   "depth": 10,
+   "note": "screw height approximate - place the runner bottom on runner_line_v and drill through the runner holes",
+   "verify": true
+  },
+  {
+   "id": "f0133",
+   "cabinet": "P3",
+   "kind": "runner-screw",
+   "hardware": "450.5001B + screws 4x15",
+   "part": {
+    "id": "p0121",
+    "name": "P3 Bok L 702x505"
+   },
+   "face": "y+",
+   "world": {
+    "p": [
+     1399.0,
+     -2032.0,
+     711.0
+    ],
+    "dir": [
+     0,
+     -1,
+     0
+    ]
+   },
+   "local": {
+    "u": 69,
+    "v": 582.0,
+    "u_from": "front edge",
+    "v_from": "panel bottom edge",
+    "face": "inner",
+    "runner_line_v": 576.0
+   },
+   "dia": 2.5,
+   "depth": 10,
+   "note": "screw height approximate - place the runner bottom on runner_line_v and drill through the runner holes",
+   "verify": true
+  },
+  {
+   "id": "f0134",
+   "cabinet": "P3",
+   "kind": "runner-screw",
+   "hardware": "450.5001B + screws 4x15",
+   "part": {
+    "id": "p0121",
+    "name": "P3 Bok L 702x505"
+   },
+   "face": "y+",
+   "world": {
+    "p": [
+     1591.0,
+     -2032.0,
+     711.0
+    ],
+    "dir": [
+     0,
+     -1,
+     0
+    ]
+   },
+   "local": {
+    "u": 261,
+    "v": 582.0,
+    "u_from": "front edge",
+    "v_from": "panel bottom edge",
+    "face": "inner",
+    "runner_line_v": 576.0
+   },
+   "dia": 2.5,
+   "depth": 10,
+   "note": "screw height approximate - place the runner bottom on runner_line_v and drill through the runner holes",
+   "verify": true
+  },
+  {
+   "id": "f0135",
+   "cabinet": "P3",
+   "kind": "runner-screw",
+   "hardware": "450.5001B + screws 4x15",
+   "part": {
+    "id": "p0121",
+    "name": "P3 Bok L 702x505"
+   },
+   "face": "y+",
+   "world": {
+    "p": [
+     1623.0,
+     -2032.0,
+     711.0
+    ],
+    "dir": [
+     0,
+     -1,
+     0
+    ]
+   },
+   "local": {
+    "u": 293,
+    "v": 582.0,
+    "u_from": "front edge",
+    "v_from": "panel bottom edge",
+    "face": "inner",
+    "runner_line_v": 576.0
+   },
+   "dia": 2.5,
+   "depth": 10,
+   "note": "screw height approximate - place the runner bottom on runner_line_v and drill through the runner holes",
+   "verify": true
+  },
+  {
+   "id": "f0136",
+   "cabinet": "P3",
+   "kind": "runner-screw",
+   "hardware": "450.5001B + screws 4x15",
+   "part": {
+    "id": "p0122",
+    "name": "P3 Bok P 702x505"
+   },
+   "face": "y-",
+   "world": {
+    "p": [
+     1349.0,
+     -1568.0,
+     711.0
+    ],
+    "dir": [
+     0,
+     1,
+     0
+    ]
+   },
+   "local": {
+    "u": 19,
+    "v": 582.0,
+    "u_from": "front edge",
+    "v_from": "panel bottom edge",
+    "face": "inner",
+    "runner_line_v": 576.0
+   },
+   "dia": 2.5,
+   "depth": 10,
+   "note": "screw height approximate - place the runner bottom on runner_line_v and drill through the runner holes",
+   "verify": true
+  },
+  {
+   "id": "f0137",
+   "cabinet": "P3",
+   "kind": "runner-screw",
+   "hardware": "450.5001B + screws 4x15",
+   "part": {
+    "id": "p0122",
+    "name": "P3 Bok P 702x505"
+   },
+   "face": "y-",
+   "world": {
+    "p": [
+     1367.0,
+     -1568.0,
+     711.0
+    ],
+    "dir": [
+     0,
+     1,
+     0
+    ]
+   },
+   "local": {
+    "u": 37,
+    "v": 582.0,
+    "u_from": "front edge",
+    "v_from": "panel bottom edge",
+    "face": "inner",
+    "runner_line_v": 576.0
+   },
+   "dia": 2.5,
+   "depth": 10,
+   "note": "screw height approximate - place the runner bottom on runner_line_v and drill through the runner holes",
+   "verify": true
+  },
+  {
+   "id": "f0138",
+   "cabinet": "P3",
+   "kind": "runner-screw",
+   "hardware": "450.5001B + screws 4x15",
+   "part": {
+    "id": "p0122",
+    "name": "P3 Bok P 702x505"
+   },
+   "face": "y-",
+   "world": {
+    "p": [
+     1399.0,
+     -1568.0,
+     711.0
+    ],
+    "dir": [
+     0,
+     1,
+     0
+    ]
+   },
+   "local": {
+    "u": 69,
+    "v": 582.0,
+    "u_from": "front edge",
+    "v_from": "panel bottom edge",
+    "face": "inner",
+    "runner_line_v": 576.0
+   },
+   "dia": 2.5,
+   "depth": 10,
+   "note": "screw height approximate - place the runner bottom on runner_line_v and drill through the runner holes",
+   "verify": true
+  },
+  {
+   "id": "f0139",
+   "cabinet": "P3",
+   "kind": "runner-screw",
+   "hardware": "450.5001B + screws 4x15",
+   "part": {
+    "id": "p0122",
+    "name": "P3 Bok P 702x505"
+   },
+   "face": "y-",
+   "world": {
+    "p": [
+     1591.0,
+     -1568.0,
+     711.0
+    ],
+    "dir": [
+     0,
+     1,
+     0
+    ]
+   },
+   "local": {
+    "u": 261,
+    "v": 582.0,
+    "u_from": "front edge",
+    "v_from": "panel bottom edge",
+    "face": "inner",
+    "runner_line_v": 576.0
+   },
+   "dia": 2.5,
+   "depth": 10,
+   "note": "screw height approximate - place the runner bottom on runner_line_v and drill through the runner holes",
+   "verify": true
+  },
+  {
+   "id": "f0140",
+   "cabinet": "P3",
+   "kind": "runner-screw",
+   "hardware": "450.5001B + screws 4x15",
+   "part": {
+    "id": "p0122",
+    "name": "P3 Bok P 702x505"
+   },
+   "face": "y-",
+   "world": {
+    "p": [
+     1623.0,
+     -1568.0,
+     711.0
+    ],
+    "dir": [
+     0,
+     1,
+     0
+    ]
+   },
+   "local": {
+    "u": 293,
+    "v": 582.0,
+    "u_from": "front edge",
+    "v_from": "panel bottom edge",
+    "face": "inner",
+    "runner_line_v": 576.0
+   },
+   "dia": 2.5,
+   "depth": 10,
+   "note": "screw height approximate - place the runner bottom on runner_line_v and drill through the runner holes",
+   "verify": true
+  },
+  {
+   "id": "f0141",
+   "cabinet": "G2",
+   "kind": "hinge-cup",
+   "hardware": "71B3550",
+   "part": {
+    "id": "p0179",
+    "name": "G2 Drzwi (zawiasy L) 446x896"
+   },
+   "face": "y+",
+   "world": {
+    "p": [
+     169.5,
+     -332.0,
+     1521.0
+    ],
+    "dir": [
+     0,
+     -1,
+     0
+    ]
+   },
+   "local": {
+    "u": 22.5,
+    "v": 100.0,
+    "u_from": "hinge edge",
+    "v_from": "door bottom edge",
+    "face": "back"
+   },
+   "dia": 35,
+   "depth": 13,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0142",
+   "cabinet": "G2",
+   "kind": "hinge-screw",
+   "hardware": "609.1500",
+   "part": {
+    "id": "p0179",
+    "name": "G2 Drzwi (zawiasy L) 446x896"
+   },
+   "face": "y+",
+   "world": {
+    "p": [
+     179.0,
+     -332.0,
+     1498.5
+    ],
+    "dir": [
+     0,
+     -1,
+     0
+    ]
+   },
+   "local": {
+    "u": 32.0,
+    "v": 77.5,
+    "u_from": "hinge edge",
+    "v_from": "door bottom edge",
+    "face": "back"
+   },
+   "dia": 2.5,
+   "depth": 10,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0143",
+   "cabinet": "G2",
+   "kind": "hinge-screw",
+   "hardware": "609.1500",
+   "part": {
+    "id": "p0179",
+    "name": "G2 Drzwi (zawiasy L) 446x896"
+   },
+   "face": "y+",
+   "world": {
+    "p": [
+     179.0,
+     -332.0,
+     1543.5
+    ],
+    "dir": [
+     0,
+     -1,
+     0
+    ]
+   },
+   "local": {
+    "u": 32.0,
+    "v": 122.5,
+    "u_from": "hinge edge",
+    "v_from": "door bottom edge",
+    "face": "back"
+   },
+   "dia": 2.5,
+   "depth": 10,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0144",
+   "cabinet": "G2",
+   "kind": "plate-screw",
+   "hardware": "173L6100",
+   "part": {
+    "id": "p0174",
+    "name": "G2 Bok P 900x332"
+   },
+   "face": "x+",
+   "world": {
+    "p": [
+     163.0,
+     -295.0,
+     1505.0
+    ],
+    "dir": [
+     -1,
+     0,
+     0
+    ]
+   },
+   "local": {
+    "u": 37,
+    "v": 86.0,
+    "u_from": "front edge",
+    "v_from": "panel bottom edge",
+    "face": "inner (towards the door centre)"
+   },
+   "dia": 2.5,
+   "depth": 10,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0145",
+   "cabinet": "G2",
+   "kind": "plate-screw",
+   "hardware": "173L6100",
+   "part": {
+    "id": "p0174",
+    "name": "G2 Bok P 900x332"
+   },
+   "face": "x+",
+   "world": {
+    "p": [
+     163.0,
+     -295.0,
+     1537.0
+    ],
+    "dir": [
+     -1,
+     0,
+     0
+    ]
+   },
+   "local": {
+    "u": 37,
+    "v": 118.0,
+    "u_from": "front edge",
+    "v_from": "panel bottom edge",
+    "face": "inner (towards the door centre)"
+   },
+   "dia": 2.5,
+   "depth": 10,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0146",
+   "cabinet": "G2",
+   "kind": "hinge-cup",
+   "hardware": "71B3550",
+   "part": {
+    "id": "p0179",
+    "name": "G2 Drzwi (zawiasy L) 446x896"
+   },
+   "face": "y+",
+   "world": {
+    "p": [
+     169.5,
+     -332.0,
+     2217.0
+    ],
+    "dir": [
+     0,
+     -1,
+     0
+    ]
+   },
+   "local": {
+    "u": 22.5,
+    "v": 796.0,
+    "u_from": "hinge edge",
+    "v_from": "door bottom edge",
+    "face": "back"
+   },
+   "dia": 35,
+   "depth": 13,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0147",
+   "cabinet": "G2",
+   "kind": "hinge-screw",
+   "hardware": "609.1500",
+   "part": {
+    "id": "p0179",
+    "name": "G2 Drzwi (zawiasy L) 446x896"
+   },
+   "face": "y+",
+   "world": {
+    "p": [
+     179.0,
+     -332.0,
+     2194.5
+    ],
+    "dir": [
+     0,
+     -1,
+     0
+    ]
+   },
+   "local": {
+    "u": 32.0,
+    "v": 773.5,
+    "u_from": "hinge edge",
+    "v_from": "door bottom edge",
+    "face": "back"
+   },
+   "dia": 2.5,
+   "depth": 10,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0148",
+   "cabinet": "G2",
+   "kind": "hinge-screw",
+   "hardware": "609.1500",
+   "part": {
+    "id": "p0179",
+    "name": "G2 Drzwi (zawiasy L) 446x896"
+   },
+   "face": "y+",
+   "world": {
+    "p": [
+     179.0,
+     -332.0,
+     2239.5
+    ],
+    "dir": [
+     0,
+     -1,
+     0
+    ]
+   },
+   "local": {
+    "u": 32.0,
+    "v": 818.5,
+    "u_from": "hinge edge",
+    "v_from": "door bottom edge",
+    "face": "back"
+   },
+   "dia": 2.5,
+   "depth": 10,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0149",
+   "cabinet": "G2",
+   "kind": "plate-screw",
+   "hardware": "173L6100",
+   "part": {
+    "id": "p0174",
+    "name": "G2 Bok P 900x332"
+   },
+   "face": "x+",
+   "world": {
+    "p": [
+     163.0,
+     -295.0,
+     2201.0
+    ],
+    "dir": [
+     -1,
+     0,
+     0
+    ]
+   },
+   "local": {
+    "u": 37,
+    "v": 782.0,
+    "u_from": "front edge",
+    "v_from": "panel bottom edge",
+    "face": "inner (towards the door centre)"
+   },
+   "dia": 2.5,
+   "depth": 10,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0150",
+   "cabinet": "G2",
+   "kind": "plate-screw",
+   "hardware": "173L6100",
+   "part": {
+    "id": "p0174",
+    "name": "G2 Bok P 900x332"
+   },
+   "face": "x+",
+   "world": {
+    "p": [
+     163.0,
+     -295.0,
+     2233.0
+    ],
+    "dir": [
+     -1,
+     0,
+     0
+    ]
+   },
+   "local": {
+    "u": 37,
+    "v": 814.0,
+    "u_from": "front edge",
+    "v_from": "panel bottom edge",
+    "face": "inner (towards the door centre)"
+   },
+   "dia": 2.5,
+   "depth": 10,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0151",
+   "cabinet": "G3",
+   "kind": "hinge-cup",
+   "hardware": "71B3550",
+   "part": {
+    "id": "p0189",
+    "name": "G3 Drzwi (zawiasy L) 596x896"
+   },
+   "face": "y+",
+   "world": {
+    "p": [
+     619.5,
+     -332.0,
+     1521.0
+    ],
+    "dir": [
+     0,
+     -1,
+     0
+    ]
+   },
+   "local": {
+    "u": 22.5,
+    "v": 100.0,
+    "u_from": "hinge edge",
+    "v_from": "door bottom edge",
+    "face": "back"
+   },
+   "dia": 35,
+   "depth": 13,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0152",
+   "cabinet": "G3",
+   "kind": "hinge-screw",
+   "hardware": "609.1500",
+   "part": {
+    "id": "p0189",
+    "name": "G3 Drzwi (zawiasy L) 596x896"
+   },
+   "face": "y+",
+   "world": {
+    "p": [
+     629.0,
+     -332.0,
+     1498.5
+    ],
+    "dir": [
+     0,
+     -1,
+     0
+    ]
+   },
+   "local": {
+    "u": 32.0,
+    "v": 77.5,
+    "u_from": "hinge edge",
+    "v_from": "door bottom edge",
+    "face": "back"
+   },
+   "dia": 2.5,
+   "depth": 10,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0153",
+   "cabinet": "G3",
+   "kind": "hinge-screw",
+   "hardware": "609.1500",
+   "part": {
+    "id": "p0189",
+    "name": "G3 Drzwi (zawiasy L) 596x896"
+   },
+   "face": "y+",
+   "world": {
+    "p": [
+     629.0,
+     -332.0,
+     1543.5
+    ],
+    "dir": [
+     0,
+     -1,
+     0
+    ]
+   },
+   "local": {
+    "u": 32.0,
+    "v": 122.5,
+    "u_from": "hinge edge",
+    "v_from": "door bottom edge",
+    "face": "back"
+   },
+   "dia": 2.5,
+   "depth": 10,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0154",
+   "cabinet": "G3",
+   "kind": "plate-screw",
+   "hardware": "173L6100",
+   "part": {
+    "id": "p0182",
+    "name": "G3 Bok P 900x332"
+   },
+   "face": "x+",
+   "world": {
+    "p": [
+     613.0,
+     -295.0,
+     1505.0
+    ],
+    "dir": [
+     -1,
+     0,
+     0
+    ]
+   },
+   "local": {
+    "u": 37,
+    "v": 86.0,
+    "u_from": "front edge",
+    "v_from": "panel bottom edge",
+    "face": "inner (towards the door centre)"
+   },
+   "dia": 2.5,
+   "depth": 10,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0155",
+   "cabinet": "G3",
+   "kind": "plate-screw",
+   "hardware": "173L6100",
+   "part": {
+    "id": "p0182",
+    "name": "G3 Bok P 900x332"
+   },
+   "face": "x+",
+   "world": {
+    "p": [
+     613.0,
+     -295.0,
+     1537.0
+    ],
+    "dir": [
+     -1,
+     0,
+     0
+    ]
+   },
+   "local": {
+    "u": 37,
+    "v": 118.0,
+    "u_from": "front edge",
+    "v_from": "panel bottom edge",
+    "face": "inner (towards the door centre)"
+   },
+   "dia": 2.5,
+   "depth": 10,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0156",
+   "cabinet": "G3",
+   "kind": "hinge-cup",
+   "hardware": "71B3550",
+   "part": {
+    "id": "p0189",
+    "name": "G3 Drzwi (zawiasy L) 596x896"
+   },
+   "face": "y+",
+   "world": {
+    "p": [
+     619.5,
+     -332.0,
+     2217.0
+    ],
+    "dir": [
+     0,
+     -1,
+     0
+    ]
+   },
+   "local": {
+    "u": 22.5,
+    "v": 796.0,
+    "u_from": "hinge edge",
+    "v_from": "door bottom edge",
+    "face": "back"
+   },
+   "dia": 35,
+   "depth": 13,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0157",
+   "cabinet": "G3",
+   "kind": "hinge-screw",
+   "hardware": "609.1500",
+   "part": {
+    "id": "p0189",
+    "name": "G3 Drzwi (zawiasy L) 596x896"
+   },
+   "face": "y+",
+   "world": {
+    "p": [
+     629.0,
+     -332.0,
+     2194.5
+    ],
+    "dir": [
+     0,
+     -1,
+     0
+    ]
+   },
+   "local": {
+    "u": 32.0,
+    "v": 773.5,
+    "u_from": "hinge edge",
+    "v_from": "door bottom edge",
+    "face": "back"
+   },
+   "dia": 2.5,
+   "depth": 10,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0158",
+   "cabinet": "G3",
+   "kind": "hinge-screw",
+   "hardware": "609.1500",
+   "part": {
+    "id": "p0189",
+    "name": "G3 Drzwi (zawiasy L) 596x896"
+   },
+   "face": "y+",
+   "world": {
+    "p": [
+     629.0,
+     -332.0,
+     2239.5
+    ],
+    "dir": [
+     0,
+     -1,
+     0
+    ]
+   },
+   "local": {
+    "u": 32.0,
+    "v": 818.5,
+    "u_from": "hinge edge",
+    "v_from": "door bottom edge",
+    "face": "back"
+   },
+   "dia": 2.5,
+   "depth": 10,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0159",
+   "cabinet": "G3",
+   "kind": "plate-screw",
+   "hardware": "173L6100",
+   "part": {
+    "id": "p0182",
+    "name": "G3 Bok P 900x332"
+   },
+   "face": "x+",
+   "world": {
+    "p": [
+     613.0,
+     -295.0,
+     2201.0
+    ],
+    "dir": [
+     -1,
+     0,
+     0
+    ]
+   },
+   "local": {
+    "u": 37,
+    "v": 782.0,
+    "u_from": "front edge",
+    "v_from": "panel bottom edge",
+    "face": "inner (towards the door centre)"
+   },
+   "dia": 2.5,
+   "depth": 10,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0160",
+   "cabinet": "G3",
+   "kind": "plate-screw",
+   "hardware": "173L6100",
+   "part": {
+    "id": "p0182",
+    "name": "G3 Bok P 900x332"
+   },
+   "face": "x+",
+   "world": {
+    "p": [
+     613.0,
+     -295.0,
+     2233.0
+    ],
+    "dir": [
+     -1,
+     0,
+     0
+    ]
+   },
+   "local": {
+    "u": 37,
+    "v": 814.0,
+    "u_from": "front edge",
+    "v_from": "panel bottom edge",
+    "face": "inner (towards the door centre)"
+   },
+   "dia": 2.5,
+   "depth": 10,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0161",
+   "cabinet": "G4",
+   "kind": "hinge-cup",
+   "hardware": "71B3550",
+   "part": {
+    "id": "p0197",
+    "name": "G4 Drzwi (zawiasy P) 596x896"
+   },
+   "face": "y+",
+   "world": {
+    "p": [
+     1770.5,
+     -332.0,
+     1521.0
+    ],
+    "dir": [
+     0,
+     -1,
+     0
+    ]
+   },
+   "local": {
+    "u": 22.5,
+    "v": 100.0,
+    "u_from": "hinge edge",
+    "v_from": "door bottom edge",
+    "face": "back"
+   },
+   "dia": 35,
+   "depth": 13,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0162",
+   "cabinet": "G4",
+   "kind": "hinge-screw",
+   "hardware": "609.1500",
+   "part": {
+    "id": "p0197",
+    "name": "G4 Drzwi (zawiasy P) 596x896"
+   },
+   "face": "y+",
+   "world": {
+    "p": [
+     1761.0,
+     -332.0,
+     1498.5
+    ],
+    "dir": [
+     0,
+     -1,
+     0
+    ]
+   },
+   "local": {
+    "u": 32.0,
+    "v": 77.5,
+    "u_from": "hinge edge",
+    "v_from": "door bottom edge",
+    "face": "back"
+   },
+   "dia": 2.5,
+   "depth": 10,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0163",
+   "cabinet": "G4",
+   "kind": "hinge-screw",
+   "hardware": "609.1500",
+   "part": {
+    "id": "p0197",
+    "name": "G4 Drzwi (zawiasy P) 596x896"
+   },
+   "face": "y+",
+   "world": {
+    "p": [
+     1761.0,
+     -332.0,
+     1543.5
+    ],
+    "dir": [
+     0,
+     -1,
+     0
+    ]
+   },
+   "local": {
+    "u": 32.0,
+    "v": 122.5,
+    "u_from": "hinge edge",
+    "v_from": "door bottom edge",
+    "face": "back"
+   },
+   "dia": 2.5,
+   "depth": 10,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0164",
+   "cabinet": "G4",
+   "kind": "plate-screw",
+   "hardware": "173L6100",
+   "part": {
+    "id": "p0191",
+    "name": "G4 Bok L 900x332"
+   },
+   "face": "x-",
+   "world": {
+    "p": [
+     1777.0,
+     -295.0,
+     1505.0
+    ],
+    "dir": [
+     1,
+     0,
+     0
+    ]
+   },
+   "local": {
+    "u": 37,
+    "v": 86.0,
+    "u_from": "front edge",
+    "v_from": "panel bottom edge",
+    "face": "inner (towards the door centre)"
+   },
+   "dia": 2.5,
+   "depth": 10,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0165",
+   "cabinet": "G4",
+   "kind": "plate-screw",
+   "hardware": "173L6100",
+   "part": {
+    "id": "p0191",
+    "name": "G4 Bok L 900x332"
+   },
+   "face": "x-",
+   "world": {
+    "p": [
+     1777.0,
+     -295.0,
+     1537.0
+    ],
+    "dir": [
+     1,
+     0,
+     0
+    ]
+   },
+   "local": {
+    "u": 37,
+    "v": 118.0,
+    "u_from": "front edge",
+    "v_from": "panel bottom edge",
+    "face": "inner (towards the door centre)"
+   },
+   "dia": 2.5,
+   "depth": 10,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0166",
+   "cabinet": "G4",
+   "kind": "hinge-cup",
+   "hardware": "71B3550",
+   "part": {
+    "id": "p0197",
+    "name": "G4 Drzwi (zawiasy P) 596x896"
+   },
+   "face": "y+",
+   "world": {
+    "p": [
+     1770.5,
+     -332.0,
+     2217.0
+    ],
+    "dir": [
+     0,
+     -1,
+     0
+    ]
+   },
+   "local": {
+    "u": 22.5,
+    "v": 796.0,
+    "u_from": "hinge edge",
+    "v_from": "door bottom edge",
+    "face": "back"
+   },
+   "dia": 35,
+   "depth": 13,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0167",
+   "cabinet": "G4",
+   "kind": "hinge-screw",
+   "hardware": "609.1500",
+   "part": {
+    "id": "p0197",
+    "name": "G4 Drzwi (zawiasy P) 596x896"
+   },
+   "face": "y+",
+   "world": {
+    "p": [
+     1761.0,
+     -332.0,
+     2194.5
+    ],
+    "dir": [
+     0,
+     -1,
+     0
+    ]
+   },
+   "local": {
+    "u": 32.0,
+    "v": 773.5,
+    "u_from": "hinge edge",
+    "v_from": "door bottom edge",
+    "face": "back"
+   },
+   "dia": 2.5,
+   "depth": 10,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0168",
+   "cabinet": "G4",
+   "kind": "hinge-screw",
+   "hardware": "609.1500",
+   "part": {
+    "id": "p0197",
+    "name": "G4 Drzwi (zawiasy P) 596x896"
+   },
+   "face": "y+",
+   "world": {
+    "p": [
+     1761.0,
+     -332.0,
+     2239.5
+    ],
+    "dir": [
+     0,
+     -1,
+     0
+    ]
+   },
+   "local": {
+    "u": 32.0,
+    "v": 818.5,
+    "u_from": "hinge edge",
+    "v_from": "door bottom edge",
+    "face": "back"
+   },
+   "dia": 2.5,
+   "depth": 10,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0169",
+   "cabinet": "G4",
+   "kind": "plate-screw",
+   "hardware": "173L6100",
+   "part": {
+    "id": "p0191",
+    "name": "G4 Bok L 900x332"
+   },
+   "face": "x-",
+   "world": {
+    "p": [
+     1777.0,
+     -295.0,
+     2201.0
+    ],
+    "dir": [
+     1,
+     0,
+     0
+    ]
+   },
+   "local": {
+    "u": 37,
+    "v": 782.0,
+    "u_from": "front edge",
+    "v_from": "panel bottom edge",
+    "face": "inner (towards the door centre)"
+   },
+   "dia": 2.5,
+   "depth": 10,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0170",
+   "cabinet": "G4",
+   "kind": "plate-screw",
+   "hardware": "173L6100",
+   "part": {
+    "id": "p0191",
+    "name": "G4 Bok L 900x332"
+   },
+   "face": "x-",
+   "world": {
+    "p": [
+     1777.0,
+     -295.0,
+     2233.0
+    ],
+    "dir": [
+     1,
+     0,
+     0
+    ]
+   },
+   "local": {
+    "u": 37,
+    "v": 814.0,
+    "u_from": "front edge",
+    "v_from": "panel bottom edge",
+    "face": "inner (towards the door centre)"
+   },
+   "dia": 2.5,
+   "depth": 10,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0171",
+   "cabinet": "Z1",
+   "kind": "hinge-cup",
+   "hardware": "71B3550",
+   "part": {
+    "id": "p0223",
+    "name": "Z1 Drzwi L 365x716"
+   },
+   "face": "x-",
+   "world": {
+    "p": [
+     18.0,
+     -850.5,
+     213.0
+    ],
+    "dir": [
+     1,
+     0,
+     0
+    ]
+   },
+   "local": {
+    "u": 24.5,
+    "v": 100.0,
+    "u_from": "hinge edge",
+    "v_from": "door bottom edge",
+    "face": "back"
+   },
+   "dia": 35,
+   "depth": 13,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0172",
+   "cabinet": "Z1",
+   "kind": "hinge-screw",
+   "hardware": "609.1500",
+   "part": {
+    "id": "p0223",
+    "name": "Z1 Drzwi L 365x716"
+   },
+   "face": "x-",
+   "world": {
+    "p": [
+     18.0,
+     -860.0,
+     190.5
+    ],
+    "dir": [
+     1,
+     0,
+     0
+    ]
+   },
+   "local": {
+    "u": 34.0,
+    "v": 77.5,
+    "u_from": "hinge edge",
+    "v_from": "door bottom edge",
+    "face": "back"
+   },
+   "dia": 2.5,
+   "depth": 10,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0173",
+   "cabinet": "Z1",
+   "kind": "hinge-screw",
+   "hardware": "609.1500",
+   "part": {
+    "id": "p0223",
+    "name": "Z1 Drzwi L 365x716"
+   },
+   "face": "x-",
+   "world": {
+    "p": [
+     18.0,
+     -860.0,
+     235.5
+    ],
+    "dir": [
+     1,
+     0,
+     0
+    ]
+   },
+   "local": {
+    "u": 34.0,
+    "v": 122.5,
+    "u_from": "hinge edge",
+    "v_from": "door bottom edge",
+    "face": "back"
+   },
+   "dia": 2.5,
+   "depth": 10,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0174",
+   "cabinet": "Z1",
+   "kind": "plate-screw",
+   "hardware": "173L6100",
+   "part": {
+    "id": "p0219",
+    "name": "Z1 Bok L 702x330"
+   },
+   "face": "y-",
+   "world": {
+    "p": [
+     -19.0,
+     -844.0,
+     197.0
+    ],
+    "dir": [
+     0,
+     1,
+     0
+    ]
+   },
+   "local": {
+    "u": 37,
+    "v": 68.0,
+    "u_from": "front edge",
+    "v_from": "panel bottom edge",
+    "face": "inner (towards the door centre)"
+   },
+   "dia": 2.5,
+   "depth": 10,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0175",
+   "cabinet": "Z1",
+   "kind": "plate-screw",
+   "hardware": "173L6100",
+   "part": {
+    "id": "p0219",
+    "name": "Z1 Bok L 702x330"
+   },
+   "face": "y-",
+   "world": {
+    "p": [
+     -19.0,
+     -844.0,
+     229.0
+    ],
+    "dir": [
+     0,
+     1,
+     0
+    ]
+   },
+   "local": {
+    "u": 37,
+    "v": 100.0,
+    "u_from": "front edge",
+    "v_from": "panel bottom edge",
+    "face": "inner (towards the door centre)"
+   },
+   "dia": 2.5,
+   "depth": 10,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0176",
+   "cabinet": "Z1",
+   "kind": "hinge-cup",
+   "hardware": "71B3550",
+   "part": {
+    "id": "p0223",
+    "name": "Z1 Drzwi L 365x716"
+   },
+   "face": "x-",
+   "world": {
+    "p": [
+     18.0,
+     -850.5,
+     698.0
+    ],
+    "dir": [
+     1,
+     0,
+     0
+    ]
+   },
+   "local": {
+    "u": 24.5,
+    "v": 585.0,
+    "u_from": "hinge edge",
+    "v_from": "door bottom edge",
+    "face": "back"
+   },
+   "dia": 35,
+   "depth": 13,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0177",
+   "cabinet": "Z1",
+   "kind": "hinge-screw",
+   "hardware": "609.1500",
+   "part": {
+    "id": "p0223",
+    "name": "Z1 Drzwi L 365x716"
+   },
+   "face": "x-",
+   "world": {
+    "p": [
+     18.0,
+     -860.0,
+     675.5
+    ],
+    "dir": [
+     1,
+     0,
+     0
+    ]
+   },
+   "local": {
+    "u": 34.0,
+    "v": 562.5,
+    "u_from": "hinge edge",
+    "v_from": "door bottom edge",
+    "face": "back"
+   },
+   "dia": 2.5,
+   "depth": 10,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0178",
+   "cabinet": "Z1",
+   "kind": "hinge-screw",
+   "hardware": "609.1500",
+   "part": {
+    "id": "p0223",
+    "name": "Z1 Drzwi L 365x716"
+   },
+   "face": "x-",
+   "world": {
+    "p": [
+     18.0,
+     -860.0,
+     720.5
+    ],
+    "dir": [
+     1,
+     0,
+     0
+    ]
+   },
+   "local": {
+    "u": 34.0,
+    "v": 607.5,
+    "u_from": "hinge edge",
+    "v_from": "door bottom edge",
+    "face": "back"
+   },
+   "dia": 2.5,
+   "depth": 10,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0179",
+   "cabinet": "Z1",
+   "kind": "plate-screw",
+   "hardware": "173L6100",
+   "part": {
+    "id": "p0219",
+    "name": "Z1 Bok L 702x330"
+   },
+   "face": "y-",
+   "world": {
+    "p": [
+     -19.0,
+     -844.0,
+     682.0
+    ],
+    "dir": [
+     0,
+     1,
+     0
+    ]
+   },
+   "local": {
+    "u": 37,
+    "v": 553.0,
+    "u_from": "front edge",
+    "v_from": "panel bottom edge",
+    "face": "inner (towards the door centre)"
+   },
+   "dia": 2.5,
+   "depth": 10,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0180",
+   "cabinet": "Z1",
+   "kind": "plate-screw",
+   "hardware": "173L6100",
+   "part": {
+    "id": "p0219",
+    "name": "Z1 Bok L 702x330"
+   },
+   "face": "y-",
+   "world": {
+    "p": [
+     -19.0,
+     -844.0,
+     714.0
+    ],
+    "dir": [
+     0,
+     1,
+     0
+    ]
+   },
+   "local": {
+    "u": 37,
+    "v": 585.0,
+    "u_from": "front edge",
+    "v_from": "panel bottom edge",
+    "face": "inner (towards the door centre)"
+   },
+   "dia": 2.5,
+   "depth": 10,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0181",
+   "cabinet": "Z1",
+   "kind": "hinge-cup",
+   "hardware": "71B3550",
+   "part": {
+    "id": "p0224",
+    "name": "Z1 Drzwi P 364x716"
+   },
+   "face": "x-",
+   "world": {
+    "p": [
+     18.0,
+     -1533.5,
+     213.0
+    ],
+    "dir": [
+     1,
+     0,
+     0
+    ]
+   },
+   "local": {
+    "u": 24.5,
+    "v": 100.0,
+    "u_from": "hinge edge",
+    "v_from": "door bottom edge",
+    "face": "back"
+   },
+   "dia": 35,
+   "depth": 13,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0182",
+   "cabinet": "Z1",
+   "kind": "hinge-screw",
+   "hardware": "609.1500",
+   "part": {
+    "id": "p0224",
+    "name": "Z1 Drzwi P 364x716"
+   },
+   "face": "x-",
+   "world": {
+    "p": [
+     18.0,
+     -1524.0,
+     190.5
+    ],
+    "dir": [
+     1,
+     0,
+     0
+    ]
+   },
+   "local": {
+    "u": 34.0,
+    "v": 77.5,
+    "u_from": "hinge edge",
+    "v_from": "door bottom edge",
+    "face": "back"
+   },
+   "dia": 2.5,
+   "depth": 10,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0183",
+   "cabinet": "Z1",
+   "kind": "hinge-screw",
+   "hardware": "609.1500",
+   "part": {
+    "id": "p0224",
+    "name": "Z1 Drzwi P 364x716"
+   },
+   "face": "x-",
+   "world": {
+    "p": [
+     18.0,
+     -1524.0,
+     235.5
+    ],
+    "dir": [
+     1,
+     0,
+     0
+    ]
+   },
+   "local": {
+    "u": 34.0,
+    "v": 122.5,
+    "u_from": "hinge edge",
+    "v_from": "door bottom edge",
+    "face": "back"
+   },
+   "dia": 2.5,
+   "depth": 10,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0184",
+   "cabinet": "Z1",
+   "kind": "plate-screw",
+   "hardware": "173L6100",
+   "part": {
+    "id": "p0220",
+    "name": "Z1 Bok P 702x330"
+   },
+   "face": "y+",
+   "world": {
+    "p": [
+     -19.0,
+     -1540.0,
+     197.0
+    ],
+    "dir": [
+     0,
+     -1,
+     0
+    ]
+   },
+   "local": {
+    "u": 37,
+    "v": 68.0,
+    "u_from": "front edge",
+    "v_from": "panel bottom edge",
+    "face": "inner (towards the door centre)"
+   },
+   "dia": 2.5,
+   "depth": 10,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0185",
+   "cabinet": "Z1",
+   "kind": "plate-screw",
+   "hardware": "173L6100",
+   "part": {
+    "id": "p0220",
+    "name": "Z1 Bok P 702x330"
+   },
+   "face": "y+",
+   "world": {
+    "p": [
+     -19.0,
+     -1540.0,
+     229.0
+    ],
+    "dir": [
+     0,
+     -1,
+     0
+    ]
+   },
+   "local": {
+    "u": 37,
+    "v": 100.0,
+    "u_from": "front edge",
+    "v_from": "panel bottom edge",
+    "face": "inner (towards the door centre)"
+   },
+   "dia": 2.5,
+   "depth": 10,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0186",
+   "cabinet": "Z1",
+   "kind": "hinge-cup",
+   "hardware": "71B3550",
+   "part": {
+    "id": "p0224",
+    "name": "Z1 Drzwi P 364x716"
+   },
+   "face": "x-",
+   "world": {
+    "p": [
+     18.0,
+     -1533.5,
+     698.0
+    ],
+    "dir": [
+     1,
+     0,
+     0
+    ]
+   },
+   "local": {
+    "u": 24.5,
+    "v": 585.0,
+    "u_from": "hinge edge",
+    "v_from": "door bottom edge",
+    "face": "back"
+   },
+   "dia": 35,
+   "depth": 13,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0187",
+   "cabinet": "Z1",
+   "kind": "hinge-screw",
+   "hardware": "609.1500",
+   "part": {
+    "id": "p0224",
+    "name": "Z1 Drzwi P 364x716"
+   },
+   "face": "x-",
+   "world": {
+    "p": [
+     18.0,
+     -1524.0,
+     675.5
+    ],
+    "dir": [
+     1,
+     0,
+     0
+    ]
+   },
+   "local": {
+    "u": 34.0,
+    "v": 562.5,
+    "u_from": "hinge edge",
+    "v_from": "door bottom edge",
+    "face": "back"
+   },
+   "dia": 2.5,
+   "depth": 10,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0188",
+   "cabinet": "Z1",
+   "kind": "hinge-screw",
+   "hardware": "609.1500",
+   "part": {
+    "id": "p0224",
+    "name": "Z1 Drzwi P 364x716"
+   },
+   "face": "x-",
+   "world": {
+    "p": [
+     18.0,
+     -1524.0,
+     720.5
+    ],
+    "dir": [
+     1,
+     0,
+     0
+    ]
+   },
+   "local": {
+    "u": 34.0,
+    "v": 607.5,
+    "u_from": "hinge edge",
+    "v_from": "door bottom edge",
+    "face": "back"
+   },
+   "dia": 2.5,
+   "depth": 10,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0189",
+   "cabinet": "Z1",
+   "kind": "plate-screw",
+   "hardware": "173L6100",
+   "part": {
+    "id": "p0220",
+    "name": "Z1 Bok P 702x330"
+   },
+   "face": "y+",
+   "world": {
+    "p": [
+     -19.0,
+     -1540.0,
+     682.0
+    ],
+    "dir": [
+     0,
+     -1,
+     0
+    ]
+   },
+   "local": {
+    "u": 37,
+    "v": 553.0,
+    "u_from": "front edge",
+    "v_from": "panel bottom edge",
+    "face": "inner (towards the door centre)"
+   },
+   "dia": 2.5,
+   "depth": 10,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0190",
+   "cabinet": "Z1",
+   "kind": "plate-screw",
+   "hardware": "173L6100",
+   "part": {
+    "id": "p0220",
+    "name": "Z1 Bok P 702x330"
+   },
+   "face": "y+",
+   "world": {
+    "p": [
+     -19.0,
+     -1540.0,
+     714.0
+    ],
+    "dir": [
+     0,
+     -1,
+     0
+    ]
+   },
+   "local": {
+    "u": 37,
+    "v": 585.0,
+    "u_from": "front edge",
+    "v_from": "panel bottom edge",
+    "face": "inner (towards the door centre)"
+   },
+   "dia": 2.5,
+   "depth": 10,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0191",
+   "cabinet": "L6",
+   "kind": "hinge-cup",
+   "hardware": "71B3750",
+   "part": {
+    "id": "p0246",
+    "name": "L6 Drzwi nadstawki 610x374"
+   },
+   "face": "x-",
+   "world": {
+    "p": [
+     18.0,
+     -2167.5,
+     2025.0
+    ],
+    "dir": [
+     1,
+     0,
+     0
+    ]
+   },
+   "local": {
+    "u": 22.5,
+    "v": 82.0,
+    "u_from": "hinge edge",
+    "v_from": "door bottom edge",
+    "face": "back"
+   },
+   "dia": 35,
+   "depth": 13,
+   "note": "",
+   "verify": true
+  },
+  {
+   "id": "f0192",
+   "cabinet": "L6",
+   "kind": "hinge-screw",
+   "hardware": "609.1500",
+   "part": {
+    "id": "p0246",
+    "name": "L6 Drzwi nadstawki 610x374"
+   },
+   "face": "x-",
+   "world": {
+    "p": [
+     18.0,
+     -2158.0,
+     2002.5
+    ],
+    "dir": [
+     1,
+     0,
+     0
+    ]
+   },
+   "local": {
+    "u": 32.0,
+    "v": 59.5,
+    "u_from": "hinge edge",
+    "v_from": "door bottom edge",
+    "face": "back"
+   },
+   "dia": 2.5,
+   "depth": 10,
+   "note": "",
+   "verify": true
+  },
+  {
+   "id": "f0193",
+   "cabinet": "L6",
+   "kind": "hinge-screw",
+   "hardware": "609.1500",
+   "part": {
+    "id": "p0246",
+    "name": "L6 Drzwi nadstawki 610x374"
+   },
+   "face": "x-",
+   "world": {
+    "p": [
+     18.0,
+     -2158.0,
+     2047.5
+    ],
+    "dir": [
+     1,
+     0,
+     0
+    ]
+   },
+   "local": {
+    "u": 32.0,
+    "v": 104.5,
+    "u_from": "hinge edge",
+    "v_from": "door bottom edge",
+    "face": "back"
+   },
+   "dia": 2.5,
+   "depth": 10,
+   "note": "",
+   "verify": true
+  },
+  {
+   "id": "f0194",
+   "cabinet": "L6",
+   "kind": "plate-screw",
+   "hardware": "173L6100 (inset setback)",
+   "part": {
+    "id": "p0238",
+    "name": "L2 Bok lodowki (strona salonu) 688x2414 (z naddatkiem, dotnij)"
+   },
+   "face": "y+",
+   "world": {
+    "p": [
+     -20.5,
+     -2192.0,
+     2009.0
+    ],
+    "dir": [
+     0,
+     -1,
+     0
+    ]
+   },
+   "local": {
+    "u": 56.5,
+    "v": 2040.0,
+    "u_from": "front edge",
+    "v_from": "panel bottom edge",
+    "face": "inner (towards the door centre)"
+   },
+   "dia": 2.5,
+   "depth": 10,
+   "note": "",
+   "verify": true
+  },
+  {
+   "id": "f0195",
+   "cabinet": "L6",
+   "kind": "plate-screw",
+   "hardware": "173L6100 (inset setback)",
+   "part": {
+    "id": "p0238",
+    "name": "L2 Bok lodowki (strona salonu) 688x2414 (z naddatkiem, dotnij)"
+   },
+   "face": "y+",
+   "world": {
+    "p": [
+     -20.5,
+     -2192.0,
+     2041.0
+    ],
+    "dir": [
+     0,
+     -1,
+     0
+    ]
+   },
+   "local": {
+    "u": 56.5,
+    "v": 2072.0,
+    "u_from": "front edge",
+    "v_from": "panel bottom edge",
+    "face": "inner (towards the door centre)"
+   },
+   "dia": 2.5,
+   "depth": 10,
+   "note": "",
+   "verify": true
+  },
+  {
+   "id": "f0196",
+   "cabinet": "L6",
+   "kind": "hinge-cup",
+   "hardware": "71B3750",
+   "part": {
+    "id": "p0246",
+    "name": "L6 Drzwi nadstawki 610x374"
+   },
+   "face": "x-",
+   "world": {
+    "p": [
+     18.0,
+     -2167.5,
+     2235.0
+    ],
+    "dir": [
+     1,
+     0,
+     0
+    ]
+   },
+   "local": {
+    "u": 22.5,
+    "v": 292.0,
+    "u_from": "hinge edge",
+    "v_from": "door bottom edge",
+    "face": "back"
+   },
+   "dia": 35,
+   "depth": 13,
+   "note": "",
+   "verify": true
+  },
+  {
+   "id": "f0197",
+   "cabinet": "L6",
+   "kind": "hinge-screw",
+   "hardware": "609.1500",
+   "part": {
+    "id": "p0246",
+    "name": "L6 Drzwi nadstawki 610x374"
+   },
+   "face": "x-",
+   "world": {
+    "p": [
+     18.0,
+     -2158.0,
+     2212.5
+    ],
+    "dir": [
+     1,
+     0,
+     0
+    ]
+   },
+   "local": {
+    "u": 32.0,
+    "v": 269.5,
+    "u_from": "hinge edge",
+    "v_from": "door bottom edge",
+    "face": "back"
+   },
+   "dia": 2.5,
+   "depth": 10,
+   "note": "",
+   "verify": true
+  },
+  {
+   "id": "f0198",
+   "cabinet": "L6",
+   "kind": "hinge-screw",
+   "hardware": "609.1500",
+   "part": {
+    "id": "p0246",
+    "name": "L6 Drzwi nadstawki 610x374"
+   },
+   "face": "x-",
+   "world": {
+    "p": [
+     18.0,
+     -2158.0,
+     2257.5
+    ],
+    "dir": [
+     1,
+     0,
+     0
+    ]
+   },
+   "local": {
+    "u": 32.0,
+    "v": 314.5,
+    "u_from": "hinge edge",
+    "v_from": "door bottom edge",
+    "face": "back"
+   },
+   "dia": 2.5,
+   "depth": 10,
+   "note": "",
+   "verify": true
+  },
+  {
+   "id": "f0199",
+   "cabinet": "L6",
+   "kind": "plate-screw",
+   "hardware": "173L6100 (inset setback)",
+   "part": {
+    "id": "p0238",
+    "name": "L2 Bok lodowki (strona salonu) 688x2414 (z naddatkiem, dotnij)"
+   },
+   "face": "y+",
+   "world": {
+    "p": [
+     -20.5,
+     -2192.0,
+     2219.0
+    ],
+    "dir": [
+     0,
+     -1,
+     0
+    ]
+   },
+   "local": {
+    "u": 56.5,
+    "v": 2250.0,
+    "u_from": "front edge",
+    "v_from": "panel bottom edge",
+    "face": "inner (towards the door centre)"
+   },
+   "dia": 2.5,
+   "depth": 10,
+   "note": "",
+   "verify": true
+  },
+  {
+   "id": "f0200",
+   "cabinet": "L6",
+   "kind": "plate-screw",
+   "hardware": "173L6100 (inset setback)",
+   "part": {
+    "id": "p0238",
+    "name": "L2 Bok lodowki (strona salonu) 688x2414 (z naddatkiem, dotnij)"
+   },
+   "face": "y+",
+   "world": {
+    "p": [
+     -20.5,
+     -2192.0,
+     2251.0
+    ],
+    "dir": [
+     0,
+     -1,
+     0
+    ]
+   },
+   "local": {
+    "u": 56.5,
+    "v": 2282.0,
+    "u_from": "front edge",
+    "v_from": "panel bottom edge",
+    "face": "inner (towards the door centre)"
+   },
+   "dia": 2.5,
+   "depth": 10,
+   "note": "",
+   "verify": true
+  },
+  {
+   "id": "f0201",
+   "cabinet": "B3",
+   "kind": "shelf-screw",
+   "hardware": "Spax 4x50",
+   "part": {
+    "id": "p0029",
+    "name": "B3 Bok P 702x510"
+   },
+   "face": "x-",
+   "world": {
+    "p": [
+     595.0,
+     -520.0,
+     197.0
+    ],
+    "dir": [
+     1,
+     0,
+     0
+    ]
+   },
+   "local": {
+    "u": 40.0,
+    "v": 68.0,
+    "u_from": "front edge",
+    "v_from": "panel bottom edge",
+    "face": "outer"
+   },
+   "dia": 4,
+   "depth": 18,
+   "note": "through the side, countersink; pilot 2.5 mm into the shelf edge",
+   "verify": false
+  },
+  {
+   "id": "f0202",
+   "cabinet": "B3",
+   "kind": "shelf-screw",
+   "hardware": "Spax 4x50",
+   "part": {
+    "id": "p0029",
+    "name": "B3 Bok P 702x510"
+   },
+   "face": "x-",
+   "world": {
+    "p": [
+     595.0,
+     -325.0,
+     197.0
+    ],
+    "dir": [
+     1,
+     0,
+     0
+    ]
+   },
+   "local": {
+    "u": 235.0,
+    "v": 68.0,
+    "u_from": "front edge",
+    "v_from": "panel bottom edge",
+    "face": "outer"
+   },
+   "dia": 4,
+   "depth": 18,
+   "note": "through the side, countersink; pilot 2.5 mm into the shelf edge",
+   "verify": false
+  },
+  {
+   "id": "f0203",
+   "cabinet": "B3",
+   "kind": "shelf-screw",
+   "hardware": "Spax 4x50",
+   "part": {
+    "id": "p0029",
+    "name": "B3 Bok P 702x510"
+   },
+   "face": "x-",
+   "world": {
+    "p": [
+     595.0,
+     -130.0,
+     197.0
+    ],
+    "dir": [
+     1,
+     0,
+     0
+    ]
+   },
+   "local": {
+    "u": 430.0,
+    "v": 68.0,
+    "u_from": "front edge",
+    "v_from": "panel bottom edge",
+    "face": "outer"
+   },
+   "dia": 4,
+   "depth": 18,
+   "note": "through the side, countersink; pilot 2.5 mm into the shelf edge",
+   "verify": false
+  },
+  {
+   "id": "f0204",
+   "cabinet": "B3",
+   "kind": "shelf-screw",
+   "hardware": "Spax 4x50",
+   "part": {
+    "id": "p0028",
+    "name": "B3 Bok L 702x510"
+   },
+   "face": "x+",
+   "world": {
+    "p": [
+     1195.0,
+     -520.0,
+     197.0
+    ],
+    "dir": [
+     -1,
+     0,
+     0
+    ]
+   },
+   "local": {
+    "u": 40.0,
+    "v": 68.0,
+    "u_from": "front edge",
+    "v_from": "panel bottom edge",
+    "face": "outer"
+   },
+   "dia": 4,
+   "depth": 18,
+   "note": "through the side, countersink; pilot 2.5 mm into the shelf edge",
+   "verify": false
+  },
+  {
+   "id": "f0205",
+   "cabinet": "B3",
+   "kind": "shelf-screw",
+   "hardware": "Spax 4x50",
+   "part": {
+    "id": "p0028",
+    "name": "B3 Bok L 702x510"
+   },
+   "face": "x+",
+   "world": {
+    "p": [
+     1195.0,
+     -325.0,
+     197.0
+    ],
+    "dir": [
+     -1,
+     0,
+     0
+    ]
+   },
+   "local": {
+    "u": 235.0,
+    "v": 68.0,
+    "u_from": "front edge",
+    "v_from": "panel bottom edge",
+    "face": "outer"
+   },
+   "dia": 4,
+   "depth": 18,
+   "note": "through the side, countersink; pilot 2.5 mm into the shelf edge",
+   "verify": false
+  },
+  {
+   "id": "f0206",
+   "cabinet": "B3",
+   "kind": "shelf-screw",
+   "hardware": "Spax 4x50",
+   "part": {
+    "id": "p0028",
+    "name": "B3 Bok L 702x510"
+   },
+   "face": "x+",
+   "world": {
+    "p": [
+     1195.0,
+     -130.0,
+     197.0
+    ],
+    "dir": [
+     -1,
+     0,
+     0
+    ]
+   },
+   "local": {
+    "u": 430.0,
+    "v": 68.0,
+    "u_from": "front edge",
+    "v_from": "panel bottom edge",
+    "face": "outer"
+   },
+   "dia": 4,
+   "depth": 18,
+   "note": "through the side, countersink; pilot 2.5 mm into the shelf edge",
+   "verify": false
+  },
+  {
+   "id": "f0207",
+   "cabinet": "P1",
+   "kind": "shelf-pin",
+   "hardware": "podporka 5 mm",
+   "part": {
+    "id": "p0057",
+    "name": "P1 Bok L 702x505"
+   },
+   "face": "y+",
+   "world": {
+    "p": [
+     1387.0,
+     -932.0,
+     448.5
+    ],
+    "dir": [
+     0,
+     -1,
+     0
+    ]
+   },
+   "local": {
+    "u": 57.0,
+    "v": 319.5,
+    "u_from": "front edge",
+    "v_from": "panel bottom edge",
+    "face": "inner"
+   },
+   "dia": 5,
+   "depth": 10,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0208",
+   "cabinet": "P1",
+   "kind": "shelf-pin",
+   "hardware": "podporka 5 mm",
+   "part": {
+    "id": "p0057",
+    "name": "P1 Bok L 702x505"
+   },
+   "face": "y+",
+   "world": {
+    "p": [
+     1798.0,
+     -932.0,
+     448.5
+    ],
+    "dir": [
+     0,
+     -1,
+     0
+    ]
+   },
+   "local": {
+    "u": 468.0,
+    "v": 319.5,
+    "u_from": "front edge",
+    "v_from": "panel bottom edge",
+    "face": "inner"
+   },
+   "dia": 5,
+   "depth": 10,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0209",
+   "cabinet": "P1",
+   "kind": "shelf-pin",
+   "hardware": "podporka 5 mm",
+   "part": {
+    "id": "p0061",
+    "name": "P1 Bok tylny przy scianie 702x640 (jeden kawalek do boku B3, zamyka tyl B4)"
+   },
+   "face": "y-",
+   "world": {
+    "p": [
+     1387.0,
+     -68.0,
+     448.5
+    ],
+    "dir": [
+     0,
+     1,
+     0
+    ]
+   },
+   "local": {
+    "u": 192.0,
+    "v": 319.5,
+    "u_from": "front edge",
+    "v_from": "panel bottom edge",
+    "face": "inner"
+   },
+   "dia": 5,
+   "depth": 10,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0210",
+   "cabinet": "P1",
+   "kind": "shelf-pin",
+   "hardware": "podporka 5 mm",
+   "part": {
+    "id": "p0061",
+    "name": "P1 Bok tylny przy scianie 702x640 (jeden kawalek do boku B3, zamyka tyl B4)"
+   },
+   "face": "y-",
+   "world": {
+    "p": [
+     1798.0,
+     -68.0,
+     448.5
+    ],
+    "dir": [
+     0,
+     1,
+     0
+    ]
+   },
+   "local": {
+    "u": 603.0,
+    "v": 319.5,
+    "u_from": "front edge",
+    "v_from": "panel bottom edge",
+    "face": "inner"
+   },
+   "dia": 5,
+   "depth": 10,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0211",
+   "cabinet": "G2",
+   "kind": "shelf-pin",
+   "hardware": "podporka 5 mm",
+   "part": {
+    "id": "p0174",
+    "name": "G2 Bok P 900x332"
+   },
+   "face": "x+",
+   "world": {
+    "p": [
+     163.0,
+     -275.0,
+     1866.5
+    ],
+    "dir": [
+     -1,
+     0,
+     0
+    ]
+   },
+   "local": {
+    "u": 57.0,
+    "v": 447.5,
+    "u_from": "front edge",
+    "v_from": "panel bottom edge",
+    "face": "inner"
+   },
+   "dia": 5,
+   "depth": 10,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0212",
+   "cabinet": "G2",
+   "kind": "shelf-pin",
+   "hardware": "podporka 5 mm",
+   "part": {
+    "id": "p0174",
+    "name": "G2 Bok P 900x332"
+   },
+   "face": "x+",
+   "world": {
+    "p": [
+     163.0,
+     -37.0,
+     1866.5
+    ],
+    "dir": [
+     -1,
+     0,
+     0
+    ]
+   },
+   "local": {
+    "u": 295.0,
+    "v": 447.5,
+    "u_from": "front edge",
+    "v_from": "panel bottom edge",
+    "face": "inner"
+   },
+   "dia": 5,
+   "depth": 10,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0213",
+   "cabinet": "G2",
+   "kind": "shelf-pin",
+   "hardware": "podporka 5 mm",
+   "part": {
+    "id": "p0173",
+    "name": "G2 Bok L 900x332"
+   },
+   "face": "x-",
+   "world": {
+    "p": [
+     577.0,
+     -275.0,
+     1866.5
+    ],
+    "dir": [
+     1,
+     0,
+     0
+    ]
+   },
+   "local": {
+    "u": 57.0,
+    "v": 447.5,
+    "u_from": "front edge",
+    "v_from": "panel bottom edge",
+    "face": "inner"
+   },
+   "dia": 5,
+   "depth": 10,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0214",
+   "cabinet": "G2",
+   "kind": "shelf-pin",
+   "hardware": "podporka 5 mm",
+   "part": {
+    "id": "p0173",
+    "name": "G2 Bok L 900x332"
+   },
+   "face": "x-",
+   "world": {
+    "p": [
+     577.0,
+     -37.0,
+     1866.5
+    ],
+    "dir": [
+     1,
+     0,
+     0
+    ]
+   },
+   "local": {
+    "u": 295.0,
+    "v": 447.5,
+    "u_from": "front edge",
+    "v_from": "panel bottom edge",
+    "face": "inner"
+   },
+   "dia": 5,
+   "depth": 10,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0215",
+   "cabinet": "G4",
+   "kind": "shelf-pin",
+   "hardware": "podporka 5 mm",
+   "part": {
+    "id": "p0192",
+    "name": "G4 Bok P 900x332"
+   },
+   "face": "x+",
+   "world": {
+    "p": [
+     1213.0,
+     -275.0,
+     1866.5
+    ],
+    "dir": [
+     -1,
+     0,
+     0
+    ]
+   },
+   "local": {
+    "u": 57.0,
+    "v": 447.5,
+    "u_from": "front edge",
+    "v_from": "panel bottom edge",
+    "face": "inner"
+   },
+   "dia": 5,
+   "depth": 10,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0216",
+   "cabinet": "G4",
+   "kind": "shelf-pin",
+   "hardware": "podporka 5 mm",
+   "part": {
+    "id": "p0192",
+    "name": "G4 Bok P 900x332"
+   },
+   "face": "x+",
+   "world": {
+    "p": [
+     1213.0,
+     -37.0,
+     1866.5
+    ],
+    "dir": [
+     -1,
+     0,
+     0
+    ]
+   },
+   "local": {
+    "u": 295.0,
+    "v": 447.5,
+    "u_from": "front edge",
+    "v_from": "panel bottom edge",
+    "face": "inner"
+   },
+   "dia": 5,
+   "depth": 10,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0217",
+   "cabinet": "G4",
+   "kind": "shelf-pin",
+   "hardware": "podporka 5 mm",
+   "part": {
+    "id": "p0191",
+    "name": "G4 Bok L 900x332"
+   },
+   "face": "x-",
+   "world": {
+    "p": [
+     1777.0,
+     -275.0,
+     1866.5
+    ],
+    "dir": [
+     1,
+     0,
+     0
+    ]
+   },
+   "local": {
+    "u": 57.0,
+    "v": 447.5,
+    "u_from": "front edge",
+    "v_from": "panel bottom edge",
+    "face": "inner"
+   },
+   "dia": 5,
+   "depth": 10,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0218",
+   "cabinet": "G4",
+   "kind": "shelf-pin",
+   "hardware": "podporka 5 mm",
+   "part": {
+    "id": "p0191",
+    "name": "G4 Bok L 900x332"
+   },
+   "face": "x-",
+   "world": {
+    "p": [
+     1777.0,
+     -37.0,
+     1866.5
+    ],
+    "dir": [
+     1,
+     0,
+     0
+    ]
+   },
+   "local": {
+    "u": 295.0,
+    "v": 447.5,
+    "u_from": "front edge",
+    "v_from": "panel bottom edge",
+    "face": "inner"
+   },
+   "dia": 5,
+   "depth": 10,
+   "note": "",
+   "verify": false
+  },
+  {
+   "id": "f0219",
+   "cabinet": "B1",
+   "kind": "handle-hole",
+   "hardware": "C-1149-128.P61 (verify code)",
+   "part": {
+    "id": "p0015",
+    "name": "B1 Drzwiczki (zawiasy od strony zmywarki, Blum 155 st.) 105x716"
+   },
+   "face": "y-",
+   "world": {
+    "p": [
+     78.0,
+     -578.0,
+     641.0
+    ],
+    "dir": [
+     0,
+     1,
+     0
+    ]
+   },
+   "local": {
+    "u": 40.0,
+    "v": 528.0,
+    "u_from": "left edge (viewed from the front)",
+    "v_from": "front bottom edge",
+    "face": "front"
+   },
+   "dia": 5,
+   "depth": 18,
+   "note": "through hole from the front (backing board behind), M4x25 screws",
+   "verify": false
+  },
+  {
+   "id": "f0220",
+   "cabinet": "B1",
+   "kind": "handle-hole",
+   "hardware": "C-1149-128.P61 (verify code)",
+   "part": {
+    "id": "p0015",
+    "name": "B1 Drzwiczki (zawiasy od strony zmywarki, Blum 155 st.) 105x716"
+   },
+   "face": "y-",
+   "world": {
+    "p": [
+     78.0,
+     -578.0,
+     769.0
+    ],
+    "dir": [
+     0,
+     1,
+     0
+    ]
+   },
+   "local": {
+    "u": 40.0,
+    "v": 656.0,
+    "u_from": "left edge (viewed from the front)",
+    "v_from": "front bottom edge",
+    "face": "front"
+   },
+   "dia": 5,
+   "depth": 18,
+   "note": "through hole from the front (backing board behind), M4x25 screws",
+   "verify": false
+  },
+  {
+   "id": "f0221",
+   "cabinet": "B2",
+   "kind": "handle-hole",
+   "hardware": "C-1149-320.P61",
+   "part": {
+    "id": "p0023",
+    "name": "B2 Zmywarka Front 446x716"
+   },
+   "face": "y-",
+   "world": {
+    "p": [
+     210.0,
+     -578.0,
+     779.0
+    ],
+    "dir": [
+     0,
+     1,
+     0
+    ]
+   },
+   "local": {
+    "u": 63.0,
+    "v": 666.0,
+    "u_from": "left edge (viewed from the front)",
+    "v_from": "front bottom edge",
+    "face": "front"
+   },
+   "dia": 5,
+   "depth": 18,
+   "note": "through hole from the front (backing board behind), M4x25 screws",
+   "verify": false
+  },
+  {
+   "id": "f0222",
+   "cabinet": "B2",
+   "kind": "handle-hole",
+   "hardware": "C-1149-320.P61",
+   "part": {
+    "id": "p0023",
+    "name": "B2 Zmywarka Front 446x716"
+   },
+   "face": "y-",
+   "world": {
+    "p": [
+     530.0,
+     -578.0,
+     779.0
+    ],
+    "dir": [
+     0,
+     1,
+     0
+    ]
+   },
+   "local": {
+    "u": 383.0,
+    "v": 666.0,
+    "u_from": "left edge (viewed from the front)",
+    "v_from": "front bottom edge",
+    "face": "front"
+   },
+   "dia": 5,
+   "depth": 18,
+   "note": "through hole from the front (backing board behind), M4x25 screws",
+   "verify": false
+  },
+  {
+   "id": "f0223",
+   "cabinet": "B3",
+   "kind": "handle-hole",
+   "hardware": "C-1149-128.P61 (verify code)",
+   "part": {
+    "id": "p0033",
+    "name": "B3 Klapa schowka (2 zawiasy na dole, otwiera sie w dol) 596x82"
+   },
+   "face": "y-",
+   "world": {
+    "p": [
+     831.0,
+     -578.0,
+     154.0
+    ],
+    "dir": [
+     0,
+     1,
+     0
+    ]
+   },
+   "local": {
+    "u": 234.0,
+    "v": 41.0,
+    "u_from": "left edge (viewed from the front)",
+    "v_from": "front bottom edge",
+    "face": "front"
+   },
+   "dia": 5,
+   "depth": 18,
+   "note": "through hole from the front (backing board behind), M4x25 screws",
+   "verify": false
+  },
+  {
+   "id": "f0224",
+   "cabinet": "B3",
+   "kind": "handle-hole",
+   "hardware": "C-1149-128.P61 (verify code)",
+   "part": {
+    "id": "p0033",
+    "name": "B3 Klapa schowka (2 zawiasy na dole, otwiera sie w dol) 596x82"
+   },
+   "face": "y-",
+   "world": {
+    "p": [
+     959.0,
+     -578.0,
+     154.0
+    ],
+    "dir": [
+     0,
+     1,
+     0
+    ]
+   },
+   "local": {
+    "u": 362.0,
+    "v": 41.0,
+    "u_from": "left edge (viewed from the front)",
+    "v_from": "front bottom edge",
+    "face": "front"
+   },
+   "dia": 5,
+   "depth": 18,
+   "note": "through hole from the front (backing board behind), M4x25 screws",
+   "verify": false
+  },
+  {
+   "id": "f0225",
+   "cabinet": "B4",
+   "kind": "handle-hole",
+   "hardware": "C-1149-128.P61 (verify code)",
+   "part": {
+    "id": "p0049",
+    "name": "B4 Drzwiczki narozne (zawiasy Blum 155 st. na boku B4, otw. w lewo, chowaja sie za drzwiami P1) 131x716"
+   },
+   "face": "y-",
+   "world": {
+    "p": [
+     1287.0,
+     -578.0,
+     641.0
+    ],
+    "dir": [
+     0,
+     1,
+     0
+    ]
+   },
+   "local": {
+    "u": 91.0,
+    "v": 528.0,
+    "u_from": "left edge (viewed from the front)",
+    "v_from": "front bottom edge",
+    "face": "front"
+   },
+   "dia": 5,
+   "depth": 18,
+   "note": "through hole from the front (backing board behind), M4x25 screws",
+   "verify": false
+  },
+  {
+   "id": "f0226",
+   "cabinet": "B4",
+   "kind": "handle-hole",
+   "hardware": "C-1149-128.P61 (verify code)",
+   "part": {
+    "id": "p0049",
+    "name": "B4 Drzwiczki narozne (zawiasy Blum 155 st. na boku B4, otw. w lewo, chowaja sie za drzwiami P1) 131x716"
+   },
+   "face": "y-",
+   "world": {
+    "p": [
+     1287.0,
+     -578.0,
+     769.0
+    ],
+    "dir": [
+     0,
+     1,
+     0
+    ]
+   },
+   "local": {
+    "u": 91.0,
+    "v": 656.0,
+    "u_from": "left edge (viewed from the front)",
+    "v_from": "front bottom edge",
+    "face": "front"
+   },
+   "dia": 5,
+   "depth": 18,
+   "note": "through hole from the front (backing board behind), M4x25 screws",
+   "verify": false
+  },
+  {
+   "id": "f0227",
+   "cabinet": "P1",
+   "kind": "handle-hole",
+   "hardware": "C-1149-128.P61 (verify code)",
+   "part": {
+    "id": "p0063",
+    "name": "P1 Drzwi (zawiasy Blum 155 st. od szuflad, otw. w prawo, otwierasz PIERWSZE) 367x716"
+   },
+   "face": "x-",
+   "world": {
+    "p": [
+     1312.0,
+     -621.0,
+     641.0
+    ],
+    "dir": [
+     1,
+     0,
+     0
+    ]
+   },
+   "local": {
+    "u": 40.0,
+    "v": 528.0,
+    "u_from": "left edge (viewed from the front)",
+    "v_from": "front bottom edge",
+    "face": "front"
+   },
+   "dia": 5,
+   "depth": 18,
+   "note": "through hole from the front (backing board behind), M4x25 screws",
+   "verify": false
+  },
+  {
+   "id": "f0228",
+   "cabinet": "P1",
+   "kind": "handle-hole",
+   "hardware": "C-1149-128.P61 (verify code)",
+   "part": {
+    "id": "p0063",
+    "name": "P1 Drzwi (zawiasy Blum 155 st. od szuflad, otw. w prawo, otwierasz PIERWSZE) 367x716"
+   },
+   "face": "x-",
+   "world": {
+    "p": [
+     1312.0,
+     -621.0,
+     769.0
+    ],
+    "dir": [
+     1,
+     0,
+     0
+    ]
+   },
+   "local": {
+    "u": 40.0,
+    "v": 656.0,
+    "u_from": "left edge (viewed from the front)",
+    "v_from": "front bottom edge",
+    "face": "front"
+   },
+   "dia": 5,
+   "depth": 18,
+   "note": "through hole from the front (backing board behind), M4x25 screws",
+   "verify": false
+  },
+  {
+   "id": "f0229",
+   "cabinet": "P2",
+   "kind": "handle-hole",
+   "hardware": "C-1149-320.P61",
+   "part": {
+    "id": "p0086",
+    "name": "P2 Szuflada dolna (E + galeria) 596x320"
+   },
+   "face": "x-",
+   "world": {
+    "p": [
+     1312.0,
+     -1090.0,
+     383.0
+    ],
+    "dir": [
+     1,
+     0,
+     0
+    ]
+   },
+   "local": {
+    "u": 138.0,
+    "v": 270.0,
+    "u_from": "left edge (viewed from the front)",
+    "v_from": "front bottom edge",
+    "face": "front"
+   },
+   "dia": 5,
+   "depth": 18,
+   "note": "through hole from the front (backing board behind), M4x25 screws",
+   "verify": false
+  },
+  {
+   "id": "f0230",
+   "cabinet": "P2",
+   "kind": "handle-hole",
+   "hardware": "C-1149-320.P61",
+   "part": {
+    "id": "p0086",
+    "name": "P2 Szuflada dolna (E + galeria) 596x320"
+   },
+   "face": "x-",
+   "world": {
+    "p": [
+     1312.0,
+     -1410.0,
+     383.0
+    ],
+    "dir": [
+     1,
+     0,
+     0
+    ]
+   },
+   "local": {
+    "u": 458.0,
+    "v": 270.0,
+    "u_from": "left edge (viewed from the front)",
+    "v_from": "front bottom edge",
+    "face": "front"
+   },
+   "dia": 5,
+   "depth": 18,
+   "note": "through hole from the front (backing board behind), M4x25 screws",
+   "verify": false
+  },
+  {
+   "id": "f0231",
+   "cabinet": "P2",
+   "kind": "handle-hole",
+   "hardware": "C-1149-320.P61",
+   "part": {
+    "id": "p0087",
+    "name": "P2 Szuflada srodkowa (K) 596x250"
+   },
+   "face": "x-",
+   "world": {
+    "p": [
+     1312.0,
+     -1090.0,
+     636.0
+    ],
+    "dir": [
+     1,
+     0,
+     0
+    ]
+   },
+   "local": {
+    "u": 138.0,
+    "v": 200.0,
+    "u_from": "left edge (viewed from the front)",
+    "v_from": "front bottom edge",
+    "face": "front"
+   },
+   "dia": 5,
+   "depth": 18,
+   "note": "through hole from the front (backing board behind), M4x25 screws",
+   "verify": false
+  },
+  {
+   "id": "f0232",
+   "cabinet": "P2",
+   "kind": "handle-hole",
+   "hardware": "C-1149-320.P61",
+   "part": {
+    "id": "p0087",
+    "name": "P2 Szuflada srodkowa (K) 596x250"
+   },
+   "face": "x-",
+   "world": {
+    "p": [
+     1312.0,
+     -1410.0,
+     636.0
+    ],
+    "dir": [
+     1,
+     0,
+     0
+    ]
+   },
+   "local": {
+    "u": 458.0,
+    "v": 200.0,
+    "u_from": "left edge (viewed from the front)",
+    "v_from": "front bottom edge",
+    "face": "front"
+   },
+   "dia": 5,
+   "depth": 18,
+   "note": "through hole from the front (backing board behind), M4x25 screws",
+   "verify": false
+  },
+  {
+   "id": "f0233",
+   "cabinet": "P2",
+   "kind": "handle-hole",
+   "hardware": "C-1149-320.P61",
+   "part": {
+    "id": "p0088",
+    "name": "P2 Szuflada gorna (M, sztucce) 596x140"
+   },
+   "face": "x-",
+   "world": {
+    "p": [
+     1312.0,
+     -1090.0,
+     779.0
+    ],
+    "dir": [
+     1,
+     0,
+     0
+    ]
+   },
+   "local": {
+    "u": 138.0,
+    "v": 90.0,
+    "u_from": "left edge (viewed from the front)",
+    "v_from": "front bottom edge",
+    "face": "front"
+   },
+   "dia": 5,
+   "depth": 18,
+   "note": "through hole from the front (backing board behind), M4x25 screws",
+   "verify": false
+  },
+  {
+   "id": "f0234",
+   "cabinet": "P2",
+   "kind": "handle-hole",
+   "hardware": "C-1149-320.P61",
+   "part": {
+    "id": "p0088",
+    "name": "P2 Szuflada gorna (M, sztucce) 596x140"
+   },
+   "face": "x-",
+   "world": {
+    "p": [
+     1312.0,
+     -1410.0,
+     779.0
+    ],
+    "dir": [
+     1,
+     0,
+     0
+    ]
+   },
+   "local": {
+    "u": 458.0,
+    "v": 90.0,
+    "u_from": "left edge (viewed from the front)",
+    "v_from": "front bottom edge",
+    "face": "front"
+   },
+   "dia": 5,
+   "depth": 18,
+   "note": "through hole from the front (backing board behind), M4x25 screws",
+   "verify": false
+  },
+  {
+   "id": "f0235",
+   "cabinet": "P3",
+   "kind": "handle-hole",
+   "hardware": "C-1149-320.P61",
+   "part": {
+    "id": "p0126",
+    "name": "P3 Szuflada dolna (E + galeria) 496x320"
+   },
+   "face": "x-",
+   "world": {
+    "p": [
+     1312.0,
+     -1640.0,
+     383.0
+    ],
+    "dir": [
+     1,
+     0,
+     0
+    ]
+   },
+   "local": {
+    "u": 88.0,
+    "v": 270.0,
+    "u_from": "left edge (viewed from the front)",
+    "v_from": "front bottom edge",
+    "face": "front"
+   },
+   "dia": 5,
+   "depth": 18,
+   "note": "through hole from the front (backing board behind), M4x25 screws",
+   "verify": false
+  },
+  {
+   "id": "f0236",
+   "cabinet": "P3",
+   "kind": "handle-hole",
+   "hardware": "C-1149-320.P61",
+   "part": {
+    "id": "p0126",
+    "name": "P3 Szuflada dolna (E + galeria) 496x320"
+   },
+   "face": "x-",
+   "world": {
+    "p": [
+     1312.0,
+     -1960.0,
+     383.0
+    ],
+    "dir": [
+     1,
+     0,
+     0
+    ]
+   },
+   "local": {
+    "u": 408.0,
+    "v": 270.0,
+    "u_from": "left edge (viewed from the front)",
+    "v_from": "front bottom edge",
+    "face": "front"
+   },
+   "dia": 5,
+   "depth": 18,
+   "note": "through hole from the front (backing board behind), M4x25 screws",
+   "verify": false
+  },
+  {
+   "id": "f0237",
+   "cabinet": "P3",
+   "kind": "handle-hole",
+   "hardware": "C-1149-320.P61",
+   "part": {
+    "id": "p0127",
+    "name": "P3 Szuflada srodkowa (K) 496x250"
+   },
+   "face": "x-",
+   "world": {
+    "p": [
+     1312.0,
+     -1640.0,
+     636.0
+    ],
+    "dir": [
+     1,
+     0,
+     0
+    ]
+   },
+   "local": {
+    "u": 88.0,
+    "v": 200.0,
+    "u_from": "left edge (viewed from the front)",
+    "v_from": "front bottom edge",
+    "face": "front"
+   },
+   "dia": 5,
+   "depth": 18,
+   "note": "through hole from the front (backing board behind), M4x25 screws",
+   "verify": false
+  },
+  {
+   "id": "f0238",
+   "cabinet": "P3",
+   "kind": "handle-hole",
+   "hardware": "C-1149-320.P61",
+   "part": {
+    "id": "p0127",
+    "name": "P3 Szuflada srodkowa (K) 496x250"
+   },
+   "face": "x-",
+   "world": {
+    "p": [
+     1312.0,
+     -1960.0,
+     636.0
+    ],
+    "dir": [
+     1,
+     0,
+     0
+    ]
+   },
+   "local": {
+    "u": 408.0,
+    "v": 200.0,
+    "u_from": "left edge (viewed from the front)",
+    "v_from": "front bottom edge",
+    "face": "front"
+   },
+   "dia": 5,
+   "depth": 18,
+   "note": "through hole from the front (backing board behind), M4x25 screws",
+   "verify": false
+  },
+  {
+   "id": "f0239",
+   "cabinet": "P3",
+   "kind": "handle-hole",
+   "hardware": "C-1149-320.P61",
+   "part": {
+    "id": "p0128",
+    "name": "P3 Szuflada gorna (M, sztucce) 496x140"
+   },
+   "face": "x-",
+   "world": {
+    "p": [
+     1312.0,
+     -1640.0,
+     779.0
+    ],
+    "dir": [
+     1,
+     0,
+     0
+    ]
+   },
+   "local": {
+    "u": 88.0,
+    "v": 90.0,
+    "u_from": "left edge (viewed from the front)",
+    "v_from": "front bottom edge",
+    "face": "front"
+   },
+   "dia": 5,
+   "depth": 18,
+   "note": "through hole from the front (backing board behind), M4x25 screws",
+   "verify": false
+  },
+  {
+   "id": "f0240",
+   "cabinet": "P3",
+   "kind": "handle-hole",
+   "hardware": "C-1149-320.P61",
+   "part": {
+    "id": "p0128",
+    "name": "P3 Szuflada gorna (M, sztucce) 496x140"
+   },
+   "face": "x-",
+   "world": {
+    "p": [
+     1312.0,
+     -1960.0,
+     779.0
+    ],
+    "dir": [
+     1,
+     0,
+     0
+    ]
+   },
+   "local": {
+    "u": 408.0,
+    "v": 90.0,
+    "u_from": "left edge (viewed from the front)",
+    "v_from": "front bottom edge",
+    "face": "front"
+   },
+   "dia": 5,
+   "depth": 18,
+   "note": "through hole from the front (backing board behind), M4x25 screws",
+   "verify": false
+  },
+  {
+   "id": "f0241",
+   "cabinet": "G2",
+   "kind": "handle-hole",
+   "hardware": "C-1149-128.P61 (verify code)",
+   "part": {
+    "id": "p0179",
+    "name": "G2 Drzwi (zawiasy L) 446x896"
+   },
+   "face": "y-",
+   "world": {
+    "p": [
+     553.0,
+     -350.0,
+     1481.0
+    ],
+    "dir": [
+     0,
+     1,
+     0
+    ]
+   },
+   "local": {
+    "u": 406.0,
+    "v": 60.0,
+    "u_from": "left edge (viewed from the front)",
+    "v_from": "front bottom edge",
+    "face": "front"
+   },
+   "dia": 5,
+   "depth": 18,
+   "note": "through hole from the front (backing board behind), M4x25 screws",
+   "verify": false
+  },
+  {
+   "id": "f0242",
+   "cabinet": "G2",
+   "kind": "handle-hole",
+   "hardware": "C-1149-128.P61 (verify code)",
+   "part": {
+    "id": "p0179",
+    "name": "G2 Drzwi (zawiasy L) 446x896"
+   },
+   "face": "y-",
+   "world": {
+    "p": [
+     553.0,
+     -350.0,
+     1609.0
+    ],
+    "dir": [
+     0,
+     1,
+     0
+    ]
+   },
+   "local": {
+    "u": 406.0,
+    "v": 188.0,
+    "u_from": "left edge (viewed from the front)",
+    "v_from": "front bottom edge",
+    "face": "front"
+   },
+   "dia": 5,
+   "depth": 18,
+   "note": "through hole from the front (backing board behind), M4x25 screws",
+   "verify": false
+  },
+  {
+   "id": "f0243",
+   "cabinet": "G3",
+   "kind": "handle-hole",
+   "hardware": "C-1149-128.P61 (verify code)",
+   "part": {
+    "id": "p0189",
+    "name": "G3 Drzwi (zawiasy L) 596x896"
+   },
+   "face": "y-",
+   "world": {
+    "p": [
+     1153.0,
+     -350.0,
+     1481.0
+    ],
+    "dir": [
+     0,
+     1,
+     0
+    ]
+   },
+   "local": {
+    "u": 556.0,
+    "v": 60.0,
+    "u_from": "left edge (viewed from the front)",
+    "v_from": "front bottom edge",
+    "face": "front"
+   },
+   "dia": 5,
+   "depth": 18,
+   "note": "through hole from the front (backing board behind), M4x25 screws",
+   "verify": false
+  },
+  {
+   "id": "f0244",
+   "cabinet": "G3",
+   "kind": "handle-hole",
+   "hardware": "C-1149-128.P61 (verify code)",
+   "part": {
+    "id": "p0189",
+    "name": "G3 Drzwi (zawiasy L) 596x896"
+   },
+   "face": "y-",
+   "world": {
+    "p": [
+     1153.0,
+     -350.0,
+     1609.0
+    ],
+    "dir": [
+     0,
+     1,
+     0
+    ]
+   },
+   "local": {
+    "u": 556.0,
+    "v": 188.0,
+    "u_from": "left edge (viewed from the front)",
+    "v_from": "front bottom edge",
+    "face": "front"
+   },
+   "dia": 5,
+   "depth": 18,
+   "note": "through hole from the front (backing board behind), M4x25 screws",
+   "verify": false
+  },
+  {
+   "id": "f0245",
+   "cabinet": "G4",
+   "kind": "handle-hole",
+   "hardware": "C-1149-128.P61 (verify code)",
+   "part": {
+    "id": "p0197",
+    "name": "G4 Drzwi (zawiasy P) 596x896"
+   },
+   "face": "y-",
+   "world": {
+    "p": [
+     1237.0,
+     -350.0,
+     1481.0
+    ],
+    "dir": [
+     0,
+     1,
+     0
+    ]
+   },
+   "local": {
+    "u": 40.0,
+    "v": 60.0,
+    "u_from": "left edge (viewed from the front)",
+    "v_from": "front bottom edge",
+    "face": "front"
+   },
+   "dia": 5,
+   "depth": 18,
+   "note": "through hole from the front (backing board behind), M4x25 screws",
+   "verify": false
+  },
+  {
+   "id": "f0246",
+   "cabinet": "G4",
+   "kind": "handle-hole",
+   "hardware": "C-1149-128.P61 (verify code)",
+   "part": {
+    "id": "p0197",
+    "name": "G4 Drzwi (zawiasy P) 596x896"
+   },
+   "face": "y-",
+   "world": {
+    "p": [
+     1237.0,
+     -350.0,
+     1609.0
+    ],
+    "dir": [
+     0,
+     1,
+     0
+    ]
+   },
+   "local": {
+    "u": 40.0,
+    "v": 188.0,
+    "u_from": "left edge (viewed from the front)",
+    "v_from": "front bottom edge",
+    "face": "front"
+   },
+   "dia": 5,
+   "depth": 18,
+   "note": "through hole from the front (backing board behind), M4x25 screws",
+   "verify": false
+  },
+  {
+   "id": "f0247",
+   "cabinet": "Z1",
+   "kind": "handle-hole",
+   "hardware": "C-1149-128.P61 (verify code)",
+   "part": {
+    "id": "p0223",
+    "name": "Z1 Drzwi L 365x716"
+   },
+   "face": "x+",
+   "world": {
+    "p": [
+     36.0,
+     -1151.0,
+     641.0
+    ],
+    "dir": [
+     -1,
+     0,
+     0
+    ]
+   },
+   "local": {
+    "u": 40.0,
+    "v": 528.0,
+    "u_from": "left edge (viewed from the front)",
+    "v_from": "front bottom edge",
+    "face": "front"
+   },
+   "dia": 5,
+   "depth": 18,
+   "note": "through hole from the front (backing board behind), M4x25 screws",
+   "verify": false
+  },
+  {
+   "id": "f0248",
+   "cabinet": "Z1",
+   "kind": "handle-hole",
+   "hardware": "C-1149-128.P61 (verify code)",
+   "part": {
+    "id": "p0223",
+    "name": "Z1 Drzwi L 365x716"
+   },
+   "face": "x+",
+   "world": {
+    "p": [
+     36.0,
+     -1151.0,
+     769.0
+    ],
+    "dir": [
+     -1,
+     0,
+     0
+    ]
+   },
+   "local": {
+    "u": 40.0,
+    "v": 656.0,
+    "u_from": "left edge (viewed from the front)",
+    "v_from": "front bottom edge",
+    "face": "front"
+   },
+   "dia": 5,
+   "depth": 18,
+   "note": "through hole from the front (backing board behind), M4x25 screws",
+   "verify": false
+  },
+  {
+   "id": "f0249",
+   "cabinet": "Z1",
+   "kind": "handle-hole",
+   "hardware": "C-1149-128.P61 (verify code)",
+   "part": {
+    "id": "p0224",
+    "name": "Z1 Drzwi P 364x716"
+   },
+   "face": "x+",
+   "world": {
+    "p": [
+     36.0,
+     -1234.0,
+     641.0
+    ],
+    "dir": [
+     -1,
+     0,
+     0
+    ]
+   },
+   "local": {
+    "u": 324.0,
+    "v": 528.0,
+    "u_from": "left edge (viewed from the front)",
+    "v_from": "front bottom edge",
+    "face": "front"
+   },
+   "dia": 5,
+   "depth": 18,
+   "note": "through hole from the front (backing board behind), M4x25 screws",
+   "verify": false
+  },
+  {
+   "id": "f0250",
+   "cabinet": "Z1",
+   "kind": "handle-hole",
+   "hardware": "C-1149-128.P61 (verify code)",
+   "part": {
+    "id": "p0224",
+    "name": "Z1 Drzwi P 364x716"
+   },
+   "face": "x+",
+   "world": {
+    "p": [
+     36.0,
+     -1234.0,
+     769.0
+    ],
+    "dir": [
+     -1,
+     0,
+     0
+    ]
+   },
+   "local": {
+    "u": 324.0,
+    "v": 656.0,
+    "u_from": "left edge (viewed from the front)",
+    "v_from": "front bottom edge",
+    "face": "front"
+   },
+   "dia": 5,
+   "depth": 18,
+   "note": "through hole from the front (backing board behind), M4x25 screws",
+   "verify": false
+  },
+  {
+   "id": "f0251",
+   "cabinet": "L6",
+   "kind": "handle-hole",
+   "hardware": "C-1149-128.P61 (verify code)",
+   "part": {
+    "id": "p0246",
+    "name": "L6 Drzwi nadstawki 610x374"
+   },
+   "face": "x+",
+   "world": {
+    "p": [
+     36.0,
+     -1620.0,
+     2003.0
+    ],
+    "dir": [
+     -1,
+     0,
+     0
+    ]
+   },
+   "local": {
+    "u": 570.0,
+    "v": 60.0,
+    "u_from": "left edge (viewed from the front)",
+    "v_from": "front bottom edge",
+    "face": "front"
+   },
+   "dia": 5,
+   "depth": 18,
+   "note": "through hole from the front (backing board behind), M4x25 screws",
+   "verify": false
+  },
+  {
+   "id": "f0252",
+   "cabinet": "L6",
+   "kind": "handle-hole",
+   "hardware": "C-1149-128.P61 (verify code)",
+   "part": {
+    "id": "p0246",
+    "name": "L6 Drzwi nadstawki 610x374"
+   },
+   "face": "x+",
+   "world": {
+    "p": [
+     36.0,
+     -1620.0,
+     2131.0
+    ],
+    "dir": [
+     -1,
+     0,
+     0
+    ]
+   },
+   "local": {
+    "u": 570.0,
+    "v": 188.0,
+    "u_from": "left edge (viewed from the front)",
+    "v_from": "front bottom edge",
+    "face": "front"
+   },
+   "dia": 5,
+   "depth": 18,
+   "note": "through hole from the front (backing board behind), M4x25 screws",
+   "verify": false
+  },
+  {
+   "id": "f0253",
+   "cabinet": "G2",
+   "kind": "hanger-dowel",
+   "hardware": "Camar 801",
+   "part": {
+    "id": "p0173",
+    "name": "G2 Bok L 900x332"
+   },
+   "face": "x-",
+   "world": {
+    "p": [
+     577.0,
+     -20.0,
+     2259.0
+    ],
+    "dir": [
+     1,
+     0,
+     0
+    ]
+   },
+   "local": {
+    "u": 20,
+    "v": 840.0,
+    "u_from": "BACK edge",
+    "v_from": "panel bottom edge",
+    "face": "inner"
+   },
+   "dia": 10,
+   "depth": 10.5,
+   "note": "u and spacing are placeholders - measure the hanger",
+   "verify": true
+  },
+  {
+   "id": "f0254",
+   "cabinet": "G2",
+   "kind": "hanger-dowel",
+   "hardware": "Camar 801",
+   "part": {
+    "id": "p0173",
+    "name": "G2 Bok L 900x332"
+   },
+   "face": "x-",
+   "world": {
+    "p": [
+     577.0,
+     -52.0,
+     2259.0
+    ],
+    "dir": [
+     1,
+     0,
+     0
+    ]
+   },
+   "local": {
+    "u": 52,
+    "v": 840.0,
+    "u_from": "BACK edge",
+    "v_from": "panel bottom edge",
+    "face": "inner"
+   },
+   "dia": 10,
+   "depth": 10.5,
+   "note": "u and spacing are placeholders - measure the hanger",
+   "verify": true
+  },
+  {
+   "id": "f0255",
+   "cabinet": "G2",
+   "kind": "hanger-dowel",
+   "hardware": "Camar 801",
+   "part": {
+    "id": "p0174",
+    "name": "G2 Bok P 900x332"
+   },
+   "face": "x+",
+   "world": {
+    "p": [
+     163.0,
+     -20.0,
+     2259.0
+    ],
+    "dir": [
+     -1,
+     0,
+     0
+    ]
+   },
+   "local": {
+    "u": 20,
+    "v": 840.0,
+    "u_from": "BACK edge",
+    "v_from": "panel bottom edge",
+    "face": "inner"
+   },
+   "dia": 10,
+   "depth": 10.5,
+   "note": "u and spacing are placeholders - measure the hanger",
+   "verify": true
+  },
+  {
+   "id": "f0256",
+   "cabinet": "G2",
+   "kind": "hanger-dowel",
+   "hardware": "Camar 801",
+   "part": {
+    "id": "p0174",
+    "name": "G2 Bok P 900x332"
+   },
+   "face": "x+",
+   "world": {
+    "p": [
+     163.0,
+     -52.0,
+     2259.0
+    ],
+    "dir": [
+     -1,
+     0,
+     0
+    ]
+   },
+   "local": {
+    "u": 52,
+    "v": 840.0,
+    "u_from": "BACK edge",
+    "v_from": "panel bottom edge",
+    "face": "inner"
+   },
+   "dia": 10,
+   "depth": 10.5,
+   "note": "u and spacing are placeholders - measure the hanger",
+   "verify": true
+  },
+  {
+   "id": "f0257",
+   "cabinet": "G3",
+   "kind": "hanger-dowel",
+   "hardware": "Camar 801",
+   "part": {
+    "id": "p0181",
+    "name": "G3 Bok L 900x332"
+   },
+   "face": "x-",
+   "world": {
+    "p": [
+     1177.0,
+     -20.0,
+     2259.0
+    ],
+    "dir": [
+     1,
+     0,
+     0
+    ]
+   },
+   "local": {
+    "u": 20,
+    "v": 840.0,
+    "u_from": "BACK edge",
+    "v_from": "panel bottom edge",
+    "face": "inner"
+   },
+   "dia": 10,
+   "depth": 10.5,
+   "note": "u and spacing are placeholders - measure the hanger",
+   "verify": true
+  },
+  {
+   "id": "f0258",
+   "cabinet": "G3",
+   "kind": "hanger-dowel",
+   "hardware": "Camar 801",
+   "part": {
+    "id": "p0181",
+    "name": "G3 Bok L 900x332"
+   },
+   "face": "x-",
+   "world": {
+    "p": [
+     1177.0,
+     -52.0,
+     2259.0
+    ],
+    "dir": [
+     1,
+     0,
+     0
+    ]
+   },
+   "local": {
+    "u": 52,
+    "v": 840.0,
+    "u_from": "BACK edge",
+    "v_from": "panel bottom edge",
+    "face": "inner"
+   },
+   "dia": 10,
+   "depth": 10.5,
+   "note": "u and spacing are placeholders - measure the hanger",
+   "verify": true
+  },
+  {
+   "id": "f0259",
+   "cabinet": "G3",
+   "kind": "hanger-dowel",
+   "hardware": "Camar 801",
+   "part": {
+    "id": "p0182",
+    "name": "G3 Bok P 900x332"
+   },
+   "face": "x+",
+   "world": {
+    "p": [
+     613.0,
+     -20.0,
+     2259.0
+    ],
+    "dir": [
+     -1,
+     0,
+     0
+    ]
+   },
+   "local": {
+    "u": 20,
+    "v": 840.0,
+    "u_from": "BACK edge",
+    "v_from": "panel bottom edge",
+    "face": "inner"
+   },
+   "dia": 10,
+   "depth": 10.5,
+   "note": "u and spacing are placeholders - measure the hanger",
+   "verify": true
+  },
+  {
+   "id": "f0260",
+   "cabinet": "G3",
+   "kind": "hanger-dowel",
+   "hardware": "Camar 801",
+   "part": {
+    "id": "p0182",
+    "name": "G3 Bok P 900x332"
+   },
+   "face": "x+",
+   "world": {
+    "p": [
+     613.0,
+     -52.0,
+     2259.0
+    ],
+    "dir": [
+     -1,
+     0,
+     0
+    ]
+   },
+   "local": {
+    "u": 52,
+    "v": 840.0,
+    "u_from": "BACK edge",
+    "v_from": "panel bottom edge",
+    "face": "inner"
+   },
+   "dia": 10,
+   "depth": 10.5,
+   "note": "u and spacing are placeholders - measure the hanger",
+   "verify": true
+  },
+  {
+   "id": "f0261",
+   "cabinet": "G4",
+   "kind": "hanger-dowel",
+   "hardware": "Camar 801",
+   "part": {
+    "id": "p0191",
+    "name": "G4 Bok L 900x332"
+   },
+   "face": "x-",
+   "world": {
+    "p": [
+     1777.0,
+     -20.0,
+     2259.0
+    ],
+    "dir": [
+     1,
+     0,
+     0
+    ]
+   },
+   "local": {
+    "u": 20,
+    "v": 840.0,
+    "u_from": "BACK edge",
+    "v_from": "panel bottom edge",
+    "face": "inner"
+   },
+   "dia": 10,
+   "depth": 10.5,
+   "note": "u and spacing are placeholders - measure the hanger",
+   "verify": true
+  },
+  {
+   "id": "f0262",
+   "cabinet": "G4",
+   "kind": "hanger-dowel",
+   "hardware": "Camar 801",
+   "part": {
+    "id": "p0191",
+    "name": "G4 Bok L 900x332"
+   },
+   "face": "x-",
+   "world": {
+    "p": [
+     1777.0,
+     -52.0,
+     2259.0
+    ],
+    "dir": [
+     1,
+     0,
+     0
+    ]
+   },
+   "local": {
+    "u": 52,
+    "v": 840.0,
+    "u_from": "BACK edge",
+    "v_from": "panel bottom edge",
+    "face": "inner"
+   },
+   "dia": 10,
+   "depth": 10.5,
+   "note": "u and spacing are placeholders - measure the hanger",
+   "verify": true
+  },
+  {
+   "id": "f0263",
+   "cabinet": "G4",
+   "kind": "hanger-dowel",
+   "hardware": "Camar 801",
+   "part": {
+    "id": "p0192",
+    "name": "G4 Bok P 900x332"
+   },
+   "face": "x+",
+   "world": {
+    "p": [
+     1213.0,
+     -20.0,
+     2259.0
+    ],
+    "dir": [
+     -1,
+     0,
+     0
+    ]
+   },
+   "local": {
+    "u": 20,
+    "v": 840.0,
+    "u_from": "BACK edge",
+    "v_from": "panel bottom edge",
+    "face": "inner"
+   },
+   "dia": 10,
+   "depth": 10.5,
+   "note": "u and spacing are placeholders - measure the hanger",
+   "verify": true
+  },
+  {
+   "id": "f0264",
+   "cabinet": "G4",
+   "kind": "hanger-dowel",
+   "hardware": "Camar 801",
+   "part": {
+    "id": "p0192",
+    "name": "G4 Bok P 900x332"
+   },
+   "face": "x+",
+   "world": {
+    "p": [
+     1213.0,
+     -52.0,
+     2259.0
+    ],
+    "dir": [
+     -1,
+     0,
+     0
+    ]
+   },
+   "local": {
+    "u": 52,
+    "v": 840.0,
+    "u_from": "BACK edge",
+    "v_from": "panel bottom edge",
+    "face": "inner"
+   },
+   "dia": 10,
+   "depth": 10.5,
+   "note": "u and spacing are placeholders - measure the hanger",
+   "verify": true
+  }
+ ]
+}
